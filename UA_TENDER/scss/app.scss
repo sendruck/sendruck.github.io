@@ -594,7 +594,8 @@ $tender-font-size: 12px;
         border-width: 2px;
         border-style: outset;
         border-color: buttonface;
-        border-image: initial;
+        -o-border-image: initial;
+           border-image: initial;
         background-color: buttonface;
         line-height: normal;
         
@@ -1092,17 +1093,21 @@ img.hit_icon {
     padding: 0px !important;
     overflow: hidden !important;
 
+    -webkit-transition: display .15s linear;
+
     transition: display .15s linear;
 
     input {
         height: 70px;
         padding: 6px 8px 6px 50px;
-        box-shadow: unset;
+        -webkit-box-shadow: unset;
+                box-shadow: unset;
         border: none;
         font-family: $body-font-family;
 
         &:hover {
-            box-shadow: inset 0 0 2px 2px #c4c4c4;
+            -webkit-box-shadow: inset 0 0 2px 2px #c4c4c4;
+                    box-shadow: inset 0 0 2px 2px #c4c4c4;
         }
     }
 
@@ -1184,7 +1189,8 @@ img.hit_icon {
     width: 1.2rem;
     height: 2px;
     background: #666666;
-    box-shadow: 0 0.3em 0 0 #666666, 0 0.6em 0 0 #666666;
+    -webkit-box-shadow: 0 0.3em 0 0 #666666, 0 0.6em 0 0 #666666;
+            box-shadow: 0 0.3em 0 0 #666666, 0 0.6em 0 0 #666666;
 }
 
 //MOBILE_SELECT
@@ -1231,7 +1237,8 @@ img.hit_icon {
         {
         
             &:focus {
-                box-shadow: inset 0 0 2px 1px #c4c4c4;
+                -webkit-box-shadow: inset 0 0 2px 1px #c4c4c4;
+                        box-shadow: inset 0 0 2px 1px #c4c4c4;
             }
         }
 
