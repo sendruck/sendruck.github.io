@@ -128,25 +128,24 @@ $(document).ready(function () {
     checkScreenSize();
 
     function checkScreenSize(){
-        // var normalSize_HTML = $(".predm_col").html();
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 480) {
-            if ($(".tender_link").text().length > 150) {
-                var fullName = $(".tender_link").text(),
-                    shortName = $(".tender_link").text().slice(0, 150),
-                    dots_btn = $("<span class='dotsBtn'>...</span>");
-                $(".tender_link").text(shortName).append(dots_btn);
-            
-                $(".dotsBtn").on('click', function (event)  {
-                    event.preventDefault();
-                    $(this).parent().text(fullName);
-                });
-            }
-        }
-        else
-        {
-            $(".tender_link").text(fullName);
-            $(".dotsBtn").remove;
-        }
+            $(".tender_link").each(function( index ) {
+                if ($(this).text().length > 150) {
+                    var fullName = $(this).text(),
+                        shortName = $(this).text().slice(0, 150),
+                        dots_btn = $("<span class='dotsBtn'>...</span>");
+                    $(this).text(shortName).append(dots_btn);
+                
+                    $(".dotsBtn").on('click', function (event)  {
+                        event.preventDefault();
+                        $(this).parent().text(fullName);
+                    });
+                } else {
+                    $(".tender_link").text(fullName);
+                    $(".dotsBtn").remove;
+                };
+            });
+        }   
     }
-})
+});
