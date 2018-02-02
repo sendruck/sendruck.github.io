@@ -481,6 +481,10 @@ $tender-font-size: 12px;
                 font-weight: 400;
             }
             
+            input[type="text"] {
+                width: 21% !important;
+            }
+
             .input_hint {
                 font-size: 7pt;
                 color: #666666;
@@ -1207,6 +1211,7 @@ img.hit_icon {
                 box-shadow: inset 0 0 2px 1px #c4c4c4;
             }
         }
+
 
         a {
             font-size: 16px;
