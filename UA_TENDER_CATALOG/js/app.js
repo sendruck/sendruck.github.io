@@ -110,7 +110,6 @@ $(document).ready(function () {
 
     // HIDE MORE FILTERS MOBILE
     $(".up_icon").on("click", function(){
-        console.log("here we are");
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
         $(".see_more_btn").removeClass("active");
