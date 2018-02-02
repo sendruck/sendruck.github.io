@@ -1350,10 +1350,28 @@ img.hit_icon {
         #min_amount {
             margin-right: 10px;
         }
+
+        .with_hint {
+            padding-top: 0px !important;
+        }
+
+        .submit_row {
+            margin-top: 0px !important;
+
+            input[type='submit'] {
+                height: 30px;
+                position: relative;
+                bottom: 15px;
+            }
+        }
     }
 }
 
-
+.hide_before_320 {
+    @include breakpoint(321 up) {
+        display: none !important;
+    }
+}
 
 
 
