@@ -1327,6 +1327,21 @@ img.hit_icon {
 
             .sbutton {
                 height: 27px;
+                width: 90% !important;
+                display: inline-block;
+            }
+
+            .up_icon {
+                width: 6%;
+                height: 6%;
+                position: relative;
+                bottom: 15px;
+                left: 5px;
+
+                &:focus {
+                    background-color: #8e8e8e54;
+                    outline: none;
+                }
             }
         }
 
@@ -1414,7 +1429,7 @@ img.hit_icon {
     }
 }
 
-.hide_before_320 {
+.hide_before_370 {
     @include breakpoint(370 up) {
         display: none !important;
     }

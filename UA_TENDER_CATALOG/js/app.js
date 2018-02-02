@@ -108,4 +108,17 @@ $(document).ready(function () {
         
     })
 
+    // HIDE MORE FILTERS MOBILE
+    $(".up_icon").on("click", function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        $(".see_more_btn").removeClass("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = $(".see_more");
+        if (panel.css("maxHeight") > 0){
+            panel.css("maxHeight", 0);
+        } 
+    })
+
 })
