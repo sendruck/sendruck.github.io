@@ -410,14 +410,13 @@ $tender-font-size: 12px;
     padding-right: 80px !important;
     padding-left: 10px !important;
 
-    h2 {
+    span {
         padding: 0;
         margin: 10px 0 10px 0;
         font-size: 16px;
         font-family: $body-font-family;
         font-weight: 700;
         color: #666666;
-        display: inline-block;
     }
 
     
@@ -1349,16 +1348,6 @@ img.hit_icon {
     }
 }
 
-// select {
-//     margin: 0;
-//     padding: 0;
-//     padding-left: 5px;
-//     padding-right: 25px;
-//     height: 15px;   
-//     font-size: 9px;
-//     line-height: normal;
-//     font-family: "MS Sans Serif", Arial, Verdana, sans-serif;
-// }
 
 
 
