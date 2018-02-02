@@ -675,7 +675,7 @@ $tender-font-size: 12px;
 
 
 // TENDERS_TABLE
-$responsive-card-table-bottom-gap: 0px;
+$responsive-card-table-bottom-gap: 20px;
 $responsive-card-table-border: 1px solid #E2DFD8;
 $responsive-card-table-stack-point: 480px;
 $responsive-card-table-label-bg: #e6e6e6;;
@@ -786,7 +786,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
 
     .deliv_col {
         width: 22%;
-        }
+    }
 
     @media screen and (max-width: $responsive-card-table-stack-point) {
         thead tr {
@@ -804,6 +804,34 @@ $responsive-card-table-label-bg: #e6e6e6;;
             margin-top: $responsive-card-table-bottom-gap;
         }
         /* Get table cells to act like rows */
+
+
+        .deliv_col, .date_publ_col, .date_pod_col, .num_col, .summ_col {
+            width: unset !important;
+        }
+
+        .deliv_col {
+            .deliv_paragraph {
+                width: 100%;
+            }
+        }
+
+        .add_col {
+            display: none;
+        }
+
+        span.dotsBtn {
+            padding: 2px;
+            padding-top: 0px;
+            border-radius: 3px;
+            margin-left: 3px;
+            font-size: 10px;
+            border: 1px solid;
+        }
+
+        .tender_link {
+            width: 100%;
+        }
 
         td {
             border: none;
@@ -826,7 +854,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
                 font-weight: bold;
                 line-height: 1.5;
                 margin-left: -100%;
-                width: 50%;
+                width: 100%;
                 position: relative;
                 z-index: 1;
                 text-align: left;
@@ -836,7 +864,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
                 content: '';
                 position: absolute;
                 background: $responsive-card-table-label-bg;
-                width: 25%;
+                width: 45%;
                 text-align: left;
                 height: 98%;
                 left: 1px;
@@ -1264,6 +1292,8 @@ img.hit_icon {
     
     .footer_phone {
         text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px !important;
     }
     
     .footer_left_menu {
@@ -1284,6 +1314,7 @@ img.hit_icon {
 
     .footer_block {
         height: 90px;
+        margin-top: 10px;
     }
 
     .full_version {
