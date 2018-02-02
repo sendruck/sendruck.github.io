@@ -1415,7 +1415,7 @@ img.hit_icon {
 }
 
 .hide_before_320 {
-    @include breakpoint(321 up) {
+    @include breakpoint(327 up) {
         display: none !important;
     }
 }
