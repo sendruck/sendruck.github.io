@@ -1362,6 +1362,11 @@ img.hit_icon {
                 height: 30px;
                 position: relative;
                 bottom: 15px;
+
+                &:focus {
+                    background-color: #afafaf;
+                    border: 1px solid black;
+                }
             }
         }
     }
