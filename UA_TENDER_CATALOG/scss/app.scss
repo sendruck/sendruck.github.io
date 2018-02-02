@@ -413,10 +413,10 @@ $tender-font-size: 12px;
     span {
         padding: 0;
         margin: 10px 0 10px 0;
-        font-size: 16px;
+        font-size: 12px;
         font-family: $body-font-family;
         font-weight: 700;
-        color: #666666;
+        color: $primary-color;
     }
 
     
@@ -460,6 +460,11 @@ $tender-font-size: 12px;
 
         .second_col {
             padding-left: 5px !important;
+        }
+
+        .zakup_summ {
+            position: relative;
+            bottom: 9px;
         }
 
         .filter_input {
@@ -683,6 +688,12 @@ $responsive-card-table-label-bg: #e6e6e6;;
 .table_col {
     padding-left: 10px;
     padding-right: 10px;
+}
+
+@media screen and (max-width: $responsive-card-table-stack-point) {
+    #tablee {
+        padding: 0px !important;
+    }
 }
 
 .responsive-card-table {
@@ -1486,16 +1497,18 @@ img.hit_icon {
 
 
 // MOBILE PAGINATION
-.pagination {
-    text-align: center;
-
-    li {
-        font-size: 15px;
-
-        &.pagination-next a::after {
-            display: inline-block;
+@include breakpoint(small down) {
+    .pagination {
+        text-align: center;
+    
+        li {
+            font-size: 15px;
+    
+            &.pagination-next a::after {
+                display: inline-block;
+            }
         }
-    }
+    }    
 }
 
 
