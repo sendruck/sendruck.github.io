@@ -1376,6 +1376,41 @@ img.hit_icon {
                 }
             }
         }
+
+        button.see_more_btn {
+            display: block;
+            margin: 0 auto;
+            background-color: #dddddd;
+            position: relative;
+            top: 12px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border: 1px solid black;
+            padding-bottom: 5px;
+            font-size: 17px;
+            border-top-width: 1px;
+            padding-top: 5px;
+            margin-bottom: 15px;
+
+            &:hover {
+                background-color: #a9a9a9;
+            }
+
+            &:focus {
+                background-color: #a9a9a9;
+            }
+        }
+
+        .active {
+            display: none !important;
+        }
+
+        .see_more {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1.5s ease-out;
+        }
     }
 }
 

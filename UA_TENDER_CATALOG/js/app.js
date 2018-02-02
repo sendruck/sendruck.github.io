@@ -91,4 +91,21 @@ $(document).ready(function () {
     $(".pagination .current").prepend('[').append(']');
 
 
+    // SHOW MORE FILTERS MOBILE
+    $(".see_more_btn").on("click", function(){
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = $(".see_more_btn").next();
+        if (panel.css("maxHeight") > 0){
+            panel.css("maxHeight", 0);
+        } else {
+                var scrollH = panel.prop("scrollHeight");
+                panel.css("maxHeight", scrollH);
+        } 
+        
+    })
+
 })
