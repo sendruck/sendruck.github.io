@@ -1339,7 +1339,12 @@ img.hit_icon {
                 left: 5px;
 
                 &:focus {
-                    background-color: #8e8e8e54;
+                    background-color: #dddddd;
+                    outline: none;
+                }
+
+                &:hover {
+                    background-color: #dddddd;
                     outline: none;
                 }
             }
