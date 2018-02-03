@@ -146,6 +146,8 @@ $(document).ready(function () {
                     $(".dotsBtn").remove;
                 };
             });
+
+            
         }   
     }
 });
