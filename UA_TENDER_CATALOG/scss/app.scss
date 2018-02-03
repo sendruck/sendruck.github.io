@@ -841,7 +841,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
         }
 
         .tender_link {
-            width: 100%;
+            width: 125%;
         }
 
         td {
@@ -865,7 +865,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
                 font-weight: bold;
                 line-height: 1.5;
                 margin-left: -100%;
-                width: 95%;
+                width: 71%;
                 word-break: break-word;
                 position: relative;
                 z-index: 1;
@@ -876,7 +876,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
                 content: '';
                 position: absolute;
                 background: $responsive-card-table-label-bg;
-                width: 45%;
+                width: 35%;
                 text-align: left;
                 height: 98%;
                 left: 1px;
@@ -1353,6 +1353,13 @@ img.hit_icon {
 
         .filter_input {
             padding-left: 0px !important;
+
+            &.zakup_summ {
+                span {
+                    position: relative;
+                    top: 0px !important;
+                }
+            }
 
             select {
                 border: 1px solid #828282;
