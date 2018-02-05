@@ -419,7 +419,141 @@ $tender-font-size: 12px;
 
 
 
-//TENDER_INFO
+//NEWS_BLOCK
+
+//LEFT_MENU
+.left_menu_wrapper {
+    margin-left: 0px !important;
+    padding-top: 7px;
+
+    ul {
+        list-style: none;
+        margin-left: 0px !important
+    }
+
+    .left_menu {
+
+        a.news_link {
+            color: #417AC6;
+            background: #F0F6FC url("../images/al_menu_fon.gif") no-repeat 0 50%;
+        }
+
+        li {
+            text-transform: uppercase;
+            padding: 1px 10px 0px 3px;
+            margin: 0;
+            font-family: Verdana, Arial, sans-serif;
+
+
+
+            a {
+                color: #666666;
+                background: transparent url("../images/l_menu_fon.gif") bottom no-repeat;
+                font: bold 12px "Arial Narrow", Arial,sans-serif;
+                padding-top: 3px;
+                padding-left: 25px;
+                min-height: 22px;
+                display: block;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary-color;
+                }
+            }
+
+        }
+        .left_inner_menu {
+            margin: 0;
+            margin-top: 5px;
+            margin-left: 20px !important;
+            padding: 0px;
+            padding-bottom: 5px;
+            background: transparent;
+
+            li {
+                text-transform: none;
+            }
+
+            a {
+                color: #666666;
+                background: transparent url("../images/left_sub_menu_item.gif") no-repeat 0 6px;
+                padding: 0;
+                margin: 0;
+                padding-left: 10px;
+            }
+        }
+    }
+
+}
+
+
+//LEFT_USER_INFO
+.left_user_info {
+    border: 1px solid #E2DFD8;
+    background: #FBF7EE;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+
+    .welcome {
+        font-size: $tender-font-size;
+        font-family: Verdana, Arial, sans-serif;
+        color: $primary-color;
+        margin-bottom: 0px;
+    }
+
+    a {
+        font-weight: 700;
+        color: $primary-color;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: $tender-font-size;
+
+        &:hover {
+            text-decoration: underline;
+            outline: none;
+        }
+    }
+
+    .user_name_link {
+        position: relative;
+        bottom: 8px;
+    }
+
+    .user_link_line {
+        height: 35px;
+        .user_link_icon {
+            width: 20%;
+            display: inline-block;
+        }
+        .user_link {
+            float: right;
+            width: 80%;
+            display: inline-block;
+
+            a {
+                display: inline-block;
+            }
+
+            .acces_link {
+                position: relative;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .links_list {
+
+        a.icon_link {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+
 
 .tender_cards {
     padding-left: 10px !important;
@@ -487,247 +621,8 @@ $tender-font-size: 12px;
 
     }
 
-    .err_buttons {
-        position: absolute;
-        right: 8px;
-        top: 5px;
-
-        form {        -webkit-appearance: none;
-
-            display: inline-block;
-            position: relative;
-            top: 4px;
-        }
-
-        a.message_down {
-            position: relative;
-            top: 3px;
-        }
-    }
-
 }
 
-.tender_docs_wrapper {
-    border: 2px solid red;
-    padding: 5px;
-    margin-right: 10px;
-
-    .tender_docs_capture {
-        padding: 0 20px;
-
-        h2 {
-            font-size: 16px;
-            color: #666666;
-            padding: 0;
-            padding: 10px 0 10px 0;
-            font-family: $body-font-family;
-            font-weight: 700;
-            border-bottom: 1px solid #B6B6B6;
-        }
-    }
-
-    .tender_docs_body {
-        padding-bottom: 10px;
-
-        .doc_icon {
-            width: 24px;
-            border: 0px;
-            margin: 0 25px 0 5px;
-        }
-
-        .tender_cod_link, p {
-            color: $primary-color;
-            font-weight: 700;
-            font-family: $body-font-family;
-            font-size: $tender-font-size;
-            vertical-align: middle;
-            display: inline-block;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        p {
-            font-weight: 400;
-            margin-left: 25px;
-            margin-bottom: 0px;
-            
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-//HELP_BUTTONS
-.help_btns {
-    width: 99%;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    margin: 10px 0px 10px 0px;
-    background: #33CC66;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: bold;
-
-    a {
-        color: #fff;
-        text-decoration: underline;
-    }
-}
-
-.bank_guarantee {
-    background: #3366ff;
-}
-
-
-//BONUS_BUTTON
-
-.bonus_button {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 10px 0;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: 700;
-
-    .bonus_button-text {
-        cursor: pointer;
-        color: #000;
-        font-size: 20px;
-        padding: 10px;
-
-        font-size: 20px;
-        -webkit-appearance: button;        -moz-appearance: none;
-        appearance: none;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonface;
-        -o-border-image: initial;
-           border-image: initial;
-        background-color: buttonface;
-        line-height: normal;
-        
-    }
-}
-
-//MODAL_WINDOW_BONUS
-.modal_bonus {
-    padding: 0px !important;
-    overflow: hidden;
-
-    .bonus_heading {
-        padding-top: 1px;
-        border-bottom: 1px solid #007fc5;
-        background: #e2f3fd;
-
-        h1 {
-            text-align: center;
-            color: #666;
-            font-size: 26px;
-            font-family: Verdana, Arial, sans-serif;
-            margin-top: 17px;
-            margin-bottom: 17px;
-            font-weight: 700;
-        }
-    }
-
-    .bonus_body {
-        max-height: 550px;
-        overflow: hidden;
-        overflow-y: auto;
-        color: #000;
-        padding-bottom: 25px;
-
-        p {
-            padding: 10px;
-            color: #000;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        ol {
-            margin-top: -15px;
-            padding-left: 30px;
-
-            li {
-                color: #000;
-                font-size: 13.3px;
-                font-family: Verdana, Arial, sans-serif;
-                font-weight: 700;
-                line-height: normal;
-
-            }
-        }
-
-        .faq {
-            color: #666;
-            padding: 10px;
-            font-size: 16px;
-            font-family: $body-font-family;
-            margin: 5px 0 5px 0;
-            font-weight: 700;
-        }
-
-        .accordion-item {
-            font-size: 13.3px;
-            font-weight: 700;
-            line-height: normal;
-            font-family: Verdana, Arial, sans-serif;
-
-            a:hover {
-                color: #666;
-            }
-
-            a:focus {
-                color: #666;
-            }
-
-            a:active {
-                color: #666;
-            }
-        }
-
-        .accordion-content {
-            p {
-                margin: 0px;
-
-            }
-        }
-    }
-
-    .bonus_footer {
-        padding: 20px;
-        background: #f9d082;
-        border-top: 1px solid #007fc5;
-
-        .bonus_consultation {
-            width: 85%;
-            color: #fff;
-            font-weight: 700;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            display: inline-block;
-        }
-
-        span {
-            font-weight: 700;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            cursor: pointer;
-            color: $primary-color;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-    }
-}
 
 //FOOTER
 .footer_block {
@@ -873,8 +768,6 @@ $tender-font-size: 12px;
         font-weight: 700;
         font-family: Verdana, Arial, sans-serif;
         margin-bottom: 0px;
-        // position: relative;
-        // bottom: 20px;
     }
 
     .footer_consultation {
