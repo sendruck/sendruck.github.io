@@ -494,6 +494,7 @@ $tender-font-size: 12px;
     padding: 5px;
     margin-top: 20px;
     margin-left: 5px;
+    padding-bottom: 10px;
 
     .welcome {
         font-size: $tender-font-size;
@@ -552,6 +553,11 @@ $tender-font-size: 12px;
 }
 
 
+//LEFT BANNERS
+.banner_wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
 
 
