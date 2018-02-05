@@ -521,6 +521,7 @@ $tender-font-size: 12px;
                 font: normal 12px Verdana,sans-serif;
             }
 
+
             select {
                 width: 100%;
                 border: 1px solid #000000;
@@ -1388,6 +1389,14 @@ img.hit_icon {
                 }
             }
 
+            .find_expanded {
+                width: 100% !important;
+                display: inline-block;
+                height: 27px;
+                position: relative !important;
+                top: 0px !important;
+            }
+
             .sbutton {
                 height: 27px;
                 width: 90% !important;
@@ -1410,6 +1419,10 @@ img.hit_icon {
                     background-color: #dddddd;
                     outline: none;
                 }
+            }
+
+            .not_expanded {
+                display: none !important;
             }
         }
 
@@ -1460,28 +1473,29 @@ img.hit_icon {
                 }
             }
         }
+        
+        .see_more_wrapper {
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
 
-        button.see_more_btn {
-            display: block;
+        .see_more_btn {
             margin: 0 auto;
-            background-color: #dddddd;
             position: relative;
-            top: 12px;
+            top: 5px;
+            font-family: $body-font-family;
             padding-right: 10px;
             padding-left: 10px;
-            border: 1px solid black;
             padding-bottom: 5px;
-            font-size: 17px;
-            border-top-width: 1px;
+            font-size: 14px;
             padding-top: 5px;
-            margin-bottom: 25px;
+            color: $primary-color;
+            font-weight: 600;
 
             &:hover {
-                background-color: #a9a9a9;
-            }
-
-            &:focus {
-                background-color: #a9a9a9;
+                text-decoration: underline;
+                outline: none;
             }
         }
 

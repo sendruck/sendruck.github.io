@@ -327,19 +327,31 @@
 
 						<div class="row expanded collapse filter-row">
 							<div class="column large-2 filter_caption">
-								<span>
+								<span class="hide_small">
 									Статус тендера:
+								</span>
+								<!-- change order of inputs for mobile version via clasess -->
+								<span class="hide_not_small">
+									Предмет закупки:
 								</span>
 							</div>
 							<div class="column large-5 filter_input">
-								<select name="st" id="st" >
+								<select name="st" id="st" class="hide_small">
 								    <option value="all">-- Все статусы --</option>
-									<option value="2">Период уточнений</option><option value="3">Прием предложений</option><option value="4">Период аукциона</option><option value="5">Квалификация победителя</option><option value="6">Предложения рассмотрены</option><option value="7">Закупка не состоялась</option><option value="8">Закупка завершена</option><option value="9">Закупка отменена</option><option value="14">Предквалификация (период обжалований)</option><option value="1">Предквалификация</option> 
+									<option value="2">Период уточнений</option>
+									<option value="3">Прием предложений</option>
+									<option value="4">Период аукциона</option>
+									<option value="5">Квалификация победителя</option>
+									<option value="6">Предложения рассмотрены</option>
+									<option value="7">Закупка не состоялась</option>
+									<option value="8">Закупка завершена</option>
+									<option value="9">Закупка отменена</option>
+									<option value="14">Предквалификация (период обжалований)</option>
+									<option value="1">Предквалификация</option> 
 								</select>
+								<!-- change order of inputs for mobile version via clasess -->
+								<input type="text" name="z" value="" id="z" class="hide_not_small" >
 							</div>
-							<button class="see_more_btn hide_not_small">
-								Ещё
-							</button>
 							<div class="see_more">
 								<div class="column large-5 filter_input second_col zakup_summ">
 									<span>
@@ -425,16 +437,34 @@
 								</div>
 	
 								<div class="row expanded collapse filter-row with_hint">
-									<div class="column large-2 filter_caption">
-										<span>
+									<div class="column large-2 filter_caption ">
+										<span class="hide_small">
 											Предмет закупки:
+										</span>
+										<!-- change order of inputs for mobile version via clasess -->
+										<span class="hide_not_small">
+											Статус тендера:
 										</span>
 									</div>
 									<div class="column large-5 filter_input">
 										<span class="input_hint hide_small">
 											например "послуги" или номер тендера "UA-2016-07-26-000077-c"
 										</span>
-										<input type="text" name="z" value="" id="z" >
+										<input type="text" name="z" value="" id="z" class="hide_small" >
+										<!-- change order of inputs for mobile version via clasess -->
+										<select name="st" id="st" class="hide_not_small">
+											<option value="all">-- Все статусы --</option>
+											<option value="2">Период уточнений</option>
+											<option value="3">Прием предложений</option>
+											<option value="4">Период аукциона</option>
+											<option value="5">Квалификация победителя</option>
+											<option value="6">Предложения рассмотрены</option>
+											<option value="7">Закупка не состоялась</option>
+											<option value="8">Закупка завершена</option>
+											<option value="9">Закупка отменена</option>
+											<option value="14">Предквалификация (период обжалований)</option>
+											<option value="1">Предквалификация</option> 
+										</select>
 									</div>
 									<div class="column large-5 filter_input second_col hide_small">
 										<div class="register_announcement">
@@ -467,18 +497,23 @@
 										
 									</div>
 								</div>
+							</div>
 
-								<div class="row expanded collapse filter-row with_hint submit_row">
-									<div class="column large-2 filter_caption hide_text">
-										Lorem.
-									</div>
-									<div class="column large-5 filter_input">
-										<input type="submit" value="Искать" class="sbutton">
-										<img src="images/down.png" class="up_icon hide_not_small"></img>
-									</div>
-									<div class="column large-5 filter_input">
-										
-									</div>
+							<div class="row expanded collapse filter-row with_hint submit_row">
+								<div class="column large-2 filter_caption hide_text">
+									Lorem.
+								</div>
+								<div class="column large-5 filter_input">
+									<input type="submit" value="Искать" class="find_expanded">
+									<img src="images/down.png" class="up_icon not_expanded hide_not_small">
+									<p class="see_more_wrapper">
+										<a class="see_more_btn hide_not_small">
+											Расширенный поиск
+										</a>
+									</p>
+								</div>
+								<div class="column large-5 filter_input">
+									
 								</div>
 							</div>
 						</div>
