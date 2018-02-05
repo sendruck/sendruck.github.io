@@ -250,6 +250,17 @@ $tender-font-size: 12px;
                 }
 
             }
+
+            .is-dropdown-submenu-parent {
+                li {
+                    a {
+                        text-align: left;
+                        border: none;
+                        padding-top: 4px !important;
+                        padding-bottom: 4px !important;
+                    }
+                }
+            }
         }
     }
     
