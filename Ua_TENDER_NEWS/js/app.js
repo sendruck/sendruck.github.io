@@ -4,8 +4,6 @@ $(document).ready(function () {
     // SHORTENT LONG TENDER LINK
     $(window).on("load", function (e) {
         checkScreenSize();
-        var fullName = null,
-            shortName = null;
     });
 
     checkScreenSize();
@@ -18,8 +16,6 @@ $(document).ready(function () {
                         fullName = $(this).text(),
                         shortName = $(this).text().slice(0, 150),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
-                        console.log("full Name" + fullName);
-                        console.log("short Name" + shortName);
                     $(this).text(shortName).append(dots_btn);
                 
                     $(".dotsBtn").on('click', function (event)  {
