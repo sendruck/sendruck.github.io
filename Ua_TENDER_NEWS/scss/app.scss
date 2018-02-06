@@ -641,6 +641,15 @@ $tender-font-size: 12px;
 
 }
 
+.preface {
+    position: relative;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    color: #666666;
+    font: normal 12px Verdana,Arial,sans-serif;
+    background: #EFEFEF;
+}
+
 .tender_info_wrapper {
     background-color: $tender_info-color;
     border: $tender_info-border;
