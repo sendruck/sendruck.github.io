@@ -4,6 +4,7 @@ $(document).ready(function () {
     // SHORTENT LONG TENDER LINK
     $(window).on("load", function (e) {
         checkScreenSize();
+        fullName = null;
     });
 
     checkScreenSize();
