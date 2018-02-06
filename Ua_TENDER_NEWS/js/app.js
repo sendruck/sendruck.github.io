@@ -3,11 +3,11 @@ $(document).ready(function () {
 
     // SHORTENT LONG TENDER LINK
     $(window).on("load", function (e) {
-        fullName = null;
         checkScreenSize();
     });
 
     checkScreenSize();
+    fullName = null;
 
     function checkScreenSize(){
         var newWindowWidth = $(window).width();
