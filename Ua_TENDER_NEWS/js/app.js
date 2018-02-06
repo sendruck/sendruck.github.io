@@ -19,7 +19,6 @@ $(document).ready(function () {
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                     $(this).text(shortName).append(dots_btn);
                 } else {
-                    $(".news_info_block p").text(fullName);
                     $(".dotsBtn").remove;
                 };
                 $(".dotsBtn").on('click', function (event)  {
@@ -33,6 +32,6 @@ $(document).ready(function () {
     }
 
 
-    $(".checkJS").css("color", "blue");
+    $(".checkJS").css("color", "green");
 
 });
