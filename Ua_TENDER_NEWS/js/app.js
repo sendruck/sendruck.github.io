@@ -15,7 +15,7 @@ $(document).ready(function () {
         if (newWindowWidth < 480) {
             $(".news_info_wrapper p").each(function( index ) {
                 if ($(this).text().length > 150) {
-                    var fullName = $(this).text(),
+                        fullName = $(this).text(),
                         shortName = $(this).text().slice(0, 150),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                         console.log("full Name" + fullName);
