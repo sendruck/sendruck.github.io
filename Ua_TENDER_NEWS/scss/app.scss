@@ -1072,6 +1072,49 @@ img.hit_icon {
                 padding-bottom: 14px;
             }
         }
+
+        .is-accordion-submenu-parent {
+            > a::after {
+                display: block;
+                width: 0;
+                height: 0;
+                border: inset 6px;
+                content: '';
+                border-bottom-width: 0;
+                border-top-style: solid;
+                border-color: #a5a9ab transparent transparent;
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+            }
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+            transform-origin: 50% 50%;
+            transform: rotate(180deg);
+            border-color: #ffffff transparent transparent;
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] > a {
+            background-color: #cab57e;
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] {
+            border-bottom: 1px solid #534741;
+        }
+
+        .is-accordion-submenu-item {
+            a {
+                color: #4b4b4b;
+                font-weight: 700;
+                font-family: Arial,Verdana,sans-serif;
+                font-size: 14px;
+                border-bottom: 1px solid #d2ae9d99;
+                border-right: 1px solid #534741;
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
     
     }
 }
