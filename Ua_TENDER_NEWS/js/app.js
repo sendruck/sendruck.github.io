@@ -1,10 +1,11 @@
 $(document).foundation();
 $(document).ready(function () {
-    var fullName = null,
-        shortName = null;
+
     // SHORTENT LONG TENDER LINK
     $(window).on("load", function (e) {
         checkScreenSize();
+        var fullName = null,
+            shortName = null;
     });
 
     checkScreenSize();
