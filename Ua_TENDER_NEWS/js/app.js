@@ -32,4 +32,7 @@ $(document).ready(function () {
         }   
     }
 
+
+    $(".checkJS").css("color", "blue");
+
 });
