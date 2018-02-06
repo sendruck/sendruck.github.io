@@ -12,11 +12,6 @@ $(document).ready(function () {
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 480) {
             $(".news_info_block p").each(function( index ) {
-                $(".dotsBtn").on('click', function (event)  {
-                    event.preventDefault();
-                    $(this).parent().text(fullName);
-                });
-                
                 if ($(this).text().length > 150) {
                     var fullName = $(this).text(),
                         shortName = $(this).text().slice(0, 150),
@@ -26,6 +21,10 @@ $(document).ready(function () {
                     $(".news_info_block p").text(fullName);
                     $(".dotsBtn").remove;
                 };
+                $(".dotsBtn").on('click', function (event)  {
+                    event.preventDefault();
+                    $(this).parent().text(fullName);
+                });
             });
 
             
