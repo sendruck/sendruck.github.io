@@ -1090,8 +1090,10 @@ img.hit_icon {
         }
 
         .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
-            transform-origin: 50% 50%;
-            transform: rotate(180deg);
+            -webkit-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
             border-color: #ffffff transparent transparent;
         }
 
