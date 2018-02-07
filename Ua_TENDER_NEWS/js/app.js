@@ -17,6 +17,7 @@ $(document).ready(function () {
                     var fullName = $(this).text(),
                         shortName = $(this).text().slice(0, 150),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
+                        console.log("this new text" + $(this).text());
                     $(this).text(shortName).append(dots_btn);
                 } else {
                     console.log("here");
@@ -28,8 +29,8 @@ $(document).ready(function () {
                     event.preventDefault();
                     $(this).parent().text(fullName);
                 });
-                console.log("fullName = " + fullName);
-                console.log("shortName = " + shortName);
+                // console.log("fullName = " + fullName);
+                // console.log("shortName = " + shortName);
             });
         }   
     }
