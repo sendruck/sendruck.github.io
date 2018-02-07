@@ -13,6 +13,7 @@ $(document).ready(function () {
         if (newWindowWidth < 480) {
             $(".news_info_block p").each(function( index ) {
                 if ($(this).text().length > 150) {
+                    console.log("yepp it's really more than 150 char");
                     var fullName = $(this).text(),
                         shortName = $(this).text().slice(0, 150),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
