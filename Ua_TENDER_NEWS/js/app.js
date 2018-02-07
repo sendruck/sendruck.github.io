@@ -14,8 +14,9 @@ $(document).ready(function () {
         if (newWindowWidth < 480) {
             $(".news_info_block p").each(function( index ) {
                 if ($(this).text().length > 150) {
+                    console.log("here");
                     var fullName = $(this).text(),
-                        shortName = $(this).text().slice(0, 150),
+                        shortName = $(this).text().slice(0, 149),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                     $(this).text(shortName).append(dots_btn);
                 } else {
@@ -26,12 +27,10 @@ $(document).ready(function () {
                     $(this).parent().text(fullName);
                 });
             });
-
-            
         }   
     }
 
 
-    $(".checkJS").css("color", "green");
+    $(".checkJS").css("color", "yellow");
 
 });
