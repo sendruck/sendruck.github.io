@@ -16,7 +16,7 @@ $(document).ready(function () {
                 if ($(this).text().length > 150) {
                     console.log("here");
                     var fullName = $(this).text(),
-                        shortName = $(this).text().slice(0, 149),
+                        shortName = $(this).text().slice(0, 151),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                     $(this).text(shortName).append(dots_btn);
                 } else {
