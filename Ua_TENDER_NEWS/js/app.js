@@ -21,6 +21,7 @@ $(document).ready(function () {
                     $(this).text(shortName).append(dots_btn);
                 } else {
                     $(".dotsBtn").remove;
+                    fullName = $(this).text();
                 };
                 $(".dotsBtn").on('click', function (event)  {
                     event.preventDefault();
@@ -31,8 +32,5 @@ $(document).ready(function () {
             });
         }   
     }
-
-
-    $(".checkJS").css("color", "yellow");
 
 });
