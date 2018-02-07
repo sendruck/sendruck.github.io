@@ -250,6 +250,17 @@ $tender-font-size: 12px;
                 }
 
             }
+
+            .is-dropdown-submenu-parent {
+                li {
+                    a {
+                        text-align: left;
+                        border: none;
+                        padding-top: 4px !important;
+                        padding-bottom: 4px !important;
+                    }
+                }
+            }
         }
     }
     
@@ -316,7 +327,7 @@ $tender-font-size: 12px;
 }
 
 
-//CONTEXT_MENU
+//TOP NEWS
 .right-column {
     padding-right: 10px !important;
 }
@@ -350,98 +361,323 @@ $tender-font-size: 12px;
         font: bold 12px Verdana,sans-serif;
         text-align: left;
     }
+}
 
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        margin-bottom: 20px;
+.top_news_wrapper {
+    padding-left: 10px;
+    background: #FDFAF4;
+    border: 1px solid #F1EFE9;
+    margin-bottom: 25px;
+    .top_news_item {
+        margin-top: 10px;
+        a {
+            font-size: 12px;
+            color: $primary-color;
+            font-family: Verdana, sans-serif;
+            display: block;
+            background: transparent url("../images/top_news_item.gif") no-repeat 0 10px;
+            padding: 5px 0px 0px 10px;
 
-        li {
-            height: 21px;
+            &:hover {
+                outline: none;
+                text-decoration: underline;
+            }
         }
 
-        li.n-white {
-            background: #F8FBFD url("../images/w_news_item.gif") no-repeat 0 6px;
-            padding: 3px 10px 3px 25px;
+        a.all_news {
+            color: #666666;
+            margin-bottom: 15px;
         }
 
-        li.n-blue {
-            background: #F0F6FC url("../images/b_news_item.gif") no-repeat 0 6px;
-            padding: 3px 10px 3px 25px;
+        p.t_news_date {
+            font-size: 12px;
+            color: black;
+            font-family: Verdana, sans-serif;
+            padding-left: 10px;
+            margin: 0px !important;
         }
+    }
+}
+
+//CALENDAR
+.calendar_wrapper {
+    background-color: #fdfaf4;
+    padding: 10px 7px 10px 7px;
+    margin: 0;
+    border: 1px solid #F1EFE9;
+    border-top: 0px;
+    margin-bottom: 10px;
+    color: #3B3B3B;
+}
+
+//EXPORT NEWS
+.news_exp_wrapper {
+    padding: 10px 7px 10px 7px;
+    margin: 0;
+    color: #3B3B3B;
+    background: #FDFAF4;
+    border: 1px solid #F1EFE9;
+    border-top: 0px;
+
+    #rss {
+        margin-top: 15px;
+        margin-left: 26px;
+        margin-bottom: 0px;
+    }
+
+    .w-link {
+        background: transparent url("../images/w_item.gif") no-repeat 0 12px;
+        margin-left: 10px;
+        padding: 4px 5px 4px 15px;
 
         a {
-            color: $primary-color;
-            text-decoration: none;
+            font-weight: 700;
+            font-family: Verdana, sans-serif;
             font-size: $font-size;
-            font-family: $body-font-family;
-            font-weight: bold;
-            vertical-align: top;
 
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+}
 
-    img.bank_garant {
-        width: 100%;
-        height: 400px;
+
+
+//NEWS_BLOCK
+
+//LEFT_MENU
+.left_menu_wrapper {
+    margin-left: 0px !important;
+    padding-top: 7px;
+    display: inline-block;
+    width: 15%;
+    float: left;
+
+    ul {
+        list-style: none;
+        margin-left: 0px !important
     }
 
+    .left_menu {
 
-    .order_adds_wrapper {
-        text-align: center;
+        a.news_link {
+            color: #417AC6;
+            background: #F0F6FC url("../images/al_menu_fon.gif") no-repeat 0 50%;
 
-        .order_adds {
-            color: red;
-            font-weight: bold;
-            text-decoration: underline;
-            font-size: 11px;
+            &:hover {
+                color: #417AC6;
+            }
+        }
+
+        li {
+            text-transform: uppercase;
+            padding: 1px 10px 0px 3px;
+            margin: 0;
             font-family: Verdana, Arial, sans-serif;
-            vertical-align: top;
+
+
+
+            a {
+                color: #666666;
+                background: transparent url("../images/l_menu_fon.gif") left bottom no-repeat;
+                font: bold 12px "Arial Narrow", Arial,sans-serif;
+                padding-top: 3px;
+                padding-left: 25px;
+                min-height: 22px;
+                display: block;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary-color;
+                }
+            }
+
+        }
+
+        li.li_opened {
+            background: transparent url("../images/al_menu_sub_fon.gif") no-repeat 2px 100%;
+        }
+        
+        .left_inner_menu {
+            margin: 0;
+            margin-top: 5px;
+            margin-left: 20px !important;
+            padding: 0px;
+            padding-bottom: 5px;
+            background: transparent;
+
+            li {
+                text-transform: none;
+            }
+
+            a {
+                color: #666666;
+                background: transparent url("../images/left_sub_menu_item.gif") no-repeat 0 6px;
+                padding: 0;
+                margin: 0;
+                padding-left: 10px;
+                font-weight: 400;
+            }
         }
     }
-    
+
 }
 
 
+//LEFT_USER_INFO
+.left_user_info {
+    border: 1px solid #E2DFD8;
+    background: #FBF7EE;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-bottom: 10px;
+    width: 93%;
+    margin-bottom: 15px;
 
-//TENDER_INFO
+    .welcome {
+        font-size: $tender-font-size;
+        font-family: Verdana, Arial, sans-serif;
+        color: $primary-color;
+        margin-bottom: 0px;
+    }
 
-.tender_cards {
-    padding-left: 10px !important;
+    a {
+        font-weight: 700;
+        color: $primary-color;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: $tender-font-size;
+
+        &:hover {
+            text-decoration: underline;
+            outline: none;
+        }
+    }
+
+    .user_name_link {
+        position: relative;
+        bottom: 8px;
+    }
+
+    .user_link_line {
+        height: 35px;
+        .user_link_icon {
+            width: 20%;
+            display: inline-block;
+        }
+        .user_link {
+            float: right;
+            width: 80%;
+            display: inline-block;
+
+            a {
+                display: inline-block;
+            }
+
+            .acces_link {
+                position: relative;
+                bottom: 20px;
+            }
+        }
+    }
+
+    .links_list {
+
+        a.icon_link {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
-.tender_info_wrapper {
+
+//LEFT BANNERS
+.banner_wrapper {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+//NEWS CARDS BLOCK
+
+.news_cards {
+    padding-left: 4px !important;
+    position: relative;
+}
+
+.news_wrapper {
+    width: 84%;
+    display: inline-block;
+    padding-left: 15px;
+
+    //SORT NEWS
+    .sort_input {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        
+        .sorting_caption {
+            display: inline-block;
+            margin: 0px;
+            font-size: $tender-font-size;
+            font-family: Verdana, Arial, sans-serif;
+            color: $primary-color;
+            margin-right: 15px;
+        }
+
+        select {
+            border: 1px solid #a9a9a9;
+            margin-bottom: 0px;
+            height: 20px;
+            width: 140px;
+            padding-top: 0px;
+            padding-bottom: 2px;
+            padding-left: 5px;
+            font-size: 13px;
+        }
+    }
+
+}
+
+.preface {
+    position: relative;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+    color: #666666;
+    font: normal 12px Verdana,Arial,sans-serif;
+    background: #EFEFEF;
+}
+
+.news_info_wrapper {
     background-color: $tender_info-color;
     border: $tender_info-border;
     margin: 5px 0 15px 0;
     padding: 5px;
     color: $primary-color;
     font-size: $tender-font-size;
-    font-family: $body-font-family;
-
-    .err_buttons {
-        #messageForm {
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
+    font-family: $body-font-family
 }
 
-.tender_info_block {
+.news_info_block {
 
-    h3.tender_blck_caption {
+    a.news_blck_caption {
         color: $primary-color;
         font-size: $tender-font-size;
         font-family: $body-font-family;
         padding: 0;
         margin: 5px 0 5px 0;
         font-weight: 700;
+    }
+
+    .publication_date {
+        color: $primary-color;
+        font-size: 9px;
+        font-weight: 400;
+        font-family: Verdana, Arial, sans-serif;
+        display: block;
+        margin-top: 3px;
     }
 
     p {
@@ -466,257 +702,53 @@ $tender-font-size: 12px;
 
 .customer_block {
     position: relative;
-    h2 {
-        font-size: 16px;
-        color: #666666;
-        padding: 0;
-        margin: 10px 0 10px 0;
-        font-family: $body-font-family;
+}
+
+h2.news_heading {
+    font-size: 16px;
+    color: #666666;
+    padding: 0;
+    margin: 10px 0 15px 0;
+    font-family: $body-font-family;
+    font-weight: 700;
+}
+
+
+//NEWS PAGINATION
+.news_pagination {
+    height: 27px;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    color: $primary-color;
+
+    .current {
         font-weight: 700;
-
     }
-
-    .err_buttons {
-        position: absolute;
-        right: 8px;
-        top: 5px;
-
-        form {        -webkit-appearance: none;
-
-            display: inline-block;
-            position: relative;
-            top: 4px;
-        }
-
-        a.message_down {
-            position: relative;
-            top: 3px;
-        }
-    }
-
-}
-
-.tender_docs_wrapper {
-    border: 2px solid red;
-    padding: 5px;
-    margin-right: 10px;
-
-    .tender_docs_capture {
-        padding: 0 20px;
-
-        h2 {
-            font-size: 16px;
-            color: #666666;
-            padding: 0;
-            padding: 10px 0 10px 0;
-            font-family: $body-font-family;
-            font-weight: 700;
-            border-bottom: 1px solid #B6B6B6;
-        }
-    }
-
-    .tender_docs_body {
-        padding-bottom: 10px;
-
-        .doc_icon {
-            width: 24px;
-            border: 0px;
-            margin: 0 25px 0 5px;
-        }
-
-        .tender_cod_link, p {
-            color: $primary-color;
-            font-weight: 700;
-            font-family: $body-font-family;
-            font-size: $tender-font-size;
-            vertical-align: middle;
-            display: inline-block;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-        p {
-            font-weight: 400;
-            margin-left: 25px;
-            margin-bottom: 0px;
-            
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-//HELP_BUTTONS
-.help_btns {
-    width: 99%;
-    text-align: center;
-    padding: 10px 0px 10px 0px;
-    margin: 10px 0px 10px 0px;
-    background: #33CC66;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: bold;
 
     a {
-        color: #fff;
-        text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-previous {
+        display: none !important;
+    }
+
+    .pagination-next {
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-next a::after {
+        display: none;
     }
 }
 
-.bank_guarantee {
-    background: #3366ff;
-}
-
-
-//BONUS_BUTTON
-
-.bonus_button {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 10px 0;
-    color: #fff;
-    font-size: 10pt;
-    font-weight: 700;
-
-    .bonus_button-text {
-        cursor: pointer;
-        color: #000;
-        font-size: 20px;
-        padding: 10px;
-
-        font-size: 20px;
-        -webkit-appearance: button;        -moz-appearance: none;
-        appearance: none;
-        border-width: 2px;
-        border-style: outset;
-        border-color: buttonface;
-        -o-border-image: initial;
-           border-image: initial;
-        background-color: buttonface;
-        line-height: normal;
-        
-    }
-}
-
-//MODAL_WINDOW_BONUS
-.modal_bonus {
-    padding: 0px !important;
-    overflow: hidden;
-
-    .bonus_heading {
-        padding-top: 1px;
-        border-bottom: 1px solid #007fc5;
-        background: #e2f3fd;
-
-        h1 {
-            text-align: center;
-            color: #666;
-            font-size: 26px;
-            font-family: Verdana, Arial, sans-serif;
-            margin-top: 17px;
-            margin-bottom: 17px;
-            font-weight: 700;
-        }
-    }
-
-    .bonus_body {
-        max-height: 550px;
-        overflow: hidden;
-        overflow-y: auto;
-        color: #000;
-        padding-bottom: 25px;
-
-        p {
-            padding: 10px;
-            color: #000;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        ol {
-            margin-top: -15px;
-            padding-left: 30px;
-
-            li {
-                color: #000;
-                font-size: 13.3px;
-                font-family: Verdana, Arial, sans-serif;
-                font-weight: 700;
-                line-height: normal;
-
-            }
-        }
-
-        .faq {
-            color: #666;
-            padding: 10px;
-            font-size: 16px;
-            font-family: $body-font-family;
-            margin: 5px 0 5px 0;
-            font-weight: 700;
-        }
-
-        .accordion-item {
-            font-size: 13.3px;
-            font-weight: 700;
-            line-height: normal;
-            font-family: Verdana, Arial, sans-serif;
-
-            a:hover {
-                color: #666;
-            }
-
-            a:focus {
-                color: #666;
-            }
-
-            a:active {
-                color: #666;
-            }
-        }
-
-        .accordion-content {
-            p {
-                margin: 0px;
-
-            }
-        }
-    }
-
-    .bonus_footer {
-        padding: 20px;
-        background: #f9d082;
-        border-top: 1px solid #007fc5;
-
-        .bonus_consultation {
-            width: 85%;
-            color: #fff;
-            font-weight: 700;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            display: inline-block;
-        }
-
-        span {
-            font-weight: 700;
-            font-size: 13.3px;
-            font-family: Verdana, Arial, sans-serif;
-            cursor: pointer;
-            color: $primary-color;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-
-    }
-}
 
 //FOOTER
 .footer_block {
@@ -862,8 +894,6 @@ $tender-font-size: 12px;
         font-weight: 700;
         font-family: Verdana, Arial, sans-serif;
         margin-bottom: 0px;
-        // position: relative;
-        // bottom: 20px;
     }
 
     .footer_consultation {
@@ -884,7 +914,7 @@ $tender-font-size: 12px;
         }
 
         .right-cons {
-            margin-left: 50px;
+            margin-left: 11%;
         }
 
         p {
@@ -1000,26 +1030,6 @@ img.hit_icon {
     }
 }
 
-@include breakpoint(small down) {
-    span.predmet_zak {
-        font-weight: 700;   
-    }
-
-    .noHighlight {
-        font-weight: 400;
-    }
-
-    span.dotsBtn {
-        padding: 2px;
-        padding-top: 0px;   
-        border-radius: 3px;
-        margin-left: 3px;
-        font-size: 10px;
-        border: 1px solid;
-    }
-}
-
-
 
 //HIDE_HEADER_TOP_LINE
 .header_top_line {
@@ -1057,6 +1067,51 @@ img.hit_icon {
                 font-weight: 700;
                 font-family: Arial,Verdana,sans-serif;
                 border-bottom: 1px solid #534741;
+                border-right: 1px solid #534741;
+                padding-top: 14px;
+                padding-bottom: 14px;
+            }
+        }
+
+        .is-accordion-submenu-parent {
+            > a::after {
+                display: block;
+                width: 0;
+                height: 0;
+                border: inset 6px;
+                content: '';
+                border-bottom-width: 0;
+                border-top-style: solid;
+                border-color: #a5a9ab transparent transparent;
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+            }
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] > a::after {
+            -webkit-transform-origin: 50% 50%;
+                    transform-origin: 50% 50%;
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+            border-color: #ffffff transparent transparent;
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] > a {
+            background-color: #cab57e;
+        }
+
+        .is-accordion-submenu-parent[aria-expanded='true'] {
+            border-bottom: 1px solid #534741;
+        }
+
+        .is-accordion-submenu-item {
+            a {
+                color: #4b4b4b;
+                font-weight: 700;
+                font-family: Arial,Verdana,sans-serif;
+                font-size: 14px;
+                border-bottom: 1px solid #d2ae9d99;
                 border-right: 1px solid #534741;
                 padding-top: 14px;
                 padding-bottom: 14px;
@@ -1207,6 +1262,20 @@ img.hit_icon {
     }
 }
 
+//MOBILE SORTING
+@include breakpoint(small down) {
+    .sort_input {
+        .sorting_caption {
+            margin-right: 5px !important;
+        }
+
+        select {
+            height: 25px !important;
+            vertical-align: bottom;
+        }
+    }
+}
+
 
 //MOBILE_LOGIN
 @include breakpoint(small down) {
@@ -1320,6 +1389,41 @@ img.hit_icon {
     }
 }
 
+// MOBILE PAGINATION
+@include breakpoint(small down) {
+    .pagination {
+        text-align: center;
+
+        .pagination-previous {
+            display: unset !important;
+        }
+    
+        li {
+            font-size: 15px;
+    
+            &.pagination-next a::after {
+                display: inline-block;
+            }
+        }
+    }    
+}
+
+//MOBILE NEWS BLOCK
+@include breakpoint(small down) {
+    .news_wrapper {
+        width: 100%;
+        padding-left: 10px !important;
+
+        span.dotsBtn {
+            padding: 3px;
+            padding-top: 0px;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-size: 10px;
+            border: 1px solid;
+        }
+    }
+}
 
 
 
