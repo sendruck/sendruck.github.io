@@ -12,17 +12,17 @@ $(document).ready(function () {
         var newWindowWidth = $(window).width();
         if (newWindowWidth < 480) {
             $(".news_info_block p").each(function( index ) {
-                var fullName, shortName;
                 if ($(this).text().length > 150) {
-                    console.log("here");
-                    fullName = $(this).text();
-                    shortName = $(this).text().slice(0, 145);
-                    var dots_btn = $("<span class='dotsBtn'>...</span>");
+                    var fullName = $(this).text(),
+                        shortName = $(this).text().slice(0, 150),
+                        dots_btn = $("<span class='dotsBtn'>...</span>");
                     $(this).text(shortName).append(dots_btn);
                 } else {
+                    console.log("here");
                     $(".dotsBtn").remove;
-                    fullName = $(this).text();
+                    $(".news_info_block p").text(fullName);
                 };
+
                 $(".dotsBtn").on('click', function (event)  {
                     event.preventDefault();
                     $(this).parent().text(fullName);
