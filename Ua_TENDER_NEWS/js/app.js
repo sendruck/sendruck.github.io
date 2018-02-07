@@ -15,7 +15,7 @@ $(document).ready(function () {
                 if ($(this).text().length > 150) {
                     console.log("yepp it's really more than 150 char");
                     var fullName = $(this).text(),
-                        shortName = $(this).text().slice(0, 150),
+                        shortName = fullName.slice(0, 150),
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                         console.log("this new text" + $(this).text());
                     $(this).text(shortName).append(dots_btn);
