@@ -24,6 +24,7 @@ $(document).ready(function () {
                 };
                 $(".dotsBtn").on('click', function (event)  {
                     event.preventDefault();
+                    consolelog(fullName);
                     $(this).parent().text(fullName);
                 });
             });
