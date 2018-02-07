@@ -444,163 +444,9 @@ $tender-font-size: 12px;
 
 
 
-//NEWS_BLOCK
+//COMPANY_NEWS_BLOCK
 
-//LEFT_MENU
-.left_menu_wrapper {
-    margin-left: 0px !important;
-    padding-top: 7px;
-    display: inline-block;
-    width: 15%;
-    float: left;
-
-    ul {
-        list-style: none;
-        margin-left: 0px !important
-    }
-
-    .left_menu {
-
-        a.news_link {
-            color: #417AC6;
-            background: #F0F6FC url("../images/al_menu_fon.gif") no-repeat 0 50%;
-
-            &:hover {
-                color: #417AC6;
-            }
-        }
-
-        li {
-            text-transform: uppercase;
-            padding: 1px 10px 0px 3px;
-            margin: 0;
-            font-family: Verdana, Arial, sans-serif;
-
-
-
-            a {
-                color: #666666;
-                background: transparent url("../images/l_menu_fon.gif") left bottom no-repeat;
-                font: bold 12px "Arial Narrow", Arial,sans-serif;
-                padding-top: 3px;
-                padding-left: 25px;
-                min-height: 22px;
-                display: block;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: $primary-color;
-                }
-            }
-
-        }
-
-        li.li_opened {
-            background: transparent url("../images/al_menu_sub_fon.gif") no-repeat 2px 100%;
-        }
-        
-        .left_inner_menu {
-            margin: 0;
-            margin-top: 5px;
-            margin-left: 20px !important;
-            padding: 0px;
-            padding-bottom: 5px;
-            background: transparent;
-
-            li {
-                text-transform: none;
-            }
-
-            a {
-                color: #666666;
-                background: transparent url("../images/left_sub_menu_item.gif") no-repeat 0 6px;
-                padding: 0;
-                margin: 0;
-                padding-left: 10px;
-                font-weight: 400;
-            }
-        }
-    }
-
-}
-
-
-//LEFT_USER_INFO
-.left_user_info {
-    border: 1px solid #E2DFD8;
-    background: #FBF7EE;
-    padding: 5px;
-    margin-top: 20px;
-    margin-left: 5px;
-    padding-bottom: 10px;
-    width: 93%;
-    margin-bottom: 15px;
-
-    .welcome {
-        font-size: $tender-font-size;
-        font-family: Verdana, Arial, sans-serif;
-        color: $primary-color;
-        margin-bottom: 0px;
-    }
-
-    a {
-        font-weight: 700;
-        color: $primary-color;
-        font-family: Verdana, Arial, sans-serif;
-        font-size: $tender-font-size;
-
-        &:hover {
-            text-decoration: underline;
-            outline: none;
-        }
-    }
-
-    .user_name_link {
-        position: relative;
-        bottom: 8px;
-    }
-
-    .user_link_line {
-        height: 35px;
-        .user_link_icon {
-            width: 20%;
-            display: inline-block;
-        }
-        .user_link {
-            float: right;
-            width: 80%;
-            display: inline-block;
-
-            a {
-                display: inline-block;
-            }
-
-            .acces_link {
-                position: relative;
-                bottom: 20px;
-            }
-        }
-    }
-
-    .links_list {
-
-        a.icon_link {
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-}
-
-
-//LEFT BANNERS
-.banner_wrapper {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-//NEWS CARDS BLOCK
+//NEWS ATRICLE
 
 .news_cards {
     padding-left: 4px !important;
@@ -608,37 +454,9 @@ $tender-font-size: 12px;
 }
 
 .news_wrapper {
-    width: 84%;
+    width: 100%;
     display: inline-block;
     padding-left: 15px;
-
-    //SORT NEWS
-    .sort_input {
-        position: absolute;
-        right: 10px;
-        top: 5px;
-        
-        .sorting_caption {
-            display: inline-block;
-            margin: 0px;
-            font-size: $tender-font-size;
-            font-family: Verdana, Arial, sans-serif;
-            color: $primary-color;
-            margin-right: 15px;
-        }
-
-        select {
-            border: 1px solid #a9a9a9;
-            margin-bottom: 0px;
-            height: 20px;
-            width: 140px;
-            padding-top: 0px;
-            padding-bottom: 2px;
-            padding-left: 5px;
-            font-size: 13px;
-        }
-    }
-
 }
 
 .preface {
@@ -711,42 +529,6 @@ h2.news_heading {
     margin: 10px 0 15px 0;
     font-family: $body-font-family;
     font-weight: 700;
-}
-
-
-//NEWS PAGINATION
-.news_pagination {
-    height: 27px;
-    margin-bottom: 10px;
-}
-
-.pagination {
-    color: $primary-color;
-
-    .current {
-        font-weight: 700;
-    }
-
-    a {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .pagination-previous {
-        display: none !important;
-    }
-
-    .pagination-next {
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .pagination-next a::after {
-        display: none;
-    }
 }
 
 
@@ -1262,20 +1044,6 @@ img.hit_icon {
     }
 }
 
-//MOBILE SORTING
-@include breakpoint(small down) {
-    .sort_input {
-        .sorting_caption {
-            margin-right: 5px !important;
-        }
-
-        select {
-            height: 25px !important;
-            vertical-align: bottom;
-        }
-    }
-}
-
 
 //MOBILE_LOGIN
 @include breakpoint(small down) {
@@ -1389,41 +1157,6 @@ img.hit_icon {
     }
 }
 
-// MOBILE PAGINATION
-@include breakpoint(small down) {
-    .pagination {
-        text-align: center;
-
-        .pagination-previous {
-            display: unset !important;
-        }
-    
-        li {
-            font-size: 15px;
-    
-            &.pagination-next a::after {
-                display: inline-block;
-            }
-        }
-    }    
-}
-
-//MOBILE NEWS BLOCK
-@include breakpoint(small down) {
-    .news_wrapper {
-        width: 100%;
-        padding-left: 10px !important;
-
-        span.dotsBtn {
-            padding: 3px;
-            padding-top: 0px;
-            border-radius: 3px;
-            margin-left: 5px;
-            font-size: 10px;
-            border: 1px solid;
-        }
-    }
-}
 
 
 
