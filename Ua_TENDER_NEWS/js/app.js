@@ -19,16 +19,16 @@ $(document).ready(function () {
                         dots_btn = $("<span class='dotsBtn'>...</span>");
                         console.log("this new text" + $(this).text());
                     $(this).text(shortName).append(dots_btn);
+
+                    $(".dotsBtn").on('click', function (event)  {
+                        event.preventDefault();
+                        $(this).parent().text(fullName);
+                    });
                 } else {
                     console.log("here");
                     $(".dotsBtn").remove;
                     $(".news_info_block p").text(fullName);
                 };
-
-                $(".dotsBtn").on('click', function (event)  {
-                    event.preventDefault();
-                    $(this).parent().text(fullName);
-                });
                 // console.log("fullName = " + fullName);
                 // console.log("shortName = " + shortName);
             });
