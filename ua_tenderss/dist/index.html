@@ -10,7 +10,7 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
-	<link rel="SHORTCUT ICON" href="images/favicon.ico">
+	<link rel="SHORTCUT ICON" href="assets/img/favicon.ico">
 	<link rel="stylesheet" href="assets/css/app.css">
 </head>
 
@@ -84,7 +84,72 @@
 		    </ul>
 		    <!-- MOBILE MENU OPEN -->
 		
-		</div>		
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_OPEN -->
+		<div class="off-canvas position-bottom" id="loginModal" data-off-canvas data-transition="overlap">
+		    <!-- Close button -->
+		    <button class="close-button" aria-label="Close menu" type="button" data-close>
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <form method="post" name="log4in_form_head"	onsubmit="return check_login_form_head(this);">
+		        <div class="row">
+		            <label>Логин
+		            <input type="text" name="user_login">
+		            </label>
+		        </div>
+		        <div class="row">
+		            <label>Пароль
+		            <input type="password" name="user_password">
+		            </label>
+		        </div>
+		        <div class="contact-panel-actions">
+		            <a href="/login/remind/">
+		                Забыли пароль ?
+		            </a>
+		            <input type="submit" class="button submit-button" value="Вход" onclick="check_login_form_head(this);">
+		        </div>
+		    </form>
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
+
+		<div class="off-canvas-content" data-off-canvas-content>
+			
+			<!-- HEADER_TOP_LINE_OPEN -->
+			<div class="grid-x align-justify header_top_line ">
+			    <div class="large-5 cell ">
+			        <!-- BREADCRUMBS OPEN -->
+			        <ul class="breadcrumbs">
+			            <li>
+			                <a href="/">/ Главная</a>
+			            </li>
+			            <li>
+			                <a href="/tender/">Тендеры</a>
+			            </li>
+			            <li>
+			                <a href="/tender/zhit/">Жилищно-коммунальное и бытовое обслуживание, спецтехника</a>
+			            </li>
+			        </ul>
+			        <!-- BREADCRUMBS CLOSE -->    </div>
+			    <!-- <div class="large-1 columns hide_text">
+			        Lorem, ipsum.
+			    </div> -->
+			    <div class="large-6 cell statistics">
+			        <div class="stat_outer_line">
+			            <div class="stat_inner_line">
+			                <div class="statistics_wrapper">
+			                    <strong>Статистика:</strong> &nbsp;
+			                    <a href="http://www.ua-tenders.com/tender/">Тендеров: 1244420</a> &nbsp; | &nbsp;
+			                    <a href="http://www.ua-tenders.com/customers/">Заказчиков: 62204</a> &nbsp; | &nbsp;
+			                    <a href="http://www.ua-tenders.com/suppliers/">Поставщиков: 105629</a>
+			                    <a href="#" alt="attention" class="attention_banner"></a>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<!-- HEADER_TOP_LINE_CLOSE -->
+			
+		</div>
 	</div>
 
 	<script src="assets/js/app.js"></script>

@@ -1,0 +1,46 @@
+//HEADER_TOP_LINE
+
+.header_top_line {
+    background-color: #0080c6;
+    height: 26px;
+
+    .statistics {
+        // padding-left: 30px;   
+        
+        .stat_outer_line {
+            width:auto;
+            background: transparent url('../img/head_fon.gif') repeat-x;
+            border:0px solid #000;
+        }
+    
+        .stat_inner_line {
+            background: transparent url('../img/head_valwe.gif') no-repeat 0 0;
+            height:22px;
+            padding:3px 0px 0px 40px;
+
+            .statistics_wrapper {
+                position: relative;
+                bottom: 7px;
+                color: white;
+                float: right;
+
+                strong {
+                    color: $user_info-color;
+                    font-size: 11px;
+                }
+
+                a {
+                    font-size: 11px;
+                    color: $link-color;
+                }
+
+                a.attention_banner {
+                    background: url('../img/vnimanie4.gif');
+                    height: 22px;
+                    width: 110px;
+                    float: right;
+                }
+            }
+        }
+    }
+}

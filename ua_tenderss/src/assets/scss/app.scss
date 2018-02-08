@@ -3,3 +3,9 @@
 //MOBILE STYLES
 @import 'components/mobile/mobile-share.scss';
 @import 'components/mobile/mobile-menu.scss';
+@import 'components/header/top-line.scss';
+
+.hide_text {
+    color: transparent;
+    visibility: hidden;
+}

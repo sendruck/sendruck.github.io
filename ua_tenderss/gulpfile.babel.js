@@ -52,6 +52,7 @@ function copy() {
 function pages() {
   return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
     .pipe(panini({
+      images: 'src/assets/img',
       root: 'src/pages/',
       layouts: 'src/layouts/',
       partials: 'src/partials/',

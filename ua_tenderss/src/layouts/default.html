@@ -11,7 +11,7 @@
 	<meta name="description" content="{{description}}">
 	<meta name="keywords" content="{{keywords}}">
 
-	<link rel="SHORTCUT ICON" href="images/favicon.ico">
+	<link rel="SHORTCUT ICON" href="{{root}}assets/img/favicon.ico">
 	<link rel="stylesheet" href="{{root}}assets/css/app.css">
 </head>
 
@@ -23,7 +23,12 @@
 	</script>
 	<div class="off-canvas-wrapper">
 		{{> mobile-menu}}
-		{{> body}}
+		{{> mobile-login}}
+
+		<div class="off-canvas-content" data-off-canvas-content>
+			{{> top-line}}
+			{{> body}}
+		</div>
 	</div>
 
 	<script src="{{root}}assets/js/app.js"></script>
