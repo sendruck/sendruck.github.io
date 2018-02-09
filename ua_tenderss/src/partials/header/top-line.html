@@ -2,11 +2,14 @@
 <!-- HEADER_TOP_LINE_OPEN -->
 <div class="grid-x align-justify header_top_line ">
     <div class="large-5 cell ">
-        {{> header-breadcrumbs}}
+        <ul class="breadcrumbs">
+            {{#each breadcrumbs.tender-industry-breadcrumbs}}
+            <li>
+                <a href="{{link}}">{{text}}</a>
+            </li>
+            {{/each}}
+        </ul>
     </div>
-    <!-- <div class="large-1 columns hide_text">
-        Lorem, ipsum.
-    </div> -->
     <div class="large-6 cell statistics">
         <div class="stat_outer_line">
             <div class="stat_inner_line">
