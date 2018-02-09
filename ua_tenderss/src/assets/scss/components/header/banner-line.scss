@@ -1,0 +1,78 @@
+// BANNER_LINE
+.banner_line {
+    height: 95px;
+    color: #FFFFFF;
+    background: #0289CF url('../img/logo_fon.gif') repeat-x 0 0;
+
+    .logo_banner {
+        background: transparent url('../img/logo1.gif') no-repeat 0 0;
+        padding: 0;
+        padding-top: 36px;
+        padding-left: 6px;
+        height: 95px;
+        width: 182px;
+
+    }
+
+    .banner-2 {
+        img.banner-2 {
+            width: 150px;
+            border: 0px;
+            height: 80px;
+            margin-top: 5px;
+        }
+    }
+
+    .banner-3 {
+        img.banner-3 {
+            margin-top: 5px;
+            width: 150px;
+            border: 0px;
+            height: 80px;
+        }
+    }
+
+    .banner-4 {
+        padding-left: 0px;
+        
+        img.banner-4 {
+            margin-top: 5px;
+            width: 150px;
+            border: 0px;
+            height: 80px;
+        }
+    }
+
+    .my_page_info {
+        margin-top: 5px;
+        margin-right: 5px;
+        font-size: $font-size;
+        color: $user_info-color;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid $user_info-color;
+
+        p.user_name {
+            text-align: right;
+            margin-bottom: 0 !important;
+        }
+
+        .my_page_links {
+            margin-bottom: 0 !important;
+
+            a {
+                color: $user_info-color;
+                text-decoration: underline;
+                font-family: $body-font-family;
+            }
+        }
+
+        input.logout_butt {
+            float: right;
+            background-color: $user_info-color;
+            border: 1px solid #5D637B;  
+            font-size: 8pt;
+            padding: 0px 5px 0px 5px;
+            height: 16px;      
+        }
+    }
+}

@@ -3,7 +3,10 @@
 //MOBILE STYLES
 @import 'components/mobile/mobile-share.scss';
 @import 'components/mobile/mobile-menu.scss';
+
+//HEADER STYLES
 @import 'components/header/top-line.scss';
+@import 'components/header/banner-line.scss';
 
 .hide_text {
     color: transparent;

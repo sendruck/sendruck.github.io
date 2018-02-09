@@ -1,0 +1,17 @@
+
+<!-- HEADER_TOP_LINE_OPEN -->
+<div class="grid-x align-justify header_top_line ">
+    <div class="large-5 cell ">
+        <ul class="breadcrumbs">
+            {{#each breadcrumbs.tender-breadcrumbs}}
+            <li>
+                <a href="{{link}}">{{text}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{> header-statistics}}
+</div>
+<!-- HEADER_TOP_LINE_CLOSE -->
+{{> banner-line}}
+
