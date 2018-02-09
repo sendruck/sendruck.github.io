@@ -1,0 +1,36 @@
+
+<!-- ERROR_BUTTONS_OPEN -->
+<div class="err_buttons hide_small">
+    <span>
+        <a href="#" id="messageForm" class="message_down" title="Сообщить об ошибке">
+            Сообщить об ошибке
+        </a>
+    </span>
+    <span>
+        <a href="#" id="messageForm" title="Сообщить об ошибке">
+            <img src="{{root}}assets/img/error.gif" style="border:0px;">
+        </a>
+    </span>
+    <span>
+        <a href="/tender/1321197/print/" target="_blank" title="Печать">
+            <img src="{{root}}assets/img/print_16x16.gif" style="border:0px;">
+        </a>
+    </span>
+    <span>
+        <a href="/tender/1321197/save/" target="_blank" title="Сохранить">
+            <img src="{{root}}assets/img/save_16x16.gif" style="border:0px;">
+        </a>
+    </span>
+    <span>
+        <form method="post" action="/tender/1321197">
+            <input type="hidden" name="BookMark" value="1321197">
+            <input type="image" src="{{root}}assets/img/flag_16x16.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
+        </form>
+    </span>
+    <span>
+        <a href="/tender/1321197/ru/" target="_blank">
+            <img src="{{root}}assets/img/ru_16x16.gif" style="border:0;" alt="ru">
+        </a>
+    </span>
+</div>
+<!-- ERROR_BUTTONS_OPEN -->

@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<link rel="SHORTCUT ICON" href="assets/img/favicon.ico">
+	<link rel="stylesheet" href="assets/css/app.css">
+</head>
+
+<body>
+	<script>
+		window.onbeforeunload = function () {
+			window.scrollTo(0, 0);
+		}
+	</script>
+	<div class="off-canvas-wrapper">
+		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+		    <!-- Close button open-->
+		    <button class="close-button" aria-label="Close menu" type="button" data-close>
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <!-- Close button close-->
+		
+		
+		    <!-- MOBILE MENU OPEN -->
+		    <ul class="vertical menu mobile_menu">
+		        <li>
+		            <a href="http://www.ua-tenders.com/">
+		                Главная	
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/services/expresstender/">
+		                Заказчикам
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/services/tenders/">
+		                Поставщикам
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/guarantee/">
+		                Банковская гарантия
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/garantiya_turfirmam/">
+		                Гарантия турфирмам
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/learning/">
+		                Семинары
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/inquiry/">
+		                Справки
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/complaint/">
+		                Жалобы
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/audit/">
+		                Проверки-Аудит
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/examination/">
+		                Экспертиза
+		            </a>
+		        </li>
+		    </ul>
+		    <!-- MOBILE MENU OPEN -->
+		
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_OPEN -->
+		<div class="off-canvas position-bottom" id="loginModal" data-off-canvas data-transition="overlap">
+		    <!-- Close button -->
+		    <button class="close-button" aria-label="Close menu" type="button" data-close>
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <form method="post" name="log4in_form_head"	onsubmit="return check_login_form_head(this);">
+		        <div class="row">
+		            <label>Логин
+		            <input type="text" name="user_login">
+		            </label>
+		        </div>
+		        <div class="row">
+		            <label>Пароль
+		            <input type="password" name="user_password">
+		            </label>
+		        </div>
+		        <div class="contact-panel-actions">
+		            <a href="/login/remind/">
+		                Забыли пароль ?
+		            </a>
+		            <input type="submit" class="button submit-button" value="Вход" onclick="check_login_form_head(this);">
+		        </div>
+		    </form>
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
+
+		<div class="off-canvas-content" data-off-canvas-content>
+			
+		</div>
+	</div>
+
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+//MODAL_WINDOW_BONUS
+.modal_bonus {
+    padding: 0px !important;
+    overflow: hidden;
+
+    .bonus_heading {
+        padding-top: 1px;
+        border-bottom: 1px solid #007fc5;
+        background: #e2f3fd;
+
+        h1 {
+            text-align: center;
+            color: #666;
+            font-size: 26px;
+            font-family: Verdana, Arial, sans-serif;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            font-weight: 700;
+        }
+    }
+
+    .bonus_body {
+        max-height: 550px;
+        overflow: hidden;
+        overflow-y: auto;
+        color: #000;
+        padding-bottom: 25px;
+
+        p {
+            padding: 10px;
+            color: #000;
+            font-size: 13.3px;
+            font-family: Verdana, Arial, sans-serif;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        ol {
+            margin-top: -15px;
+            padding-left: 30px;
+
+            li {
+                color: #000;
+                font-size: 13.3px;
+                font-family: Verdana, Arial, sans-serif;
+                font-weight: 700;
+                line-height: normal;
+
+            }
+        }
+
+        .faq {
+            color: #666;
+            padding: 10px;
+            font-size: 16px;
+            font-family: $body-font-family;
+            margin: 5px 0 5px 0;
+            font-weight: 700;
+        }
+
+        .accordion-item {
+            font-size: 13.3px;
+            font-weight: 700;
+            line-height: normal;
+            font-family: Verdana, Arial, sans-serif;
+
+            a:hover {
+                color: #666;
+            }
+
+            a:focus {
+                color: #666;
+            }
+
+            a:active {
+                color: #666;
+            }
+        }
+
+        .accordion-content {
+            p {
+                margin: 0px;
+
+            }
+        }
+    }
+
+    .bonus_footer {
+        padding: 20px;
+        background: #f9d082;
+        border-top: 1px solid #007fc5;
+
+        .bonus_consultation {
+            width: 85%;
+            color: #fff;
+            font-weight: 700;
+            font-size: 13.3px;
+            font-family: Verdana, Arial, sans-serif;
+            display: inline-block;
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 13.3px;
+            font-family: Verdana, Arial, sans-serif;
+            cursor: pointer;
+            color: $primary-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}

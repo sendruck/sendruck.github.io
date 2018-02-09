@@ -1,0 +1,192 @@
+//TENDER_INFO
+.tender_cards {
+    padding-left: 10px !important;
+}
+
+.tender_info_wrapper {
+    background-color: $tender_info-color;
+    border: $tender_info-border;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    color: $primary-color;
+    font-size: $tender-font-size;
+    font-family: $body-font-family;
+
+    .err_buttons {
+        #messageForm {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.tender_info_block {
+
+    h3.tender_blck_caption {
+        color: $primary-color;
+        font-size: $tender-font-size;
+        font-family: $body-font-family;
+        padding: 0;
+        margin: 5px 0 5px 0;
+        font-weight: 700;
+    }
+
+    p {
+        color: $primary-color;
+        font-size: $tender-font-size;
+        font-family: $body-font-family;
+        margin-bottom: 0px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .tender_mrgn {
+        margin-top: 8px;
+    }
+
+    .tender_highl {
+        font-weight: 700;   
+    }
+}
+
+.customer_block {
+    position: relative;
+    h2 {
+        font-size: 16px;
+        color: #666666;
+        padding: 0;
+        margin: 10px 0 10px 0;
+        font-family: $body-font-family;
+        font-weight: 700;
+
+    }
+
+    .err_buttons {
+        position: absolute;
+        right: 8px;
+        top: 5px;
+
+        form {        -webkit-appearance: none;
+
+            display: inline-block;
+            position: relative;
+            top: 4px;
+        }
+
+        a.message_down {
+            position: relative;
+            top: 3px;
+        }
+    }
+
+}
+
+.tender_docs_wrapper {
+    border: 2px solid red;
+    padding: 5px;
+    margin-right: 10px;
+
+    .tender_docs_capture {
+        padding: 0 20px;
+
+        h2 {
+            font-size: 16px;
+            color: #666666;
+            padding: 0;
+            padding: 10px 0 10px 0;
+            font-family: $body-font-family;
+            font-weight: 700;
+            border-bottom: 1px solid #B6B6B6;
+        }
+    }
+
+    .tender_docs_body {
+        padding-bottom: 10px;
+
+        .doc_icon {
+            width: 24px;
+            border: 0px;
+            margin: 0 25px 0 5px;
+        }
+
+        .tender_cod_link, p {
+            color: $primary-color;
+            font-weight: 700;
+            font-family: $body-font-family;
+            font-size: $tender-font-size;
+            vertical-align: middle;
+            display: inline-block;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            margin-left: 25px;
+            margin-bottom: 0px;
+            
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//HELP_BUTTONS
+.help_btns {
+    width: 99%;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
+    background: #33CC66;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: bold;
+
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
+.bank_guarantee {
+    background: #3366ff;
+}
+
+
+//BONUS_BUTTON
+
+.bonus_button {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 10pt;
+    font-weight: 700;
+
+    .bonus_button-text {
+        cursor: pointer;
+        color: #000;
+        font-size: 20px;
+        padding: 10px;
+
+        font-size: 20px;
+        -webkit-appearance: button;        -moz-appearance: none;
+        appearance: none;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        -o-border-image: initial;
+           border-image: initial;
+        background-color: buttonface;
+        line-height: normal;
+        
+    }
+}

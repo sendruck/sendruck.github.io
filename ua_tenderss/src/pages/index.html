@@ -1,18 +1,145 @@
+---
+customer: 'Заказчик: Лівобережна районна адміністрація Маріупольської міської ради, 04053230'
 
-<!-- HEADER_TOP_LINE_OPEN -->
-<div class="header_top_line ">
-    <div >
-        <ul class="breadcrumbs">
-            {{#each breadcrumbs.tender-breadcrumbs}}
-            <li>
-                <a href="{{link}}">{{text}}</a>
-            </li>
-            {{/each}}
-        </ul>
+status: 'Прийом пропозицій'
+
+procedure: 'Открытые торги Prozorro'
+
+pub_date: 18.01.2018
+
+tender_num: UA-2018-01-18-000024-a
+
+predmet_zak: 'ліквідація несанкціонованих звалищ, прибирання, вивезення сміття з території Лівобережного району м.Маріуполя, Донецька область
+ліквідація несанкціонованих звалищ, прибирання, вивезення сміття з території Лівобережного району м.Маріуполя, Донецька область. Обсяги робіт - у додатку в тендерній документації'
+
+predment_zak_2p: '90510000-5 - Утилізація сміття та поводження зі сміттям
+ліквідація несанкціонованих звалищ, прибирання, вивезення сміття з території Лівобережного району м.Маріуполя, Донецька область. Обсяги робіт - у додатку в тендерній документації - 1 Послуга'
+
+delivery_addr: '87500, Україна, Донецька область, Маріуполь, пр.Перемоги,16, 30.12.2018 23:12'
+
+expected_summ: '315 624.00 UAH'
+
+min_step:  1600.00 UAH
+
+period_zakinch: 26.01.2018 08:00
+
+pdv:  з ПДВ
+
+docs_link: 'https://public.docs.openprocurement.org/get/f61dc604674a4d1696259907884b2d6b?KeyID=52462340&Signature=5Z6LTvaFE21zf0r65p48Crgf8nkNUBX1Gv%252BAEVj5ZSvOCItu8b7GcvKG%252BSDt8I0PNNInGI57ooneDAC4gwIuAQ%253D%253D" target="_blank" class="tender_cod_link'
+
+docs_name: ТД Звалища 2018.docx
+
+tender_docs_link: 'https://etp.zakupki.com.ua/v?TenderID=UA-2018-01-18-000024-a'
+
+ymovu_podachi_link: 'https://etp.zakupki.com.ua/v?TenderID=UA-2018-01-18-000024-a'
+
+customer_addr: '87502, Україна, Донецька область, Маріуполь, пр.Перемоги,16'
+
+end_date: '05.02.2018 08:00'
+
+procedure_date: '06.02.2018 13:16'
+
+procedure_link: 'https://etp.zakupki.com.ua/v?TenderID=UA-2018-01-18-000024-a'
+
+contact_name: 'Комісар Олександр Васильович'
+
+contact_phone: '380985763937'
+
+contact_email: 'aleksandr.komisar@mariupolrada.gov.ua'
+---
+
+
+{{> header-tender}}
+
+<!-- TENDER_INFO_OPEN -->
+<div class="row expanded large-collapse">
+    {{> tender-info}}
+
+    <!-- TENDER_RIGHT_BLOCK_OPEN -->
+    <div class="large-2 columns right-column hide_small">
+        <div id="context-menu">
+            <div class="tb-selector">
+                <select name="tbsel" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
+                    <option value="all">Список тендеров по отрасли...</option>
+
+                    <option value="trz">Автомототранспорт, транспорт, запчасти</option>
+                    <option value="kul">Бумага, бытовые, канцелярские и хозяйственные товары</option>
+                    <option value="zhit">Жилищно-коммунальное и бытовое обслуживание, спецтехника</option>
+                    <option value="kom">Компьютерная техника, периферия, комплектующие</option>
+                    <option value="kpn">Консалтинговые услуги, обучение</option>
+                    <option value="meb">Мебель</option>
+                    <option value="med">Медицина</option>
+                    <option value="met">Металлы</option>
+                    <option value="ndr">Научно-исследовательские работы</option>
+                    <option value="ner">Недвижимость</option>
+                    <option value="leg">Одежда, обувь, продукция легкой промышленности</option>
+                    <option value="php">Пищевая промышленность и продукты питания</option>
+                    <option value="ppd">Полиграфическая промышленность</option>
+                    <option value="tech">Промышленное оборудование, приборы</option>
+                    <option value="psg">Сельское хозяйство</option>
+                    <option value="bud">Строительство и строительные материалы, ремонт</option>
+                    <option value="trp">Товары, Работы, Услуги, Разное</option>
+                    <option value="pal">Энергетика, нефтепродукты, топливо</option>
+                </select>
+            </div>
+            <div id="context-top-topic" class="hide_small">Персональная страница</div>
+            <ul id="context-menu-ul" class="hide_small">
+                <li class="n-blue">
+                    <a href="http://44037.ua-tenders.com/news/">Новости компании</a>
+                </li>
+                <li class="n-white">
+                    <a href="http://44037.ua-tenders.com/activity/">Деятельность</a>
+                </li>
+                <li class="n-blue">
+                    <a href="http://44037.ua-tenders.com/sentence/">Продукция</a>
+                </li>
+                <li class="n-white">
+                    <a href="http://44037.ua-tenders.com/tenders/">Тендеры компании</a>
+                </li>
+                <li class="n-blue">
+                    <a href="http://44037.ua-tenders.com/offer/">Предложения компании</a>
+                </li>
+                <li class="n-white">
+                    <a href="http://44037.ua-tenders.com/">Контакты</a>
+                </li>
+            </ul>
+
+
+            <!-- <div style="width:240px;">
+
+                <div id="div-gpt-ad-1363969703647-0" style="width:240px; height:400px;">
+                    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script>
+                    <script type="text/javascript">
+                        googletag.cmd.push(function () {
+                            googletag.display('div-gpt-ad-1363969703647-0');
+                        });
+                    </script>
+                    <div id="google_ads_iframe_/49672854/Home240x400_0__container__" style="border: 0pt none;">
+                        <iframe id="google_ads_iframe_/49672854/Home240x400_0" title="3rd party ad content" name="google_ads_iframe_/49672854/Home240x400_0"
+                        width="240" height="400" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;">
+                            
+                        </iframe>
+                    </div>
+                </div>
+                <center>
+                    <a href="http://www.ua-tenders.com/rubrics/services/reklama/66061/" target="_blank" style="color:red; font-weight:bold; text-decoration:underline;">Заказать рекламу</a>
+                </center>
+            </div> -->
+
+            <a href="#" class="bank_garant_wrapper">
+                <img src="images/2228643673625732697.gif" alt="" class="bank_garant hide_small">
+            </a>
+
+            <p class="order_adds_wrapper hide_small">
+                <a href="http://www.ua-tenders.com/rubrics/services/reklama/66061/" target="_blank"  class="order_adds">
+                    Заказать рекламу
+                </a>
+            </p>
+
+
+        </div>
     </div>
-    {{> header-statistics}}
+    <!-- TENDER_RIGHT_BLOCK_CLOSE -->
+
 </div>
-<!-- HEADER_TOP_LINE_CLOSE -->
-{{> banner-line}}
-{{> menu-line}}
-{{> mobile-select}}
+<!-- TENDER_INFO_CLOSE -->

@@ -5,10 +5,18 @@
 @import 'components/mobile/mobile-menu.scss';
 @import 'components/mobile/mobile-select.scss';
 
+//MODALS
+@import 'components/modal/bonus-modal.scss';
+
 //HEADER STYLES
 @import 'components/header/top-line.scss';
 @import 'components/header/banner-line.scss';
 @import 'components/header/menu-line.scss';
+
+//TENDER
+@import 'components/tender/tender-info.scss';
+
+
 
 
 .hide_text {

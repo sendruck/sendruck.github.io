@@ -1,0 +1,248 @@
+
+
+<div class="large-10 columns tender_cards">
+    <div class="tender_info_wrapper customer_block hide_small">
+        <h2>
+            {{customer}}
+        </h2>
+        {{> error-buttons}}
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Статус тендера
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                {{status}}
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <div class="tender_info_wrapper ">
+            <p>
+                Процедура закупки: <span class="tender_highl">{{procedure}}</span> 
+            </p>
+            <p>
+                Дата размещения: <span class="tender_highl">{{pub_date}}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Информация о публикации
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Номер тендера: <span class="tender_highl">{{tender_num}}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Информация о предмете закупки
+        </h3>
+        <div class="tender_info_wrapper ">
+            <span class="predmet_zak">
+                <div class="predmet_wrapper">
+                    <p>
+                        <span class="noHighlight">Предмет закупки:</span> <span class="tender_highl">{{predmet_zak}}</span>
+                    </p>
+                    <p>
+                        <span class="tender_highl">
+                            {{predment_zak_2p}}
+                        </span>
+                    </p>
+                </div>
+            </span>
+            <p class="tender_mrgn">
+                Место и срок поставки: <span class="tender_highl">{{delivery_addr}}</span>
+            </p>
+        </div>
+    </div>	
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Ожидаемая сумма закупки
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                {{expected_summ}}
+            </p>
+        </div>
+    </div>
+
+    <!-- SHOW_FOR_MOBILE_ONLY -->
+
+    <div class="tender_info_wrapper customer_block hide_not_small">
+        <h2>
+            {{customer}}
+        </h2>
+    </div>
+
+    <div class="tender_info_block hide_not_small">
+        <h3 class="tender_blck_caption">
+            Информация о публикации
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Номер тендера: <span class="tender_highl">{{tender_num}}</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- SHOW_FOR_MOBILE_ONLY_CLOSE -->
+
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Дополнительная информация
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                <span class="tender_highl">Мiнiмальний крок:</span>{{min_step}}
+            </p>
+            <p>
+                <span class="tender_highl">Закiнчення перiоду уточнення:</span> {{period_zakinch}}
+            </p>
+            <p>
+                <span class="tender_highl">Сума закупiвлi вказана:</span>{{pdv}}
+            </p>
+        </div>
+    </div>	
+
+    <div class="tender_docs_wrapper">
+        <div class="tender_docs_capture">
+            <h2>
+                Документация
+            </h2>
+        </div>
+        <div class="tender_docs_body">
+            <img src="{{root}}assets/img/docx.png" alt="word_icon" class="doc_icon">
+            <a href="{{docs_link}}">											
+                {{docs_name}}
+            </a>
+            <p>
+                Тендерна документація 
+            </p>
+        </div>
+    </div>
+
+    <div class="help_btns hide_small">
+        <a href="http://ua-tenders.com/rubrics/services/suppliers/">
+            Заказать
+            юридическое сопровождение тендера
+        </a>
+        044 581-28-16, 581-28-21.
+    </div>
+
+    <div class="help_btns bank_guarantee hide_small">
+        <a href="http://ua-tenders.com/rubrics/guarantee/">
+            Получить Банковскую гарантию за 2 дня
+        </a>
+        044 230-82-27, 425-28-47.
+    </div>
+    
+    <div class="bonus_button hide_small">
+        <button class="bonus_button-text" data-open="exampleModal1">
+            Бонус 100% за платеж
+        </button>
+    </div>
+
+    {{> bonus-modal}}
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Получение тендерной документации
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Адрес: <span class="tender_highl">
+                    <a href="{{tender_docs_link}}" target="_blank">
+                        {{tender_docs_link}}
+                    </a>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Условия подачи тендерных предложений
+            о предмете закупки
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Условия: <span class="tender_highl">
+                    <a href="{{ymovu_podachi_link}}" target="_blank">
+                        {{ymovu_podachi_link}} 
+                    </a>
+                </span>
+            </p>
+            <p>
+                Адрес заказчика
+                <span class="tender_highl">
+                    {{customer_addr}}
+                </span>
+            </p>
+            <p>
+                Конечный срок: 
+                <span class="tender_highl">
+                    {{end_date}}
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+                Проведение процедуры
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Дата
+                <span class="tender_highl">
+                    {{procedure_date}}
+                </span>
+            </p>
+            <p>
+                Адрес: 
+                <span class="tender_highl">
+                    <a href="{{procedure_link}}" target="_blank">
+                        {{procedure_link}}
+                    </a>
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <div class="tender_info_block">
+        <h3 class="tender_blck_caption">
+            Лицо, ответственное за проведение торгов
+        </h3>
+        <div class="tender_info_wrapper ">
+            <p>
+                Контактное лицо:
+                <span class="tender_highl">
+                    {{contact_name}}
+                </span>
+            </p>
+            <p>
+                Контактный телефон:
+                <span class="tender_highl">
+                    {{contact_phone}}
+                </span>
+            </p>
+            <p>
+                E-mail:
+                <span class="tender_highl">
+                    {{contact_email}}
+                </span>
+            </p>
+        </div>
+    </div>
+
+</div>
