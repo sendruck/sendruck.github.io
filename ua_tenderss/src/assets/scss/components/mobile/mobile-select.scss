@@ -1,0 +1,14 @@
+
+//MOBILE_SELECT
+@include breakpoint(small down) {
+    .tb-selector {
+        margin: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        select {
+            margin-bottom: 5px;
+            border: 1px solid #828282;
+        }
+    }
+}

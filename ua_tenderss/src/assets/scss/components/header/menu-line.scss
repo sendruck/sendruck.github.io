@@ -1,0 +1,125 @@
+//MENU_LINE
+.menu_line {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    background-color: #fbd983;
+    border-top: 2px solid #f3af08;
+    margin-bottom: 6px;
+
+    .menu_div {
+        padding: 0 0 0 6px;
+
+
+        ul.menu_list {
+            float: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-align: center;
+    
+            li {
+                float: left;
+                padding: 4px 0 5px 0;
+                margin: 0;
+                list-style: none;
+                color: #534741;
+
+                &:last-child {
+                    a {
+                        padding-right: 0px;
+                        padding-left: 4px;
+                    }
+                }
+                
+                a.first {
+                    border-left: none; 
+                    padding-left: 0px;
+ 
+                }
+
+                a {
+                    display: block;
+                    color: #534741;
+                    font-size: 12px;
+                    font-weight: 700;
+                    border-left: 1px solid #534741; 
+                    padding: 0 5px;
+                    margin: 0;
+                    text-decoration: none;
+                    line-height: normal;
+                    font-family: $body-font-family;
+                    background-color: #fbd983;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+    
+                }
+
+            }
+        }
+    }
+    
+}
+
+//SEARCH_LINE
+.search_wrapp {
+    width: 23%;
+}
+.search_bar {
+    background-color: #f9ca65;
+
+    .search_icon {
+        padding: 0;
+        padding-top: 0px;
+        padding-bottom: 0;
+        margin: 0;
+        margin-top: 1px;
+        color: transparent;
+        display: inline-block;
+    }
+
+        .search_icon_tr {
+            background: url("../img/search_icon.gif") no-repeat;
+            color: transparent;
+            width: 22px;
+            height: 19px;
+            display: inline-block;
+        }
+
+        input {
+            font-family: Verdana,Arial,sans-serif;
+            font-size: 10px;
+            border: 1px solid #505153;
+            width: 65%;
+            margin: 0;
+            display: inline-block;
+            padding: 0 1px;
+            height: 16px;
+            bottom: 3px;
+            position: relative;
+        }
+
+        a {
+            // margin-right: 50px;
+            display: unset;
+            font-size: 12px;
+            font-family: $body-font-family;
+            color: #534741;
+            text-decoration: none;
+            line-height: normal;
+            font-weight: 700;
+            bottom: 3px;
+            position: relative;
+        }
+}
+
+.favourite_wrapper {
+
+    .faw_mail_btns {
+        position: relative;
+        top: -3px;
+        left: 10px;
+    }
+}
