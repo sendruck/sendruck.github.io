@@ -2,7 +2,8 @@
 
 //MOBILE STYLES
 @import 'components/mobile/mobile-share.scss';
-@import 'components/mobile/mobile-menu.scss';
+@import 'components/mobile/header/mobile-menu.scss';
+@import 'components/mobile/header/mobile-login.scss';
 @import 'components/mobile/mobile-select.scss';
 
 //MODALS
@@ -15,6 +16,7 @@
 
 //TENDER
 @import 'components/tender/tender-info.scss';
+@import 'components/accesories/context-menu.scss';
 
 
 

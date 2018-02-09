@@ -1,0 +1,89 @@
+//CONTEXT_MENU
+.right-column {
+    padding-right: 10px !important;
+}
+
+#context-menu {
+    margin-top: 7px;
+
+    .tb-selector {
+        padding: 5px;
+        padding-top: 0px;
+        padding-bottom: 3px;
+        margin: 0 0 10px 0;
+        background: #FAD683;
+
+        select {
+            margin: 0;
+            padding: 0;
+            padding-left: 5px;
+            padding-right: 25px;
+            height: 15px;   
+            font-size: 9px;
+            line-height: normal;
+            font-family: "MS Sans Serif", Arial, Verdana, sans-serif;
+        }
+    }
+
+    #context-top-topic {
+        background: #0080C6 url("../img/tender_title.gif") no-repeat 10px 55%;
+        color: #FFFFFF;
+        padding: 2px 10px 2px 28px;
+        font: bold 12px Verdana,sans-serif;
+        text-align: left;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-bottom: 20px;
+
+        li {
+            height: 21px;
+        }
+
+        li.n-white {
+            background: #F8FBFD url("../img/w_news_item.gif") no-repeat 0 6px;
+            padding: 3px 10px 3px 25px;
+        }
+
+        li.n-blue {
+            background: #F0F6FC url("../img/b_news_item.gif") no-repeat 0 6px;
+            padding: 3px 10px 3px 25px;
+        }
+
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            font-size: $font-size;
+            font-family: $body-font-family;
+            font-weight: bold;
+            vertical-align: top;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // img.bank_garant {
+    //     width: 100%;
+    //     height: 400px;
+    // }
+
+
+    // .order_adds_wrapper {
+    //     text-align: center;
+
+    //     .order_adds {
+    //         color: red;
+    //         font-weight: bold;
+    //         text-decoration: underline;
+    //         font-size: 11px;
+    //         font-family: Verdana, Arial, sans-serif;
+    //         vertical-align: top;
+    //     }
+    // }
+    
+}
