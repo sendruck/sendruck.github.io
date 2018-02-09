@@ -177,13 +177,14 @@
         padding: 10px;
 
         font-size: 20px;
-        -webkit-appearance: button;        -moz-appearance: none;
+        -webkit-appearance: button;        
+        -moz-appearance: none;
         appearance: none;
         border-width: 2px;
         border-style: outset;
         border-color: buttonface;
         -o-border-image: initial;
-           border-image: initial;
+        border-image: initial;
         background-color: buttonface;
         line-height: normal;
         

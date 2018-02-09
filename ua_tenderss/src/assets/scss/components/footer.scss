@@ -1,15 +1,11 @@
 //FOOTER
 .footer_block {
     background-color: $footer-color;
-
-    .footer_instr_wrapper {
-        margin-left: 34px;
-        margin-top: 3px;
-    }
-
-
+    display: flex;
+    justify-content: space-between;
+    padding-left: 34px; 
+    padding-top: 3px;
     .instr_caption {
-
         p {
             padding: 2px 0px 5px 0px;
             font-family: $body-font-family;
@@ -28,19 +24,26 @@
         }
     }
 
+    img.hit_icon {
+        float: right;
+        margin: 6px;
+    }
+}
+
+.footer_instr_consul {
+    background-color: $footer-color;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 34px; 
+
     .instr_body {
-
-        img {
-            margin-left: 5px;
-            display: inline-block;
-        }
-
+        display: flex;
+        justify-content: flex-end;
         a {
             font-family: $body-font-family;
             font-size: $font-size;
             font-weight: 700;
             color: $primary-color;
-            vertical-align: top;
 
             &:hover {
                 text-decoration: underline;
@@ -62,92 +65,43 @@
             padding: 0;
             line-height: 1 !important;
 
-            .footer_img_wrapper, .instr_block_text {
-                display: inline-block;
-            }
-            
             .footer_img_wrapper {
-                width: 35%;
-
-                img {
-                    position: relative;
-                    bottom: 20px;
-                }
-
+                margin-right: 15px;
+                float: left;
                 a {
                     line-height: 1.2;
                 }
             }
-    
+        }
+        .instr_block1 {
             .instr_block_text {
-                width: 57%;
-
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 25px;
+                p:last-child {
+                    margin-top: 55px;
+                    margin-bottom: 0px;
                 }
-
             }
         }
 
         .instr_block2 {
-            .footer_img_wrapper {
-
-                img {
-                    position: relative;
-                    bottom: 40px;
-                }
-
-            }
-
             .instr_block_text {
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 5px;
+                p:last-child {
+                    margin-top: 25px;
+                    margin-bottom: 0px;
                 }
-
             }
         }
 
         .instr_block3 {
-            .footer_img_wrapper {
-
-                img {
-                    position: relative;
-                    bottom: 8px;
-                }
-
-            }
-
             .instr_block_text {
-                
-                p, strong {
-                    margin: 0px;
-                    position: relative;
-                    top: 36px;
+                p:last-child {
+                    margin-top: 58px;
+                    margin-bottom: 0px;
                 }
-
             }
         }
-
-    }
-
-    .footer_phone {
-        color: #000;
-        font-size: $font-size;
-        font-weight: 700;
-        font-family: Verdana, Arial, sans-serif;
-        margin-bottom: 0px;
-        // position: relative;
-        // bottom: 20px;
     }
 
     .footer_consultation {
-        margin-top: 32px;
         margin-bottom: 0px;
         color: $primary-color;
         font-size: $font-size;
@@ -163,8 +117,8 @@
             display: inline-block;
         }
 
-        .right-cons {
-            margin-left: 50px;
+        .left-cons {
+            margin-right: 50px;
         }
 
         p {
@@ -196,46 +150,46 @@
             }
         }
     }
-
 }
 
-.relative_wrapper {
-    position: relative;
-}
-
-img.hit_icon {
-    position: absolute;
-    right: 5px;
-    top: 6px;
-}
-
-.footer_instr_wrapper {
-
+.phone {
+    padding-left: 34px; 
+    padding-bottom: 10px;
+    background-color: $footer-color;
+    .footer_phone {
+        color: #000;
+        font-size: $font-size;
+        font-weight: 700;
+        font-family: Verdana, Arial, sans-serif;
+        margin-bottom: 0px;
+    }
     .footer_left_menu {
-        // position: relative;
-        margin-left: 10px !important;
-        bottom: 10px;
-    
-        li {
-            display: inline-block;
-            color: $primary-color;
-            font-weight: 700;
-            font-size: $font-size;
-            font-family: Verdana, Arial, sans-serif;
-    
-            &:hover {
-                text-decoration: underline;
-            }
-    
-            img {
-                margin-bottom: 5px;
-            }
+    margin-left: 10px !important;    
+    margin-bottom: 0px !important;
+
+    li {
+        display: inline-block;
+        color: $primary-color;
+        font-weight: 700;
+        font-size: $font-size;
+        font-family: Verdana, Arial, sans-serif;
+
+        &:hover {
+            text-decoration: underline;
         }
+
+        img {
+            margin-bottom: 5px;
+        }
+    }
     }
 }
 
-//FOOTER_BOTTOM_LINE 
+
+// //FOOTER_BOTTOM_LINE 
 .footer_bottom_line {
+    display: flex;
+    justify-content: space-between;
     background: #0080C6;
     color: #FFFFFF;
     font-size: 10px;
