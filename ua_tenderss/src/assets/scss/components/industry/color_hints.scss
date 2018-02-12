@@ -1,0 +1,71 @@
+// COLOR_HINTS_BLOCK
+.hints_wrapper {
+    padding-top: 20px;
+}
+
+.hints_block {
+    padding-left: 10px !important;
+
+    .color_block {
+        display: inline-block;
+        width: 22px;
+        height: 15px;
+    }
+
+    .orange_blck {
+        background-color: #F7E0BD;
+        border: 1px solid #E2DFD8;
+    }
+
+    .blue_blck {
+        background-color: #BCD3F9;
+        border: 1px solid #E2DFD8;
+        margin-left: 12px;
+    }
+
+    .green_blck {
+        background-color: #CCDDAE;
+        border: 1px solid #E2DFD8;
+        margin-left: 12px;
+    }
+
+    .violet_blck {
+        background-color: #990099;
+        border: 1px solid #E2DFD8;
+    }
+
+    .zaklad_icon {
+        background: url("../img/zak1.gif") no-repeat;
+        margin-left: 12px;
+    }
+
+    .hint_first_line {
+        margin-bottom: 8px;
+    }
+
+    .hint_title {
+        height: 15px;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: $font-size;
+        font-family: Verdana, Arial, sans-serif;
+        vertical-align: text-top;
+
+    }
+}
+
+.right_banner {
+    padding-right: 10px !important; 
+    img {
+        width: 468px;
+        height: 60px;
+    }
+
+    .order_adds {
+        color:#FF0000;
+        text-decoration:underline;
+        font-size: $font-size;
+        font-weight: 400;
+        font-family: Verdana, Arial, sans-serif;
+    }
+}
