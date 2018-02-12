@@ -134,6 +134,11 @@
                 text-decoration: none;
             }
         }
+        @include breakpoint(small down) {
+            p:last-child {
+                margin-left: 60px;
+            }
+        }
     }
 }
 
