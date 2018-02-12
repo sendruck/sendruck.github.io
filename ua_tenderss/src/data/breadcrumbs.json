@@ -1,0 +1,26 @@
+{
+	"tender-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/tender/",
+			"text": "Тендеры"
+		},
+		{
+			"link": "/tender/zhit/",
+			"text": "Жилищно-коммунальное и бытовое обслуживание, спецтехника"
+		}
+	],
+	"tender-industry-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/tender/",
+			"text": "Тендеры"
+		}
+	]
+}
