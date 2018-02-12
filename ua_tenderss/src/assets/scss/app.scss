@@ -5,6 +5,7 @@
 @import 'components/mobile/header/mobile-login.scss';
 @import 'components/mobile/mobile-select.scss';
 @import 'components/mobile/mobile-footer.scss';
+@import 'components/mobile/accesories/dotBtn.scss';
 
 //MODALS
 @import 'components/modal/bonus-modal.scss';
@@ -22,7 +23,7 @@
 //FOOTER
 @import 'components/footer.scss';
 
-.hide_text {
-    color: transparent;
-    visibility: hidden;
-}
+// .hide_text {
+//     color: transparent;
+//     visibility: hidden;
+// }

@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
+import {checkScreenSize} from '../js/tender.js';
 
 window.$ = $;
 
@@ -10,3 +11,7 @@ import Foundation from 'foundation-sites';
 
 
 $(document).foundation();
+
+$(document).ready(function () {  
+    checkScreenSize();
+});

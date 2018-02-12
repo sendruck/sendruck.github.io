@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -14570,6 +14570,8 @@ var _whatInput = __webpack_require__(38);
 
 var _whatInput2 = _interopRequireDefault(_whatInput);
 
+var _tender = __webpack_require__(39);
+
 var _foundationSites = __webpack_require__(21);
 
 var _foundationSites2 = _interopRequireDefault(_foundationSites);
@@ -14584,6 +14586,10 @@ window.$ = _jquery2.default;
 
 
 (0, _jquery2.default)(document).foundation();
+
+(0, _jquery2.default)(document).ready(function () {
+    (0, _tender.checkScreenSize)();
+});
 
 /***/ }),
 /* 21 */
@@ -22356,6 +22362,50 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 /* 39 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.checkScreenSize = checkScreenSize;
+// Cut long title
+// $(document).ready(function () {  
+
+
+// $(window).on("load", function (e) {
+//     checkScreenSize();
+// });
+
+// checkScreenSize();
+
+function checkScreenSize() {
+    var normalSize_HTML = $(".predmet_wrapper").html();
+    var newWindowWidth = $(window).width();
+    if (newWindowWidth < 480) {
+        if ($(".predmet_wrapper").text().length > 260) {
+            var fullName = $(".predmet_wrapper").text(),
+                shortName = $(".predmet_wrapper").text().slice(15, 260),
+                dots_btn = $("<span class='dotsBtn'>...</span>");
+            $(".predmet_wrapper").text(shortName).append(dots_btn);
+            $(".predmet_wrapper").prepend('<span class="noHighlight">Предмет закупки:</span>');
+
+            $(".dotsBtn").on('click', function () {
+                $(".predmet_wrapper").html(normalSize_HTML);
+                $(".predmet_wrapper").prepend('<span class="noHighlight">Предмет закупки:</span>');
+            });
+        }
+    } else {
+        $(".predmet_wrapper").html(normalSize_HTML);
+    }
+};
+
+// });
+
+/***/ }),
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);
