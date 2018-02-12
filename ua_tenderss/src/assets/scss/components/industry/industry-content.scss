@@ -1,0 +1,161 @@
+//FILTER_BLOCK
+.filter_block {
+    padding-right: 80px !important;
+    padding-left: 10px !important;
+
+    span {
+        padding: 0;
+        margin: 10px 0 10px 0;
+        font-size: 12px;
+        font-family: $body-font-family;
+        font-weight: 700;
+        color: $primary-color;
+    }
+
+    
+    a {
+        margin-left: 5px;
+
+        .rss_icon {
+            vertical-align: sub !important;
+        }
+    }
+
+    .filter_wrapper {
+        margin-top: 5px;
+
+        .filter-row {
+            margin-top: 9px;
+        }
+
+        .with_hint {
+            padding-top: 15px;
+            position: relative;
+        }
+
+        .two_row_hint {
+            padding-top: 33px;
+            position: relative;
+        }
+
+        .filter_caption {
+            color: $primary-color;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $tender-font-size;
+            font-weight: 700;
+            text-align: left;
+
+            span {
+                position: relative;
+                top: 2px;
+            }
+        }
+
+        .second_col {
+            padding-left: 5px !important;
+        }
+
+        .zakup_summ {
+            position: relative;
+            bottom: 9px;
+        }
+
+        .filter_input {
+            padding-left: 35px;
+            color: $primary-color;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $tender-font-size;
+            font-weight: 700;
+            text-align: left;
+
+            span {
+                position: relative;
+                top: 2px;
+                margin-left: 20px;
+            } 
+
+            .fromtTo {
+                margin-left: 8px;
+                font-weight: 400;
+            }
+            
+            #min_amount, #max_amount {
+                width: 21% !important;
+            }
+
+            .input_hint {
+                font-size: 7pt;
+                color: #666666;
+                margin: 0px;
+                font-weight: 400;
+                position: absolute;
+                top: -2px;
+            }
+
+            .input_spec_hint {
+                width: 38%;
+            }
+
+            input {
+                display: inline-block;
+                border: 1px solid #000000;
+                color: #000;
+                font-family: Verdana, Arial, sans-serif;
+                font-size: 12px;
+                height: 19px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 0px;
+            }
+
+            input.sbutton, input.find_expanded {
+                width: 100%;
+                border: 1px solid #000000;
+                font: normal 12px Verdana,sans-serif;
+            }
+
+
+            select {
+                width: 100%;
+                border: 1px solid #000000;
+                color: #000;
+                font-family: Verdana, Arial, sans-serif;
+                font-size: $tender-font-size;
+                height: 19px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                margin: 0px;
+            }
+        }
+
+        .second_col {
+
+            input {
+                margin-left: 5px;
+            }
+
+            .register_announcement {
+                margin-left: 10px;
+                background-color: #FBF7EE;
+                border: 1px solid #E2DFD8;
+                padding-top: 15px;
+                padding-bottom: 3px;
+                position: absolute;
+                top: 0px;
+                text-align: center;
+                font-weight: 700;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                a {
+                    color: #FF0000;
+                    text-decoration:underline;
+                }
+
+                a:last-child {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

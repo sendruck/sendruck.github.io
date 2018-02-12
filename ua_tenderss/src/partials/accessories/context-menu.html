@@ -1,23 +1,10 @@
 <!-- CONTEXT_MENU_OPEN -->
-<div id="context-top-topic" class="hide-for-small-only">Персональная страница</div>
+<div id="context-top-topic" class="hide-for-small-only">{{context-heading}}</div>
     <ul id="context-menu-ul" class="hide-for-small-only">
-        <li class="n-blue">
-            <a href="http://44037.ua-tenders.com/news/">Новости компании</a>
-        </li>
-        <li class="n-white">
-            <a href="http://44037.ua-tenders.com/activity/">Деятельность</a>
-        </li>
-        <li class="n-blue">
-            <a href="http://44037.ua-tenders.com/sentence/">Продукция</a>
-        </li>
-        <li class="n-white">
-            <a href="http://44037.ua-tenders.com/tenders/">Тендеры компании</a>
-        </li>
-        <li class="n-blue">
-            <a href="http://44037.ua-tenders.com/offer/">Предложения компании</a>
-        </li>
-        <li class="n-white">
-            <a href="http://44037.ua-tenders.com/">Контакты</a>
-        </li>
+        {{#each context-content}}
+            <li class="{{class}}">
+                <a href="{{link}}">{{text}}</a>
+            </li>
+        {{/each}}
     </ul>
 <!-- CONTEXT_MENU_CLOSE -->

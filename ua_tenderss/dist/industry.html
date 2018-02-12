@@ -271,6 +271,277 @@
 			</div>
 			<!-- MOBILE_SELECT_CLOSE -->
 			    
+			<div class="grid-x">
+			    <!-- FILTER_BLOCK_OPEN -->
+			    <div class="large-10 cell filter_block">
+			        <span>
+			            Автомототранспорт, транспорт, запчасти
+			        </span>
+			        <a href="http://www.ua-tenders.com/export/rss/tender/?otr=trz&count=100" target="_blank">
+			            <img class="rss_icon" src="assets/img/rss_tender.gif" alt="RSS-канал: Автомототранспорт, транспорт, запчасти">
+			        </a>
+			
+			        <div class="filter_wrapper">
+			            <div class="grid-x filter-row">
+			                <div class="cell large-2 filter_caption">
+			                    <span>
+			                        Отрасль:
+			                    </span>
+			                </div>
+			                <div class="cell large-10 filter_input">
+			                    <select name="b" id="b">
+			                        <option value="all">-- Все отрасли --</option>
+			                        <option value="trz" selected="selected">Автомототранспорт, транспорт, запчасти</option>
+			                        <option value="kul">Бумага, бытовые, канцелярские и хозяйственные товары</option>
+			                        <option value="zhit">Жилищно-коммунальное и бытовое обслуживание, спецтехника</option>
+			                        <option value="kom">Компьютерная техника, периферия, комплектующие</option>
+			                        <option value="kpn">Консалтинговые услуги, обучение</option>
+			                        <option value="meb">Мебель</option>
+			                        <option value="med">Медицина</option>
+			                        <option value="met">Металлы</option>
+			                        <option value="ndr">Научно-исследовательские работы</option>
+			                        <option value="ner">Недвижимость</option>
+			                        <option value="leg">Одежда, обувь, продукция легкой промышленности</option>
+			                        <option value="php">Пищевая промышленность и продукты питания</option>
+			                        <option value="ppd">Полиграфическая промышленность</option>
+			                        <option value="tech">Промышленное оборудование, приборы</option>
+			                        <option value="psg">Сельское хозяйство</option>
+			                        <option value="bud">Строительство и строительные материалы, ремонт</option>
+			                        <option value="trp">Товары, Работы, Услуги, Разное</option>
+			                        <option value="pal">Энергетика, нефтепродукты, топливо</option>
+			                    </select>
+			                </div>
+			            </div>
+			
+			            <div class="grid-x filter-row">
+			                <div class="cell large-2 filter_caption">
+			                    <span class="hide_small">
+			                        Статус тендера:
+			                    </span>
+			                    <!-- change order of inputs for mobile version via clasess -->
+			                    <span class="hide_not_small">
+			                        Предмет закупки:
+			                    </span>
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <select name="st" id="st" class="hide_small">
+			                        <option value="all">-- Все статусы --</option>
+			                        <option value="2">Период уточнений</option>
+			                        <option value="3">Прием предложений</option>
+			                        <option value="4">Период аукциона</option>
+			                        <option value="5">Квалификация победителя</option>
+			                        <option value="6">Предложения рассмотрены</option>
+			                        <option value="7">Закупка не состоялась</option>
+			                        <option value="8">Закупка завершена</option>
+			                        <option value="9">Закупка отменена</option>
+			                        <option value="14">Предквалификация (период обжалований)</option>
+			                        <option value="1">Предквалификация</option> 
+			                    </select>
+			                    <!-- change order of inputs for mobile version via clasess -->
+			                    <input type="text" name="z" value="" id="z" class="hide_not_small" >
+			                </div>
+			                <div class="see_more">
+			                    <div class="cell large-5 filter_input second_col zakup_summ">
+			                        <span>
+			                            Сумма закупки: 
+			                        </span>
+			                        <br class="hide_before_370">
+			                        <span class="fromtTo">
+			                            от
+			                        </span>
+			                        <input type="text" name="min_amount" id="min_amount" style="width:80px;" value="">
+			                        <span class="fromtTo">
+			                            до
+			                        </span>
+			                        <input type="text" name="max_amount" id="max_amount" style="width:80px;" value="">
+			                    </div>	
+			                    <div class="grid-x filter-row">
+			                        <div class="cell large-2 filter_caption">
+			                            <span>
+			                                Дата подачи и вид:
+			                            </span>
+			                        </div>
+			                        <div class="cell large-5 filter_input">
+			                            <select size="1" name="a" id="a" class="tkind" >
+			                                <option value="" selected="selected">
+			                                -- Все тендеры --
+			                                </option>
+			                                <option value="all">
+			                                Выбор даты
+			                                </option>
+			                                <option value="0">
+			                                Актуальные
+			                                </option>
+			                                <option value="1">
+			                                Архивные
+			                                </option>
+			                            </select>
+			                        </div>
+			                        <div class="cell large-5 filter_input second_col">
+			                            <select name="t" id="t">
+			                                <option value="all">-- Все закупки --</option>
+			                                <option value="open-ukr-prozorro"> Открытые торги Prozorro
+			                                </option>
+			                                <option value="open-euro-prozorro"> Европейские торги Prozorro
+			                                </option>
+			                                <option value="e-auction"> Допороговые закупки Prozorro
+			                                </option>
+			                                <option value="esco"> Закупка энергосервиса (ESCO)
+			                                </option>
+			                                <option value="open"> Открытые торги
+			                                </option>
+			                                <option value="qualification"> Предварительная квалификация
+			                                </option>
+			                                <option value="request"> Запрос ценовых котировок
+			                                </option>
+			                                <option value="commercial"> Коммерческие торги
+			                                </option>
+			                                <option value="negotiation-ukr-prozorro"> Конкурентный диалог
+			                                </option>
+			                                <option value="negotiation-euro-prozorro"> Конкурентный диалог с публикацией на английском языке
+			                                </option>
+			                            </select>
+			                        </div>
+			                    </div>
+			
+			                    <div class="grid-x filter-row with_hint">
+			                        <div class="cell large-2 filter_caption">
+			                            <span>
+			                                Адрес, место поставки:
+			                            </span>
+			                        </div>
+			                        <div class="cell large-5 filter_input">
+			                            <span class="input_hint hide_small">
+			                                например " вул. Хрещатик "
+			                            </span>
+			                            <input type="text" name="p" value="" id="p">
+			                        </div>
+			                        <div class="cell large-5 filter_input second_col">
+			                            <select name="region" id="region" >
+			                                <option value="0">-&nbsp;- все регионы -&nbsp;-</option>
+			                                <option value="9">Винницкая область</option><option value="3">Волынская область</option><option value="19">Днепропетровская область</option><option value="24">Донецкая область</option><option value="10">Житомирская область</option><option value="1">Закарпатская область</option><option value="22">Запорожская область</option><option value="4">Ивано-Франковская область</option><option value="26">Киев</option><option value="11">Киевская область</option><option value="14">Кировоградская область</option><option value="25">Луганская область</option><option value="2">Львовская область</option><option value="15">Николаевская область</option><option value="13">Одесская область</option><option value="17">Полтавская область</option><option value="7">Ровенская область</option><option value="18">Сумская область</option><option value="5">Тернопольская область</option><option value="23">Харьковская область</option><option value="20">Херсонская область</option><option value="8">Хмельницкая область</option><option value="12">Черкасская область</option><option value="16">Черниговская область</option><option value="6">Черновицкая область</option> 
+			                            </select>
+			                        </div>
+			                    </div>
+			
+			                    <div class="gird-x filter-row with_hint">
+			                        <div class="cell large-2 filter_caption ">
+			                            <span class="hide_small">
+			                                Предмет закупки:
+			                            </span>
+			                            <!-- change order of inputs for mobile version via clasess -->
+			                            <span class="hide_not_small">
+			                                Статус тендера:
+			                            </span>
+			                        </div>
+			                        <div class="cell large-5 filter_input">
+			                            <span class="input_hint hide_small">
+			                                например "послуги" или номер тендера "UA-2016-07-26-000077-c"
+			                            </span>
+			                            <input type="text" name="z" value="" id="z" class="hide_small" >
+			                            <!-- change order of inputs for mobile version via clasess -->
+			                            <select name="st" id="st" class="hide_not_small">
+			                                <option value="all">-- Все статусы --</option>
+			                                <option value="2">Период уточнений</option>
+			                                <option value="3">Прием предложений</option>
+			                                <option value="4">Период аукциона</option>
+			                                <option value="5">Квалификация победителя</option>
+			                                <option value="6">Предложения рассмотрены</option>
+			                                <option value="7">Закупка не состоялась</option>
+			                                <option value="8">Закупка завершена</option>
+			                                <option value="9">Закупка отменена</option>
+			                                <option value="14">Предквалификация (период обжалований)</option>
+			                                <option value="1">Предквалификация</option> 
+			                            </select>
+			                        </div>
+			                        <div class="cell large-5 filter_input second_col hide_small">
+			                            <div class="register_announcement">
+			                                <a href="/reg/">
+			                                    Зарегистрируйтесь
+			                                </a>
+			                                это БЕСПЛАТНО !
+			                                <br><br>
+			                                <a href="/login/">
+			                                    Авторизируйтесь
+			                                </a> 
+			                                если вы уже участник системы.
+			                            </div>
+			                        </div>
+			                    </div>
+			
+			                    <div class="grid-x expanded collapse filter-row with_hint two_row_hint">
+			                        <div class="cell large-2 filter_caption">
+			                            <span>
+			                                Код классификатора:
+			                            </span>
+			                        </div>
+			                        <div class="cell large-5 filter_input">
+			                            <span class="input_hint hide_small input_spec_hint">
+			                                вводите начальные цифры классификатора ДКПП/CPV пока не появится список совпадении 
+			                            </span>
+			                            <input type="text" name="classifier_code" value="" id="classifier_code" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+			                        </div>
+			                        <div class="cell large-5 filter_input second_col">
+			                            
+			                        </div>
+			                    </div>
+			                </div>
+			
+			                <div class="grid-x filter-row with_hint submit_row">
+			                    <div class="cell large-2 filter_caption hide_text">
+			                        Lorem.
+			                    </div>
+			                    <div class="cell large-5 filter_input">
+			                        <input type="submit" value="Искать" class="find_expanded ">
+			                        <img src="assets/img/down.png" class="up_icon not_expanded hide_not_small">
+			                        <p class="see_more_wrapper">
+			                            <a class="see_more_btn hide_not_small">
+			                                Расширенный поиск
+			                            </a>
+			                        </p>
+			                    </div>
+			                    <div class="cell large-5 filter_input">
+			                        
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			    <!-- FILTER_BLOCK_CLOSE -->
+			
+			    <div class="large-2 cell">
+			        <!-- CONTEXT_MENU_OPEN -->
+			        <div id="context-top-topic" class="hide-for-small-only">Контекстное меню</div>
+			            <ul id="context-menu-ul" class="hide-for-small-only">
+			                    <li class="n-blue">
+			                        <a href="/tender/all/?b&#x3D;all&amp;a&#x3D;&amp;t&#x3D;all&amp;p&#x3D;&amp;z&#x3D;">Поиск тендера</a>
+			                    </li>
+			                    <li class="n-white">
+			                        <a href="/tenders/tenders_list/add/">Добавить тендер</a>
+			                    </li>
+			                    <li class="n-blue">
+			                        <a href="/tenders/result/add/">Добавить результат</a>
+			                    </li>
+			                    <li class="n-white">
+			                        <a href="/result/trz">Результаты тендеров</a>
+			                    </li>
+			                    <li class="n-blue">
+			                        <a href="/customers/trz">Каталог заказчиков</a>
+			                    </li>
+			                    <li class="n-white">
+			                        <a href="/suppliers/trz">Каталог поставщиков</a>
+			                    </li>
+			                    <li class="n-blue">
+			                        <a href="/offer/trz">Каталог предложений</a>
+			                    </li>
+			                    <li class="n-white">
+			                        <a href="/rubrics/services/price/">Доступ к тендерам</a>
+			                    </li>
+			            </ul>
+			        <!-- CONTEXT_MENU_CLOSE -->    </div>
+			
+			</div>
+			
 			<!-- FOOTER_OPEN -->
 			<div class="footer_block hide-for-small-only">
 			    <div class="instr_caption hide-for-small-only">
