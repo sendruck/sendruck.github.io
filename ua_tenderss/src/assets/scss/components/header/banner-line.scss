@@ -5,6 +5,9 @@
     height: 95px;
     color: #FFFFFF;
     background: #0289CF;
+    @include breakpoint(small down) {
+        height: 65px;
+    }
 
     .logo_banner {
         padding: 0;
@@ -12,7 +15,11 @@
         padding-left: 6px;
         height: 95px;
         width: 182px;
-
+        @include breakpoint(small down) {
+            @include horizontal-center;
+            padding-top: 15px;
+            height: 95px;
+        }
     }
 
     .banner-2 {
