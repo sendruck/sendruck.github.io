@@ -1,0 +1,46 @@
+//MOBILE_FOOTER
+@include breakpoint(small down) {
+    // .footer_instr_wrapper  {
+    //     margin-left: 0px !important;
+    // }
+    .phone {
+        padding-left: 0px !important;
+        height: 90px;
+        .footer_phone {
+            text-align: center;
+        }
+    }
+
+    
+    .footer_left_menu {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        
+        li {
+            margin-right: 5px;
+        }
+    }
+
+    .footer_bottom_line {
+        p {
+            text-align: center;
+        }
+    }
+
+    .full_version {
+        @include horizontal-center;
+        color: #064D9F;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: Verdana, Arial, sans-serif;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .expanded_spec {
+        padding: 0px !important;
+    }
+}
