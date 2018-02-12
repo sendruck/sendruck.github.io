@@ -84,17 +84,17 @@ context-heading: Контекстное меню
             </div>
 
             <div class="grid-x filter-row">
-                <div class="cell large-2 filter_caption">
-                    <span class="hide_small">
+                <div class="large-2 cell filter_caption">
+                    <span class="hide-for-small-only">
                         Статус тендера:
                     </span>
                     <!-- change order of inputs for mobile version via clasess -->
-                    <span class="hide_not_small">
+                    <span class="show-for-small-only">
                         Предмет закупки:
                     </span>
                 </div>
-                <div class="cell large-5 filter_input">
-                    <select name="st" id="st" class="hide_small">
+                <div class="large-5 cell filter_input">
+                    <select name="st" id="st" class="hide-for-small-only">
                         <option value="all">-- Все статусы --</option>
                         <option value="2">Период уточнений</option>
                         <option value="3">Прием предложений</option>
@@ -108,23 +108,24 @@ context-heading: Контекстное меню
                         <option value="1">Предквалификация</option> 
                     </select>
                     <!-- change order of inputs for mobile version via clasess -->
-                    <input type="text" name="z" value="" id="z" class="hide_not_small" >
+                    <input type="text" name="z" value="" id="z" class="show-for-small-only" >
                 </div>
-                <div class="see_more">
-                    <div class="cell large-5 filter_input second_col zakup_summ">
-                        <span>
-                            Сумма закупки: 
-                        </span>
-                        <br class="hide_before_370">
-                        <span class="fromtTo">
-                            от
-                        </span>
-                        <input type="text" name="min_amount" id="min_amount" style="width:80px;" value="">
-                        <span class="fromtTo">
-                            до
-                        </span>
-                        <input type="text" name="max_amount" id="max_amount" style="width:80px;" value="">
-                    </div>	
+                <!-- <div class="see_more"> -->
+                <div class="large-5 cell filter_input second_col zakup_summ">
+                    <span>
+                        Сумма закупки: 
+                    </span>
+                    <br class="hide_before_370">
+                    <span class="fromtTo">
+                        от
+                    </span>
+                    <input type="text" name="min_amount" id="min_amount" style="width:80px;" value="">
+                    <span class="fromtTo">
+                        до
+                    </span>
+                    <input type="text" name="max_amount" id="max_amount" style="width:80px;" value="">
+                </div>	
+            </div>
                     <div class="grid-x filter-row">
                         <div class="cell large-2 filter_caption">
                             <span>
@@ -181,7 +182,7 @@ context-heading: Контекстное меню
                             </span>
                         </div>
                         <div class="cell large-5 filter_input">
-                            <span class="input_hint hide_small">
+                            <span class="input_hint hide-for-small-only">
                                 например " вул. Хрещатик "
                             </span>
                             <input type="text" name="p" value="" id="p">
@@ -194,23 +195,23 @@ context-heading: Контекстное меню
                         </div>
                     </div>
 
-                    <div class="gird-x filter-row with_hint">
+                    <div class="grid-x filter-row with_hint">
                         <div class="cell large-2 filter_caption ">
-                            <span class="hide_small">
+                            <span class="hide-for-small-only">
                                 Предмет закупки:
                             </span>
                             <!-- change order of inputs for mobile version via clasess -->
-                            <span class="hide_not_small">
+                            <span class="show-for-small-only">
                                 Статус тендера:
                             </span>
                         </div>
                         <div class="cell large-5 filter_input">
-                            <span class="input_hint hide_small">
+                            <span class="input_hint hide-for-small-only">
                                 например "послуги" или номер тендера "UA-2016-07-26-000077-c"
                             </span>
-                            <input type="text" name="z" value="" id="z" class="hide_small" >
+                            <input type="text" name="z" value="" id="z" class="hide-for-small-only" >
                             <!-- change order of inputs for mobile version via clasess -->
-                            <select name="st" id="st" class="hide_not_small">
+                            <select name="st" id="st" class="show-for-small-only">
                                 <option value="all">-- Все статусы --</option>
                                 <option value="2">Период уточнений</option>
                                 <option value="3">Прием предложений</option>
@@ -224,7 +225,7 @@ context-heading: Контекстное меню
                                 <option value="1">Предквалификация</option> 
                             </select>
                         </div>
-                        <div class="cell large-5 filter_input second_col hide_small">
+                        <div class="cell large-5 filter_input second_col hide-for-small-only">
                             <div class="register_announcement">
                                 <a href="/reg/">
                                     Зарегистрируйтесь
@@ -239,14 +240,14 @@ context-heading: Контекстное меню
                         </div>
                     </div>
 
-                    <div class="grid-x expanded collapse filter-row with_hint two_row_hint">
+                    <div class="grid-x filter-row with_hint two_row_hint">
                         <div class="cell large-2 filter_caption">
                             <span>
                                 Код классификатора:
                             </span>
                         </div>
                         <div class="cell large-5 filter_input">
-                            <span class="input_hint hide_small input_spec_hint">
+                            <span class="input_hint hide-for-small-only input_spec_hint">
                                 вводите начальные цифры классификатора ДКПП/CPV пока не появится список совпадении 
                             </span>
                             <input type="text" name="classifier_code" value="" id="classifier_code" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
@@ -255,7 +256,7 @@ context-heading: Контекстное меню
                             
                         </div>
                     </div>
-                </div>
+                <!-- </div> -->
 
                 <div class="grid-x filter-row with_hint submit_row">
                     <div class="cell large-2 filter_caption hide_text">
@@ -263,23 +264,22 @@ context-heading: Контекстное меню
                     </div>
                     <div class="cell large-5 filter_input">
                         <input type="submit" value="Искать" class="find_expanded ">
-                        <img src="{{root}}assets/img/down.png" class="up_icon not_expanded hide_not_small">
+                        <img src="{{root}}assets/img/down.png" class="up_icon not_expanded show-for-small-only">
                         <p class="see_more_wrapper">
-                            <a class="see_more_btn hide_not_small">
+                            <a class="see_more_btn show-for-small-only">
                                 Расширенный поиск
                             </a>
                         </p>
                     </div>
-                    <div class="cell large-5 filter_input">
-                        
+                    <div class="cell large-5 filter_input hide_text">
+                        lorem
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- FILTER_BLOCK_CLOSE -->
 
-    <div class="large-2 cell">
+    <div class="large-2 cell" id="context-menu">
         {{>context-menu}}
     </div>
 

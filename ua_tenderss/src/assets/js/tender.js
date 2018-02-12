@@ -1,13 +1,4 @@
 // Cut long title
-// $(document).ready(function () {  
-
-
-    // $(window).on("load", function (e) {
-    //     checkScreenSize();
-    // });
-
-    // checkScreenSize();
-
     export function checkScreenSize(){
         var normalSize_HTML = $(".predmet_wrapper").html();
         var newWindowWidth = $(window).width();
@@ -30,6 +21,3 @@
             $(".predmet_wrapper").html(normalSize_HTML);
         }
     };
-
-
-// });
