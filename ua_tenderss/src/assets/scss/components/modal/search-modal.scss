@@ -2,8 +2,8 @@
 .navbar-new--search {
     float: right;
     outline: none;
-    padding-bottom: 6px !important;
-    padding-left: 20px !important;
+    padding-bottom: 4px !important;
+    padding-left: 15px !important;
 
     &:hover {
         background-color: #f3af088c;
@@ -45,7 +45,7 @@
     button.closing-button {
         height: 70px;
         width: 70px;
-        top: 70px;
+        top: 0px;
         right: 0px;
         position: absolute;
         background-color: #eeeeee;
@@ -86,7 +86,7 @@
 .login_icon {
     float: right;
     outline: none;
-    padding: 0px 15px 5px 15px;
+    padding: 0px 15px 4px 15px;
 
     &:hover {
         background-color: #f3af088c;
