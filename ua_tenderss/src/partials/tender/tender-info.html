@@ -4,7 +4,7 @@
     <div class="tender_info_wrapper customer_block hide_small">
         {{> error-buttons}}
         <h2>
-            {{customer}}
+            {{specific-tender.customer}}
         </h2>
     </div>
 
@@ -14,7 +14,7 @@
         </h3>
         <div class="tender_info_wrapper ">
             <p>
-                {{status}}
+                {{specific-tender.status}}
             </p>
         </div>
     </div>
@@ -22,10 +22,10 @@
     <div class="tender_info_block">
         <div class="tender_info_wrapper ">
             <p>
-                Процедура закупки: <span class="tender_highl">{{procedure}}</span> 
+                Процедура закупки: <span class="tender_highl">{{specific-tender.procedure}}</span> 
             </p>
             <p>
-                Дата размещения: <span class="tender_highl">{{pub_date}}</span>
+                Дата размещения: <span class="tender_highl">{{specific-tender.pub_date}}</span>
             </p>
         </div>
     </div>
@@ -36,7 +36,7 @@
         </h3>
         <div class="tender_info_wrapper ">
             <p>
-                Номер тендера: <span class="tender_highl">{{tender_num}}</span>
+                Номер тендера: <span class="tender_highl">{{specific-tender.tender_num}}</span>
             </p>
         </div>
     </div>
@@ -49,17 +49,17 @@
             <span class="predmet_zak">
                 <div class="predmet_wrapper">
                     <p>
-                        <span class="noHighlight">Предмет закупки:</span> <span class="tender_highl">{{predmet_zak}}</span>
+                        <span class="noHighlight">Предмет закупки:</span> <span class="tender_highl">{{specific-tender.predmet_zak}}</span>
                     </p>
                     <p>
                         <span class="tender_highl">
-                            {{predment_zak_2p}}
+                            {{specific-tender.predment_zak_2p}}
                         </span>
                     </p>
                 </div>
             </span>
             <p class="tender_mrgn">
-                Место и срок поставки: <span class="tender_highl">{{delivery_addr}}</span>
+                Место и срок поставки: <span class="tender_highl">{{specific-tender.delivery_addr}}</span>
             </p>
         </div>
     </div>	
@@ -70,7 +70,7 @@
         </h3>
         <div class="tender_info_wrapper ">
             <p>
-                {{expected_summ}}
+                {{specific-tender.expected_summ}}
             </p>
         </div>
     </div>
@@ -79,7 +79,7 @@
 
     <div class="tender_info_wrapper customer_block hide_not_small">
         <h2>
-            {{customer}}
+            {{specific-tender.customer}}
         </h2>
     </div>
 
@@ -89,7 +89,7 @@
         </h3>
         <div class="tender_info_wrapper ">
             <p>
-                Номер тендера: <span class="tender_highl">{{tender_num}}</span>
+                Номер тендера: <span class="tender_highl">{{specific-tender.tender_num}}</span>
             </p>
         </div>
     </div>
@@ -103,13 +103,13 @@
         </h3>
         <div class="tender_info_wrapper ">
             <p>
-                <span class="tender_highl">Мiнiмальний крок:</span>{{min_step}}
+                <span class="tender_highl">Мiнiмальний крок:</span>{{specific-tender.min_step}}
             </p>
             <p>
-                <span class="tender_highl">Закiнчення перiоду уточнення:</span> {{period_zakinch}}
+                <span class="tender_highl">Закiнчення перiоду уточнення:</span> {{specific-tender.period_zakinch}}
             </p>
             <p>
-                <span class="tender_highl">Сума закупiвлi вказана:</span>{{pdv}}
+                <span class="tender_highl">Сума закупiвлi вказана:</span>{{specific-tender.pdv}}
             </p>
         </div>
     </div>	
@@ -122,8 +122,8 @@
         </div>
         <div class="tender_docs_body">
             <img src="{{root}}assets/img/docx.png" alt="word_icon" class="doc_icon">
-            <a href="{{docs_link}}" target="_blank" class="tender_cod_link">											
-                {{docs_name}}
+            <a href="{{specific-tender.docs_link}}" target="_blank" class="tender_cod_link">											
+                {{specific-tender.docs_name}}
             </a>
             <p>
                 Тендерна документація 
@@ -161,8 +161,8 @@
         <div class="tender_info_wrapper ">
             <p>
                 Адрес: <span class="tender_highl">
-                    <a href="{{tender_docs_link}}" target="_blank">
-                        {{tender_docs_link}}
+                    <a href="{{specific-tender.tender_docs_link}}" target="_blank">
+                        {{specific-tender.tender_docs_link}}
                     </a>
                 </span>
             </p>
@@ -177,21 +177,21 @@
         <div class="tender_info_wrapper ">
             <p>
                 Условия: <span class="tender_highl">
-                    <a href="{{ymovu_podachi_link}}" target="_blank">
-                        {{ymovu_podachi_link}} 
+                    <a href="{{specific-tender.ymovu_podachi_link}}" target="_blank">
+                        {{specific-tender.ymovu_podachi_link}} 
                     </a>
                 </span>
             </p>
             <p>
                 Адрес заказчика
                 <span class="tender_highl">
-                    {{customer_addr}}
+                    {{specific-tender.customer_addr}}
                 </span>
             </p>
             <p>
                 Конечный срок: 
                 <span class="tender_highl">
-                    {{end_date}}
+                    {{specific-tender.end_date}}
                 </span>
             </p>
         </div>
@@ -205,14 +205,14 @@
             <p>
                 Дата
                 <span class="tender_highl">
-                    {{procedure_date}}
+                    {{specific-tender.procedure_date}}
                 </span>
             </p>
             <p>
                 Адрес: 
                 <span class="tender_highl">
-                    <a href="{{procedure_link}}" target="_blank">
-                        {{procedure_link}}
+                    <a href="{{specific-tender.procedure_link}}" target="_blank">
+                        {{specific-tender.procedure_link}}
                     </a>
                 </span>
             </p>
@@ -227,19 +227,19 @@
             <p>
                 Контактное лицо:
                 <span class="tender_highl">
-                    {{contact_name}}
+                    {{specific-tender.contact_name}}
                 </span>
             </p>
             <p>
                 Контактный телефон:
                 <span class="tender_highl">
-                    {{contact_phone}}
+                    {{specific-tender.contact_phone}}
                 </span>
             </p>
             <p>
                 E-mail:
                 <span class="tender_highl">
-                    {{contact_email}}
+                    {{specific-tender.contact_email}}
                 </span>
             </p>
         </div>
