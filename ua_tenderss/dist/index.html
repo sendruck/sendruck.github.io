@@ -191,7 +191,7 @@
 			        <a href="#searchModal" class="navbar-new__item navbar-new--search navbar-toggle collapsed hide-for-large" data-toggle="searchModal">
 			            <img src="/assets/img/search-icon-small.png">
 			        </a>
-			        <ul class="menu_list hide_small flex-container">
+			        <ul class="menu_list hide-for-small-only flex-container">
 			            <li>
 			                <a class="first flex-child-shrink" href="http://www.ua-tenders.com/">Главная</a>
 			            </li>
@@ -224,7 +224,7 @@
 			            </li>
 			        </ul>
 			    </div>
-			    <div class="hide_small search_wrapp flex-container">
+			    <div class="hide-for-small-only search_wrapp flex-container">
 			        <div class="search_bar flex-child-grow">
 			            <div class="search_icon">
 			                <div class="search_icon_tr">l</div>
@@ -248,8 +248,8 @@
 			<!-- MENU_CLOSE -->
 			
 			<!-- MOBILE_SELECT_OPEN -->
-			<div class="tb-selector hide_not_small">
-			    <select name="tbsel hide_not_small" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
+			<div class="tb-selector show-for-small-only">
+			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
 			        <option value="all">Список тендеров по отрасли...</option>
 			
 			        <option value="trz">Автомототранспорт, транспорт, запчасти</option>
@@ -279,10 +279,10 @@
 			    
 			    
 			    <div class="large-10 cell tender_cards">
-			        <div class="tender_info_wrapper customer_block hide_small">
+			        <div class="tender_info_wrapper customer_block hide-for-small-only">
 			            
 			            <!-- ERROR_BUTTONS_OPEN -->
-			            <div class="err_buttons hide_small">
+			            <div class="err_buttons hide-for-small-only">
 			                <span>
 			                    <a href="#" id="messageForm" class="message_down" title="Сообщить об ошибке">
 			                        Сообщить об ошибке
@@ -390,13 +390,13 @@
 			    
 			        <!-- SHOW_FOR_MOBILE_ONLY -->
 			    
-			        <div class="tender_info_wrapper customer_block hide_not_small">
+			        <div class="tender_info_wrapper customer_block show-for-small-only">
 			            <h2>
 			                Заказчик: Лівобережна районна адміністрація Маріупольської міської ради, 04053230
 			            </h2>
 			        </div>
 			    
-			        <div class="tender_info_block hide_not_small">
+			        <div class="tender_info_block show-for-small-only">
 			            <h3 class="tender_blck_caption">
 			                Информация о публикации
 			            </h3>
@@ -444,7 +444,7 @@
 			            </div>
 			        </div>
 			    
-			        <div class="help_btns hide_small">
+			        <div class="help_btns hide-for-small-only">
 			            <a href="http://ua-tenders.com/rubrics/services/suppliers/">
 			                Заказать
 			                юридическое сопровождение тендера
@@ -452,14 +452,14 @@
 			            044 581-28-16, 581-28-21.
 			        </div>
 			    
-			        <div class="help_btns bank_guarantee hide_small">
+			        <div class="help_btns bank_guarantee hide-for-small-only">
 			            <a href="http://ua-tenders.com/rubrics/guarantee/">
 			                Получить Банковскую гарантию за 2 дня
 			            </a>
 			            044 230-82-27, 425-28-47.
 			        </div>
 			        
-			        <div class="bonus_button hide_small">
+			        <div class="bonus_button hide-for-small-only">
 			            <button class="bonus_button-text" data-open="exampleModal1">
 			                Бонус 100% за платеж
 			            </button>
@@ -665,7 +665,7 @@
 			        </div>
 			    
 			    </div>     <!-- TENDER_RIGHT_BLOCK_OPEN -->
-			     <div class="large-2 cell right-column hide_small">
+			     <div class="large-2 cell right-column hide-for-small-only">
 			        <div id="context-menu">
 			            <div class="tb-selector">
 			                <select name="tbsel" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
@@ -691,8 +691,8 @@
 			                    <option value="pal">Энергетика, нефтепродукты, топливо</option>
 			                </select>
 			            </div>        <!-- CONTEXT_MENU_OPEN -->
-			            <div id="context-top-topic" class="hide_small">Персональная страница</div>
-			                <ul id="context-menu-ul" class="hide_small">
+			            <div id="context-top-topic" class="hide-for-small-only">Персональная страница</div>
+			                <ul id="context-menu-ul" class="hide-for-small-only">
 			                    <li class="n-blue">
 			                        <a href="http://44037.ua-tenders.com/news/">Новости компании</a>
 			                    </li>
@@ -715,10 +715,10 @@
 			            <!-- CONTEXT_MENU_CLOSE -->
 			            <div style="width:240px;">
 			                <a href="#" class="bank_garant_wrapper">
-			                    <img src="assets/img/2228643673625732697.gif" alt="" class="bank_garant hide_small">
+			                    <img src="assets/img/2228643673625732697.gif" alt="" class="bank_garant hide-for-small-only">
 			                </a>
 			    
-			                <p class="order_adds_wrapper hide_small">
+			                <p class="order_adds_wrapper hide-for-small-only">
 			                    <a href="http://www.ua-tenders.com/rubrics/services/reklama/66061/" target="_blank"  class="order_adds">
 			                        Заказать рекламу
 			                    </a>
@@ -731,7 +731,7 @@
 			<!-- TENDER_INFO_CLOSE -->
 			<!-- FOOTER_OPEN -->
 			<div class="footer_block">
-			    <div class="instr_caption hide_small">
+			    <div class="instr_caption hide-for-small-only">
 			        <img src="assets/img/info_tenders.gif" alt="footer_icon" class="foooter_info">
 			        <p>
 			            Почему стоит зарегистрироваться
@@ -742,7 +742,7 @@
 			    </a>
 			</div>
 			<div class="footer_instr_consul">
-			    <div class="instr_body hide_small grid-x">
+			    <div class="instr_body hide-for-small-only grid-x">
 			        <div class="instr_block instr_block1 cell large-4">
 			            <div class="footer_img_wrapper">
 			                <a href="/tender/all/?b=all&a=all&t=all&p=&z=">
@@ -935,14 +935,14 @@
 			            </a>
 			        </li>
 			    </ul>
-			    <a href="http://www.ua-tenders.com/?nomobile=true" class="full_version hide_not_small">
+			    <a href="http://www.ua-tenders.com/?nomobile=true" class="full_version show-for-small-only">
 			        Полная версия сайта
 			    </a>
 			</div>
 			
 			<div class="footer_bottom_line">
 			    <div class="bottom-line-left">
-			        <a href="http://www.ua-tenders.com/news/rss/" class="hide_small">
+			        <a href="http://www.ua-tenders.com/news/rss/" class="hide-for-small-only">
 			            <img src="assets/img/rss_all.gif" alt="rss_icon" class="footer_line_icon">
 			        </a>
 			        <p>
@@ -959,8 +959,8 @@
 			        </p>
 			    </div>
 			    <div class="bottom-line-right">
-			        <img src="assets/img/dynamic.gif" alt="dynamicGif" class="dynamic hide_small">
-			        <a href="/dinamics/" class="dynamic hide_small">
+			        <img src="assets/img/dynamic.gif" alt="dynamicGif" class="dynamic hide-for-small-only">
+			        <a href="/dinamics/" class="dynamic hide-for-small-only">
 			            динамика сайта	
 			        </a>
 			    </div>
