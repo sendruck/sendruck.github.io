@@ -1,0 +1,31 @@
+// PAGINATION
+.pagination_wrapp {
+    height: 27px;
+}
+
+.pagination {
+    // margin-top: 5px;
+    // margin-bottom: 0px;
+    color: $primary-color;
+
+    .current {
+        font-weight: 700;
+    }
+
+    a {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-next {
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pagination-next a::after {
+        display: none;
+    }
+}
