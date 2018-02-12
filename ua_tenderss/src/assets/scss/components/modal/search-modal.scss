@@ -12,7 +12,7 @@
     img {
         width: 23px;
         height: 20px;
-        margin-top: 7px;
+        margin-top: 0px;
         margin-right: 15px;
 
     }
@@ -86,7 +86,7 @@
 .login_icon {
     float: right;
     outline: none;
-    padding: 3px 15px 5px 15px;
+    padding: 0px 15px 5px 15px;
 
     &:hover {
         background-color: #f3af088c;
@@ -95,7 +95,7 @@
     img {
         width: 22px;
         height: 20px;
-        margin-top: 3px !important;
+        // margin-top: 3px !important;
     }
 
 }
@@ -106,17 +106,18 @@
     display: block;
     width: 1.2rem;
     padding: 0 1.5rem;
-    height: 33px;
+    height: 28px;
     border-right: 1px solid #f3af08;
     margin-right: 1.2rem;
     cursor: pointer;
+    display: inline-block;
 }
 
 .mobile-menu-icon:before {
     content: "";
     position: absolute;
     left: 9px;
-    top: 11px;
+    top: 8px;
     width: 1.2rem;
     height: 2px;
     background: #666666;

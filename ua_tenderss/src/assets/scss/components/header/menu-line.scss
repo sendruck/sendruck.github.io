@@ -2,14 +2,14 @@
 .menu_line {
     display: flex;
     justify-content: space-between;
-    height: 24px;
+    height: 30px;
     background-color: #fbd983;
     border-top: 2px solid #f3af08;
     margin-bottom: 6px;
 
     .menu_div {
         padding: 0 0 0 6px;
-
+        width: 100%;
 
         ul.menu_list {
             float: left;
