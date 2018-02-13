@@ -22,5 +22,15 @@
 			"link": "/tender/",
 			"text": "Тендеры"
 		}
+	],
+	"news-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/news/",
+			"text": "Новости"
+		}
 	]
 }
