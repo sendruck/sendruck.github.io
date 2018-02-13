@@ -22422,34 +22422,23 @@ function industryCode() {
         $("input.find_expanded").removeClass("find_expanded");
 
         // Show up icon for expanded filters
-        $(".up_icon").toggleClass("not_expanded");
+        $(".roll_up_link").toggleClass("not_expanded");
 
-        /* Toggle between hiding and showing the active panel */
-        var panel = $(".see_more");
-        if (panel.css("maxHeight") > 0) {
-            panel.css("maxHeight", 0);
-        } else {
-            var scrollH = panel.prop("scrollHeight");
-            panel.css("maxHeight", scrollH);
-        }
+        // /* Toggle between hiding and showing the active panel */
+        $(".hide_expand").toggleClass("hide_expand");
     });
 
     // HIDE MORE FILTERS MOBILE
-    $(".up_icon").on("click", function () {
+    $(".roll_up_link").on("click", function () {
         /* Toggle between adding and removing the "active" class,
         to highlight the button that controls the panel */
         $(".see_more_btn").removeClass("active");
 
-        // Change find input width
-        $("input.sbutton").addClass("find_expanded");
-        $("input.sbutton").removeClass("sbutton");
-
         // Hide up icon for expanded filters
-        $(".up_icon").toggleClass("not_expanded");
+        $(".roll_up_link").toggleClass("not_expanded");
 
         /* Toggle between hiding and showing the active panel */
-        var panel = $(".see_more");
-        panel.css("maxHeight", 0);
+        $(".will_expand").toggleClass("hide_expand");
     });
 
     // SHORTENT LONG TENDER LINK

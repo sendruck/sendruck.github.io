@@ -28,3 +28,17 @@
         display: none;
     }
 }
+
+// MOBILE PAGINATION
+@include breakpoint(small down) {
+    .pagination_wrapp {
+        margin-bottom: 10px!important;
+    }
+    .pagination {
+        text-align: center;
+        @include horizontal-center;
+        li {
+            font-size: 15px;
+        }
+    }    
+}

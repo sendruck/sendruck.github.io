@@ -1,5 +1,8 @@
 // MOBILE FILTERS
 @include breakpoint(small down) {
+    .hide_expand {
+        display: none;
+    }
     .filter_block {
         padding-right: 10px !important;
 
@@ -48,30 +51,6 @@
                 top: 0px !important;
             }
 
-            .sbutton {
-                height: 27px;
-                width: 90% !important;
-                display: inline-block;
-            }
-
-            .up_icon {
-                width: 6%;
-                height: 6%;
-                position: relative;
-                bottom: 15px;
-                left: 5px;
-
-                &:focus {
-                    background-color: #dddddd;
-                    outline: none;
-                }
-
-                &:hover {
-                    background-color: #dddddd;
-                    outline: none;
-                }
-            }
-
             .not_expanded {
                 display: none !important;
             }
@@ -107,7 +86,7 @@
             margin-top: 0px !important;
 
             input[type='submit'] {
-                height: 30px;
+                height: 30px !important;
                 position: relative;
                 bottom: 15px;
 
@@ -129,6 +108,19 @@
             text-align: center;
             margin-top: 10px;
             margin-bottom: 10px;
+        }
+
+        .roll_up_link {
+            text-align: center;
+            color: $primary-color;
+            font-weight: 600;
+            font-family: $body-font-family;
+            font-size: 14px;
+            margin-bottom: 0px;
+            &:hover {
+                text-decoration: underline;
+                outline: none;
+            }
         }
 
         .see_more_btn {

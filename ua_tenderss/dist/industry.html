@@ -244,33 +244,6 @@
 			</div>
 			<!-- MENU_CLOSE -->
 			
-			<!-- MOBILE_SELECT_OPEN -->
-			<div class="tb-selector show-for-small-only">
-			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
-			        <option value="all">Список тендеров по отрасли...</option>
-			
-			        <option value="trz">Автомототранспорт, транспорт, запчасти</option>
-			        <option value="kul">Бумага, бытовые, канцелярские и хозяйственные товары</option>
-			        <option value="zhit">Жилищно-коммунальное и бытовое обслуживание, спецтехника</option>
-			        <option value="kom">Компьютерная техника, периферия, комплектующие</option>
-			        <option value="kpn">Консалтинговые услуги, обучение</option>
-			        <option value="meb">Мебель</option>
-			        <option value="med">Медицина</option>
-			        <option value="met">Металлы</option>
-			        <option value="ndr">Научно-исследовательские работы</option>
-			        <option value="ner">Недвижимость</option>
-			        <option value="leg">Одежда, обувь, продукция легкой промышленности</option>
-			        <option value="php">Пищевая промышленность и продукты питания</option>
-			        <option value="ppd">Полиграфическая промышленность</option>
-			        <option value="tech">Промышленное оборудование, приборы</option>
-			        <option value="psg">Сельское хозяйство</option>
-			        <option value="bud">Строительство и строительные материалы, ремонт</option>
-			        <option value="trp">Товары, Работы, Услуги, Разное</option>
-			        <option value="pal">Энергетика, нефтепродукты, топливо</option>
-			    </select>
-			</div>
-			<!-- MOBILE_SELECT_CLOSE -->
-			    
 			<div class="grid-x">
 			    <!-- FILTER_BLOCK_OPEN -->
 			    <div class="large-10 cell filter_block">
@@ -341,7 +314,7 @@
 			                    <input type="text" name="z" value="" id="z" class="show-for-small-only" >
 			                </div>
 			                <!-- <div class="see_more"> -->
-			                <div class="large-5 cell filter_input second_col zakup_summ">
+			                <div class="large-5 cell filter_input second_col zakup_summ hide_expand will_expand">
 			                    <span>
 			                        Сумма закупки: 
 			                    </span>
@@ -356,158 +329,162 @@
 			                    <input type="text" name="max_amount" id="max_amount" style="width:80px;" value="">
 			                </div>	
 			            </div>
-			                    <div class="grid-x filter-row">
-			                        <div class="cell large-2 filter_caption">
-			                            <span>
-			                                Дата подачи и вид:
-			                            </span>
-			                        </div>
-			                        <div class="cell large-5 filter_input">
-			                            <select size="1" name="a" id="a" class="tkind" >
-			                                <option value="" selected="selected">
-			                                -- Все тендеры --
-			                                </option>
-			                                <option value="all">
-			                                Выбор даты
-			                                </option>
-			                                <option value="0">
-			                                Актуальные
-			                                </option>
-			                                <option value="1">
-			                                Архивные
-			                                </option>
-			                            </select>
-			                        </div>
-			                        <div class="cell large-5 filter_input second_col">
-			                            <select name="t" id="t">
-			                                <option value="all">-- Все закупки --</option>
-			                                <option value="open-ukr-prozorro"> Открытые торги Prozorro
-			                                </option>
-			                                <option value="open-euro-prozorro"> Европейские торги Prozorro
-			                                </option>
-			                                <option value="e-auction"> Допороговые закупки Prozorro
-			                                </option>
-			                                <option value="esco"> Закупка энергосервиса (ESCO)
-			                                </option>
-			                                <option value="open"> Открытые торги
-			                                </option>
-			                                <option value="qualification"> Предварительная квалификация
-			                                </option>
-			                                <option value="request"> Запрос ценовых котировок
-			                                </option>
-			                                <option value="commercial"> Коммерческие торги
-			                                </option>
-			                                <option value="negotiation-ukr-prozorro"> Конкурентный диалог
-			                                </option>
-			                                <option value="negotiation-euro-prozorro"> Конкурентный диалог с публикацией на английском языке
-			                                </option>
-			                            </select>
-			                        </div>
-			                    </div>
+			            <div class="grid-x filter-row hide_expand will_expand">
+			                <div class="cell large-2 filter_caption">
+			                    <span>
+			                        Дата подачи и вид:
+			                    </span>
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <select size="1" name="a" id="a" class="tkind" >
+			                        <option value="" selected="selected">
+			                        -- Все тендеры --
+			                        </option>
+			                        <option value="all">
+			                        Выбор даты
+			                        </option>
+			                        <option value="0">
+			                        Актуальные
+			                        </option>
+			                        <option value="1">
+			                        Архивные
+			                        </option>
+			                    </select>
+			                </div>
+			                <div class="cell large-5 filter_input second_col">
+			                    <select name="t" id="t">
+			                        <option value="all">-- Все закупки --</option>
+			                        <option value="open-ukr-prozorro"> Открытые торги Prozorro
+			                        </option>
+			                        <option value="open-euro-prozorro"> Европейские торги Prozorro
+			                        </option>
+			                        <option value="e-auction"> Допороговые закупки Prozorro
+			                        </option>
+			                        <option value="esco"> Закупка энергосервиса (ESCO)
+			                        </option>
+			                        <option value="open"> Открытые торги
+			                        </option>
+			                        <option value="qualification"> Предварительная квалификация
+			                        </option>
+			                        <option value="request"> Запрос ценовых котировок
+			                        </option>
+			                        <option value="commercial"> Коммерческие торги
+			                        </option>
+			                        <option value="negotiation-ukr-prozorro"> Конкурентный диалог
+			                        </option>
+			                        <option value="negotiation-euro-prozorro"> Конкурентный диалог с публикацией на английском языке
+			                        </option>
+			                    </select>
+			                </div>
+			            </div>
 			
-			                    <div class="grid-x filter-row with_hint">
-			                        <div class="cell large-2 filter_caption">
-			                            <span>
-			                                Адрес, место поставки:
-			                            </span>
-			                        </div>
-			                        <div class="cell large-5 filter_input">
-			                            <span class="input_hint hide-for-small-only">
-			                                например " вул. Хрещатик "
-			                            </span>
-			                            <input type="text" name="p" value="" id="p">
-			                        </div>
-			                        <div class="cell large-5 filter_input second_col">
-			                            <select name="region" id="region" >
-			                                <option value="0">-&nbsp;- все регионы -&nbsp;-</option>
-			                                <option value="9">Винницкая область</option><option value="3">Волынская область</option><option value="19">Днепропетровская область</option><option value="24">Донецкая область</option><option value="10">Житомирская область</option><option value="1">Закарпатская область</option><option value="22">Запорожская область</option><option value="4">Ивано-Франковская область</option><option value="26">Киев</option><option value="11">Киевская область</option><option value="14">Кировоградская область</option><option value="25">Луганская область</option><option value="2">Львовская область</option><option value="15">Николаевская область</option><option value="13">Одесская область</option><option value="17">Полтавская область</option><option value="7">Ровенская область</option><option value="18">Сумская область</option><option value="5">Тернопольская область</option><option value="23">Харьковская область</option><option value="20">Херсонская область</option><option value="8">Хмельницкая область</option><option value="12">Черкасская область</option><option value="16">Черниговская область</option><option value="6">Черновицкая область</option> 
-			                            </select>
-			                        </div>
-			                    </div>
+			            <div class="grid-x filter-row with_hint hide_expand will_expand">
+			                <div class="cell large-2 filter_caption">
+			                    <span>
+			                        Адрес, место поставки:
+			                    </span>
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <span class="input_hint hide-for-small-only">
+			                        например " вул. Хрещатик "
+			                    </span>
+			                    <input type="text" name="p" value="" id="p">
+			                </div>
+			                <div class="cell large-5 filter_input second_col">
+			                    <select name="region" id="region" >
+			                        <option value="0">-&nbsp;- все регионы -&nbsp;-</option>
+			                        <option value="9">Винницкая область</option><option value="3">Волынская область</option><option value="19">Днепропетровская область</option><option value="24">Донецкая область</option><option value="10">Житомирская область</option><option value="1">Закарпатская область</option><option value="22">Запорожская область</option><option value="4">Ивано-Франковская область</option><option value="26">Киев</option><option value="11">Киевская область</option><option value="14">Кировоградская область</option><option value="25">Луганская область</option><option value="2">Львовская область</option><option value="15">Николаевская область</option><option value="13">Одесская область</option><option value="17">Полтавская область</option><option value="7">Ровенская область</option><option value="18">Сумская область</option><option value="5">Тернопольская область</option><option value="23">Харьковская область</option><option value="20">Херсонская область</option><option value="8">Хмельницкая область</option><option value="12">Черкасская область</option><option value="16">Черниговская область</option><option value="6">Черновицкая область</option> 
+			                    </select>
+			                </div>
+			            </div>
 			
-			                    <div class="grid-x filter-row with_hint">
-			                        <div class="cell large-2 filter_caption ">
-			                            <span class="hide-for-small-only">
-			                                Предмет закупки:
-			                            </span>
-			                            <!-- change order of inputs for mobile version via clasess -->
-			                            <span class="show-for-small-only">
-			                                Статус тендера:
-			                            </span>
-			                        </div>
-			                        <div class="cell large-5 filter_input">
-			                            <span class="input_hint hide-for-small-only">
-			                                например "послуги" или номер тендера "UA-2016-07-26-000077-c"
-			                            </span>
-			                            <input type="text" name="z" value="" id="z" class="hide-for-small-only" >
-			                            <!-- change order of inputs for mobile version via clasess -->
-			                            <select name="st" id="st" class="show-for-small-only">
-			                                <option value="all">-- Все статусы --</option>
-			                                <option value="2">Период уточнений</option>
-			                                <option value="3">Прием предложений</option>
-			                                <option value="4">Период аукциона</option>
-			                                <option value="5">Квалификация победителя</option>
-			                                <option value="6">Предложения рассмотрены</option>
-			                                <option value="7">Закупка не состоялась</option>
-			                                <option value="8">Закупка завершена</option>
-			                                <option value="9">Закупка отменена</option>
-			                                <option value="14">Предквалификация (период обжалований)</option>
-			                                <option value="1">Предквалификация</option> 
-			                            </select>
-			                        </div>
-			                        <div class="cell large-5 filter_input second_col hide-for-small-only">
-			                            <div class="register_announcement">
-			                                <a href="/reg/">
-			                                    Зарегистрируйтесь
-			                                </a>
-			                                это БЕСПЛАТНО !
-			                                <br><br>
-			                                <a href="/login/">
-			                                    Авторизируйтесь
-			                                </a> 
-			                                если вы уже участник системы.
-			                            </div>
-			                        </div>
-			                    </div>
-			
-			                    <div class="grid-x filter-row with_hint two_row_hint">
-			                        <div class="cell large-2 filter_caption">
-			                            <span>
-			                                Код классификатора:
-			                            </span>
-			                        </div>
-			                        <div class="cell large-5 filter_input">
-			                            <span class="input_hint hide-for-small-only input_spec_hint">
-			                                вводите начальные цифры классификатора ДКПП/CPV пока не появится список совпадении 
-			                            </span>
-			                            <input type="text" name="classifier_code" value="" id="classifier_code" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
-			                        </div>
-			                        <div class="cell large-5 filter_input second_col">
-			                            
-			                        </div>
-			                    </div>
-			                <!-- </div> -->
-			
-			                <div class="grid-x filter-row with_hint submit_row">
-			                    <div class="cell large-2 filter_caption hide_text">
-			                        Lorem.
-			                    </div>
-			                    <div class="cell large-5 filter_input">
-			                        <input type="submit" value="Искать" class="find_expanded ">
-			                        <img src="assets/img/down.png" class="up_icon not_expanded show-for-small-only">
-			                        <p class="see_more_wrapper">
-			                            <a class="see_more_btn show-for-small-only">
-			                                Расширенный поиск
-			                            </a>
-			                        </p>
-			                    </div>
-			                    <div class="cell large-5 filter_input hide_text">
-			                        lorem
+			            <div class="grid-x filter-row with_hint hide_expand will_expand">
+			                <div class="cell large-2 filter_caption ">
+			                    <span class="hide-for-small-only">
+			                        Предмет закупки:
+			                    </span>
+			                    <!-- change order of inputs for mobile version via clasess -->
+			                    <span class="show-for-small-only">
+			                        Статус тендера:
+			                    </span>
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <span class="input_hint hide-for-small-only">
+			                        например "послуги" или номер тендера "UA-2016-07-26-000077-c"
+			                    </span>
+			                    <input type="text" name="z" value="" id="z" class="hide-for-small-only" >
+			                    <!-- change order of inputs for mobile version via clasess -->
+			                    <select name="st" id="st" class="show-for-small-only">
+			                        <option value="all">-- Все статусы --</option>
+			                        <option value="2">Период уточнений</option>
+			                        <option value="3">Прием предложений</option>
+			                        <option value="4">Период аукциона</option>
+			                        <option value="5">Квалификация победителя</option>
+			                        <option value="6">Предложения рассмотрены</option>
+			                        <option value="7">Закупка не состоялась</option>
+			                        <option value="8">Закупка завершена</option>
+			                        <option value="9">Закупка отменена</option>
+			                        <option value="14">Предквалификация (период обжалований)</option>
+			                        <option value="1">Предквалификация</option> 
+			                    </select>
+			                </div>
+			                <div class="cell large-5 filter_input second_col hide-for-small-only">
+			                    <div class="register_announcement">
+			                        <a href="/reg/">
+			                            Зарегистрируйтесь
+			                        </a>
+			                        это БЕСПЛАТНО !
+			                        <br><br>
+			                        <a href="/login/">
+			                            Авторизируйтесь
+			                        </a> 
+			                        если вы уже участник системы.
 			                    </div>
 			                </div>
 			            </div>
+			
+			            <div class="grid-x filter-row with_hint two_row_hint hide_expand will_expand">
+			                <div class="cell large-2 filter_caption">
+			                    <span>
+			                        Код классификатора:
+			                    </span>
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <span class="input_hint hide-for-small-only input_spec_hint">
+			                        вводите начальные цифры классификатора ДКПП/CPV пока не появится список совпадении 
+			                    </span>
+			                    <input type="text" name="classifier_code" value="" id="classifier_code" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
+			                </div>
+			                <div class="cell large-5 filter_input second_col">
+			                    
+			                </div>
+			            </div>
+			
+			            <div class="grid-x filter-row with_hint submit_row">
+			                <div class="cell large-2 filter_caption hide_text">
+			                    Lorem.
+			                </div>
+			                <div class="cell large-5 filter_input">
+			                    <input type="submit" value="Искать" class="find_expanded ">
+			                    <!-- <img src="assets/img/down.png" class="up_icon not_expanded show-for-small-only"> -->
+			                    <p class="see_more_wrapper">
+			                        <a class="see_more_btn show-for-small-only">
+			                            Расширенный поиск
+			                        </a>
+			                    </p>
+			                    <p class="roll_up_link not_expanded">
+			                        <a class="show-for-small-only">
+			                            Свернуть
+			                        </a>
+			                    </p>
+			                </div>
+			                <div class="cell large-5 filter_input hide_text">
+			                    lorem
+			                </div>
+			            </div>
 			        </div>
-			    <!-- FILTER_BLOCK_CLOSE -->
+			    </div>
+			<!-- FILTER_BLOCK_CLOSE -->
 			
 			    <div class="large-2 cell" id="context-menu">
 			        <!-- CONTEXT_MENU_OPEN -->
@@ -543,7 +520,7 @@
 			</div>
 			
 			<!-- COLOR_HINTS_OPEN -->
-			<div class="grid-x align-justify hints_wrapper hide_small">
+			<div class="grid-x align-justify hints_wrapper hide-for-small-only">
 			    <div class="cell auto hints_block" style="background-color: rgb(255, 255, 255)">
 			        <div class="hint_first_line">
 			            <span class="color_block orange_blck"></span>
@@ -1454,856 +1431,6 @@
 			                        1000000.00 UAH
 			                    </td>
 			                </tr>
-			            <!-- <tr>
-			                <td class="num_col"  data-label="№">
-			                    2
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="assets/img/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    3
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    4
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    5
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    6
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    7
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    8
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    9
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    10
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    11
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    12
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    13
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    14
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    15
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    16
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    17
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    18
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    19
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    20
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    21
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    22
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    23
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    24
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    25
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    26
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, Відповідно до документації
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    1000000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    27
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для транспортних засобів великої та малої тоннажності
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для транспортних засобів великої та малої тоннажності - 14 Одиниця (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        Україна, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    28
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    29
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини для легкових автомобілів та автобусів
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Шини для легкових автомобілів та автобусів - 1093 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        29000, Україна, Хмельницька область, м. Хмельницький, вул. Маршала Красовського, буд. 2, 31.12.2018 00:12
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    16.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    2321600.00 UAH
-			                </td>
-			            </tr>
-			            <tr>
-			                <td class="num_col"  data-label="№">
-			                    30
-			                </td>
-			                <td class="add_col" data-label="Добавить в закладки">
-			                    <input type="image" src="images/tochka.gif" title="Добавить тендер в закладки!" onclick="return confirm('Хотите добавить тендер в закладки и узнать о результатах первыми ?\nПросмотреть свои закладки Вы можете в разделе &quot;Мои закладки&quot; в своем профайле.');">
-			                </td>
-			                <td class="date_publ_col" data-label="Дата публикации">
-			                    31.01.2018
-			                </td>
-			                <td class="predm_col" data-label="Предмет закупки">
-			                    <a class="tender_link" href="/tender/1338676/" target="_blank">
-			                        Шини Белшина на МАЗ з камерою та фліпером нові (кількість 2 шт.)
-			                        ціна з доставкою та оплатою після доставки (доставка адресна!!! за адресою Україна Сумська область місто Кролевець вул. Ранкова 21)
-			                        34350000-5 - Шини для транспортних засобів великої та малої тоннажності
-			                        Белшина 12.00 R20 У4 ИД 304 М слойність 18 ГОСТ 5513 з камерою та обводною стрічко (фліпером) - 2 Штуки (Транспорт, запчасти)
-			                    </a>
-			                </td>
-			                <td class="deliv_col" data-label="Поставка и выполнение">
-			                    <p class="deliv_paragraph">
-			                        41300, Україна, Сумська область, Кролевець, вул. Ранкова, 21, 02.02.2018 08:02 - 09.02.2018 08:02
-			                    </p>
-			                </td>
-			                <td class="date_pod_col" data-label="Дата подачи предложения">
-			                    07.02.2018
-			                </td>
-			                <td class="summ_col" data-label="Сумма закупки">
-			                    572000.00 UAH
-			                </td>
-			            </tr> -->
-			
 			        </tbody>
 			    </table>
 			</div>
