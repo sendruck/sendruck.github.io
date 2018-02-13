@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 42);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -14570,9 +14570,11 @@ var _whatInput = __webpack_require__(38);
 
 var _whatInput2 = _interopRequireDefault(_whatInput);
 
-var _tender = __webpack_require__(40);
+var _tender = __webpack_require__(41);
 
 var _industry = __webpack_require__(39);
+
+var _news = __webpack_require__(40);
 
 var _foundationSites = __webpack_require__(21);
 
@@ -14591,7 +14593,7 @@ window.$ = _jquery2.default;
 
 (0, _jquery2.default)(document).ready(function () {
     (0, _tender.checkScreenSize)();
-
+    (0, _news.NewscheckScreenSize)();
     (0, _industry.industryCode)();
 });
 
@@ -22478,6 +22480,37 @@ function industryCode() {
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.NewscheckScreenSize = NewscheckScreenSize;
+// Cut long news text
+function NewscheckScreenSize() {
+    var normalSize_HTML = $(".news_info_wrapper").html();
+    var newWindowWidth = $(window).width();
+    if (newWindowWidth < 768) {
+        if ($(".news_info_wrapper p").text().length > 170) {
+            var fullName = $(".news_info_wrapper p").text(),
+                shortName = $(".news_info_wrapper p").text().slice(0, 170),
+                dots_btn = $("<span class='dotsBtn'>...</span>");
+            $(".news_info_wrapper p").text(shortName).append(dots_btn);
+
+            $(".dotsBtn").on('click', function () {
+                $(".news_info_wrapper").html(normalSize_HTML);
+            });
+        }
+    } else {
+        $(".news_info_wrapper").html(normalSize_HTML);
+    }
+};
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 exports.checkScreenSize = checkScreenSize;
 // Cut long title
 function checkScreenSize() {
@@ -22502,7 +22535,7 @@ function checkScreenSize() {
 };
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(20);

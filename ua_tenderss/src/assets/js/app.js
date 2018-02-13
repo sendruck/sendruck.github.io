@@ -2,6 +2,7 @@ import $ from 'jquery';
 import whatInput from 'what-input';
 import {checkScreenSize} from '../js/tender.js';
 import {industryCode} from '../js/industry.js';
+import {NewscheckScreenSize} from '../js/news.js';
 
 window.$ = $;
 
@@ -15,6 +16,6 @@ $(document).foundation();
 
 $(document).ready(function () {  
     checkScreenSize();
-
+    NewscheckScreenSize();
     industryCode();
 });
