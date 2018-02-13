@@ -1,0 +1,208 @@
+// TENDERS_TABLE
+$responsive-card-table-bottom-gap: 20px;
+$responsive-card-table-border: 1px solid #E2DFD8;
+$responsive-card-table-stack-point: 480px;
+$responsive-card-table-label-bg: #e6e6e6;;
+
+.table_col {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: $responsive-card-table-stack-point) {
+    #tablee {
+        padding: 0px !important;
+    }
+}
+
+.responsive-card-table {
+    border-collapse: collapse;
+    margin-bottom: 0px;
+
+    &.unstriped tbody {
+        background-color: transparent;
+    }
+
+    th {
+        background: #fbf7ee;
+        border: 1px solid #E2DFD8;
+        padding: 3px;
+        font-size: $font-size;
+        font-weight: 700;
+        font-family: Verdana,sans-serif;
+        color: #615F60;
+        text-align: center;
+
+        a {
+            font-size: $font-size;
+            font-weight: 700;
+            font-family: Verdana,sans-serif;
+            color: #615F60;
+            border-bottom: 1px dashed #615F60;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    tr,
+    th,
+    td {
+        border: $responsive-card-table-border;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fbf7ee
+    }
+
+    td {
+        font-size: $font-size;
+        font-weight: 400;
+        font-family: Verdana, Arial, sans-serif;
+        color: $primary-color;
+        text-align: center;
+        line-height: normal;
+
+        a {
+            font-size: $font-size;
+        }
+
+        &.summ_col {
+            text-align: left;
+        }
+
+        &.deliv_col {
+            text-align: left;
+        }
+
+        &.num_col {
+            background: #bcd3f9;
+        }
+    }
+
+    .num_col {
+        width: 1%;
+    }
+
+    .date_publ_col {
+        width: 8%;
+    }
+
+    .summ_col {
+        width: 8%;
+    }
+
+    .add_col {
+        width: 1%;
+        padding: 5px;
+    }
+
+    td.predm_col {
+        text-align: left;
+
+        a {
+            font-weight: 400;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .date_pod_col {
+        width: 9%;
+    }
+
+    .deliv_col {
+        width: 22%;
+    }
+
+    @media screen and (max-width: $responsive-card-table-stack-point) {
+        thead tr {
+            position: absolute;
+            top: -9999em;
+            left: -9999em;
+        }
+
+        tr {
+            border: $responsive-card-table-border;
+            display: block;
+        }
+
+        tr + tr {
+            margin-top: $responsive-card-table-bottom-gap;
+        }
+        /* Get table cells to act like rows */
+
+
+        .deliv_col, .date_publ_col, .date_pod_col, .num_col, .summ_col {
+            width: unset !important;
+        }
+
+        .deliv_col {
+            .deliv_paragraph {
+                width: 100%;
+            }
+        }
+
+        .add_col {
+            display: none;
+        }
+
+        span.dotsBtn {
+            padding: 3px;
+            padding-top: 0px;
+            border-radius: 3px;
+            margin-left: 5px;
+            font-size: 10px;
+            border: 1px solid;
+        }
+
+        .tender_link {
+            width: 125%;
+        }
+
+        td {
+            border: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            border-bottom: $responsive-card-table-border;
+            padding-left: 50%;
+            position: relative;
+
+            &:before {
+                content: attr(data-label);
+                display: inline-block;
+                font-weight: bold;
+                line-height: 1.5;
+                margin-left: -100%;
+                width: 71%;
+                word-break: break-word;
+                position: relative;
+                z-index: 1;
+                text-align: left;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                background: $responsive-card-table-label-bg;
+                width: 35%;
+                text-align: left;
+                height: 98%;
+                left: 1px;
+                top: 1px;
+                z-index: 0;
+            }
+        }
+    }
+
+}

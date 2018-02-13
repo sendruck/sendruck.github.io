@@ -3,7 +3,6 @@ import whatInput from 'what-input';
 import {checkScreenSize} from '../js/tender.js';
 import {industryCode} from '../js/industry.js';
 
-
 window.$ = $;
 
 import Foundation from 'foundation-sites';
