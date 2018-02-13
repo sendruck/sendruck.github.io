@@ -88,6 +88,7 @@ $("#region").on("change", function(){
 $(".pagination .current").prepend('[').append(']');
 
 
+
 // SHOW MORE FILTERS MOBILE
 $(".see_more_btn").on("click", function(){
     /* Toggle between adding and removing the "active" class,
@@ -124,7 +125,8 @@ checkScreenSize();
 
 function checkScreenSize(){
     var newWindowWidth = $(window).width();
-    if (newWindowWidth < 480) {
+    if (newWindowWidth < 768) {
+        $(".pagination_wrapp").addClass("align-center");
         $(".tender_link").each(function( index ) {
             if ($(this).text().length > 150) {
                 var fullName = $(this).text(),

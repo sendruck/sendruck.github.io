@@ -2,7 +2,7 @@
     export function checkScreenSize(){
         var normalSize_HTML = $(".predmet_wrapper").html();
         var newWindowWidth = $(window).width();
-        if (newWindowWidth < 480) {
+        if (newWindowWidth < 768) {
             if ($(".predmet_wrapper").text().length > 260) {
                 var fullName = $(".predmet_wrapper").text(),
                     shortName = $(".predmet_wrapper").text().slice(15, 260),

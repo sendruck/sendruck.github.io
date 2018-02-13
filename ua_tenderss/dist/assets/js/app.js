@@ -22446,7 +22446,8 @@ function industryCode() {
 
     function checkScreenSize() {
         var newWindowWidth = $(window).width();
-        if (newWindowWidth < 480) {
+        if (newWindowWidth < 768) {
+            $(".pagination_wrapp").addClass("align-center");
             $(".tender_link").each(function (index) {
                 if ($(this).text().length > 150) {
                     var fullName = $(this).text(),
@@ -22482,7 +22483,7 @@ exports.checkScreenSize = checkScreenSize;
 function checkScreenSize() {
     var normalSize_HTML = $(".predmet_wrapper").html();
     var newWindowWidth = $(window).width();
-    if (newWindowWidth < 480) {
+    if (newWindowWidth < 768) {
         if ($(".predmet_wrapper").text().length > 260) {
             var fullName = $(".predmet_wrapper").text(),
                 shortName = $(".predmet_wrapper").text().slice(15, 260),

@@ -1,0 +1,44 @@
+<div class="news_wrapper">
+    {{#ifpage 'news'}}
+    <div class="sort_wrapper">
+        <form name="modes" class="sort_input">
+            <p class="sorting_caption">
+                Сортировка:
+            </p>
+            <select name="sort" onchange="location.href='./?date=&amp;sort=' + this[this.selectedIndex].value;">
+            <option value="date">по дате</option>
+            <option value="hits">по популярности</option>
+            </select>
+        </form>
+    </div>
+    {{/ifpage}}
+    <h2 class="news_heading">
+        {{news-content.heading}}
+    </h2>
+
+    <p class="preface">
+       {{news-content.preface}}
+    </p>
+    {{#each news-content.news-item}}
+    <div class="news_info_block clear-fix">
+        <img src="{{image_link}}" alt="news-image" class="news-image">
+        <p>
+            <a class="news_blck_caption" href="{{link}}">
+                {{link_text}}
+            </a>
+        </p>
+        <span class="publication_date">
+            {{publication_date}}
+        </span>
+        <div class="news_info_wrapper ">
+            <p>
+                {{text}}
+            </p>
+        </div>
+    </div>
+    {{/each}}
+
+    <div class="news_pagination">
+        {{> pagination}}
+    </div>
+</div>

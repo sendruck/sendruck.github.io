@@ -3,7 +3,10 @@
     height: 27px;
     padding-left: 10px;
 }
-
+.newspage_wrap {
+    height: unset;
+    padding-left: 0px!important;
+}
 .pagination {
     color: $primary-color;
 
