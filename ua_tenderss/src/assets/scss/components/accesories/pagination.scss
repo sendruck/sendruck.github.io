@@ -1,11 +1,10 @@
 // PAGINATION
 .pagination_wrapp {
     height: 27px;
+    padding-left: 10px;
 }
 
 .pagination {
-    // margin-top: 5px;
-    // margin-bottom: 0px;
     color: $primary-color;
 
     .current {
