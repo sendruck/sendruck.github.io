@@ -1,10 +1,33 @@
 <!-- CONTEXT_MENU_OPEN -->
 <div id="context-top-topic" class="hide-for-small-only">{{context-heading}}</div>
-    <ul id="context-menu-ul" class="hide-for-small-only">
+    {{#ifpage 'index' 'industry'}}
+        <ul id="context-menu-ul" class="hide-for-small-only">
+            {{#each context-content}}
+                <li class="{{class}}">
+                    <a href="{{link}}">{{text}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    {{/ifpage}}
+    {{#ifpage 'index' 'news'}}
+    <!-- TOP_NEWS_OPEN -->
+    <div class="top_news_wrapper">
         {{#each context-content}}
-            <li class="{{class}}">
-                <a href="{{link}}">{{text}}</a>
-            </li>
+            <div class="top_news_item">
+                <a href="{{link}}">
+                    {{link-text}}
+                </a>
+                <p class="t_news_date">
+                    {{top_news_date}}
+                </p>
+            </div>
         {{/each}}
-    </ul>
+        <div class="top_news_item">
+            <a href="/news/companies/" class="all_news">
+                Все новости по теме
+            </a>
+        </div>
+    </div>
+    <!-- TOP_NEWS_CLOSE -->
+    {{/ifpage}}
 <!-- CONTEXT_MENU_CLOSE -->

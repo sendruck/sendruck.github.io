@@ -2,6 +2,28 @@
 title: Новости
 description: Новости в сфере тендеров, государственных закупок, торгов.
 keywords: 
+context-heading: 'ТОП:: Новости'
+"context-content": 
+ - 
+  top_news_date: "07:08 19.01.2018"
+  link: "/news/companies/249228/"
+  link-text: "Государственное управление делами закупит трибуны и подставки под флаг для Мариинского дворца"
+ - 
+  top_news_date: "13:59 10.01.2018"
+  link: "/news/companies/249214/"
+  link-text: "ГП 'Селидовуголь' намерено потратить на закупку пожарно-оросительного трубопровода 26 миллионов гривен"
+ - 
+  top_news_date: "08:13 05.01.2018"
+  link: "/news/companies/249210/"
+  link-text: "На укрепление берегов и расчистку русел реки 2-я Беленькая в г. Краматорск требуется 35 миллионов гривенмиллионов гривен"
+ - 
+  top_news_date: 08:12 05.01.2018
+  link: "/news/companies/249209/"
+  link-text: "На уборку и подметание улиц города Черноморска Одесской области выделено 10 миллионов гривен"
+ - 
+  top_news_date: "14:00 10.01.2018"
+  link: "/news/companies/249209/"
+  link-text: "ПАО 'Укргаздобыча' планирует провести сейсморазведку Святогорского месторождения газа на Донбассе"
 ---
 
 {{> header-news}}
@@ -26,80 +48,9 @@ keywords:
     <!-- NEWS_RIGHT_BLOCK_OPEN -->
     <div class="large-2 cell right-column hide_small">
         <div id="context-menu">
-            <div class="tb-selector">
-                <select name="tbsel" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
-                    <option value="all">Список тендеров по отрасли...</option>
-
-                    <option value="trz">Автомототранспорт, транспорт, запчасти</option>
-                    <option value="kul">Бумага, бытовые, канцелярские и хозяйственные товары</option>
-                    <option value="zhit">Жилищно-коммунальное и бытовое обслуживание, спецтехника</option>
-                    <option value="kom">Компьютерная техника, периферия, комплектующие</option>
-                    <option value="kpn">Консалтинговые услуги, обучение</option>
-                    <option value="meb">Мебель</option>
-                    <option value="med">Медицина</option>
-                    <option value="met">Металлы</option>
-                    <option value="ndr">Научно-исследовательские работы</option>
-                    <option value="ner">Недвижимость</option>
-                    <option value="leg">Одежда, обувь, продукция легкой промышленности</option>
-                    <option value="php">Пищевая промышленность и продукты питания</option>
-                    <option value="ppd">Полиграфическая промышленность</option>
-                    <option value="tech">Промышленное оборудование, приборы</option>
-                    <option value="psg">Сельское хозяйство</option>
-                    <option value="bud">Строительство и строительные материалы, ремонт</option>
-                    <option value="trp">Товары, Работы, Услуги, Разное</option>
-                    <option value="pal">Энергетика, нефтепродукты, топливо</option>
-                </select>
-            </div>
-            <div id="context-top-topic" class="hide_small">
-                ТОП:: Новости
-            </div>
-            <div class="top_news_wrapper">
-                <div class="top_news_item">
-                    <a href="/news/companies/249228/">
-                        Государственное управление делами закупит трибуны и подставки под флаг для Мариинского дворца
-                    </a>
-                    <p class="t_news_date">
-                        07:08 19.01.2018
-                    </p>
-                </div>
-                <div class="top_news_item">
-                    <a href="/news/companies/249214/">
-                        ГП "Селидовуголь" намерено потратить на закупку пожарно-оросительного трубопровода 26 миллионов гривен
-                    </a>
-                    <p class="t_news_date">
-                        13:59 10.01.2018
-                    </p>
-                </div>
-                <div class="top_news_item">
-                    <a href="/news/companies/249210/">
-                        На укрепление берегов и расчистку русел реки 2-я Беленькая в г. Краматорск требуется 35 миллионов гривенмиллионов гривен
-                    </a>
-                    <p class="t_news_date">
-                        08:13 05.01.2018
-                    </p>
-                </div>
-                <div class="top_news_item">
-                    <a href="/news/companies/249209/">
-                        На уборку и подметание улиц города Черноморска Одесской области выделено 10 миллионов гривен
-                    </a>
-                    <p class="t_news_date">
-                        08:12 05.01.2018
-                    </p>
-                </div>
-                <div class="top_news_item">
-                    <a href="/news/companies/249209/">
-                        ПАО "Укргаздобыча" планирует провести сейсморазведку Святогорского месторождения газа на Донбассе
-                    </a>
-                    <p class="t_news_date">
-                        14:00 10.01.2018
-                    </p>
-                </div>
-                <div class="top_news_item">
-                    <a href="/news/companies/" class="all_news">
-                        Все новости по теме
-                    </a>
-                </div>
-            </div>
+            {{> select-industry}}
+            
+            {{> context-menu}}
 
 
             <!-- CALENDAR OPEN -->
