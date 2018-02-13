@@ -143,8 +143,6 @@ function checkScreenSize(){
                 $(".dotsBtn").remove;
             };
         });
-
-        
     }   
 }
 }
