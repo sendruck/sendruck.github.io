@@ -36,9 +36,13 @@
     }
     .pagination {
         text-align: center;
-        @include horizontal-center;
+        // @include horizontal-center;
         li {
             font-size: 15px;
+        }
+
+        li:first-child, li:last-child {
+            display: inline-block;
         }
     }    
 }
