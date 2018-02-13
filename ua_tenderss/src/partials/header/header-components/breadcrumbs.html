@@ -1,0 +1,31 @@
+<div>
+    <ul class="breadcrumbs ">
+        {{#ifpage 'index'}}
+            {{#each breadcrumbs.tender-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+        {{#ifpage 'industry'}}
+            {{#each breadcrumbs.tender-industry-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+        {{#ifpage 'news'}}
+            {{#each breadcrumbs.news-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+    </ul>
+</div>

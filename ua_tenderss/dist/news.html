@@ -106,17 +106,20 @@
 			
 			<!-- HEADER_TOP_LINE_OPEN -->
 			<div class="header_top_line hide-for-small-only">
-			    <div >
+			    <div>
 			        <ul class="breadcrumbs ">
-			            <li>
-			                <a href="/">/ Главная</a>
-			            </li>
-			            <li>
-			                <a href="/news/">Новости</a>
-			            </li>
+			                <li>
+			                    <a href="/">
+			                        / Главная
+			                    </a>
+			                </li>
+			                <li>
+			                    <a href="/news/">
+			                        Новости
+			                    </a>
+			                </li>
 			        </ul>
-			    </div>
-			    
+			    </div>    
 			    <div class="statistics">
 			        <div class="stat_outer_line">
 			            <div class="stat_inner_line">
@@ -244,6 +247,33 @@
 			</div>
 			<!-- MENU_CLOSE -->
 			
+			<!-- MOBILE_SELECT_OPEN -->
+			<div class="tb-selector show-for-small-only">
+			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
+			        <option value="all">Список тендеров по отрасли...</option>
+			
+			        <option value="trz">Автомототранспорт, транспорт, запчасти</option>
+			        <option value="kul">Бумага, бытовые, канцелярские и хозяйственные товары</option>
+			        <option value="zhit">Жилищно-коммунальное и бытовое обслуживание, спецтехника</option>
+			        <option value="kom">Компьютерная техника, периферия, комплектующие</option>
+			        <option value="kpn">Консалтинговые услуги, обучение</option>
+			        <option value="meb">Мебель</option>
+			        <option value="med">Медицина</option>
+			        <option value="met">Металлы</option>
+			        <option value="ndr">Научно-исследовательские работы</option>
+			        <option value="ner">Недвижимость</option>
+			        <option value="leg">Одежда, обувь, продукция легкой промышленности</option>
+			        <option value="php">Пищевая промышленность и продукты питания</option>
+			        <option value="ppd">Полиграфическая промышленность</option>
+			        <option value="tech">Промышленное оборудование, приборы</option>
+			        <option value="psg">Сельское хозяйство</option>
+			        <option value="bud">Строительство и строительные материалы, ремонт</option>
+			        <option value="trp">Товары, Работы, Услуги, Разное</option>
+			        <option value="pal">Энергетика, нефтепродукты, топливо</option>
+			    </select>
+			</div>
+			<!-- MOBILE_SELECT_CLOSE -->
+			    
 			<!-- NEWS_BLOCK_OPEN -->
 			<div class="grid-x">
 			
