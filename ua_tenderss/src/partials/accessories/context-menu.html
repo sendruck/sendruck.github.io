@@ -1,5 +1,5 @@
 <!-- CONTEXT_MENU_OPEN -->
-<div id="context-top-topic" class="hide-for-small-only">{{context-heading}}</div>
+<div id="context-top-topic" class="hide-for-small-only">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
     {{#ifpage 'index' 'industry'}}
         <ul id="context-menu-ul" class="hide-for-small-only">
             {{#each context-content}}
@@ -10,9 +10,10 @@
         </ul>
     {{/ifpage}}
     {{#ifpage 'index' 'news'}}
+    
     <!-- TOP_NEWS_OPEN -->
     <div class="top_news_wrapper">
-        {{#each context-content}}
+        {{#each top-news.top-news-content}}
             <div class="top_news_item">
                 <a href="{{link}}">
                     {{link-text}}

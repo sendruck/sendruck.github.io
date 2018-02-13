@@ -1,0 +1,45 @@
+{
+	"context-heading": "Контекстное меню",
+	"context-content": [
+		{
+			"class": "n-blue",
+			"link": "/tender/all/?b=all&a=&t=all&p=&z=",
+			"text": "Поиск тендера"
+		},
+		{
+			"class": "n-white",
+			"link": "/tenders/tenders_list/add/",
+			"text": "Добавить тендер"
+		},
+		{
+			"class": "n-blue",
+			"link": "/tenders/result/add/",
+			"text": "Добавить результат"
+		},
+		{
+			"class": "n-white",
+			"link": "/result/trz",
+			"text": "Результаты тендеров"
+		},
+		{
+			"class": "n-blue",
+			"link": "/customers/trz",
+			"text": "Каталог заказчиков"
+		},
+		{
+			"class": "n-white",
+			"link": "/suppliers/trz",
+			"text": "Каталог поставщиков"
+		},
+		{
+			"class": "n-blue",
+			"link": "/offer/trz",
+			"text": "Каталог предложений"
+		},
+		{
+			"class": "n-white",
+			"link": "/rubrics/services/price/",
+			"text": "Доступ к тендерам"
+		}
+	]
+}
