@@ -18,4 +18,5 @@ $(document).ready(function () {
     checkScreenSize();
     NewscheckScreenSize();
     industryCode();
+    ChangeStrong();
 });

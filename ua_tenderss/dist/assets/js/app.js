@@ -14595,6 +14595,7 @@ window.$ = _jquery2.default;
     (0, _tender.checkScreenSize)();
     (0, _news.NewscheckScreenSize)();
     (0, _industry.industryCode)();
+    ChangeStrong();
 });
 
 /***/ }),
