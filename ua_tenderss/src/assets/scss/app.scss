@@ -38,10 +38,14 @@
 @import 'components/news/export_news.scss';
 @import 'components/mobile/news/mobile-news.scss';
 
+//SPECIFIC NEWS
+@import 'components/specific-news/news-subscription.scss';
+@import 'components/specific-news/export-news.scss';
+
 //FOOTER
 @import 'components/footer.scss';
 
-.hide_text {
-    color: transparent;
-    visibility: hidden;
-}
+// .hide_text {
+//     color: transparent;
+//     visibility: hidden;
+// }

@@ -48,6 +48,7 @@ context-heading: Персональная страница
                 {{> select-industry}}
                 {{> context-menu}}
                 {{> left-banner-block}}
+
                 <!-- NEWS_SUBSCRIPTION_OPEN -->
                 <div id="context-top-topic" class="hide-for-small-only">
                     Подписка на новости
@@ -63,7 +64,42 @@ context-heading: Персональная страница
                         form.submit();
                     };
                 </script>
+                <div class="news-subscr-wrapper">
+                    <form action="http://www.ua-tenders.com/news/subscribe/" name="subscribe_form">
+                        <p>
+                            Ваш e-mail:
+                        </p>
+                        <input type="text" name="email">
+                        <a onclick="form_submit();">ok</a>
+                        <label>
+                            <input type="radio" name="action" value="subscribe" checked="checked" class="radio_but">
+                                Подписаться
+                        </label>
+                        <label>
+                            <input type="radio" name="action" value="unsubscribe" class="radio_but">
+                                Отписаться
+                        </label>
+                    </form>
+                </div>
                 <!-- NEWS_SUBSCRIPTION_CLOSE -->
+
+                <!-- NEWS EXPORT OPEN -->
+                <div id="context-top-topic" class="hide-for-small-only">
+                    Экспорт новостей
+                </div>
+                <div class="news_exp_wrapper specific_news_exp_wrapper">
+                    <div id="rss">
+                        <a href="/news/rss/">
+                            <img src="{{root}}assets/img/rss.gif" height="15" width="88" alt="RSS" border="0">
+                        </a>
+                    </div>
+                    <div class="w-link">
+                        <a href="/news/informer/">
+                            Размещение информера
+                        </a>
+                    </div>
+                </div>
+                <!-- NEWS EXPORT CLOSE -->
             </div>
         </div>
     </div>
