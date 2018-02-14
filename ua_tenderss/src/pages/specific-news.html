@@ -1,0 +1,70 @@
+---
+title: ГП "Стивидорная компания "Ольвия" закупит автобус стоимостью 5 миллионов гривен
+description: Для эффективного осуществления задач, предприятию требуется транспортное средство для перевозки 10 и больше людей, а именно, автобус городского типа "ЭЛЕКТРОН А18" с низким уровнем пола, новый, год выпуска - не ранее 2018 года, в заводском исполнении, который не был в использовании.
+keywords: 'Компании: Поставки, закупка, объявлен тендер, победитель торгов,  результаты тендера'
+context-heading: Персональная страница
+"context-content": 
+ - 
+  class: "n-blue"
+  link: "http://44037.ua-tenders.com/news/"
+  text: "Новости компании"
+ - 
+  class: "n-white"
+  link: "http://44037.ua-tenders.com/activity/"
+  text: "Деятельность"
+ - 
+  class: "n-blue"
+  link: "http://44037.ua-tenders.com/sentence/"
+  text: "Продукция"
+ - 
+  class: "n-white"
+  link: "http://44037.ua-tenders.com/tenders/"
+  text: "Тендеры компании"
+ - 
+  class: "n-blue"
+  link: "http://44037.ua-tenders.com/offer/"
+  text: "Предложения компании"
+ - 
+  class: "n-white"
+  link: "http://44037.ua-tenders.com/"
+  text: "Контакты"
+ - 
+  class: "n-white"
+  link: "/?Mail"
+  text: "Связаться"
+---
+
+{{> header}}
+
+<!-- SPECIFIC_NEWS_OPEN -->
+    <div class="grid-x">
+        <div class="large-10 cell specific-news-content">
+            <h2 class="news_heading">
+                Новости
+            </h2>
+        </div>
+        <div class="large-2 cell">
+            <div id="context-menu">
+                {{> select-industry}}
+                {{> context-menu}}
+                {{> left-banner-block}}
+                <!-- NEWS_SUBSCRIPTION_OPEN -->
+                <div id="context-top-topic" class="hide-for-small-only">
+                    Подписка на новости
+                </div>
+                <script type="text/javascript">
+                    function form_submit(){
+                        form=window.document.subscribe_form;
+                        if (form.email.value == '\'\' || form.email.value == \'Ваш e-mail\''){
+                        alert ('Введите ваш e-mail');  
+                        form.email.focus(); 
+                        return false;
+                        }
+                        form.submit();
+                    };
+                </script>
+                <!-- NEWS_SUBSCRIPTION_CLOSE -->
+            </div>
+        </div>
+    </div>
+<!-- SPECIFIC_NEWS_CLOSE -->

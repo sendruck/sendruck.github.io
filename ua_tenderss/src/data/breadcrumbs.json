@@ -32,5 +32,19 @@
 			"link": "/news/",
 			"text": "Новости"
 		}
+	],
+	"specific-news-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "http://www.ua-tenders.com/suppliers/",
+			"text": "Поставщики"
+		},
+		{
+			"link": "http://agency.ua-tenders.com/",
+			"text": "ГЛОБАЛКОНСАЛТИНГ УКРАИНА"
+		}
 	]
 }

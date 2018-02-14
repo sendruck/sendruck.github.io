@@ -27,5 +27,14 @@
             </li>
             {{/each}}
         {{/ifpage}}
+        {{#ifpage 'specific-news'}}
+        {{#each breadcrumbs.specific-news-breadcrumbs}}
+        <li>
+            <a href="{{link}}">
+                {{text}}
+            </a>
+        </li>
+        {{/each}}
+    {{/ifpage}}
     </ul>
 </div>
