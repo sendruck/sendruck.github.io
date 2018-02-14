@@ -1,37 +1,42 @@
 <!-- LEFT_MENU_OPEN -->
     <ul class="left_menu">
-        <li class="li_opened">
-            <a href="/news/" class="news_link">
+        {{#ifpage 'news'}}
+            <li class="li_opened">
+                <a href="/news/" class="news_link">
+                    Новости
+                </a>
+                <ul class="left_inner_menu">
+                    <li>
+                        <a href="/news/companies/">Компании</a>
+                    </li>
+                    <li>
+                        <a href="/news/tenders/">Тендеры</a>
+                    </li>
+                    <li>
+                        <a href="/news/laws/">Законодательство</a>
+                    </li>
+                    <li>
+                        <a href="/news/comments/">Комментарии</a>
+                    </li>
+                    <li>
+                        <a href="/news/investigations/">Расследования</a>
+                    </li>
+                    <li>
+                        <a href="/news/world/">Мир</a>
+                    </li>
+                    <li>
+                        <a href="/news/construction/">Строительство</a>
+                    </li>
+                    <li>
+                        <a href="/news/medicine/">Медицина</a>
+                    </li>
+                </ul>
+            </li>
+        {{/ifpage}}
+        <li>
+            <a href="/news/">
                 Новости
             </a>
-            {{#ifpage 'news'}}
-            <ul class="left_inner_menu">
-                <li>
-                    <a href="/news/companies/">Компании</a>
-                </li>
-                <li>
-                    <a href="/news/tenders/">Тендеры</a>
-                </li>
-                <li>
-                    <a href="/news/laws/">Законодательство</a>
-                </li>
-                <li>
-                    <a href="/news/comments/">Комментарии</a>
-                </li>
-                <li>
-                    <a href="/news/investigations/">Расследования</a>
-                </li>
-                <li>
-                    <a href="/news/world/">Мир</a>
-                </li>
-                <li>
-                    <a href="/news/construction/">Строительство</a>
-                </li>
-                <li>
-                    <a href="/news/medicine/">Медицина</a>
-                </li>
-            </ul>
-            {{/ifpage}}
         </li>
         <li>
             <a href="/rubrics/tenders/">

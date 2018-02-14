@@ -28,13 +28,22 @@
             {{/each}}
         {{/ifpage}}
         {{#ifpage 'specific-news'}}
-        {{#each breadcrumbs.specific-news-breadcrumbs}}
-        <li>
-            <a href="{{link}}">
-                {{text}}
-            </a>
-        </li>
-        {{/each}}
-    {{/ifpage}}
+            {{#each breadcrumbs.specific-news-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+        {{#ifpage 'legislation'}}
+            {{#each breadcrumbs.legislation-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
     </ul>
 </div>

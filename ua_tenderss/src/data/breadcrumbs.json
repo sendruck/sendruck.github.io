@@ -46,5 +46,15 @@
 			"link": "http://agency.ua-tenders.com/",
 			"text": "ГЛОБАЛКОНСАЛТИНГ УКРАИНА"
 		}
+	],
+	"legislation-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/legislation/",
+			"text": "Законодательство"
+		}
 	]
 }

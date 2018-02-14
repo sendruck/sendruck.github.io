@@ -2,12 +2,13 @@
 .left_user_info {
     border: 1px solid #E2DFD8;
     background: #FBF7EE;
-    padding: 5px;
+    padding: 10px;
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
     padding-bottom: 10px;
     width: 93%;
     margin-bottom: 15px;
+    padding-right: 25px;
 
     .welcome {
         font-size: $tender-font-size;
@@ -62,5 +63,47 @@
                 text-decoration: none;
             }
         }
+    }
+
+    .form_labels {
+        display: inline;
+        vertical-align: top;
+        color: $primary-color;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+
+    input[type=text], input[type=password] {
+        width: 90px;
+        background-color: rgb(250, 255, 189);
+        display: inline-block;
+        height: 20px;
+        border: 2px solid initial;
+        position: absolute;
+        right: 0px;
+        font-size: 13px;
+    }
+
+    .login_first_row, .login_second_row {
+        position: relative;
+    }
+
+    button[type=submit] {
+        width: 100%;
+        color: buttontext;
+        text-align: center;
+        background-color: buttonface;
+        border-width: 2px;
+        border-style: outset;
+        border-color: buttonface;
+        border-image: initial;
+        -webkit-appearance: button;
+        font-size: 13px;
+    }
+
+    input[type=button] {
+        font-size: 13px;
+        width: 100%;
     }
 }
