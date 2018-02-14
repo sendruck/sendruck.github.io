@@ -10,6 +10,10 @@
     display: inline-block;
     padding-left: 15px;
 
+    hr {
+        margin: 0px!important;
+        margin-bottom: 10px!important;
+    }
     //SORT NEWS
     .sort_input {
         position: absolute;
@@ -70,6 +74,14 @@
     margin-left: 13%;
 }
 
+.legislation_wrapper {
+    margin-left: 0px;
+}
+
+.legeslation_info_block {
+    margin-bottom: 0px!important;
+}
+
 .news_info_block {
     margin-bottom: 10px;
     .news-image {
@@ -114,6 +126,14 @@
     .tender_highl {
         font-weight: 700;   
     }
+
+    .intr_content {
+        margin: 15px 0;
+        color: $primary-color;
+        font-size: $font-size;
+        font-family: Verdana, Arial, sans-serif;
+    }
+
 }
 
 .customer_block {

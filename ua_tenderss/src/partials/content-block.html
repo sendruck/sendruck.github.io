@@ -12,37 +12,87 @@
             </form>
         </div>
     {{/ifpage}}
-    <h2 class="news_heading">
-        {{news-content.heading}}
-    </h2>
+    {{#ifpage 'news'}}
+        <h2 class="news_heading">
+            {{news-content.heading}}
+        </h2>
 
-    <p class="preface">
-       {{news-content.preface}}
-    </p>
-
-    <div class="news_pagination show-for-small-only">
-        {{> pagination}}
-    </div>
-    {{#each news-content.news-item}}
-    <div class="news_info_block clear-fix">
-        <img src="{{image_link}}" alt="news-image" class="news-image">
-        <p>
-            <a class="news_blck_caption" href="{{link}}">
-                {{link_text}}
-            </a>
+        <p class="preface">
+        {{news-content.preface}}
         </p>
-        <span class="publication_date">
-            {{publication_date}}
-        </span>
-        <div class="news_info_wrapper ">
-            <p>
-                {{text}}
-            </p>
-        </div>
-    </div>
-    {{/each}}
 
-    <div class="news_pagination">
-        {{> pagination}}
-    </div>
+        <div class="news_pagination show-for-small-only">
+            {{> pagination}}
+        </div>
+        {{#each news-content.news-item}}
+            <div class="news_info_block clear-fix">
+                <img src="{{image_link}}" alt="news-image" class="news-image">
+                <p>
+                    <a class="news_blck_caption" href="{{link}}">
+                        {{link_text}}
+                    </a>
+                </p>
+                <span class="publication_date">
+                    {{publication_date}}
+                </span>
+                <div class="news_info_wrapper ">
+                    <p>
+                        {{text}}
+                    </p>
+                </div>
+            </div>
+        {{/each}}
+
+        <div class="news_pagination">
+            {{> pagination}}
+        </div>
+    {{/ifpage}}
+
+
+
+    {{#ifpage 'legislation'}}
+        <h2 class="news_heading">
+            {{legislation-content.legislation_heading}}
+        </h2>
+
+        <p class="preface">
+            {{legislation-content.legislation_preface}}
+        </p>
+
+        <div class="news_info_block clear-fix">
+            <p>
+                <a class="news_blck_caption" href="{{link}}">
+                    Еженедельные обзоры от UA-TENDERS.COM
+                </a>
+            </p>
+            <div class="news_info_wrapper legislation_wrapper">
+                <strong style="color: red">
+                    {{legislation-content.legislation_alert}}
+                </strong>
+                <p class="intr_content">
+                    {{legislation-content.legislation_intr_text}}
+                </p>
+                <strong>
+                    {{legislation-content.legislation_experts}}
+                    <br>
+                    {{legislation-content.legislation_experts_email}}
+                </strong> 
+            </div>
+        </div>
+        <hr>
+        {{#each legislation-content.context-content}}
+            <div class="news_info_block legeslation_info_block clear-fix">
+                <p>
+                    <a class="news_blck_caption" href="{{link}}">
+                        {{link-text}}
+                    </a>
+                </p>
+                <div class="news_info_wrapper legislation_wrapper">
+                    <p>
+                        {{text}}
+                    </p>
+                </div>
+            </div>
+        {{/each}}
+    {{/ifpage}}
 </div>
