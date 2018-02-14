@@ -253,7 +253,7 @@
 			<!-- MENU_CLOSE -->
 			
 			<!-- MOBILE_SELECT_OPEN -->
-			<div class="tb-selector show-for-small-only ">
+			<div class="tb-selector show-for-small-only hide">
 			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
 			        <option value="all">Список тендеров по отрасли...</option>
 			
@@ -343,7 +343,7 @@
 			                </span>
 			            </div>
 			        </div>
-			        <div class="large-2 cell">
+			        <div class="large-2 cell hide-for-small-only">
 			            <div id="context-menu">
 			                <div class="tb-selector">
 			                    <select name="tbsel" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">

@@ -22,3 +22,16 @@
         }
     }
 }
+
+//MOBILE SPECIFIC NEWS
+@include breakpoint(small down) {
+    .specific_news_block {
+        img {
+            width: 100%!important;
+        }
+    }
+
+    #additional {
+        text-align: center;
+    }
+}
