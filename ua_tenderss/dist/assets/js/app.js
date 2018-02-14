@@ -22487,9 +22487,9 @@ function NewscheckScreenSize() {
     if (newWindowWidth < 768) {
         $(".pagination_wrapp").addClass("align-center");
         $(".news_info_wrapper p").each(function (index) {
-            if ($(this).text().length > 170) {
+            if ($(this).text().length > 150) {
                 var fullName = $(this).text(),
-                    shortName = $(this).text().slice(0, 170),
+                    shortName = $(this).text().slice(0, 150),
                     dots_btn = $("<span class='dotsBtn'>...</span>");
                 $(this).text(shortName).append(dots_btn);
 
