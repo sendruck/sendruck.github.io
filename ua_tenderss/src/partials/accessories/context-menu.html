@@ -9,8 +9,8 @@
             {{/each}}
         </ul>
     {{/ifpage}}
+
     {{#ifpage 'news'}}
-    
     <!-- TOP_NEWS_OPEN -->
     <div class="top_news_wrapper">
         {{#each top-news.top-news-content}}
@@ -31,4 +31,23 @@
     </div>
     <!-- TOP_NEWS_CLOSE -->
     {{/ifpage}}
+
+    {{#ifpage 'legislation'}}
+    <!-- ANNOUNCEMENTS_OPEN -->
+        <div class="announcements_wrapper">
+            {{#each announcements.context-content}}
+                <div class="announcements_block">
+                    <a href="{{link}}">
+                        {{link-text}}
+                    </a>
+                    <p>
+                        {{text}}
+                        <strong>{{about}}</strong>  {{{with_changes}}}
+                    </p>
+                </div>
+            {{/each}}
+        </div>
+    <!-- ANNOUNCEMENTS_CLOSE -->
+    {{/ifpage}}
+
 <!-- CONTEXT_MENU_CLOSE -->

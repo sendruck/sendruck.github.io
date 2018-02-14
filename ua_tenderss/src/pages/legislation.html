@@ -2,6 +2,7 @@
 title: Законодательство
 description: 
 keywords: 
+context-heading: Анонсы
 ---
 {{> header}}
 
@@ -18,8 +19,13 @@ keywords:
             </div>
         </div>
 
-        <div class="large-2 cell">
+        <div class="large-2 cell hide-for-small-only">
+            <div id="context-menu">
+                {{> select-industry}}
 
+                {{> context-menu}}
+
+            </div>
         </div>
     </div>
 <!-- LEGISLATION_BLOCK_CLOSE -->

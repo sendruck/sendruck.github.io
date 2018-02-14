@@ -5,7 +5,7 @@
 
 #context-menu {
     margin-top: 7px;
-    padding-right: 10px;
+    padding-right: 6px;
 
     .tb-selector {
         padding: 5px;
@@ -87,4 +87,39 @@
         }
     }
     
+    .announcements_wrapper {
+        padding: 10px 7px 10px 7px;
+        color: #3B3B3B;
+        background: #FDFAF4;
+        border: 1px solid #F1EFE9;
+        border-top: 0px;
+    }
+
+    .announcements_block {
+        background: #FBF6EE;
+        margin-top: 3px;
+        padding-top: 3px;
+
+        a {
+            color: $primary-color;
+            margin-bottom: 5px;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $tender-font-size;
+            font-weight: 700;
+            text-align: left;
+            line-height: normal;
+            display: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            color: #F00;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $font-size;
+            margin-bottom: 0px;
+        }
+    }
 }
