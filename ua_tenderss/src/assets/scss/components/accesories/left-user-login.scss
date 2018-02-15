@@ -74,15 +74,18 @@
         margin-bottom: 0px;
     }
 
+    .login_label {
+        margin-right: 8px;
+    }
+
     input[type=text], input[type=password] {
-        width: 90px;
+        width: 50%;
         background-color: rgb(250, 255, 189);
         display: inline-block;
         height: 20px;
         border: 2px solid initial;
-        position: absolute;
-        right: 0px;
         font-size: 13px;
+        margin-bottom: 5px;
     }
 
     .login_first_row, .login_second_row {
