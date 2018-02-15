@@ -1,0 +1,13 @@
+.specific_material_link {
+    p {
+        color: $primary-color;
+        font-size: 16px;
+        font-family: $body-font-family;
+        font-weight: 700;
+        margin-bottom: 0px;
+    }
+
+    p:hover {
+        text-decoration: underline;
+    }
+}

@@ -42,13 +42,24 @@
     }
 }
 
+.specific_material_block {
+    background: none!important;
+    border: none;
+    padding-left: 0px;
+
+    p {
+        font-size: $font-size!important;
+        margin-bottom: 10px!important;
+    }
+}
+
 .additional {
     margin: 20px 0 5px 0;
     padding: 0;
     color: #3B3B3B;
 }
 
-.additional_law {
+.additional_law, .additional_material {
     margin: 5px 0 25px 0;
 
     .print {
@@ -57,7 +68,7 @@
         }
     }
 
-    .at_legislation_laws {
+    .at_legislation_laws, .at_tender_zak {
         margin-right: 20px;
         padding-left: 19px;
         background: transparent url("../img/icons/list_ico.gif") no-repeat 0 1px;
@@ -68,7 +79,15 @@
             font-size: $font-size;
         }
     }
-
+}
+.additional_material {
+    position: relative;
+    left: 11px;
+    @include breakpoint(small down) {
+        .at_tender_zak {
+            display: block;
+        }
+    }
 }
 
 .print {
