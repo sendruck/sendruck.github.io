@@ -375,6 +375,26 @@
 			            <div class="left_user_info">
 			                
 			            
+			                    <form method="POST" name="loginform1" onsubmit="return check_login_form(this);">
+			                        <input type="hidden" name="action" value="login">
+			                        <div class="login_first_row">
+			                            <span class="form_labels text-left login_label">
+			                                Логин:
+			                            </span>
+			                            <input type="text" name="_login" class="">
+			                        </div>
+			                        <div class="login_second_row">
+			                            <span class="form_labels">
+			                                Пароль:
+			                            </span>
+			                            <input type="password" name="_passw">
+			                        </div>
+			                        <button type="submit" onclick="check_login_form(this);" class="reg-enter">Вход</button>
+			                        <input type="button" value="Забыли пароль ?" onclick="window.location='/login/remind/'" class="reg-enter">
+			                        <a href="/profile/" class="flex-container align-right">
+			                            <img alt="Внимание Тендеры !" src="assets/img/banners/vnimanie.gif">
+			                        </a>
+			                    </form>
 			            </div>
 			            <!-- LEFT_LOGIN_USER_BLOCK_CLOSE -->
 			            

@@ -1,7 +1,7 @@
 <!-- LEFT_LOGIN_USER_BLOCK_OPEN -->
 <div class="left_user_info">
     
-    {{#if unregistered}}
+    {{#if registered}}
         <p class="welcome">
             Добро пожаловать! 
         </p>
@@ -40,7 +40,7 @@
         </div>
     {{/if}}
 
-    {{#if registered}}
+    {{#if unregistered}}
         <form method="POST" name="loginform1" onsubmit="return check_login_form(this);">
             <input type="hidden" name="action" value="login">
             <div class="login_first_row">
