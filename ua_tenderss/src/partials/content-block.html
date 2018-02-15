@@ -1,4 +1,6 @@
 <div class="news_wrapper">
+
+    <!-- NEWS_CONTENT_OPEN -->
     {{#ifpage 'news'}}
         <div class="sort_wrapper hide-for-small-only">
             <form name="modes" class="sort_input">
@@ -47,9 +49,9 @@
             {{> pagination}}
         </div>
     {{/ifpage}}
+    <!-- NEWS_CONTENT_CLOSE -->
 
-
-
+    <!-- LEGISLATIN_CONTENT_OPEN -->
     {{#ifpage 'legislation'}}
         <h2 class="news_heading">
             {{legislation-content.legislation_heading}}
@@ -95,4 +97,50 @@
             </div>
         {{/each}}
     {{/ifpage}}
+    <!-- LEGISLATIN_CONTENT_CLOSE -->
+
+    <!-- LEGISLATIN_LAWS_CONTENT_OPEN -->
+    {{#ifpage 'legislation_laws'}}
+    <h2 class="news_heading">
+        {{legislation_laws.legislation_heading}}
+    </h2>
+
+    <p class="preface">
+        {{legislation_laws.legislation_preface}}
+    </p> 
+
+    <div class="news_info_block legeslation_info_block clear-fix">
+        <p>
+            <a class="news_blck_caption" href="{{legislation_laws.legislation_intr_link}}">
+                {{legislation_laws.legislation_intr_link_text}}
+            </a>
+        </p>
+        <div class="news_info_wrapper legislation_wrapper">
+            <strong style="color: red">
+                {{legislation_laws.legislation_alert}}
+            </strong>
+            <p class="changes_laws">
+                {{legislation_laws.legislation_changes}}
+            </p>
+        </div>
+    </div>
+    {{#each legislation_laws.context-content}}
+        <div class="news_info_block legeslation_info_block clear-fix">
+            <p>
+                <a class="news_blck_caption" href="{{link}}">
+                    {{link-text}}
+                </a>
+            </p>
+            <div class="news_info_wrapper legislation_wrapper">
+                <p>
+                    {{text}}
+                </p>
+                <span class="laws_deails">
+                    {{details}}
+                </span>
+            </div>
+        </div>
+    {{/each}}
+    {{/ifpage}}
+    <!-- LEGISLATIN_LAWS_CONTENT_CLOSE -->
 </div>

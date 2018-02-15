@@ -8,7 +8,6 @@
     padding-bottom: 10px;
     width: 93%;
     margin-bottom: 15px;
-    padding-right: 25px;
 
     .welcome {
         font-size: $tender-font-size;
@@ -72,7 +71,7 @@
     }
 
     input[type=text], input[type=password] {
-        width: 50%;
+        width: 60%;
         background-color: rgb(250, 255, 189);
         display: inline-block;
         height: 20px;

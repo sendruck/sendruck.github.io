@@ -76,6 +76,14 @@
 
 .legislation_wrapper {
     margin-left: 0px;
+    p {
+        display: inline;
+    }
+
+    .laws_deails {
+        color: #666;
+        font-weight: bold;
+    }
 }
 
 .legeslation_info_block {
@@ -132,6 +140,14 @@
         color: $primary-color;
         font-size: $font-size;
         font-family: Verdana, Arial, sans-serif;
+    }
+
+    .changes_laws {
+        margin: 15px 0;
+        color: $primary-color;
+        font-size: $font-size;
+        font-family: Verdana, Arial, sans-serif;
+        display: inline;
     }
 
 }
