@@ -70,5 +70,15 @@
 			"link": "/legislation/laws/",
 			"text": "Законы Украины"
 		}
+	],
+	"materials-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/rubrics/materials/",
+			"text": "Статьи"
+		}
 	]
 }

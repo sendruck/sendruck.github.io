@@ -63,5 +63,15 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+        {{#ifpage 'materials'}}
+            {{#each breadcrumbs.materials-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
     </ul>
 </div>
