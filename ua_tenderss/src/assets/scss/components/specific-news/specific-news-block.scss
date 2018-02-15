@@ -42,10 +42,33 @@
     }
 }
 
-#additional {
+.additional {
     margin: 20px 0 5px 0;
     padding: 0;
     color: #3B3B3B;
+}
+
+.additional_law {
+    margin: 5px 0 25px 0;
+
+    .print {
+        a {
+            font-size: $font-size;
+        }
+    }
+
+    .at_legislation_laws {
+        margin-right: 20px;
+        padding-left: 19px;
+        background: transparent url("../img/icons/list_ico.gif") no-repeat 0 1px;
+        a {
+            text-decoration: underline;
+            color: #3B3B3B;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $font-size;
+        }
+    }
+
 }
 
 .print {
