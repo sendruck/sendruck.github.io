@@ -107,6 +107,14 @@
 			<div class="header_top_line hide-for-small-only">
 			    <div>
 			        <ul class="breadcrumbs ">
+			    
+			    
+			    
+			    
+			    
+			    
+			    
+			    
 			                <li>
 			                    <a href="/">
 			                        / Главная
@@ -117,6 +125,7 @@
 			                        Законодательство
 			                    </a>
 			                </li>
+			    
 			        </ul>
 			    </div>    
 			    <div class="statistics">
@@ -360,27 +369,43 @@
 			                <!-- LEFT_LOGIN_USER_BLOCK_OPEN -->
 			                <div class="left_user_info">
 			                    
-			                
-			                    <form method="POST" name="loginform1" onsubmit="return check_login_form(this);">
-			                        <input type="hidden" name="action" value="login">
-			                        <div class="login_first_row">
-			                            <span class="form_labels text-left login_label">
-			                                Логин:
-			                            </span>
-			                            <input type="text" name="_login" class="">
-			                        </div>
-			                        <div class="login_second_row">
-			                            <span class="form_labels">
-			                                Пароль:
-			                            </span>
-			                            <input type="password" name="_passw">
-			                        </div>
-			                        <button type="submit" onclick="check_login_form(this);" class="reg-enter">Вход</button>
-			                        <input type="button" value="Забыли пароль ?" onclick="window.location='/login/remind/'" class="reg-enter">
-			                        <a href="/profile/" class="flex-container align-right">
-			                            <img alt="Внимание Тендеры !" src="assets/img/banners/vnimanie.gif">
+			                        <p class="welcome">
+			                            Добро пожаловать! 
+			                        </p>
+			                        <a href="/profile/" class="user_name_link" title="TestOrganization">
+			                            Яковенко
 			                        </a>
-			                    </form> 
+			                        <br>
+			                        <div class="links_list">
+			                
+			                            <div class="user_link_line">
+			                                    <a class="icon_link" href="/profile/">
+			                                        <img src="assets/img/icons/vnimanie2.gif" alt="Внимание!">
+			                                    </a>
+			                
+			                                    <a href="/profile/">
+			                                        Моя страница
+			                                    </a>
+			                            </div>
+			                            <div class="user_link_line" id="user_link_line_second">
+			                                    <a class="icon_link" href="/profile/maillists/">
+			                                        <img src="assets/img/icons/vnimanie3.gif" alt="Внимание!">
+			                                    </a>
+			                
+			                                    <a href="/profile/maillists/">
+			                                        Напоминания о тендерах
+			                                    </a>
+			                            </div>
+			                            <div class="user_link_line">
+			                                    <a class="icon_link" href="/profile/access/">
+			                                        <img src="assets/img/icons/rahunok.gif" alt="Внимание!">
+			                                    </a>
+			                                    <a href="/profile/access/" class="acces_link">
+			                                        Доступ к тендерам
+			                                    </a>
+			                            </div>
+			                        </div>
+			                
 			                </div>
 			                <!-- LEFT_LOGIN_USER_BLOCK_CLOSE -->
 			                

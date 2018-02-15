@@ -9,6 +9,8 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+
         {{#ifpage 'industry'}}
             {{#each breadcrumbs.tender-industry-breadcrumbs}}
             <li>
@@ -18,6 +20,8 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+
         {{#ifpage 'news'}}
             {{#each breadcrumbs.news-breadcrumbs}}
             <li>
@@ -27,6 +31,8 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+
         {{#ifpage 'specific-news'}}
             {{#each breadcrumbs.specific-news-breadcrumbs}}
             <li>
@@ -36,8 +42,20 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+
         {{#ifpage 'legislation'}}
             {{#each breadcrumbs.legislation-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+
+        {{#ifpage 'legislation_laws'}}
+            {{#each breadcrumbs.legislation-laws-breadcrumbs}}
             <li>
                 <a href="{{link}}">
                     {{text}}

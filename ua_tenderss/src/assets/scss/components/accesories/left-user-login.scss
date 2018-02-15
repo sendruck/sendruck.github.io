@@ -34,25 +34,18 @@
         bottom: 8px;
     }
 
+    #user_link_line_second {
+        margin-top: 0px!important;
+    }
+
     .user_link_line {
         height: 35px;
-        .user_link_icon {
-            width: 20%;
-            display: inline-block;
-        }
-        .user_link {
-            float: right;
-            width: 80%;
-            display: inline-block;
-
-            a {
-                display: inline-block;
-            }
-
-            .acces_link {
-                position: relative;
-                bottom: 20px;
-            }
+        display: flex;
+        margin-top: 10px;
+        .icon_link {
+            flex-shrink: 1;
+            margin-right: 5%;
+            width: 11%;
         }
     }
 

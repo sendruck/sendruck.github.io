@@ -56,5 +56,19 @@
 			"link": "/legislation/",
 			"text": "Законодательство"
 		}
+	],
+	"legislation-laws-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/legislation/",
+			"text": "Законодательство"
+		},
+		{
+			"link": "/legislation/laws/",
+			"text": "Законы Украины"
+		}
 	]
 }
