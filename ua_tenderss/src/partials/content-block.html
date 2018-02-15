@@ -99,6 +99,35 @@
     {{/ifpage}}
     <!-- LEGISLATIN_CONTENT_CLOSE -->
 
+
+    <!-- MATERIALS_CONTENT_OPEN -->
+    {{#ifpage 'materials'}}
+        <h2 class="news_heading">
+            {{materials-content.materials_heading}}
+        </h2>
+
+        <p class="preface">
+            {{materials-content.materials_preface}}
+        </p>
+
+        {{#each materials-content.context-content}}
+            <div class="news_info_block legeslation_info_block clear-fix">
+                <p>
+                    <a class="news_blck_caption" href="{{link}}">
+                        {{link-text}}
+                    </a>
+                </p>
+                <div class="news_info_wrapper legislation_wrapper">
+                    <p>
+                        {{text}}
+                    </p>
+                </div>
+            </div>
+        {{/each}}
+    {{/ifpage}}
+    <!-- MATERIALS_CONTENT_CLOSE -->
+
+
     <!-- LEGISLATIN_LAWS_CONTENT_OPEN -->
     {{#ifpage 'legislation_laws'}}
     <h2 class="news_heading">
