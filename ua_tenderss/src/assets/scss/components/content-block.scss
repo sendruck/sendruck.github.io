@@ -77,12 +77,18 @@
 .legislation_wrapper {
     margin-left: 0px;
     p {
-        display: inline;
+        display: block;
     }
 
     .laws_deails {
         color: #666;
         font-weight: bold;
+    }
+}
+
+.legislation_laws_wrapper {
+    p {
+        display: inline;
     }
 }
 
