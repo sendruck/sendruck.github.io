@@ -96,6 +96,15 @@
     margin-bottom: 0px!important;
 }
 
+.news_blck_caption {
+    color: $primary-color;
+    font-size: $tender-font-size;
+    font-family: $body-font-family;
+    padding: 0;
+    margin: 5px 0 5px 0;
+    font-weight: 700;
+}
+
 .news_info_block {
     margin-bottom: 10px;
     .news-image {
@@ -169,4 +178,24 @@ h2.news_heading {
     margin: 10px 0 15px 0;
     font-family: $body-font-family;
     font-weight: 700;
+}
+
+
+//SPECIFIC LAW
+.law_heading {
+    color: $primary-color;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: $font-size;
+    margin-bottom: 5px!important;
+    font-weight: 700;
+}
+
+.law_content {
+    color: $primary-color;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: $font-size;
+    line-height: normal;
+    p {
+        margin-bottom: 11px!important;
+    }
 }
