@@ -1,0 +1,19 @@
+.qst_author {
+    color: $primary-color;
+    font-size: 12px;
+    font-family: $body-font-family;
+    font-weight: 700;
+    margin-bottom: 0px;
+
+    a:hover {
+        text-decoration: underline;
+        color: #417AC6;
+    }
+}
+
+.question_publ_date {
+    color: #3B3B3B;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: $font-size;
+}
