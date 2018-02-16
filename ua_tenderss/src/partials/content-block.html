@@ -365,5 +365,18 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="new_questions">
+            <div class="new_quest_heading">
+                Новые вопросы
+            </div>
+            {{#each new_questions.question-link}}
+                <div class="question_item">
+                    <a href="{{link}}">
+                        {{link-text}}
+                    </a>
+                </div>
+            {{/each}}
+        </div>
     <!-- FAQ_CONTENT_CLOSE -->
 </div>
