@@ -74,7 +74,7 @@ context-heading: Контекстное меню
                     </tr>
                     <tr>
                         <th>актуальные</th>
-                        <th>архив</th>
+                        <th class="archive_col">архив</th>
                     </tr>
                     {{#each tender_indust_table.industry_row}}
                         <tr>
@@ -89,7 +89,7 @@ context-heading: Контекстное меню
                             <td>
                                 {{actual}}
                             </td>
-                            <td>
+                            <td class="archive_col">
                                 {{archive}}
                             </td>
                         </tr>
@@ -101,38 +101,20 @@ context-heading: Контекстное меню
     <div class="large-2 cell" id="context-menu">
         {{>context-menu}}
 
-        <div class="tender_anons_wrapp">
+        <div class="tender_anons_wrapp hide-for-small-only">
             <div class="tender_anons_head">
                 <p>
                     Ознакомьтесь с наиболее полезной нормативно-методической информацией по госзакупкам:
                 </p>
             </div>
             <div class="tender_anons_body">
-                <div class="anons_link_wrp">
-                    <a href="/legislation/laws/247884/">
-                        Закон від 25.12.2015 N 922-VIII
-                    </a>
-                </div>
-                <div class="anons_link_wrp">
-                    <a href="/legislation/laws/247884/">
-                        Роз'яснення Мінекономрозвитку від 17.01.2018 N 3304-06_1900-06
-                    </a>
-                </div>
-                <div class="anons_link_wrp">
-                    <a href="/legislation/explanations/249207/">
-                        Роз'яснення Мінекономрозвитку від 28.12.2017 N 3304-06/48844-06
-                    </a>
-                </div>
-                <div class="anons_link_wrp">
-                    <a href="/legislation/decisions/p1764/">
-                        Постанова Кабінету міністрів України вiд 27.12.2001 N 1764
-                    </a>
-                </div>
-                <div class="anons_link_wrp">
-                    <a href="/legislation/decisions/246136/">
-                        Постанова Кабінету міністрів України від 23.04.2014 р. N 117
-                    </a>
-                </div>
+                {{#each tender-anons.anons_item}}
+                    <div class="anons_link_wrp">
+                        <a href="{{link}}">
+                            {{link_text}}
+                        </a>
+                    </div>
+                {{/each}}
             </div>
         </div>
     </div>

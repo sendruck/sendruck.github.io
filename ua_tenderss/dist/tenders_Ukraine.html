@@ -257,7 +257,7 @@
 			<!-- MENU_CLOSE -->
 			
 			<!-- MOBILE_SELECT_OPEN -->
-			<div class="tb-selector show-for-small-only ">
+			<div class="tb-selector show-for-small-only hide">
 			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
 			        <option value="all">Список тендеров по отрасли...</option>
 			
@@ -318,7 +318,7 @@
 			                    </tr>
 			                    <tr>
 			                        <th>актуальные</th>
-			                        <th>архив</th>
+			                        <th class="archive_col">архив</th>
 			                    </tr>
 			                        <tr>
 			                            <td>
@@ -332,7 +332,7 @@
 			                            <td>
 			                                828
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                81427
 			                            </td>
 			                        </tr>
@@ -348,7 +348,7 @@
 			                            <td>
 			                                499
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                32141
 			                            </td>
 			                        </tr>
@@ -364,7 +364,7 @@
 			                            <td>
 			                                384
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                15458
 			                            </td>
 			                        </tr>
@@ -380,7 +380,7 @@
 			                            <td>
 			                                688
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                72918
 			                            </td>
 			                        </tr>
@@ -396,7 +396,7 @@
 			                            <td>
 			                                37
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                3567
 			                            </td>
 			                        </tr>
@@ -412,7 +412,7 @@
 			                            <td>
 			                                85
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                17826
 			                            </td>
 			                        </tr>
@@ -428,7 +428,7 @@
 			                            <td>
 			                                2117
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                126630
 			                            </td>
 			                        </tr>
@@ -444,7 +444,7 @@
 			                            <td>
 			                                325
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                30660
 			                            </td>
 			                        </tr>
@@ -460,7 +460,7 @@
 			                            <td>
 			                                9
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                7084
 			                            </td>
 			                        </tr>
@@ -476,7 +476,7 @@
 			                            <td>
 			                                9
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                5038
 			                            </td>
 			                        </tr>
@@ -492,7 +492,7 @@
 			                            <td>
 			                                2329
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                140223
 			                            </td>
 			                        </tr>
@@ -508,7 +508,7 @@
 			                            <td>
 			                                269
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                27992
 			                            </td>
 			                        </tr>
@@ -524,7 +524,7 @@
 			                            <td>
 			                                2625
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                178237
 			                            </td>
 			                        </tr>
@@ -540,7 +540,7 @@
 			                            <td>
 			                                107
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                14697
 			                            </td>
 			                        </tr>
@@ -556,7 +556,7 @@
 			                            <td>
 			                                1031
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                143323
 			                            </td>
 			                        </tr>
@@ -572,7 +572,7 @@
 			                            <td>
 			                                305
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                35429
 			                            </td>
 			                        </tr>
@@ -588,7 +588,7 @@
 			                            <td>
 			                                1521
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                180679
 			                            </td>
 			                        </tr>
@@ -604,7 +604,7 @@
 			                            <td>
 			                                1545
 			                            </td>
-			                            <td>
+			                            <td class="archive_col">
 			                                148242
 			                            </td>
 			                        </tr>
@@ -645,38 +645,38 @@
 			        
 			        
 			        <!-- CONTEXT_MENU_CLOSE -->
-			        <div class="tender_anons_wrapp">
+			        <div class="tender_anons_wrapp hide-for-small-only">
 			            <div class="tender_anons_head">
 			                <p>
 			                    Ознакомьтесь с наиболее полезной нормативно-методической информацией по госзакупкам:
 			                </p>
 			            </div>
 			            <div class="tender_anons_body">
-			                <div class="anons_link_wrp">
-			                    <a href="/legislation/laws/247884/">
-			                        Закон від 25.12.2015 N 922-VIII
-			                    </a>
-			                </div>
-			                <div class="anons_link_wrp">
-			                    <a href="/legislation/laws/247884/">
-			                        Роз'яснення Мінекономрозвитку від 17.01.2018 N 3304-06_1900-06
-			                    </a>
-			                </div>
-			                <div class="anons_link_wrp">
-			                    <a href="/legislation/explanations/249207/">
-			                        Роз'яснення Мінекономрозвитку від 28.12.2017 N 3304-06/48844-06
-			                    </a>
-			                </div>
-			                <div class="anons_link_wrp">
-			                    <a href="/legislation/decisions/p1764/">
-			                        Постанова Кабінету міністрів України вiд 27.12.2001 N 1764
-			                    </a>
-			                </div>
-			                <div class="anons_link_wrp">
-			                    <a href="/legislation/decisions/246136/">
-			                        Постанова Кабінету міністрів України від 23.04.2014 р. N 117
-			                    </a>
-			                </div>
+			                    <div class="anons_link_wrp">
+			                        <a href="/legislation/laws/247884/">
+			                            Закон від 25.12.2015 N 922-VIII
+			                        </a>
+			                    </div>
+			                    <div class="anons_link_wrp">
+			                        <a href="/legislation/laws/247884/">
+			                            Роз&#x27;яснення Мінекономрозвитку від 17.01.2018 N 3304-06_1900-06
+			                        </a>
+			                    </div>
+			                    <div class="anons_link_wrp">
+			                        <a href="/legislation/explanations/249207/">
+			                            Роз&#x27;яснення Мінекономрозвитку від 28.12.2017 N 3304-06/48844-06
+			                        </a>
+			                    </div>
+			                    <div class="anons_link_wrp">
+			                        <a href="/legislation/decisions/p1764/">
+			                            Постанова Кабінету міністрів України вiд 27.12.2001 N 1764
+			                        </a>
+			                    </div>
+			                    <div class="anons_link_wrp">
+			                        <a href="/legislation/decisions/246136/">
+			                            Постанова Кабінету міністрів України від 23.04.2014 р. N 117
+			                        </a>
+			                    </div>
 			            </div>
 			        </div>
 			    </div>
