@@ -17,3 +17,24 @@
     font-family: Verdana, Arial, sans-serif;
     font-size: $font-size;
 }
+
+.question_wrapper, .answer_wrapper {
+    background: #F8FBFD;
+    border: 1px solid #E5F1FD;
+    padding: 15px 20px 15px 20px;
+    color: $primary-color;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: $font-size;
+
+    p {
+        margin-bottom: 0px;
+    }
+}
+
+.answer_wrapper {
+    p:last-child {
+        margin-top: 10px;
+    }
+
+    margin-bottom: 5px;
+}
