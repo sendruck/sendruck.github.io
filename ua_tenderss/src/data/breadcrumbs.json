@@ -80,5 +80,15 @@
 			"link": "/rubrics/materials/",
 			"text": "Статьи"
 		}
+	],
+	"faq-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/faq/",
+			"text": "Вопросы-ответы"
+		}
 	]
 }
