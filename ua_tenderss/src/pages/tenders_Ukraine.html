@@ -37,17 +37,104 @@ context-heading: Контекстное меню
   link: "/rubrics/services/price/"
   text: "Доступ к тендерам"
 ---
-
 {{> header}}
 
 
-<!-- TENDERS_OF_URAINE_OPEN -->
-    <div class="grid-x">
-        <div class="large-10 cell">
-            Lorem ipsum dolor sit amet.
+<!-- TENDERS_OF_UKRAINE_OPEN -->
+<div class="grid-x">
+    <div class="large-10 cell">
+        <div class="attention_wrapper">
+            <img src="{{root}}assets/img/icons/attention.gif" alt="attention">
+            <p>
+                В данном каталоге представлены закупки, тендеры, торги в Украине, в которых вы можете принять участие. Воспользуйтесь поиском
+                внутри отраслей, чтобы найти нужные вам закупки товаров, работ или услуг. Даже если сейчас Вы не нашли интересных
+                для вас тендеров, это не означает, что они не появятся завтра - настройте бесплатные уведомления о тендерах
+                на e-mail! Для того, чтобы быть в курсе всех закупок в Украине вам нужно просто:
+            </p>
+            <h2 class="text-center">
+                <a href="/profile/">ЗАРЕГИСТРИРОВАТЬСЯ НА САЙТЕ!</a>
+            </h2>
+            <p class="text-center">
+                <a class="text-center" href="/rubrics/services/price/">
+                    Условия доступа к полной информации о тендерах
+                </a>
+            </p>
         </div>
-        <div class="large-2 cell" id="context-menu">
-            {{>context-menu}}
+
+        <div class="industry_table_wrapp">
+            <table id="tender-ind-table" cellspacing="0" cellpadding="0" border="0">
+                <tbody>
+                    <tr>
+                        <th rowspan="2">
+                            <b>#</b>
+                        </th>
+                        <th rowspan="2">Название отрасли</th>
+                        <th colspan="2" class="thbott">Тендеры</th>
+
+                    </tr>
+                    <tr>
+                        <th>актуальные</th>
+                        <th>архив</th>
+                    </tr>
+                    {{#each tender_indust_table.industry_row}}
+                        <tr>
+                            <td>
+                                {{numb}}
+                            </td>
+                            <td class="industry_col">
+                                <a style="font-weight:bold;" href="{{link}}">
+                                    {{link_text}}
+                                </a>
+                            </td>
+                            <td>
+                                {{actual}}
+                            </td>
+                            <td>
+                                {{archive}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
         </div>
     </div>
-<!-- TENDERS_OF_URAINE_CLOSE -->
+    <div class="large-2 cell" id="context-menu">
+        {{>context-menu}}
+
+        <div class="tender_anons_wrapp">
+            <div class="tender_anons_head">
+                <p>
+                    Ознакомьтесь с наиболее полезной нормативно-методической информацией по госзакупкам:
+                </p>
+            </div>
+            <div class="tender_anons_body">
+                <div class="anons_link_wrp">
+                    <a href="/legislation/laws/247884/">
+                        Закон від 25.12.2015 N 922-VIII
+                    </a>
+                </div>
+                <div class="anons_link_wrp">
+                    <a href="/legislation/laws/247884/">
+                        Роз'яснення Мінекономрозвитку від 17.01.2018 N 3304-06_1900-06
+                    </a>
+                </div>
+                <div class="anons_link_wrp">
+                    <a href="/legislation/explanations/249207/">
+                        Роз'яснення Мінекономрозвитку від 28.12.2017 N 3304-06/48844-06
+                    </a>
+                </div>
+                <div class="anons_link_wrp">
+                    <a href="/legislation/decisions/p1764/">
+                        Постанова Кабінету міністрів України вiд 27.12.2001 N 1764
+                    </a>
+                </div>
+                <div class="anons_link_wrp">
+                    <a href="/legislation/decisions/246136/">
+                        Постанова Кабінету міністрів України від 23.04.2014 р. N 117
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TENDERS_OF_UKRAINE_CLOSE -->

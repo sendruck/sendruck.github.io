@@ -1,0 +1,130 @@
+{
+    "industry_row": [
+		{
+            "numb": "1",
+			"link": "/tender/trz/",
+            "link_text": "Автомототранспорт, транспорт, запчасти",
+            "actual": "828",
+            "archive": "81427"
+        },
+        {
+            "numb": "2",
+			"link": "/tender/kul/",
+            "link_text": "Бумага, бытовые, канцелярские и хозяйственные товары",
+            "actual": "499",
+            "archive": "32141"
+        },
+        {
+            "numb": "3",
+			"link": "/tender/zhit/",
+            "link_text": "Жилищно-коммунальное и бытовое обслуживание, спецтехника",
+            "actual": "384",
+            "archive": "15458"
+        },
+        {
+            "numb": "4",
+			"link": "/tender/zhit/",
+            "link_text": "Компьютерная техника, периферия, комплектующие",
+            "actual": "688",
+            "archive": "72918"
+        },
+        {
+            "numb": "5",
+			"link": "/tender/kpn/",
+            "link_text": "Консалтинговые услуги, обучение",
+            "actual": "37",
+            "archive": "3567"
+        },
+        {
+            "numb": "6",
+			"link": "/tender/meb/",
+            "link_text": "Мебель",
+            "actual": "85",
+            "archive": "17826"
+        },
+        {
+            "numb": "7",
+			"link": "/tender/med/",
+            "link_text": "Медицина",
+            "actual": "2117",
+            "archive": "126630"
+        },
+        {
+            "numb": "8",
+			"link": "/tender/met/",
+            "link_text": "Металлы",
+            "actual": "325",
+            "archive": "30660"
+        },
+        {
+            "numb": "9",
+			"link": "/tender/ndr/",
+            "link_text": "Научно-исследовательские работы",
+            "actual": "9",
+            "archive": "7084"
+        },
+        {
+            "numb": "10",
+			"link": "/tender/ner/",
+            "link_text": "Недвижимость",
+            "actual": "9",
+            "archive": "5038"
+        },
+        {
+            "numb": "11",
+			"link": "/tender/pal/",
+            "link_text": "Энергетика, нефтепродукты, топливо",
+            "actual": "2329",
+            "archive": "140223"
+        },
+        {
+            "numb": "12",
+			"link": "/tender/leg/",
+            "link_text": "Одежда, обувь, продукция легкой промышленности",
+            "actual": "269",
+            "archive": "27992"
+        },
+        {
+            "numb": "13",
+			"link": "/tender/php/",
+            "link_text": "Пищевая промышленность и продукты питания",
+            "actual": "2625",
+            "archive": "178237"
+        },
+        {
+            "numb": "14",
+			"link": "/tender/ppd/",
+            "link_text": "Полиграфическая промышленность",
+            "actual": "107",
+            "archive": "14697"
+        },
+        {
+            "numb": "15",
+			"link": "/tender/tech/",
+            "link_text": "Промышленное оборудование, приборы",
+            "actual": "1031",
+            "archive": "143323"
+        },
+        {
+            "numb": "16",
+			"link": "/tender/psg/",
+            "link_text": "Сельское хозяйство",
+            "actual": "305",
+            "archive": "35429"
+        },
+        {
+            "numb": "17",
+			"link": "/tender/bud/",
+            "link_text": "Строительство и строительные материалы, ремонт",
+            "actual": "1521",
+            "archive": "180679"
+        },
+        {
+            "numb": "18",
+			"link": "/tender/trp/",
+            "link_text": "Товары, Работы, Услуги, Разное",
+            "actual": "1545",
+            "archive": "148242"
+        }
+    ]
+}
