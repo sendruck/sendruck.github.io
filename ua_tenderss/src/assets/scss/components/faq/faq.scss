@@ -1,0 +1,63 @@
+.faq_btn {
+    width: 30%;
+    height: 22px; 
+    border: 0px; 
+    background-image: url("../img/botton.png"); 
+    cursor: pointer; 
+    font-weight: bold;
+    padding: 1px 6px;
+    outline: none;
+    margin-bottom: 12px;
+}
+
+.botton_sides {
+    display: inline;
+}
+
+.botton_left {
+    position: relative;
+    bottom: 1.5px;
+    left: 4px;
+}
+
+.botton_right {
+    position: relative;
+    right: 5px;
+    bottom: 1.5px;
+}
+
+#tender-table-list {
+    font-size: $font-size;
+    font-family: Verdana, sans-serif;
+    color: $primary-color;
+
+    tr {
+        background: #FBF7EE;
+    }
+
+    th {
+        color: #615F60;
+        background: #FBF7EE;
+        border: 1px solid #E2DFD8;
+        padding: 5px;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    td {
+        padding: 5px;
+        border: 1px solid #E2DFD8;
+
+        a {
+            font-weight: 700;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    tr:nth-child(even) {
+        background: #FAF9F7;
+    }
+}
