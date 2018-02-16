@@ -7,7 +7,7 @@
     "legislation_experts_email": "expert@ua-tenders.com",
     "context-content": [
 		{
-			"link": "/legislation/laws/",
+			"link": "https://sendruck.github.io/ua_tenderss/dist/legislation_laws.html",
 			"link-text": "Законы Украины",
 			"text": "Законы регламентирующие сферу государственных закупок, тендеров, торгов, аукционов."
         },
