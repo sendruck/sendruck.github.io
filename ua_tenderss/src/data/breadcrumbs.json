@@ -90,5 +90,15 @@
 			"link": "/faq/",
 			"text": "Вопросы-ответы"
 		}
+	],
+	"suppliers-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/suppliers/",
+			"text": "Каталог поставщиков"
+		}
 	]
 }

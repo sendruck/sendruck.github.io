@@ -75,13 +75,23 @@
         {{/ifpage}}
 
         {{#ifpage 'faq' 'specific_question'}}
-        {{#each breadcrumbs.faq-breadcrumbs}}
-        <li>
-            <a href="{{link}}">
-                {{text}}
-            </a>
-        </li>
-        {{/each}}
-    {{/ifpage}}
+            {{#each breadcrumbs.faq-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
+
+        {{#ifpage 'suppliers'}}
+            {{#each breadcrumbs.suppliers-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
     </ul>
 </div>
