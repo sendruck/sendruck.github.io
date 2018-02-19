@@ -45,23 +45,23 @@ context-heading: Персональная страница
             </h2>
             <div class="first_line">
                 <div class="supplier_logo">
-                    <img src="{{root}}assets/img/suppliers/238337.jpg" alt="">
+                    <img src="{{specific-supplier.logo-src}}" alt="logo">
                 </div>
                 <div class="supplier_info">
                     <p>
-                        Форма собственности: <strong>ООО</strong>
+                        Форма собственности: <strong>{{specific-supplier.owner-type}}</strong>
                     </p>
                     <p>
-                        Типовая роль: <strong>Поставщик</strong>
+                        Типовая роль: <strong>{{specific-supplier.role}}</strong>
                     </p>
                     <p>
-                        Наименование организации: <strong>"КОМПАРЕКС Україна" </strong>
+                        Наименование организации: <strong>{{specific-supplier.organization-name}} </strong>
                     </p>
                     <p>
-                        Сфера деятельности: <strong>Компьютерная техника, периферия, комплектующие</strong>
+                        Сфера деятельности: <strong>{{specific-supplier.activity-field}}</strong>
                     </p>
                     <p>
-                        Код ЕГРПОУ: <strong>3627388265</strong>
+                        Код ЕГРПОУ: <strong>{{specific-supplier.edrpou}}</strong>
                     </p>
                 </div>
             </div>
@@ -72,16 +72,16 @@ context-heading: Персональная страница
                     </p>
                     <div class="supp_contact_wrpp">
                         <p>
-                            вул.М.Гринченка,4 б, БЦ "Horizon Park"
+                            {{specific-supplier.contacts-street}}
                         </p>
                         <p>
-                            м.Київ 
+                            {{specific-supplier.contacts-city}}
                         </p>
                         <p>
-                            Україна
+                            {{specific-supplier.contacts-country}}
                         </p>
                         <p>
-                            s03038
+                            {{specific-supplier.contacts-index}}
                         </p>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ context-heading: Персональная страница
                         Контактное лицо
                     </p>
                     <p>
-                        Гаюр Борис Францевич, керівник відділу продажів
+                        {{specific-supplier.contact-person}}
                     </p>
                 </div>
             </div>
