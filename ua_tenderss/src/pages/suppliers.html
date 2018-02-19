@@ -62,6 +62,43 @@ context-heading: Контекстное меню
 
                 {{> pagination}}
 
+                <div class="industry_table_wrapp suppliers_table_wrapp">
+                    <table id="suppliers-table" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <th class="numb_col">
+                                    <b>№</b>
+                                </th>
+                                <th>Название компании</th>        
+                                <th>Контактные данные</th>
+                                <th>Регион</th>
+                            </tr>
+                            {{#each suppliers.suppliers-row}}
+                                <tr>
+                                    <td class="numb_col">
+                                        {{number}}
+                                    </td>
+                                    <td class="industry_col">
+                                        <a style="font-weight:bold;" href="{{company-name-link}}">
+                                            {{company-name}}
+                                        </a>
+                                    </td>
+                                    <td>
+                                        {{contacts-info}}
+                                    </td>
+                                    <td class="archive_col">
+                                        {{region}}
+                                    </td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><strong>Найдено: </strong>{{suppliers.number_suppliers}} поставщика(ов).</p>
+
+                {{> pagination}}
+
             </div>
         </div>
 

@@ -78,5 +78,217 @@
 			"link-text": "Энергетика, нефтепродукты, топливо"
 		}
 	],
-	"number_suppliers": "105778"
+	"number_suppliers": "105778",
+	"suppliers-row": [
+		{
+			"number": "1",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "2",
+			"company-name": "Алви Род",
+			"company-name-link": "http://238305.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Оксана Глазова",
+			"region": "Украина Киев ул. Жилянская 59, офис 312"
+		},
+		{
+			"number": "3",
+			"company-name": "ОсОО \"Нур Строй Сервис",
+			"company-name-link": "http://238304.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Алыбаева Г.Т.",
+			"region": "Кыргызстан г. Бишкек ул. Чуй, 265"
+		},
+		{
+			"number": "4",
+			"company-name": "\"НВП ВЕЛДТЕК\"",
+			"company-name-link": "http://238301.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Марчук Александр Иванович",
+			"region": "Украина г.Киев ул. Вишняковская, 7А, кв.90"
+		},
+		{
+			"number": "5",
+			"company-name": "СТПРЕС",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Поліщук Сергій Анатолійови",
+			"region": "Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21"
+		},
+		{
+			"number": "6",
+			"company-name": "\"Херсон Буд Капетал\"",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бурлаков Алексей Александрович",
+			"region": "Украина Херсон Бериславское шосе 33"
+		},
+		{
+			"number": "7",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "8",
+			"company-name": "Алви Род",
+			"company-name-link": "http://238305.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Оксана Глазова",
+			"region": "Украина Киев ул. Жилянская 59, офис 312"
+		},
+		{
+			"number": "9",
+			"company-name": "ОсОО \"Нур Строй Сервис",
+			"company-name-link": "http://238304.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Алыбаева Г.Т.",
+			"region": "Кыргызстан г. Бишкек ул. Чуй, 265"
+		},
+		{
+			"number": "10",
+			"company-name": "\"НВП ВЕЛДТЕК\"",
+			"company-name-link": "http://238301.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Марчук Александр Иванович",
+			"region": "Украина г.Киев ул. Вишняковская, 7А, кв.90"
+		},
+		{
+			"number": "11",
+			"company-name": "СТПРЕС",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Поліщук Сергій Анатолійови",
+			"region": "Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21"
+		},
+		{
+			"number": "12",
+			"company-name": "\"Херсон Буд Капетал\"",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бурлаков Алексей Александрович",
+			"region": "Украина Херсон Бериславское шосе 33"
+		},
+		{
+			"number": "12",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "14",
+			"company-name": "Алви Род",
+			"company-name-link": "http://238305.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Оксана Глазова",
+			"region": "Украина Киев ул. Жилянская 59, офис 312"
+		},
+		{
+			"number": "15",
+			"company-name": "ОсОО \"Нур Строй Сервис",
+			"company-name-link": "http://238304.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Алыбаева Г.Т.",
+			"region": "Кыргызстан г. Бишкек ул. Чуй, 265"
+		},
+		{
+			"number": "16",
+			"company-name": "\"НВП ВЕЛДТЕК\"",
+			"company-name-link": "http://238301.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Марчук Александр Иванович",
+			"region": "Украина г.Киев ул. Вишняковская, 7А, кв.90"
+		},
+		{
+			"number": "17",
+			"company-name": "СТПРЕС",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Поліщук Сергій Анатолійови",
+			"region": "Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21"
+		},
+		{
+			"number": "18",
+			"company-name": "\"Херсон Буд Капетал\"",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бурлаков Алексей Александрович",
+			"region": "Украина Херсон Бериславское шосе 33"
+		},
+		{
+			"number": "19",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "20",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "21",
+			"company-name": "Алви Род",
+			"company-name-link": "http://238305.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Оксана Глазова",
+			"region": "Украина Киев ул. Жилянская 59, офис 312"
+		},
+		{
+			"number": "22",
+			"company-name": "ОсОО \"Нур Строй Сервис",
+			"company-name-link": "http://238304.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Алыбаева Г.Т.",
+			"region": "Кыргызстан г. Бишкек ул. Чуй, 265"
+		},
+		{
+			"number": "23",
+			"company-name": "\"НВП ВЕЛДТЕК\"",
+			"company-name-link": "http://238301.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Марчук Александр Иванович",
+			"region": "Украина г.Киев ул. Вишняковская, 7А, кв.90"
+		},
+		{
+			"number": "24",
+			"company-name": "СТПРЕС",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Поліщук Сергій Анатолійови",
+			"region": "Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21"
+		},
+		{
+			"number": "25",
+			"company-name": "\"Херсон Буд Капетал\"",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бурлаков Алексей Александрович",
+			"region": "Украина Херсон Бериславское шосе 33"
+		},
+		{
+			"number": "26",
+			"company-name": "ПГЩК",
+			"company-name-link": "http://238318.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
+			"region": "Украина Конецполь с Конецполь"
+		},
+		{
+			"number": "27",
+			"company-name": "Алви Род",
+			"company-name-link": "http://238305.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Оксана Глазова",
+			"region": "Украина Киев ул. Жилянская 59, офис 312"
+		},
+		{
+			"number": "28",
+			"company-name": "\"НВП ВЕЛДТЕК\"",
+			"company-name-link": "http://238301.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Марчук Александр Иванович",
+			"region": "Украина г.Киев ул. Вишняковская, 7А, кв.90"
+		},
+		{
+			"number": "29",
+			"company-name": "СТПРЕС",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Поліщук Сергій Анатолійови",
+			"region": "Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21"
+		},
+		{
+			"number": "30",
+			"company-name": "\"Херсон Буд Капетал\"",
+			"company-name-link": "http://238298.ua-tenders.com/",
+			"contacts-info": "Ф.И.О.: Бурлаков Алексей Александрович",
+			"region": "Украина Херсон Бериславское шосе 33"
+		}
+	]
 }

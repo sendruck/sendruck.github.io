@@ -12,6 +12,7 @@
 
         p {
             font-weight: 700;
+            margin-bottom: 10px!important;
         }
     }
     p {
@@ -19,6 +20,7 @@
         font-family: Verdana, Arial, sans-serif;
         font-size: $font-size;
         font-weight: 400;
+        margin-bottom: 0px!important;
     }
 
     span {
@@ -44,4 +46,37 @@
         height: 20px;
         font-size: 13px;
     } 
+
+    .pagination {
+        margin-bottom: 5px!important;
+    }
+
+    .suppliers_table_wrapp {
+        margin-left: 0px!important;
+    }
+
+    #suppliers-table {
+        th b {
+            text-align: center!important;
+        }
+
+        tr:nth-child(odd) {
+            background: #FAF9F7;
+        }
+
+        .industry_col {
+            width: 30%;
+        }
+
+        td {
+            text-align: left;
+            a {
+                font-weight: 400!important;
+            } 
+        }
+
+        .numb_col {
+            text-align: center;
+        }
+    }
 }
