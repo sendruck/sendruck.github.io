@@ -110,5 +110,19 @@
 			"link": "/customers/",
 			"text": "Каталог заказчиков"
 		}
+	],
+	"specific-supplier-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "http://www.ua-tenders.com/suppliers/",
+			"text": "Поставщики"
+		},
+		{
+			"link": "http://238337.ua-tenders.com/",
+			"text": "\"КОМПАРЕКС Україна\""
+		}
 	]
 }

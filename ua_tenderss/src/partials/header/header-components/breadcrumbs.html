@@ -103,5 +103,15 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+        {{#ifpage 'specific-supplier'}}
+            {{#each breadcrumbs.specific-supplier-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
     </ul>
 </div>
