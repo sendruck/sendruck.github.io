@@ -1,0 +1,22 @@
+//MOBILE_CUSTOMERS
+@include breakpoint(small down) {
+    .customer-table {
+        .contracts-col, .verif-tenders-col {
+            width: 100%!important;
+        }
+        
+        #customer-name {
+            a {
+                width: 120%!important;
+            }
+        }
+
+        td::after {
+            width: 38%;
+        }
+
+        td.numb_col {
+            width: 100%;
+        }
+    }
+}
