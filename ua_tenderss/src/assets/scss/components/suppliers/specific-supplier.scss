@@ -1,0 +1,89 @@
+.specific_supplier_wrapp {
+    h2 {
+        color: $primary-color;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 26.6px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .first_line, .second_line {
+        position: relative;
+    }
+    .supplier_logo {
+        border-right: 1px solid #3C9CD7;
+        border-bottom: 1px solid #3C9CD7;
+        padding: 10px;
+        padding-right: 30px;
+        width: 27%;
+        display: inline-block;
+    }
+
+    .supplier_info {
+        border-bottom: 1px solid #3C9CD7;
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left: 27%;
+
+        p {
+            color: $primary-color;
+            font-family: Verdana, Arial, sans-serif;
+            font-size: $font-size;
+            margin-bottom: 0px;
+        }
+
+        p:last-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    .supplier_contact_data {
+        border-right: 1px solid #3C9CD7;
+        padding: 10px;
+        width: 27%;
+        display: inline-block;
+        color: $primary-color;
+        font-size: 12px;
+        font-family: $body-font-family;
+        font-weight: 700;
+        p {
+            margin-bottom: 0px;
+        }
+
+        .supp_contact_wrpp {
+            padding: 5px;
+            background: #F8FBFD;
+            border: 1px solid #E5F1FD;
+            margin: 5px 0 15px 40px;
+            p {
+                line-height: 1.3;
+            }
+        }
+    }
+
+    .contact_person {
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        left: 27%;
+        color: $primary-color;
+        font-size: 12px;
+        font-family: $body-font-family;
+        font-weight: 700;
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        p:last-child {
+            padding: 5px;
+            margin: 0px 0 15px 40px;
+            background: #F8FBFD;
+            border: 1px solid #E5F1FD;
+        }
+
+    }
+}
