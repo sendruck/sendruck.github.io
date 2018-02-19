@@ -1,5 +1,5 @@
 <!-- CONTEXT_TOP_TOPIC_OPEN -->
-{{#ifpage 'suppliers'}}
+{{#ifpage 'suppliers' 'customers'}}
     <div id="context-top-topic" class="hide-for-small-only">{{suppliers.top-topic-heading}}</div>
         <ul id="context-menu-ul" class="hide-for-small-only">
             {{#each suppliers.top-topic-content}}
@@ -13,7 +13,7 @@
 
 <!-- CONTEXT_MENU_OPEN -->
 <div id="context-top-topic" class="hide-for-small-only">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
-    {{#ifpage 'index' 'industry' 'specific-news' 'tenders_Ukraine' 'suppliers'}}
+    {{#ifpage 'index' 'industry' 'specific-news' 'tenders_Ukraine' 'suppliers' 'customers'}}
         <ul id="context-menu-ul" class="hide-for-small-only">
             {{#each context-content}}
                 <li class="{{class}}">

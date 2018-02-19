@@ -1,0 +1,111 @@
+---
+title: Каталог поставщиков | Ua-Tenders.com - тендеры, закупки, торги
+description: Тендеры, государственные закупки, торги
+keywords: тендеры, закупки, торги, тендери, tenders, державні закупівлі, тендерная документация, государственные закупки
+context-heading: Контекстное меню
+"context-content": 
+ - 
+  class: "n-blue"
+  link: "/tender/all/?b=all&a=&t=all&p=&z="
+  text: "Поиск тендера"
+ - 
+  class: "n-white"
+  link: "/tenders/tenders_list/add/"
+  text: "Добавить тендер"
+ - 
+  class: "n-blue"
+  link: "/tenders/result/add/"
+  text: "Добавить результат"
+ - 
+  class: "n-white"
+  link: "/result/trz"
+  text: "Результаты тендеров"
+ - 
+  class: "n-blue"
+  link: "/customers/trz"
+  text: "Каталог заказчиков"
+ - 
+  class: "n-white"
+  link: "/suppliers/trz"
+  text: "Каталог поставщиков"
+ - 
+  class: "n-blue"
+  link: "/offer/trz"
+  text: "Каталог предложений"
+ - 
+  class: "n-white"
+  link: "/rubrics/services/price/"
+  text: "Доступ к тендерам"
+---
+{{> header}}
+
+<!-- CUSTOMERS_CONTENT_OPEN -->
+<div class="grid-x">
+        <div class="large-10 cell">
+            <div class="suppliers_wrapp">
+                <div class="suppliers_heading">
+                    <h2>
+                        Каталог заказчиков
+                    </h2>
+                    <p>
+                        Присутствие в разделе заказчиков дает Вам возможность предоставить информацию о ваших закупках компаниям поставщикам 
+                    </p>
+                </div>
+
+                <span>
+                    название организации или код ЕГРПОУ
+                </span>
+                <input type="text" name="Search">
+                <input type="submit" value="Искать в каталоге!">
+
+                <p class="found"><strong>Найдено: </strong>{{customers.number_customers}} заказчик(ов).</p>
+
+                {{> pagination}}
+
+                <div class="industry_table_wrapp suppliers_table_wrapp">
+                    <table id="suppliers-table"  class="responsive-card-table unstriped customer-table" cellspacing="0" cellpadding="0" border="0">
+                        <tbody>
+                            <thead>
+                                <tr>
+                                    <th class="numb_col">
+                                        <b>№</b>
+                                    </th>
+                                    <th>Заказчик</th>        
+                                    <th class="verif-tenders-col">Проведено тендеров</th>
+                                    <th class="contracts-col">Сумма контрактов</th>
+                                </tr>
+                            </thead>
+                            {{#each customers.customers-row}}
+                                <tr>
+                                    <td class="numb_col" data-label="№">
+                                        {{number}}
+                                    </td>
+                                    <td class="industry_col" data-label="Заказчик">
+                                        <a style="font-weight:bold;" href="{{customer-name-link}}">
+                                            {{customer-name}}
+                                        </a>
+                                    </td>
+                                    <td class="verif-tenders-col" data-label="Проведено тендеров">
+                                        {{verified-tenders}}
+                                    </td>
+                                    <td class="contracts-col" data-label="Сумма контрактов">
+                                        {{contracts-summ}}
+                                    </td>
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="found"><strong>Найдено: </strong>{{customers.number_customers}} заказчика(ов).</p>
+
+                {{> pagination}}
+
+            </div>
+        </div>
+
+        <div class="large-2 cell" id="context-menu">
+            {{>context-menu}}
+        </div>
+    </div>
+<!-- CUSTOMERS_CONTENT_CLOSE -->

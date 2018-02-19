@@ -93,5 +93,15 @@
             </li>
             {{/each}}
         {{/ifpage}}
+
+        {{#ifpage 'customers'}}
+            {{#each breadcrumbs.customers-breadcrumbs}}
+            <li>
+                <a href="{{link}}">
+                    {{text}}
+                </a>
+            </li>
+            {{/each}}
+        {{/ifpage}}
     </ul>
 </div>

@@ -1,0 +1,215 @@
+{
+    "number_customers": "62506",
+	"customers-row": [
+		{
+			"number": "1",
+			"customer-name": "Регіональна філія «Придніпровська залізниця» ПАТ \"Українська залізниця\"",
+			"customer-name-link": "http://90986.ua-tenders.com/",
+			"verified-tenders": "5596",
+			"contracts-summ": "4141009044.88"
+        },
+        {
+			"number": "2",
+			"customer-name": "Регіональна філія \"Одеська залізниця\" ПАТ \"Укрзалізниця\"",
+			"customer-name-link": "http://91820.ua-tenders.com/",
+			"verified-tenders": "5403",
+			"contracts-summ": "9566408941.73999"
+		},
+        {
+			"number": "3",
+			"customer-name": "Філія «Південно-Західна залізниця» ПАТ «Укрзалізниця»",
+			"customer-name-link": "http://91024.ua-tenders.com/",
+			"verified-tenders": "5072",
+			"contracts-summ": "8119700337.86"
+		},
+        {
+			"number": "4",
+			"customer-name": "ДЕРЖАВНЕ ПІДПРИЄМСТВО \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://106703.ua-tenders.com/",
+			"verified-tenders": "3661",
+			"contracts-summ": "17073080617.34"
+		},
+        {
+			"number": "5",
+			"customer-name": "Регіональна філія «Львівська залізниця» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://107162.ua-tenders.com/",
+			"verified-tenders": "3633",
+			"contracts-summ": "8763950479.20999"
+		},
+        {
+			"number": "6",
+			"customer-name": "Філія «Центр забезпечення виробництва» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://105587.ua-tenders.com/",
+			"verified-tenders": "3481",
+			"contracts-summ": "76506168625.6701"
+        },
+        {
+			"number": "7",
+			"customer-name": "ВІДОКРЕМЛЕНИЙ ПІДРОЗДІЛ \"ЗАПОРІЗЬКА АТОМНА ЕЛЕКТРИЧНА СТАНЦІЯ\" ДЕРЖАВНОГО ПІДПРИЄМСТВА \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://179626.ua-tenders.com/",
+			"verified-tenders": "3091",
+			"contracts-summ": "3030827269.57"
+        },
+		{
+			"number": "9",
+			"customer-name": "Регіональна філія «Придніпровська залізниця» ПАТ \"Українська залізниця\"",
+			"customer-name-link": "http://90986.ua-tenders.com/",
+			"verified-tenders": "5596",
+			"contracts-summ": "4141009044.88"
+        },
+        {
+			"number": "9",
+			"customer-name": "Регіональна філія \"Одеська залізниця\" ПАТ \"Укрзалізниця\"",
+			"customer-name-link": "http://91820.ua-tenders.com/",
+			"verified-tenders": "5403",
+			"contracts-summ": "9566408941.73999"
+		},
+        {
+			"number": "10",
+			"customer-name": "Філія «Південно-Західна залізниця» ПАТ «Укрзалізниця»",
+			"customer-name-link": "http://91024.ua-tenders.com/",
+			"verified-tenders": "5072",
+			"contracts-summ": "8119700337.86"
+		},
+        {
+			"number": "11",
+			"customer-name": "ДЕРЖАВНЕ ПІДПРИЄМСТВО \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://106703.ua-tenders.com/",
+			"verified-tenders": "3661",
+			"contracts-summ": "17073080617.34"
+		},
+        {
+			"number": "12",
+			"customer-name": "Регіональна філія «Львівська залізниця» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://107162.ua-tenders.com/",
+			"verified-tenders": "3633",
+			"contracts-summ": "8763950479.20999"
+		},
+        {
+			"number": "13",
+			"customer-name": "Філія «Центр забезпечення виробництва» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://105587.ua-tenders.com/",
+			"verified-tenders": "3481",
+			"contracts-summ": "76506168625.6701"
+        },
+        {
+			"number": "14",
+			"customer-name": "ВІДОКРЕМЛЕНИЙ ПІДРОЗДІЛ \"ЗАПОРІЗЬКА АТОМНА ЕЛЕКТРИЧНА СТАНЦІЯ\" ДЕРЖАВНОГО ПІДПРИЄМСТВА \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://179626.ua-tenders.com/",
+			"verified-tenders": "3091",
+			"contracts-summ": "3030827269.57"
+        },
+		{
+			"number": "15",
+			"customer-name": "Регіональна філія «Придніпровська залізниця» ПАТ \"Українська залізниця\"",
+			"customer-name-link": "http://90986.ua-tenders.com/",
+			"verified-tenders": "5596",
+			"contracts-summ": "4141009044.88"
+        },
+        {
+			"number": "16",
+			"customer-name": "Регіональна філія \"Одеська залізниця\" ПАТ \"Укрзалізниця\"",
+			"customer-name-link": "http://91820.ua-tenders.com/",
+			"verified-tenders": "5403",
+			"contracts-summ": "9566408941.73999"
+		},
+        {
+			"number": "17",
+			"customer-name": "Філія «Південно-Західна залізниця» ПАТ «Укрзалізниця»",
+			"customer-name-link": "http://91024.ua-tenders.com/",
+			"verified-tenders": "5072",
+			"contracts-summ": "8119700337.86"
+		},
+        {
+			"number": "18",
+			"customer-name": "ДЕРЖАВНЕ ПІДПРИЄМСТВО \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://106703.ua-tenders.com/",
+			"verified-tenders": "3661",
+			"contracts-summ": "17073080617.34"
+		},
+        {
+			"number": "19",
+			"customer-name": "Регіональна філія «Львівська залізниця» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://107162.ua-tenders.com/",
+			"verified-tenders": "3633",
+			"contracts-summ": "8763950479.20999"
+		},
+        {
+			"number": "20",
+			"customer-name": "Філія «Центр забезпечення виробництва» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://105587.ua-tenders.com/",
+			"verified-tenders": "3481",
+			"contracts-summ": "76506168625.6701"
+        },
+        {
+			"number": "21",
+			"customer-name": "ВІДОКРЕМЛЕНИЙ ПІДРОЗДІЛ \"ЗАПОРІЗЬКА АТОМНА ЕЛЕКТРИЧНА СТАНЦІЯ\" ДЕРЖАВНОГО ПІДПРИЄМСТВА \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://179626.ua-tenders.com/",
+			"verified-tenders": "3091",
+			"contracts-summ": "3030827269.57"
+        },
+		{
+			"number": "22",
+			"customer-name": "Регіональна філія «Придніпровська залізниця» ПАТ \"Українська залізниця\"",
+			"customer-name-link": "http://90986.ua-tenders.com/",
+			"verified-tenders": "5596",
+			"contracts-summ": "4141009044.88"
+        },
+        {
+			"number": "23",
+			"customer-name": "Регіональна філія \"Одеська залізниця\" ПАТ \"Укрзалізниця\"",
+			"customer-name-link": "http://91820.ua-tenders.com/",
+			"verified-tenders": "5403",
+			"contracts-summ": "9566408941.73999"
+		},
+        {
+			"number": "24",
+			"customer-name": "Філія «Південно-Західна залізниця» ПАТ «Укрзалізниця»",
+			"customer-name-link": "http://91024.ua-tenders.com/",
+			"verified-tenders": "5072",
+			"contracts-summ": "8119700337.86"
+		},
+        {
+			"number": "25",
+			"customer-name": "ДЕРЖАВНЕ ПІДПРИЄМСТВО \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://106703.ua-tenders.com/",
+			"verified-tenders": "3661",
+			"contracts-summ": "17073080617.34"
+		},
+        {
+			"number": "26",
+			"customer-name": "Регіональна філія «Львівська залізниця» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://107162.ua-tenders.com/",
+			"verified-tenders": "3633",
+			"contracts-summ": "8763950479.20999"
+		},
+        {
+			"number": "27",
+			"customer-name": "Філія «Центр забезпечення виробництва» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://105587.ua-tenders.com/",
+			"verified-tenders": "3481",
+			"contracts-summ": "76506168625.6701"
+        },
+        {
+			"number": "28",
+			"customer-name": "ВІДОКРЕМЛЕНИЙ ПІДРОЗДІЛ \"ЗАПОРІЗЬКА АТОМНА ЕЛЕКТРИЧНА СТАНЦІЯ\" ДЕРЖАВНОГО ПІДПРИЄМСТВА \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://179626.ua-tenders.com/",
+			"verified-tenders": "3091",
+			"contracts-summ": "3030827269.57"
+		},
+        {
+			"number": "29",
+			"customer-name": "Філія «Центр забезпечення виробництва» ПАТ «Українська залізниця»",
+			"customer-name-link": "http://105587.ua-tenders.com/",
+			"verified-tenders": "3481",
+			"contracts-summ": "76506168625.6701"
+        },
+        {
+			"number": "30",
+			"customer-name": "ВІДОКРЕМЛЕНИЙ ПІДРОЗДІЛ \"ЗАПОРІЗЬКА АТОМНА ЕЛЕКТРИЧНА СТАНЦІЯ\" ДЕРЖАВНОГО ПІДПРИЄМСТВА \"НАЦІОНАЛЬНА АТОМНА ЕНЕРГОГЕНЕРУЮЧА КОМПАНІЯ \"ЕНЕРГОАТОМ\"",
+			"customer-name-link": "http://179626.ua-tenders.com/",
+			"verified-tenders": "3091",
+			"contracts-summ": "3030827269.57"
+		}
+    ]
+}

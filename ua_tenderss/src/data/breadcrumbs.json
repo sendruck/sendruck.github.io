@@ -100,5 +100,15 @@
 			"link": "/suppliers/",
 			"text": "Каталог поставщиков"
 		}
+	],
+	"customers-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "/customers/",
+			"text": "Каталог заказчиков"
+		}
 	]
 }
