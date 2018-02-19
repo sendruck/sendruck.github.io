@@ -27,6 +27,7 @@
     .suppliers_table_wrapp {
         margin-right: 0px!important;
         background-color: transparent;
+        border: none;
     }
 
     #suppliers-table {
@@ -34,9 +35,9 @@
             width: 80%!important;
         }
 
-        // td.region-col:before {
-        //     width: 90%!important;
-        // }
+        tbody {
+            border: none;
+        }
 
         td.region-col:after {
             width: 25%!important;
