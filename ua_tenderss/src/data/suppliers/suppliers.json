@@ -1,0 +1,81 @@
+{
+	"top-topic-heading": "Отраслевой рубрикатор",
+	"top-topic-content": [
+		{
+			"link": null,
+			"link-text": "Все поставщики"
+		},
+		{
+			"link": "/suppliers/trz",
+			"link-text": "Автомототранспорт, транспорт, запчасти"
+		},
+		{
+			"link": "/suppliers/kul",
+			"link-text": "Бумага, бытовые, канцелярские и хозяйственные товары"
+		},
+		{
+			"link": "/suppliers/zhit",
+			"link-text": "Жилищно-коммунальное и бытовое обслуживание, спецтехника"
+		},
+		{
+			"link": "/suppliers/kom",
+			"link-text": "Компьютерная техника, периферия, комплектующие"
+		},
+		{
+			"link": "/suppliers/kpn",
+			"link-text": "Консалтинговые услуги, обучение"
+		},
+		{
+			"link": "/suppliers/meb",
+			"link-text": "Мебель"
+		},
+		{
+			"link": "/suppliers/med",
+			"link-text": "Медицина"
+		},
+		{
+			"link": "/suppliers/met",
+			"link-text": "Металлы"
+		},
+		{
+			"link": "/suppliers/ndr",
+			"link-text": "Научно-исследовательские работы"
+		},
+		{
+			"link": "/suppliers/ner",
+			"link-text": "Недвижимость"
+		},
+		{
+			"link": "/suppliers/leg",
+			"link-text": "Одежда, обувь, продукция легкой промышленности"
+		},
+		{
+			"link": "/suppliers/php",
+			"link-text": "Пищевая промышленность и продукты питания"
+		},
+		{
+			"link": "/suppliers/ppd",
+			"link-text": "Полиграфическая промышленность"
+		},
+		{
+			"link": "/suppliers/tech",
+			"link-text": "Промышленное оборудование, приборы"
+		},
+		{
+			"link": "/suppliers/psg",
+			"link-text": "Сельское хозяйство"
+		},
+		{
+			"link": "/suppliers/bud",
+			"link-text": "Строительство и строительные материалы, ремонт"
+		},
+		{
+			"link": "/suppliers/trp",
+			"link-text": "Товары, Работы, Услуги, Разное"
+		},
+		{
+			"link": "/suppliers/pal",
+			"link-text": "Энергетика, нефтепродукты, топливо"
+		}
+	]
+}
