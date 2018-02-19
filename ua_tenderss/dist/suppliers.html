@@ -304,7 +304,7 @@
 			                <input type="text" name="Search">
 			                <input type="submit" value="Искать в каталоге!">
 			
-			                <p><strong>Найдено: </strong>105778 поставщика(ов).</p>
+			                <p class="found"><strong>Найдено: </strong>105778 поставщика(ов).</p>
 			
 			                <!-- PAGINATION_OPEN -->
 			                <div class="grid-x  cell pagination_wrapp newspage_wrap">
@@ -334,493 +334,495 @@
 			                </div>
 			                <!-- PAGINATION_CLOSE -->
 			                <div class="industry_table_wrapp suppliers_table_wrapp">
-			                    <table id="suppliers-table" cellspacing="0" cellpadding="0" border="0">
+			                    <table id="suppliers-table" class="responsive-card-table unstriped" cellspacing="0" cellpadding="0" border="0">
 			                        <tbody>
-			                            <tr>
-			                                <th class="numb_col">
-			                                    <b>№</b>
-			                                </th>
-			                                <th>Название компании</th>        
-			                                <th>Контактные данные</th>
-			                                <th>Регион</th>
-			                            </tr>
+			                            <thead>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <th class="numb_col">
+			                                        <b>№</b>
+			                                    </th>
+			                                    <th>Название компании</th>        
+			                                    <th>Контактные данные</th>
+			                                    <th>Регион</th>
+			                                </tr>
+			                            </thead>
+			                                <tr>
+			                                    <td class="numb_col" data-label="№">
 			                                        1
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        2
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238305.ua-tenders.com/">
 			                                            Алви Род
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Оксана Глазова
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Киев ул. Жилянская 59, офис 312
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        3
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238304.ua-tenders.com/">
 			                                            ОсОО &quot;Нур Строй Сервис
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Алыбаева Г.Т.
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Кыргызстан г. Бишкек ул. Чуй, 265
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        4
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238301.ua-tenders.com/">
 			                                            &quot;НВП ВЕЛДТЕК&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Марчук Александр Иванович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина г.Киев ул. Вишняковская, 7А, кв.90
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        5
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            СТПРЕС
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Поліщук Сергій Анатолійови
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        6
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            &quot;Херсон Буд Капетал&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бурлаков Алексей Александрович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Херсон Бериславское шосе 33
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        7
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        8
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238305.ua-tenders.com/">
 			                                            Алви Род
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Оксана Глазова
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Киев ул. Жилянская 59, офис 312
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        9
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238304.ua-tenders.com/">
 			                                            ОсОО &quot;Нур Строй Сервис
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Алыбаева Г.Т.
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Кыргызстан г. Бишкек ул. Чуй, 265
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        10
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238301.ua-tenders.com/">
 			                                            &quot;НВП ВЕЛДТЕК&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Марчук Александр Иванович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина г.Киев ул. Вишняковская, 7А, кв.90
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        11
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            СТПРЕС
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Поліщук Сергій Анатолійови
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        12
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            &quot;Херсон Буд Капетал&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бурлаков Алексей Александрович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Херсон Бериславское шосе 33
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        12
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        14
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238305.ua-tenders.com/">
 			                                            Алви Род
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Оксана Глазова
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Киев ул. Жилянская 59, офис 312
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        15
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238304.ua-tenders.com/">
 			                                            ОсОО &quot;Нур Строй Сервис
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Алыбаева Г.Т.
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Кыргызстан г. Бишкек ул. Чуй, 265
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        16
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238301.ua-tenders.com/">
 			                                            &quot;НВП ВЕЛДТЕК&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Марчук Александр Иванович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина г.Киев ул. Вишняковская, 7А, кв.90
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        17
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            СТПРЕС
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Поліщук Сергій Анатолійови
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        18
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            &quot;Херсон Буд Капетал&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бурлаков Алексей Александрович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Херсон Бериславское шосе 33
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        19
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        20
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        21
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238305.ua-tenders.com/">
 			                                            Алви Род
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Оксана Глазова
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Киев ул. Жилянская 59, офис 312
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        22
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238304.ua-tenders.com/">
 			                                            ОсОО &quot;Нур Строй Сервис
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Алыбаева Г.Т.
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Кыргызстан г. Бишкек ул. Чуй, 265
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        23
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238301.ua-tenders.com/">
 			                                            &quot;НВП ВЕЛДТЕК&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Марчук Александр Иванович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина г.Киев ул. Вишняковская, 7А, кв.90
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        24
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            СТПРЕС
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Поліщук Сергій Анатолійови
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        25
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            &quot;Херсон Буд Капетал&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бурлаков Алексей Александрович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Херсон Бериславское шосе 33
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        26
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238318.ua-tenders.com/">
 			                                            ПГЩК
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бойчук Сергей Григорьевич
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Конецполь с Конецполь
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        27
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238305.ua-tenders.com/">
 			                                            Алви Род
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Оксана Глазова
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Киев ул. Жилянская 59, офис 312
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        28
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238301.ua-tenders.com/">
 			                                            &quot;НВП ВЕЛДТЕК&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Марчук Александр Иванович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина г.Киев ул. Вишняковская, 7А, кв.90
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        29
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            СТПРЕС
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Поліщук Сергій Анатолійови
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Україна Дніпропетровська обл., м. Кривий Ріг, вул. Костенка, 21 Вул. Костенка, 21
 			                                    </td>
 			                                </tr>
 			                                <tr>
-			                                    <td class="numb_col">
+			                                    <td class="numb_col" data-label="№">
 			                                        30
 			                                    </td>
-			                                    <td class="industry_col">
+			                                    <td class="industry_col" data-label="Название компании">
 			                                        <a style="font-weight:bold;" href="http://238298.ua-tenders.com/">
 			                                            &quot;Херсон Буд Капетал&quot;
 			                                        </a>
 			                                    </td>
-			                                    <td>
+			                                    <td class="contacts-col" data-label="Контактные данные">
 			                                        Ф.И.О.: Бурлаков Алексей Александрович
 			                                    </td>
-			                                    <td class="archive_col">
+			                                    <td class="region-col" data-label="Регион">
 			                                        Украина Херсон Бериславское шосе 33
 			                                    </td>
 			                                </tr>
@@ -828,7 +830,7 @@
 			                    </table>
 			                </div>
 			
-			                <p><strong>Найдено: </strong>105778 поставщика(ов).</p>
+			                <p class="found"><strong>Найдено: </strong>105778 поставщика(ов).</p>
 			
 			                <!-- PAGINATION_OPEN -->
 			                <div class="grid-x  cell pagination_wrapp newspage_wrap">

@@ -1,0 +1,42 @@
+// MOBILE SUPPLIERS
+@include breakpoint(small down) {
+    .suppliers_wrapp {
+        padding-right: 10px;
+        input[type=text] {
+            width: 100%!important;
+            height: 25px;
+            margin-bottom: 15px!important;
+            &:focus {
+                outline: -webkit-focus-ring-color auto 5px;
+            }
+        }
+        input[type=submit] {
+            padding: 1px 6px;
+            -webkit-appearance: push-button;
+            height: 25px;
+            width: 100%;
+            font-size: 15px;
+            margin-bottom: 15px;
+        } 
+
+        .found {
+            text-align: center;
+        }
+    }
+
+    .suppliers_table_wrapp {
+        margin-right: 0px!important;
+        background-color: transparent;
+    }
+
+    #suppliers-table {
+        td:before {
+            width: 80%!important;
+        }
+
+        td {
+            padding-left: 50%!important;
+        }
+
+    }
+}

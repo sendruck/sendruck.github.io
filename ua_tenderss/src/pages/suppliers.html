@@ -58,35 +58,37 @@ context-heading: Контекстное меню
                 <input type="text" name="Search">
                 <input type="submit" value="Искать в каталоге!">
 
-                <p><strong>Найдено: </strong>{{suppliers.number_suppliers}} поставщика(ов).</p>
+                <p class="found"><strong>Найдено: </strong>{{suppliers.number_suppliers}} поставщика(ов).</p>
 
                 {{> pagination}}
 
                 <div class="industry_table_wrapp suppliers_table_wrapp">
-                    <table id="suppliers-table" cellspacing="0" cellpadding="0" border="0">
+                    <table id="suppliers-table" class="responsive-card-table unstriped" cellspacing="0" cellpadding="0" border="0">
                         <tbody>
-                            <tr>
-                                <th class="numb_col">
-                                    <b>№</b>
-                                </th>
-                                <th>Название компании</th>        
-                                <th>Контактные данные</th>
-                                <th>Регион</th>
-                            </tr>
+                            <thead>
+                                <tr>
+                                    <th class="numb_col">
+                                        <b>№</b>
+                                    </th>
+                                    <th>Название компании</th>        
+                                    <th>Контактные данные</th>
+                                    <th>Регион</th>
+                                </tr>
+                            </thead>
                             {{#each suppliers.suppliers-row}}
                                 <tr>
-                                    <td class="numb_col">
+                                    <td class="numb_col" data-label="№">
                                         {{number}}
                                     </td>
-                                    <td class="industry_col">
+                                    <td class="industry_col" data-label="Название компании">
                                         <a style="font-weight:bold;" href="{{company-name-link}}">
                                             {{company-name}}
                                         </a>
                                     </td>
-                                    <td>
+                                    <td class="contacts-col" data-label="Контактные данные">
                                         {{contacts-info}}
                                     </td>
-                                    <td class="archive_col">
+                                    <td class="region-col" data-label="Регион">
                                         {{region}}
                                     </td>
                                 </tr>
@@ -95,7 +97,7 @@ context-heading: Контекстное меню
                     </table>
                 </div>
 
-                <p><strong>Найдено: </strong>{{suppliers.number_suppliers}} поставщика(ов).</p>
+                <p class="found"><strong>Найдено: </strong>{{suppliers.number_suppliers}} поставщика(ов).</p>
 
                 {{> pagination}}
 
