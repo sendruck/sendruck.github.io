@@ -60,6 +60,14 @@
             padding-bottom: 4px;
         }
 
+        #no_padding {
+            padding-left: 0px!important;
+
+            select {
+                position: static!important;
+            }
+        }
+
         .second_col {
             margin-top: 15px;
 
@@ -87,8 +95,8 @@
 
             input[type='submit'] {
                 height: 30px !important;
-                position: relative;
-                bottom: 15px;
+                position: static!important;
+                // bottom: 15px;
 
                 &:focus {
                     background-color: #afafaf;

@@ -108,6 +108,11 @@
                 margin: 0px;
             }
 
+            input[type='submit'] {
+                position: relative;
+                bottom: 15px;
+            }
+
             input.sbutton, input.find_expanded {
                 width: 100%;
                 border: 1px solid #000000;
