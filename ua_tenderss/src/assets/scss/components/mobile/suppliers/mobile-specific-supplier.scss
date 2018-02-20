@@ -8,7 +8,7 @@
         .supplier_logo {
             display: block;
             border: none;
-            width: 60%;
+            width: 70%;
             margin-left: auto;
             margin-right: auto;
         }
@@ -22,11 +22,19 @@
             display: block;
             width: 100%;
             border-right: none;
+
+            .supp_contact_wrpp {
+                margin-left: 0px;
+            }
         }
         .contact_person {
             border-top: 1px solid #3C9CD7; 
             position: static;
             width: 100%;
+            
+            p:last-child {
+                margin-left: 0px;
+            }
         }
     }
 }
