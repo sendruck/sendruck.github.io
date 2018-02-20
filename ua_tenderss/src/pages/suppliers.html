@@ -64,17 +64,17 @@ context-heading: Контекстное меню
 
                 <div class="industry_table_wrapp suppliers_table_wrapp">
                     <table id="suppliers-table" class="responsive-card-table unstriped" cellspacing="0" cellpadding="0" border="0">
+                        <thead>
+                            <tr>
+                                <th class="numb_col">
+                                    <b>№</b>
+                                </th>
+                                <th>Название компании</th>        
+                                <th>Контактные данные</th>
+                                <th>Регион</th>
+                            </tr>
+                        </thead>
                         <tbody>
-                            <thead>
-                                <tr>
-                                    <th class="numb_col">
-                                        <b>№</b>
-                                    </th>
-                                    <th>Название компании</th>        
-                                    <th>Контактные данные</th>
-                                    <th>Регион</th>
-                                </tr>
-                            </thead>
                             {{#each suppliers.suppliers-row}}
                                 <tr>
                                     <td class="numb_col" data-label="№">
