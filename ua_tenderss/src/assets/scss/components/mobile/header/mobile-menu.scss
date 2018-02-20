@@ -3,13 +3,17 @@
     .menu_line {
         height: 30px !important;
     }
+
+    .off-canvas.position-left {
+        background: #0592d7;
+    }
     
     .mobile_menu {
-        background-color: #fce3a2;
+        background-color: #0592d7;
     
         li {
             a {
-                color: #534741;
+                color: #ffffff;
                 font-weight: 700;
                 font-family: Arial,Verdana,sans-serif;
                 border-bottom: 1px solid #534741;
