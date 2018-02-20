@@ -247,9 +247,11 @@
 			    <div class="hide-for-small-only search_wrapp flex-container">
 			        <div class="search_bar flex-child-grow">
 			            <div class="search_icon">
-			                <div class="search_icon_tr">l</div>
-			                <input type="text" name="text" value="">
-			                <a onclick="window.document.searchform.submit();" class="reg-enter">Найти</a>
+			                <div class="search_icon_tr"></div>
+			                <form action="http://www.ua-tenders.com/search/" method="get" name="searchform">
+			                    <input type="text" name="text" value="">
+			                    <a onclick="window.document.searchform.submit();" class="reg-enter">Найти</a>
+			                </form>
 			            </div>
 			        </div>
 			        <div class="favourite_wrapper flex-child-grow">
