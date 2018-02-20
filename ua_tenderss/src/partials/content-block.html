@@ -27,7 +27,7 @@
             {{> pagination}}
         </div>
         {{#each news-content.news-item}}
-            <div class="news_info_block clear-fix" >
+            <article class="news_info_block clear-fix" >
                 <img src="{{image_link}}" alt="news-image" class="news-image">
                 <p>
                     <a class="news_blck_caption" href="{{link}}">
@@ -42,7 +42,7 @@
                         {{text}}
                     </p>
                 </div>
-            </div>
+            </article>
         {{/each}}
 
         <div class="news_pagination">
@@ -83,18 +83,18 @@
         </div>
         <hr>
         {{#each legislation-content.context-content}}
-            <div class="news_info_block legeslation_info_block clear-fix">
-                <p>
+            <article class="news_info_block legeslation_info_block clear-fix">
+                <h2>
                     <a class="news_blck_caption" href="{{link}}">
                         {{link-text}}
                     </a>
-                </p>
-                <div class="news_info_wrapper legislation_wrapper">
+                </h2>
+                <div class="news_info_wrapper legislation_wrapper legislation_description">
                     <p>
                         {{text}}
                     </p>
                 </div>
-            </div>
+            </article>
         {{/each}}
     {{/ifpage}}
     <!-- LEGISLATIN_CONTENT_CLOSE -->
@@ -111,7 +111,7 @@
         </p>
 
         {{#each materials-content.context-content}}
-            <div class="news_info_block legeslation_info_block clear-fix">
+            <article class="news_info_block legeslation_info_block clear-fix">
                 <p>
                     <a class="news_blck_caption" href="{{link}}">
                         {{link-text}}
@@ -122,7 +122,7 @@
                         {{text}}
                     </p>
                 </div>
-            </div>
+            </article>
         {{/each}}
     {{/ifpage}}
     <!-- MATERIALS_CONTENT_CLOSE -->
@@ -154,13 +154,13 @@
         </div>
     </div>
     {{#each legislation_laws.context-content}}
-        <div class="news_info_block legeslation_info_block clear-fix">
+        <article class="news_info_block legeslation_info_block clear-fix">
             <p>
                 <a class="news_blck_caption" href="{{link}}">
                     {{link-text}}
                 </a>
             </p>
-            <div class="news_info_wrapper legislation_wrapper legislation_laws_wrapper">
+            <div class="news_info_wrapper legislation_wrapper legislation_laws_wrapper legislation_decription">
                 <p>
                     {{text}}
                 </p>
@@ -168,7 +168,7 @@
                     {{details}}
                 </span>
             </div>
-        </div>
+        </article>
     {{/each}}
     {{/ifpage}}
     <!-- LEGISLATIN_LAWS_CONTENT_CLOSE -->
