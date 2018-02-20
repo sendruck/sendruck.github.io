@@ -2,7 +2,7 @@
     <ul class="left_menu">
         {{#ifpage 'news'}}
             <li class="li_opened">
-                <a href="/news/" class="news_link">
+                <a href="/news/" class="active_link">
                     Новости
                 </a>
                 <ul class="left_inner_menu">
@@ -87,7 +87,7 @@
         </li>
         
         <li>
-            <a href="/rubrics/materials/" {{#ifpage 'materials' 'specific_material'}}class="news_link"{{/ifpage}}>
+            <a href="/rubrics/materials/" {{#ifpage 'materials' 'specific_material'}}class="active_link"{{/ifpage}}>
                 Статьи
             </a>
         </li>
