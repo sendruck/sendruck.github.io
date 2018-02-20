@@ -83,7 +83,6 @@
     margin-bottom: 40px;
 }
 .question_item {
-    background-size: contain;
     border-bottom: 1px solid #CCE5FE;
     border-left: 1px solid #CCE5FE;
     border-right: 1px solid #CCE5FE;
@@ -93,6 +92,7 @@
     font-family: Verdana, Arial, sans-serif;
 
     a {
+        background-size: contain;
         background: transparent url(../img/icons/ques.gif) no-repeat 0 0px;
         padding-left: 25px;
 
