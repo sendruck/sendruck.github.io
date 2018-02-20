@@ -1,0 +1,32 @@
+// MOBILE SPECIFIC SUPPLIER
+@include breakpoint(small down) {
+    .specific_supplier_wrapp {
+        h2 {
+            text-align: center;
+        }
+
+        .supplier_logo {
+            display: block;
+            border: none;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .supplier_info {
+            position: static;
+            border-top: 1px solid #3C9CD7;
+        }
+
+        .supplier_contact_data {
+            display: block;
+            width: 100%;
+            border-right: none;
+        }
+        .contact_person {
+            border-top: 1px solid #3C9CD7; 
+            position: static;
+            width: 100%;
+        }
+    }
+}
