@@ -9,6 +9,12 @@
         height: 65px;
     }
 
+    .banners_wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
     .logo_banner {
         padding: 0;
         padding-top: 36px;
