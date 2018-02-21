@@ -176,21 +176,34 @@
 			        </div>
 			    </div>
 			
-			    <div class="my_page_info hide-for-small-only">
-			        <p class="user_name">
-			            Яковенко Олександр
-			        </p>
-			        <p class="my_page_links">
-			            <a href="http://www.ua-tenders.com/profile/">
-			                <strong>Моя страница</strong>
-			            </a>
-			            <br>
-			            <a href="http://www.ua-tenders.com/profile/access/">
-			                <strong>Заказать доступ</strong>
-			            </a>
-			        </p>
-			        <input class="logout_butt" type="submit" onclick="location.href='/?logout';" value="Выход">
-			    </div>
+			        <div class="my_page_info unregistered_block hide-for-small-only">
+			            <strong>
+			                Авторизация
+			            </strong>
+			            <form method="post" name="log4in_form_head" onsubmit="return check_login_form_head(this);">
+			                <div class="flex-container unregister-row login-row">
+			                    <p class="uregistered_caption">
+			                        логин
+			                    </p>
+			                    <input type="text" name="user_login" style="width:50%; height:13px; font-size:8pt; padding:0px; border:1px solid #505153">
+			                </div>
+			                <div class="flex-container unregister-row">
+			                    <p class="uregistered_caption">
+			                        пароль	
+			                    </p>
+			                    <input type="password" name="user_password" style="width:50%; height:13px; font-size:8pt; padding:0px; border:1px solid #505153">
+			                    <input type="submit" value="Вход" onclick="check_login_form_head(this);" style="height:16px; background:#FDE183; border:1px solid #5D637B; padding:0px 5px 0px 5px; font-size:8pt; color:#000">
+			                </div>
+			                <div class="flex-container unregister-row">
+			                    <a href="/login/remind/">
+			                        Забыли пароль ?	
+			                    </a>
+			                    <a href="/reg/">
+			                        Регистрация...
+			                    </a>
+			                </div>
+			            </form>
+			        </div>
 			</div>
 			<!-- BANNER_LINE_CLOSE -->
 			

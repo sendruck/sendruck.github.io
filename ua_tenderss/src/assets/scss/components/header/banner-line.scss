@@ -94,5 +94,55 @@
             padding: 0px 5px 0px 5px;
             height: 16px;      
         }
+
+        &.unregistered_block {
+            strong  {
+                color: #FDE183;
+                font-size: $font-size;
+                font-family: Verdana, Arial, sans-serif;
+            }
+
+            p {
+                color: white;
+                margin-bottom: 0px;
+                font-size: $font-size;
+                font-family: Verdana, Arial, sans-serif;
+
+            }
+
+            input {
+                margin-bottom: 5px;
+                height: 15px!important;
+            }
+
+            .login-row {
+                p {
+                    margin-right: 17px!important;
+                }
+            }
+
+            .unregister-row {
+                position: relative;
+                p {
+                    margin-right: 10px;
+                }
+
+                input[type=submit] {
+                    position: absolute;
+                    right: 0px;
+                }
+                a {
+                    color: white;
+                    text-decoration: underline;
+                    font-size: $font-size;
+                    font-family: Verdana, Arial, sans-serif;
+                }
+
+                a:last-child {
+                    position: absolute;
+                    right: 0px;
+                }
+            }
+        }
     }
 }
