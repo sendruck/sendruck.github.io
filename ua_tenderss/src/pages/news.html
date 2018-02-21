@@ -10,8 +10,8 @@ registered: true
 <!-- NEWS_BLOCK_OPEN -->
 <div class="grid-x">
 
-    <div class="large-10 cell news_cards">
-        <div class="left_menu_wrapper hide-for-small-only">
+    <div class="large-auto cell news_cards flex-container">
+        <div class="left_menu_wrapper flex-child-shrink hide-for-small-only">
             {{> left-menu}}
 
             {{> left-user-login}}
@@ -25,7 +25,7 @@ registered: true
     </div>
 
     <!-- NEWS_RIGHT_BLOCK_OPEN -->
-    <div class="large-2 cell right-column hide-for-small-only">
+    <div class="large-shrink cell right-column hide-for-small-only">
         <div id="context-menu">
             {{> select-industry}}
             

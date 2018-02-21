@@ -10,7 +10,7 @@ registered: true
 <!-- SPECIFIC_MATERIAL_BLOCK_OPEN -->
 <div class="grid-x">
 
-    <div class="large-10 cell">
+    <div class="large-auto flex-container cell">
         <div class="left_menu_wrapper hide-for-small-only">
             {{> left-menu}}
 
@@ -19,20 +19,10 @@ registered: true
             {{> left-banner-block}}
         </div>
         {{> content-block}}
-        
-        <a href="http://www.ua-tenders.com/tender/" class="specific_material_link text-center">
-            <p>
-                Тендерні закупівлі 
-                <br>
-                КАТАЛОГ ДЕРЖАВНИХ ЗАКУПІВЕЛЬ
-            </p>
-        </a>
-
-        {{> additional}}
 
     </div>
 
-    <div class="large-2 cell hide-for-small-only">
+    <div class="large-shrink specific_material_right cell hide-for-small-only">
         <div id="context-menu">
             {{> select-industry}}
 
