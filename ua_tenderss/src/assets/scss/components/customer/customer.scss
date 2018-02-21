@@ -9,3 +9,24 @@
     }
 }
 
+.specific_customer_link {
+    a {
+        color: #A5BBCE!important;
+        cursor: unset;
+    
+        &:hover {
+            text-decoration: none!important;
+        }
+    }
+}
+
+.customer_logo, .customer_contact_data {
+    width: 40%!important;
+}
+
+.customer_info {
+    position: absolute;
+    left: 40%!important;
+    height: 215px;
+}
+
