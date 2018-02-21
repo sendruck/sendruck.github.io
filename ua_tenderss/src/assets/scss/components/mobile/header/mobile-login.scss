@@ -56,5 +56,30 @@
                 outline: none;
             }
         }
+
+        .unregister_user_name {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+            font-family: Arial, Verdana, sans-serif;
+            margin-bottom: 5px;
+        }
+
+        .unregister-row {
+            a {
+                position: static!important;
+                display: block;
+                margin-left: 20px;
+            }
+        }
+
+        .unregister-input {
+            input {
+                margin-right: 18px;
+                font-size: 20px!important;
+                position: relative;
+                bottom: 39px;
+            }
+        }
     }
 }

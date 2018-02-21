@@ -77,28 +77,30 @@
 		</div>
 		<!-- MOBILE_LOGIN_OFF_CANVAS_OPEN -->
 		<div class="off-canvas position-bottom" id="loginModal" data-off-canvas data-transition="overlap">
-		    <!-- Close button -->
-		    <button class="close-button" aria-label="Close menu" type="button" data-close>
-		        <span aria-hidden="true">&times;</span>
-		    </button>
-		    <form method="post" name="log4in_form_head"	onsubmit="return check_login_form_head(this);">
-		        <div class="row">
-		            <label>Логин
-		            <input type="text" name="user_login">
-		            </label>
-		        </div>
-		        <div class="row">
-		            <label>Пароль
-		            <input type="password" name="user_password">
-		            </label>
-		        </div>
-		        <div class="contact-panel-actions">
-		            <a href="/login/remind/">
-		                Забыли пароль ?
+		
+		    
+		        <!-- Close button -->
+		        <button class="close-button" aria-label="Close menu" type="button" data-close>
+		            <span aria-hidden="true">&times;</span>
+		        </button>
+		        <p class="unregister_user_name">
+		            Яковенко Олександр
+		        </p>
+		        <div class="row unregister-row">
+		            <a href="http://www.ua-tenders.com/profile/">
+		                <strong>
+		                    Моя страница 
+		                </strong>
 		            </a>
-		            <input type="submit" class="button submit-button" value="Вход" onclick="check_login_form_head(this);">
+		            <a href="http://www.ua-tenders.com/profile/access/">
+		                <strong>
+		                    Заказать доступ
+		                </strong>
+		            </a>
 		        </div>
-		    </form>
+		        <div class="contact-panel-actions unregister-input">
+		            <input class="logout_butt" type="submit" onclick="location.href='/?logout';" value="Выход">
+		        </div>
 		</div>
 		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
 
