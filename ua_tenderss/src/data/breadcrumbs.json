@@ -124,5 +124,19 @@
 			"link": "http://238337.ua-tenders.com/",
 			"text": "\"КОМПАРЕКС Україна\""
 		}
+	],
+	"specific-customer-breadcrumbs": [
+		{
+			"link": "/",
+			"text": "/ Главная"
+		},
+		{
+			"link": "http://www.ua-tenders.com/customers/",
+			"text": "Заказчики"
+		},
+		{
+			"link": "http://90986.ua-tenders.com/",
+			"text": "Регіональна філія «Придніпровська залізниця» ПАТ \"Українська залізниця\""
+		}
 	]
 }

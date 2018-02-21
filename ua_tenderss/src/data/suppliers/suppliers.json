@@ -82,10 +82,10 @@
 	"suppliers-row": [
 		{
 			"number": "1",
-			"company-name": "ПГЩК",
-			"company-name-link": "http://238318.ua-tenders.com/",
-			"contacts-info": "Ф.И.О.: Бойчук Сергей Григорьевич",
-			"region": "Украина Конецполь с Конецполь"
+			"company-name": "КОМПАРЕКС",
+			"company-name-link": "https://sendruck.github.io/ua_tenderss/dist/specific-supplier.html",
+			"contacts-info": "Гаюр Борис Францевич, керівник відділу продажів",
+			"region": "вул.М.Гринченка,4 б, БЦ \"Horizon Park\""
 		},
 		{
 			"number": "2",
