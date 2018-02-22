@@ -11,116 +11,345 @@ registered: true
 <!-- MAIN_PAGE_BLOCK_OPEN -->
 <div class="grid-x">
 
-        <div class="large-shrink cell news_cards">
-            <div class="left_menu_wrapper hide-for-small-only">
-                {{> left-menu}}
-                {{> left-user-login}}
-                
-                <!-- LEFT_POLLS_OPEN -->
-                <script type="text/javascript">
-                    function checkForm() {  
-                        for (a=0;a<document.poll_form.poll_answer.length;a++) {
-                            if (document.poll_form.poll_answer[a].checked == true) {
-                                window.document.poll_form.submit();
-                                return true;
-                            } else {
-                                //window.alert ('Сделайте выбор');
-                                return false;
-                            }
+    <div class="large-shrink cell news_cards">
+        <div class="left_menu_wrapper hide-for-small-only">
+            {{> left-menu}}
+            {{> left-user-login}}
+            
+            <!-- LEFT_POLLS_OPEN -->
+            <script type="text/javascript">
+                function checkForm() {  
+                    for (a=0;a<document.poll_form.poll_answer.length;a++) {
+                        if (document.poll_form.poll_answer[a].checked == true) {
+                            window.document.poll_form.submit();
+                            return true;
+                        } else {
+                            //window.alert ('Сделайте выбор');
+                            return false;
                         }
-                        //window.alert ('Сделайте выбор');
-                        return false;
                     }
-                </script>
-                <div class="left-polls-wrapper">
-                    <form action="/action/poll.php" name="poll_form" onsubmit="return checkForm();" method="POST">
-                        <input type="hidden" name="form_poll_id" value="12">
-                        <input type="hidden" name="poll_page" value="/">
-                        <h2>
-                            Опрос
-                        </h2>
-                        <p>
-                            На какой электронной площадке Prozorro вы работаете?
-                        </p>
-                        <div class="polls_inputs">
-                            <div class="input-row">
-                                <input type="radio" class="first-input" name="poll_answer" value="53">
-                                <label for="">Zakupki.UA</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="54">
-                                <label for="" class="two-line-label">Держзакупівлі<br>Онлайн</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="55">
-                                <label for="">Public BID</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="56">
-                                <label for="">Zakupki.Prom.ua</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="57">
-                                <label for="">NewTend</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="58">
-                                <label for="">SmartTender</label>
-                            </div>
-                            <div class="input-row">
-                                <input type="radio" name="poll_answer" value="59">
-                                <label for="">E-tender</label>
-                            </div>
+                    //window.alert ('Сделайте выбор');
+                    return false;
+                }
+            </script>
+            <div class="left-polls-wrapper">
+                <form action="/action/poll.php" name="poll_form" onsubmit="return checkForm();" method="POST">
+                    <input type="hidden" name="form_poll_id" value="12">
+                    <input type="hidden" name="poll_page" value="/">
+                    <h2>
+                        Опрос
+                    </h2>
+                    <p>
+                        На какой электронной площадке Prozorro вы работаете?
+                    </p>
+                    <div class="polls_inputs">
+                        <div class="input-row">
+                            <input type="radio" class="first-input" name="poll_answer" value="53">
+                            <label for="">Zakupki.UA</label>
                         </div>
-                        <a onclick="checkForm(this);" class="reg-enter">
-                            Ответить
-                        </a>
-                        <a href="/polls/" class="polls-result">
-                            Результаты
-                        </a>
-                    </form>
-                    
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="54">
+                            <label for="" class="two-line-label">Держзакупівлі<br>Онлайн</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="55">
+                            <label for="">Public BID</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="56">
+                            <label for="">Zakupki.Prom.ua</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="57">
+                            <label for="">NewTend</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="58">
+                            <label for="">SmartTender</label>
+                        </div>
+                        <div class="input-row">
+                            <input type="radio" name="poll_answer" value="59">
+                            <label for="">E-tender</label>
+                        </div>
+                    </div>
+                    <a onclick="checkForm(this);" class="reg-enter">
+                        Ответить
+                    </a>
+                    <a href="/polls/" class="polls-result">
+                        Результаты
+                    </a>
+                </form>
+                
+            </div>
+
+            <!-- LEFT_POLLS_CLOSE -->
+
+            <!-- WEATHER_PLUG-IN_OPEN -->
+
+                <div class="weather_wrapp" style="margin-bottom: 15px;">
+                    <iframe width="150" height="270" frameborder="0" style="border:0px solid #000000; display: block; margin-left: auto; margin-right: auto;" scrolling="no" src="https://pogodnik.com/informer/vertical/01/1934-pogoda-v-Kieve-Ukraina">
+                            &lt;a href="https://pogodnik.com/1934-pogoda-v-Kieve-Ukraina"&gt; &lt;img src="https://pogodnik.com/images/prognoz-pogody-200x240.png"&gt; &lt;/a&gt
+                        
+                    </iframe>
                 </div>
 
-                <!-- LEFT_POLLS_CLOSE -->
+            <!-- WEATHER_PLUG-IN_CLOSE -->
 
-                <!-- WEATHER_PLUG-IN_OPEN -->
+            <!-- LEFT_SOCIAL_BLOCK_OPEN -->
 
-                    <div class="weather_wrapp" style="margin-bottom: 15px;">
-                        <iframe width="150" height="270" frameborder="0" style="border:0px solid #000000; display: block; margin-left: auto; margin-right: auto;" scrolling="no" src="https://pogodnik.com/informer/vertical/01/1934-pogoda-v-Kieve-Ukraina">
-                             &lt;a href="https://pogodnik.com/1934-pogoda-v-Kieve-Ukraina"&gt; &lt;img src="https://pogodnik.com/images/prognoz-pogody-200x240.png"&gt; &lt;/a&gt
-                            
-                        </iframe>
-                    </div>
+                <div class="socials_wrapp">
+                    <h1>
+                        Прогноз погоды на <a href="https://pogodnik.com" target="_blank">Погоднике</a>
+                    </h1>
 
-                <!-- WEATHER_PLUG-IN_CLOSE -->
+                    <iframe class="social_buttons" name="f8b3fc4b61897" width="190px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?app_id=135304813235375&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df187199fde20714%26domain%3Dwww.ua-tenders.com%26origin%3Dhttp%253A%252F%252Fwww.ua-tenders.com%252Ff3e04c0f990d604%26relation%3Dparent.parent&amp;container_width=179&amp;font=verdana&amp;href=http%3A%2F%2Fua-tenders.com%2F&amp;layout=box_count&amp;locale=ru_RU&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=190" style="border: none; visibility: visible; width: 81px; height: 64px;" class=""></iframe>
 
-                <!-- LEFT_SOCIAL_BLOCK_OPEN -->
+                    <h2>
+                        Закупівлі <a href="https://zakupki.com.ua" target="_blank">Прозоро</a>
+                    </h2>
 
-                    <div class="socials_wrapp">
-                        <h1>
-                            Прогноз погоды на <a href="https://pogodnik.com" target="_blank">Погоднике</a>
-                        </h1>
+                    <h2>
+                        Каталог<br>закупівель: <br>      
+                        <a href="https://etp.zakupki.com.ua" target="_blank">etp.zakupki.com.ua</a>
+                    </h2>
+                </div>
 
-                        <iframe class="social_buttons" name="f8b3fc4b61897" width="190px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?app_id=135304813235375&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df187199fde20714%26domain%3Dwww.ua-tenders.com%26origin%3Dhttp%253A%252F%252Fwww.ua-tenders.com%252Ff3e04c0f990d604%26relation%3Dparent.parent&amp;container_width=179&amp;font=verdana&amp;href=http%3A%2F%2Fua-tenders.com%2F&amp;layout=box_count&amp;locale=ru_RU&amp;sdk=joey&amp;send=true&amp;show_faces=true&amp;width=190" style="border: none; visibility: visible; width: 81px; height: 64px;" class=""></iframe>
-
-                        <h2>
-                            Закупівлі <a href="https://zakupki.com.ua" target="_blank">Прозоро</a>
-                        </h2>
-
-                        <h2>
-                            Каталог<br>закупівель: <br>      
-                            <a href="https://etp.zakupki.com.ua" target="_blank">etp.zakupki.com.ua</a>
-                        </h2>
-                    </div>
-
-                <!-- LEFT_SOCIAL_BLOCK_CLOSE -->
-            </div>    
-        </div>
-
-        <div class="cell large-auto">
-
-        </div>
-    
+            <!-- LEFT_SOCIAL_BLOCK_CLOSE -->
+        </div>    
     </div>
-    <!-- MAIN_PAGE_BLOCK_CLOSE -->
+
+    <div class="cell large-auto">
+        <div class="grid-x">
+            <div class="large-auto cell main_tender_catalog">
+                <h1>
+                    Каталог тендеров
+                </h1>
+                <div class="tender_catalog_wrapp flex-container">
+                    <div class="first_catalog_column flex-child-auto">
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/tender/zhit/">
+                                    Жилищно-коммунальное обслуживание 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (16039)	
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/kpn/">
+                                    Консалтинговые услуги 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (3632)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/meb/">
+                                    Мебель 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (17986)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/met/">
+                                    Металлы 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (31149)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/ner/">
+                                    Недвижимость 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (5058)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/ppd/">
+                                    Полиграфия 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (14893)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/psg/">
+                                    Сельское хозяйство 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (35893)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/psg/">
+                                    Товары, работы, услуги
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (150670)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/psg/">
+                                    Хозтовары, бумага
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (32976)		
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="second_catalog_column flex-child-auto">
+                        <ul class="no-bullet">
+                            <li>
+                                <a href="/tender/kom/">
+                                    Компьютеры
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (74043)	
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/leg/">
+                                    Легкая промышленность 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (28415)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/med/">
+                                    Медицина 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (129805)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/ndr/">
+                                    Научные исследования 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (7099)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/php/">
+                                    Пищевая промышленность 
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (181916)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/tech/">
+                                    Промышленное оборудование
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (144880)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/bud/">
+                                    Строительство
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (182993)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/trz/">
+                                    Транспорт, запчасти
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (82564)		
+                                </p>
+                            </li>
+                            <li>
+                                <a href="/tender/pal/">
+                                    Энергетика
+                                </a>
+                                <sup>
+                                    new
+                                </sup>
+                                <p>
+                                    (143363)		
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="large-shrink cell main_page_right_banner">
+                <div id="context-menu">
+                    <a href="#" class="bank_garant_wrapper">
+                        <img src="assets/img/banners/2228643673625732697.gif" alt="" class="bank_garant hide-for-small-only">
+                    </a>
+        
+                    <p class="order_adds_wrapper hide-for-small-only">
+                        <a href="http://www.ua-tenders.com/rubrics/services/reklama/66061/" target="_blank"  class="order_adds">
+                            Заказать рекламу
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- MAIN_PAGE_BLOCK_CLOSE -->

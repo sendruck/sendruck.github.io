@@ -1,0 +1,62 @@
+//MAIN PAGE CONTENT
+.main_page_right_banner {
+    width: 240px!important;
+    padding-right: 5px;
+}
+
+//MAIN PAGE CATALOG
+.main_tender_catalog {
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-left: 10px;
+    h1 {
+        color: $primary-color;
+        font-size: 12pt;
+        font-family: Verdana, Arial, sans-serif;
+        font-weight: 700;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 2px;
+    }
+
+    p {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}
+
+.tender_catalog_wrapp {
+    padding: 5px 35px 3px 3px;
+    border: 1px solid #E5F1FD;
+
+    ul {
+        margin-bottom: 0px;
+    }
+
+    a, p {
+        color: $primary-color;
+        font-weight: 700;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 10pt;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    sup {
+        color: #FF5E0B;
+        font-weight: bold;
+    }
+
+    p {
+        font-weight: 400;
+    }
+}
+
+.second_catalog_column {
+    margin-left: 4%;
+}
