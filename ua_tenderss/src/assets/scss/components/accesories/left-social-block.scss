@@ -1,0 +1,25 @@
+.socials_wrapp {
+    h1, h2 {
+        color: $primary-color;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .social_buttons {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h2 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
