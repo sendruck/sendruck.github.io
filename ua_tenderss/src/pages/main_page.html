@@ -559,7 +559,37 @@ registered: true
                 </div>
             </div>
             <div class="cell auto">
-                Lorem ipsum dolor sit amet.
+                <div id="context-menu">
+                    <div id="context-top-topic" class="hide-for-small-only top-news-title forum-title">
+                        Форум
+                        <span class="answered">
+                            Отв.
+                        </span>
+                        <span class="seen">
+                            Просм.
+                        </span>
+                    </div>
+                    <ul class="forum">
+                        {{#each forum.forum-post}}
+                            <li>
+                                <a href="{{link}}">
+                                    {{link-text}}
+                                </a>
+                                <span class="answered">
+                                    ({{answered}})
+                                </span>
+                                <span class="seen">
+                                    ({{seen}})
+                                </span>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <div class="add_question all_forums">
+                        <a href="http://forum.ua-tenders.com/" target="_blank">
+                            Все форумы
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
