@@ -1,0 +1,94 @@
+---
+title: Тендеры ProZorro на Веб-портале Ua-Tenders.com - коммерческие тендеры, закупки предприятий, аукционы
+description: Все тендеры в одном месте. Получайте тендеры со всех площадок на Е-mail. Лучший сайт по тендерам государственным и коммерческим.
+keywords: tender, prozorro, тендеры в украине, торги, закупки прозоро, аукционы, tenders, проведение торгов, тендеры и закупки, государственные закупки, коммерческие тендеры
+registered: true
+---
+
+{{> header}}
+
+
+<!-- MAIN_PAGE_BLOCK_OPEN -->
+<div class="grid-x">
+
+        <div class="large-shrink cell news_cards">
+            <div class="left_menu_wrapper hide-for-small-only">
+                {{> left-menu}}
+                {{> left-user-login}}
+                
+                <!-- LEFT_POLLS_OPEN -->
+                <script type="text/javascript">
+                    function checkForm() {  
+                        for (a=0;a<document.poll_form.poll_answer.length;a++) {
+                            if (document.poll_form.poll_answer[a].checked == true) {
+                                window.document.poll_form.submit();
+                                return true;
+                            } else {
+                                //window.alert ('Сделайте выбор');
+                                return false;
+                            }
+                        }
+                        //window.alert ('Сделайте выбор');
+                        return false;
+                    }
+                </script>
+                <div class="left-polls-wrapper">
+                    <form action="/action/poll.php" name="poll_form" onsubmit="return checkForm();" method="POST">
+                        <input type="hidden" name="form_poll_id" value="12">
+                        <input type="hidden" name="poll_page" value="/">
+                        <h2>
+                            Опрос
+                        </h2>
+                        <p>
+                            На какой электронной площадке Prozorro вы работаете?
+                        </p>
+                        <div class="polls_inputs">
+                            <div class="input-row">
+                                <input type="radio" class="first-input" name="poll_answer" value="53">
+                                <label for="">Zakupki.UA</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="54">
+                                <label for="" class="two-line-label">Держзакупівлі<br>Онлайн</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="55">
+                                <label for="">Public BID</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="56">
+                                <label for="">Zakupki.Prom.ua</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="57">
+                                <label for="">NewTend</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="58">
+                                <label for="">SmartTender</label>
+                            </div>
+                            <div class="input-row">
+                                <input type="radio" name="poll_answer" value="59">
+                                <label for="">E-tender</label>
+                            </div>
+                        </div>
+                        <a onclick="checkForm(this);" class="reg-enter">
+                            Ответить
+                        </a>
+                        <a href="/polls/" class="polls-result">
+                            Результаты
+                        </a>
+                    </form>
+                    
+                </div>
+
+                <!-- LEFT_POLLS_CLOSE -->
+            </div>    
+        </div>
+
+        <div class="cell large-auto">
+
+        </div>
+    
+    </div>
+    <!-- MAIN_PAGE_BLOCK_CLOSE -->
