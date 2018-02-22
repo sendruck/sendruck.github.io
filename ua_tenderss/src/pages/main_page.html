@@ -408,13 +408,13 @@ registered: true
                 </div>
                 <!-- LAST_NEWS_BLOCK_CLOSE -->
             </div>
-            <div class="large-6 cell">
+            <div class="large-6 cell main_content_right_block">
                 <div id="context-menu">
                     <!-- MAIN_PAGE_TOP_NEWS_OPEN -->
                     <div id="context-top-topic" class="hide-for-small-only top-news-title">
                         ТОП:: Новостей 
                     </div>
-                    <ul>
+                    <ul id="top_news_margin">
                         {{#each top-news.top-news-content}}
                             <li class="no-bullet top-news-item">
                                 <a href="{{link}}">
@@ -463,6 +463,21 @@ registered: true
                         </a>
                     </div>
                     <!-- MAIN_PAGE_NEWS_SUBSCRIPTION_CLOSE -->
+
+                    <!-- MAIN_PAGE_UPDATES_OPEN -->
+                        <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                            Обновления нормативной базы
+                        </div>
+                        <ul>
+                            {{#each updates.updated-item}}
+                                <li class="no-bullet update-item">
+                                    <a href="{{link}}">
+                                        {{link-text}}
+                                    </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    <!-- MAIN_PAGE_UPDATES_CLOSE -->
                 </div>
 
             </div>
