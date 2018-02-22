@@ -97,3 +97,88 @@
     margin-right: auto;
     margin-top: 25px;
 }
+
+//LAST NEWS BLOCK
+.last-news-list {
+    margin-left: 2px;
+    ul {
+        li {
+            padding-top: 3px;
+            p {
+                color: $primary-color;
+                font-size: $font-size;
+                font-family: Verdana, sans-serif;
+                font-weight: 700;
+                margin-bottom: 3px;
+            }
+            a {
+                font-weight: 400!important;
+            }
+            &:nth-child(odd) {
+                background: #F8FBFD url("../img/icons/b_news_item.gif") no-repeat 0 26px!important;
+                height: unset!important;
+                padding-left: 25px!important;
+            }
+            &:nth-child(even) {
+                background: #F0F6FC url("../img/icons/b_news_item.gif") no-repeat 0 26px!important;
+                height: unset!important;
+                padding-left: 25px!important;
+            }
+        }
+    }
+}
+
+//TOP NEWS BLOCK
+.top-news-title {
+    margin-bottom: 15px;
+}
+li.top-news-item {
+    height: unset!important;
+    border: none!important;
+    background:  url("../img/icons/w_item.gif") no-repeat 12px 3px!important;
+    padding-left: 25px!important;
+    margin-bottom: 10px!important;
+
+    a {
+        font-weight: 400!important;
+    }
+}
+
+
+//NEWS SUBSCRIPTION
+.main-page-subscription {
+    background: transparent;
+    border: none;
+
+    input[type=text] {
+        width: 156px;
+        box-shadow: none;
+        height: 24px;
+    }
+
+    a.ok_button {
+        height: 24px;
+        padding: 3px 10px 3px 10px;
+        background: #FCDC83;
+        border: 1px solid #E2BA6E;
+    }
+
+    .export_materials {
+        color: $primary-color;
+        font-size: $font-size;
+        font-weight: 700;
+        font-family: Verdana, Arial, sans-serif;
+        background:  url("../img/icons/w_item.gif") no-repeat 3px 3px!important;
+        padding-left: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            vertical-align: baseline;
+        }
+    }
+}
+
+

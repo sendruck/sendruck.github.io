@@ -118,7 +118,7 @@ registered: true
         </div>    
     </div>
 
-    <div class="cell large-auto">
+    <div class="cell large-auto main_page_content">
         <div class="grid-x">
             <div class="large-auto cell main_tender_catalog">
                 <h1>
@@ -381,6 +381,90 @@ registered: true
                         </a>
                     </p>
                 </div>
+            </div>
+        </div>
+
+        <div class="grid-x">
+            <div class="large-6 cell">
+                <!-- LAST_NEWS_BLOCK_OPEN -->
+                <div id="context-menu" class="last-news-list">
+                    <div id="context-top-topic" class="hide-for-small-only">
+                        Последние новости
+                    </div> 
+                    <div class="top-topic-block">
+                        <ul>
+                            {{#each last-news.news-item}}
+                                <li>
+                                    <p>
+                                        {{publication-date}}
+                                    </p>
+                                    <a href="{{last-news-link}}">
+                                        {{last-news-text}}
+                                    </a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <!-- LAST_NEWS_BLOCK_CLOSE -->
+            </div>
+            <div class="large-6 cell">
+                <div id="context-menu">
+                    <!-- MAIN_PAGE_TOP_NEWS_OPEN -->
+                    <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                        ТОП:: Новостей 
+                    </div>
+                    <ul>
+                        {{#each top-news.top-news-content}}
+                            <li class="no-bullet top-news-item">
+                                <a href="{{link}}">
+                                    {{link-text}}
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <!-- MAIN_PAGE_TOP_NEWS_CLOSE -->
+
+                    <!-- MAIN_PAGE_NEWS_SUBSCRIPTION_OPEN -->
+                    <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                        Подписка на новости 
+                    </div>
+                    <script type="text/javascript">
+                        function form_submit(){
+                            form=window.document.subscribe_form;
+                            if (form.email.value == '\'\' || form.email.value == \'Ваш e-mail\''){
+                            alert ('Введите ваш e-mail');  
+                            form.email.focus(); 
+                            return false;
+                            }
+                            form.submit();
+                        };
+                    </script>
+                    <div class="news-subscr-wrapper main-page-subscription">
+                        <form action="http://www.ua-tenders.com/news/subscribe/" name="subscribe_form">
+                            <p>
+                                Ваш e-mail:
+                            </p>
+                            <input type="text" name="email">
+                            <a onclick="form_submit();" class="ok_button">ok</a>
+                            <label>
+                                <input type="radio" name="action" value="subscribe" checked="checked" class="radio_but">
+                                    Подписаться
+                            </label>
+                            <label>
+                                <input type="radio" name="action" value="unsubscribe" class="radio_but">
+                                    Отписаться
+                            </label>
+                        </form>
+
+                        <a href="/news/rss/" class="export_materials">
+                            Экспорт материалов
+                            <img src="{{root}}assets/img/icons/rss_f.gif" alt="rss_icon">
+                        </a>
+                    </div>
+                    <!-- MAIN_PAGE_NEWS_SUBSCRIPTION_CLOSE -->
+                </div>
+
             </div>
         </div>
     </div>
