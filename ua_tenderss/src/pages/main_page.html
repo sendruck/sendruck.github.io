@@ -490,6 +490,7 @@ registered: true
         <div class="grid-x">
             <div class="cell auto">
                 <div id="context-menu">
+                    <!-- MAIN_PAGE_OFFER_OPEN -->
                     <div id="context-top-topic" class="hide-for-small-only top-news-title">
                         Предложения
                     </div>
@@ -528,10 +529,34 @@ registered: true
                             <option value="trp">Товары, работы, услуги</option>
                         </select>
                     </div>
+                <!-- MAIN_PAGE_OFFER_CLOSE -->
                 </div>
             </div>
             <div class="cell auto">
-                Lorem ipsum dolor sit amet.
+                <div id="context-menu">
+                    <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                        Вопросы-ответы
+                    </div>
+                    <ul class="qAndA">
+                        {{#each questions.question}}
+                            <li>
+                                <a href="{{link}}">
+                                    {{link-text}}
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                    <div class="add_question">
+                        <p>
+                            Добавить вопрос
+                        </p>
+                        <select id="faq-selector" onchange="location.href='/faq/add/' + this[this.selectedIndex].value + '/#add_message';">
+                            <option value="" selected="selected">--</option>
+                            <option value="faq-site">Вопросы по сайту UA-Tenders</option>
+                            <option value="faq-tenders">Вопросы по тендерным процедурам</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="cell auto">
                 Lorem ipsum dolor sit amet.
