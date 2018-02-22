@@ -201,4 +201,21 @@ li.top-news-item {
     }
 }
 
+//ADD NEWS LINK
+.add_news_link {
+    color:#F00; 
+    float:right; 
+    font-weight:bold; 
+    font-size: 11px; 
+    display: block;
+    margin-top: 12px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &:hover {
+        text-decoration: underline;
+        color:#F00; 
+    }
+}
+
 
