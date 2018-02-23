@@ -1,0 +1,40 @@
+//MOBILE_MAIN_PAGE
+@include breakpoint(small down) {
+    //MOBILE CATALOG
+    .tender_catalog_wrapp {
+        flex-direction: column;
+        padding-right: 5px!important;
+
+        li {
+            border-bottom: 1px solid #E5F1FD;
+        }
+    }
+    
+    .second_catalog_column {
+        margin-left: 0!important;
+    }
+
+    .catalog_items_wrapp {
+        width: 87%;
+    }
+
+    //MOBILE CONTENT MENU
+    .main_page_catalog_menu {
+        display: flex;
+        justify-content: center;
+
+        ul {
+            border: none;
+            display: unset!important;
+            padding-left: unset!important;
+        }
+        li {
+            width: unset;
+            height: unset;
+            a {
+                margin-top: 0!important;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
