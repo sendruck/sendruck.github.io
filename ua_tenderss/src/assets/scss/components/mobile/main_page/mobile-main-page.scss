@@ -59,4 +59,26 @@
         margin-bottom: 15px;
         font-size: 14px;
     }
+
+    //MOBILE THREE BLOCKS
+    .main-page-three-blck {
+        flex-direction: column!important;
+
+        .three_col_block {
+            flex-basis: 0%!important;
+        }
+    }
+
+    .add_offer, .add_question {
+        height: unset!important;
+        margin-bottom: 15px;
+
+        #offer-selector {
+            height: 25px;
+        }
+    }
+
+    #faq-selector {
+        height: 25px;
+    }
 }
