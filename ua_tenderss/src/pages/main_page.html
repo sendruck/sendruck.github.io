@@ -406,7 +406,7 @@ registered: true
             <div class="large-6 cell">
                 <!-- LAST_NEWS_BLOCK_OPEN -->
                 <div id="context-menu" class="last-news-list">
-                    <div id="context-top-topic" class="hide-for-small-only">
+                    <div id="context-top-topic">
                         Последние новости
                     </div> 
                     <div class="top-topic-block">
@@ -429,7 +429,7 @@ registered: true
             <div class="large-6 cell main_content_right_block">
                 <div id="context-menu">
                     <!-- MAIN_PAGE_TOP_NEWS_OPEN -->
-                    <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                    <div id="context-top-topic" class="top-news-title">
                         ТОП:: Новостей 
                     </div>
                     <ul id="top_news_margin">
@@ -458,7 +458,7 @@ registered: true
                             form.submit();
                         };
                     </script>
-                    <div class="news-subscr-wrapper main-page-subscription">
+                    <div class="news-subscr-wrapper hide-for-small-only main-page-subscription">
                         <form action="http://www.ua-tenders.com/news/subscribe/" name="subscribe_form">
                             <p>
                                 Ваш e-mail:
@@ -483,10 +483,10 @@ registered: true
                     <!-- MAIN_PAGE_NEWS_SUBSCRIPTION_CLOSE -->
 
                     <!-- MAIN_PAGE_UPDATES_OPEN -->
-                        <div id="context-top-topic" class="hide-for-small-only top-news-title">
+                        <div id="context-top-topic" class="top-news-title">
                             Обновления нормативной базы
                         </div>
-                        <ul>
+                        <ul id="updates-list">
                             {{#each updates.updated-item}}
                                 <li class="no-bullet update-item">
                                     <a href="{{link}}">

@@ -1,6 +1,10 @@
 //MOBILE_MAIN_PAGE
 @include breakpoint(small down) {
     //MOBILE CATALOG
+    .main_tender_catalog {
+        padding-top: 5px;
+        padding-left: 5px!important;
+    }
     .tender_catalog_wrapp {
         flex-direction: column;
         padding-right: 5px!important;
@@ -36,5 +40,23 @@
                 margin-bottom: 5px;
             }
         }
+    }
+    
+    .main_content_right_block {
+        padding-left: 5px;
+    }
+    
+    #context-top-topic {
+        margin-top: 15px;
+    }
+
+    #updates-list {
+        margin-bottom: 0px!important;
+    }
+
+    .add_news_link {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 }
