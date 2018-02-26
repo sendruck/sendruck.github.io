@@ -14,15 +14,12 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
+
 $(document).ready(function () {
     checkScreenSize();
     NewscheckScreenSize();
     industryCode();
-
-    $(function() {
-        $('.lazy').Lazy({
-            effect : "fadeIn",
-            effect_speed: 800
-        });
-    });
 });
+
+
+
