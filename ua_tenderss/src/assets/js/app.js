@@ -14,8 +14,6 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-$('#offCanvas').foundation('close');
-
 $(document).ready(function () {
     checkScreenSize();
     NewscheckScreenSize();

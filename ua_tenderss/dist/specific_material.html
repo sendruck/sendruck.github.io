@@ -21,88 +21,7 @@
 </head>
 
 <body>
-	<!-- <div class="off-canvas-wrapper"> -->
-		<div class="off-canvas position-left" id="offCanvas" data-off-canvas>
-		    <!-- Close button open-->
-		    <button class="close-button" aria-label="Close menu" type="button" data-close>
-		        <span aria-hidden="true">&times;</span>
-		    </button>
-		    <!-- Close button close-->
 		
-		
-		    <!-- MOBILE MENU OPEN -->
-		    <ul class="vertical menu mobile_menu">
-		        <li>
-		            <a href="http://www.ua-tenders.com/">
-		                Главная	
-		            </a>
-		        </li>
-		        <li>
-		            <a href="https://sendruck.github.io/ua_tenderss/dist/news.html">
-		                Новости	
-		            </a>
-		        </li>
-		        <li>
-		            <a href="http://www.ua-tenders.com/rubrics/services/expresstender/">
-		                Заказчики
-		            </a>
-		        </li>
-		        <li>
-		            <a href="http://www.ua-tenders.com/rubrics/services/tenders/">
-		                Поставщики
-		            </a>
-		        </li>
-		        <li>
-		            <a href="http://www.ua-tenders.com/rubrics/guarantee/">
-		                Тендеры
-		            </a>
-		        </li>
-		        <li>
-		            <a href="http://www.ua-tenders.com/rubrics/garantiya_turfirmam/">
-		                Услуги
-		            </a>
-		        </li>
-		        <li>
-		            <a href="https://sendruck.github.io/ua_tenderss/dist/materials.html">
-		                Статьи
-		            </a>
-		        </li>
-		        <li>
-		            <a href="http://www.ua-tenders.com/rubrics/inquiry/">
-		                Контакт
-		            </a>
-		        </li>
-		    </ul>
-		    <!-- MOBILE MENU OPEN -->
-		
-		</div>
-		<!-- MOBILE_LOGIN_OFF_CANVAS_OPEN -->
-		<div class="off-canvas position-bottom" id="loginModal" data-off-canvas data-transition="overlap">
-		        <!-- Close button -->
-		        <button class="close-button" aria-label="Close menu" type="button" data-close>
-		            <span aria-hidden="true">&times;</span>
-		        </button>
-		        <form method="post" name="log4in_form_head"	onsubmit="return check_login_form_head(this);">
-		            <div class="row">
-		                <label>Логин
-		                <input type="text" name="user_login">
-		                </label>
-		            </div>
-		            <div class="row">
-		                <label>Пароль
-		                <input type="password" name="user_password">
-		                </label>
-		            </div>
-		            <div class="contact-panel-actions">
-		                <a href="/login/remind/">
-		                    Забыли пароль ?
-		                </a>
-		                <input type="submit" class="button submit-button" value="Вход" onclick="check_login_form_head(this);">
-		            </div>
-		        </form>
-		    
-		</div>
-		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
 		<div class="off-canvas-content" data-off-canvas-content>
 			<!-- HEADER_TOP_LINE_OPEN -->
 			<div class="header_top_line hide-for-small-only">
@@ -849,8 +768,87 @@
 			            </div>
 			</div>
 			<!-- SEARCH_MODAL_CLOSE -->		</div>
+		<div class="off-canvas position-left is-closed" id="offCanvas" data-off-canvas>
+		    <!-- Close button open-->
+		    <button class="close-button" aria-label="Close menu" type="button" data-close>
+		        <span aria-hidden="true">&times;</span>
+		    </button>
+		    <!-- Close button close-->
 		
-	<!-- </div> -->
+		
+		    <!-- MOBILE MENU OPEN -->
+		    <ul class="vertical menu mobile_menu">
+		        <li>
+		            <a href="http://www.ua-tenders.com/">
+		                Главная	
+		            </a>
+		        </li>
+		        <li>
+		            <a href="https://sendruck.github.io/ua_tenderss/dist/news.html">
+		                Новости	
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/services/expresstender/">
+		                Заказчики
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/services/tenders/">
+		                Поставщики
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/guarantee/">
+		                Тендеры
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/garantiya_turfirmam/">
+		                Услуги
+		            </a>
+		        </li>
+		        <li>
+		            <a href="https://sendruck.github.io/ua_tenderss/dist/materials.html">
+		                Статьи
+		            </a>
+		        </li>
+		        <li>
+		            <a href="http://www.ua-tenders.com/rubrics/inquiry/">
+		                Контакт
+		            </a>
+		        </li>
+		    </ul>
+		    <!-- MOBILE MENU OPEN -->
+		
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_OPEN -->
+		<div class="off-canvas position-bottom is-closed" id="loginModal" data-off-canvas data-transition="overlap">
+		        <!-- Close button -->
+		        <button class="close-button" aria-label="Close menu" type="button" data-close>
+		            <span aria-hidden="true">&times;</span>
+		        </button>
+		        <form method="post" name="log4in_form_head"	onsubmit="return check_login_form_head(this);">
+		            <div class="row">
+		                <label>Логин
+		                <input type="text" name="user_login">
+		                </label>
+		            </div>
+		            <div class="row">
+		                <label>Пароль
+		                <input type="password" name="user_password">
+		                </label>
+		            </div>
+		            <div class="contact-panel-actions">
+		                <a href="/login/remind/">
+		                    Забыли пароль ?
+		                </a>
+		                <input type="submit" class="button submit-button" value="Вход" onclick="check_login_form_head(this);">
+		            </div>
+		        </form>
+		    
+		</div>
+		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
 
 	<script async src="assets/js/app.js"></script>
 </body>
