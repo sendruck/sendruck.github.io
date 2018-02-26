@@ -14,12 +14,9 @@ import Foundation from 'foundation-sites';
 
 $(document).foundation();
 
-// window.onbeforeunload = function () {
-//     window.scrollTo(0, 0);
-// }
+$('#offCanvas').foundation('close');
 
-$(document).ready(function () {  
-    window.scrollTo(0, 0);
+$(document).ready(function () {
     checkScreenSize();
     NewscheckScreenSize();
     industryCode();
