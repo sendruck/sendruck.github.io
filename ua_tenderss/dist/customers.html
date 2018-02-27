@@ -19,19 +19,9 @@
 		<link rel="stylesheet" href="assets/css/app.css">
 	</noscript>
 	<link rel="manifest" href="manifest.json">
-	<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
 </head>
 
-<body>
-	<script>
-		;(function() {
-            var bLazy = new Blazy({
-				success: function(e){
-					console.log("loaded");
-				}
-			});
-        })();		
-	</script>
+<body>	
 		
 		<div class="off-canvas-content" data-off-canvas-content>
 			<!-- HEADER_TOP_LINE_OPEN -->
@@ -1257,7 +1247,15 @@
 		        </div>
 		</div>
 		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
-		
+	<script>
+		function init() {
+		var imgDefer = document.getElementsByTagName('img');
+		for (var i=0; i<imgDefer.length; i++) {
+		if(imgDefer[i].getAttribute('data-src')) {
+		imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+		} } }
+		window.onload = init;
+	</script>
 	<script async src="assets/js/app.js"></script>
 </body>
 
