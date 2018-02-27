@@ -19,9 +19,21 @@
 		<link rel="stylesheet" href="assets/css/app.css">
 	</noscript>
 	<link rel="manifest" href="manifest.json">
+	<script src="//cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+
 </head>
 
 <body>
+	<script>
+		;(function() {
+            // Initialize
+            var bLazy = new Blazy({
+				success: function(e){
+					console.log("loaded");
+				}
+			});
+        })();		
+	</script>
 		
 		<div class="off-canvas-content" data-off-canvas-content>
 			
@@ -74,7 +86,7 @@
 			            target="_blank" rel="noopener">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img src="assets/img/banners/banner-1.gif" class="banner-2 " alt="Банковская гарантия" >
+			                    <img data-src="assets/img/banners/banner-1.gif" class="banner-2 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Банковская гарантия" >
 			                </picture>
 			            </a>
 			        </div>
@@ -83,7 +95,7 @@
 			            <a href="http://www.ua-tenders.com/rubrics/services/price/" target="_parent">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img src="assets/img/banners/17.gif" class="banner-3" >
+			                    <img data-src="assets/img/banners/17.gif" class="banner-3 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
 			                </picture>
 			            </a>
 			        </div>
@@ -92,7 +104,7 @@
 			            <a href="http://www.ua-tenders.com/rubrics/learning/" target="_parent">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img src="assets/img/banners/19.gif" class="banner-4">
+			                    <img data-src="assets/img/banners/19.gif" class="banner-4 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
 			                </picture>
 			            </a>
 			        </div>
@@ -1277,7 +1289,7 @@
 			                <a href="/tender/all/?b=all&a=all&t=all&p=&z=">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img src="assets/img/comix1.jpg" alt="instruction_1" class="lazy" data-src="assets/img/comix1.jpg">
+			                        <img data-src="assets/img/comix1.jpg" alt="instruction_1"  class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
 			                    </picture>
 			                </a>
 			            </div>
@@ -1299,7 +1311,7 @@
 			                <a href="/reg/">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img src="assets/img/comix2.jpg" alt="instruction_1" class="lazy" data-src="assets/img/comix2.jpg">
+			                        <img data-src="assets/img/comix2.jpg" alt="instruction_1" class="b-lazy" data-src="assets/img/comix2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
 			                    </picture>
 			                </a>
 			            </div>
@@ -1321,7 +1333,7 @@
 			                <a href="/profile/access/">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img src="assets/img/comix3.jpg" alt="instruction_1" class="lazy" data-src="assets/img/comix3.jpg">
+			                        <img data-src="assets/img/comix3.jpg" alt="instruction_1" class="b-lazy" data-src="assets/img/comix3.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
 			                    </picture>
 			                </a>
 			            </div>
