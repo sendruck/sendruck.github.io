@@ -83,7 +83,7 @@
 			            target="_blank" rel="noopener">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img data-src="assets/img/banners/banner-1.gif" class="banner-2 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Банковская гарантия" >
+			                    <img src="assets/img/banners/banner-1.gif" class="banner-2"  alt="Банковская гарантия" >
 			                </picture>
 			            </a>
 			        </div>
@@ -92,7 +92,7 @@
 			            <a href="http://www.ua-tenders.com/rubrics/services/price/" target="_parent">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img data-src="assets/img/banners/17.gif" class="banner-3 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
+			                    <img src="assets/img/banners/17.gif" class="banner-3 b-lazy">
 			                </picture>
 			            </a>
 			        </div>
@@ -101,7 +101,7 @@
 			            <a href="http://www.ua-tenders.com/rubrics/learning/" target="_parent">
 			                <picture>
 			                    <source media="(max-width: 768px)" srcset="assets/img/banners/mobile.gif">
-			                    <img data-src="assets/img/banners/19.gif" class="banner-4 b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
+			                    <img src="assets/img/banners/19.gif" class="banner-4"  >
 			                </picture>
 			            </a>
 			        </div>
@@ -929,7 +929,7 @@
 			                <a href="/tender/all/?b=all&a=all&t=all&p=&z=">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img data-src="assets/img/comix1.jpg" alt="instruction_1"  class="b-lazy" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
+			                        <img src="assets/img/comix1.jpg" alt="instruction_1"  >
 			                    </picture>
 			                </a>
 			            </div>
@@ -951,7 +951,7 @@
 			                <a href="/reg/">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img data-src="assets/img/comix2.jpg" alt="instruction_1" class="b-lazy" data-src="assets/img/comix2.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
+			                        <img src="assets/img/comix2.jpg" alt="instruction_1">
 			                    </picture>
 			                </a>
 			            </div>
@@ -973,7 +973,7 @@
 			                <a href="/profile/access/">
 			                    <picture>
 			                        <source media="(max-width: 768px)" srcset="assets/img/mobile.gif">
-			                        <img data-src="assets/img/comix3.jpg" alt="instruction_1" class="b-lazy" data-src="assets/img/comix3.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== >
+			                        <img src="assets/img/comix3.jpg" alt="instruction_1">
 			                    </picture>
 			                </a>
 			            </div>
@@ -1247,16 +1247,19 @@
 		        </div>
 		</div>
 		<!-- MOBILE_LOGIN_OFF_CANVAS_CLOSE -->
-	<script>
-		function init() {
-		var imgDefer = document.getElementsByTagName('img');
-		for (var i=0; i<imgDefer.length; i++) {
-		if(imgDefer[i].getAttribute('data-src')) {
-		imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-		} } }
-		window.onload = init;
-	</script>
-	<script async src="assets/js/app.js"></script>
+		<script type="text/javascript">
+			function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "assets/js/app.js";
+			document.body.appendChild(element);
+			}
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
+		</script>
+	<!-- <script async src="assets/js/app.js"></script> -->
 </body>
 
 </html>
