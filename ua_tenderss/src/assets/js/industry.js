@@ -125,7 +125,7 @@ checkScreenSize();
 
 function checkScreenSize(){
     var newWindowWidth = $(window).width();
-    if (newWindowWidth < 1024) {
+    if (newWindowWidth < 768) {
         $(".pagination_wrapp").addClass("align-center");
         $(".tender_link").each(function( index ) {
             if ($(this).text().length > 150) {

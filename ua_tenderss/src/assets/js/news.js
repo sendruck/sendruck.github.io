@@ -1,7 +1,7 @@
 // Cut long news text
 export function NewscheckScreenSize(){
     var newWindowWidth = $(window).width();
-    if (newWindowWidth < 1024) {
+    if (newWindowWidth < 768) {
         $(".pagination_wrapp").addClass("align-center");
         $(".news_info_wrapper p").each(function( index ) {
             if ($(this).text().length > 140) {
