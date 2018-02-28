@@ -1,0 +1,17 @@
+//TABLET SELECT
+@include breakpoint(medium only) {
+    .tb-selector {
+        select {
+            width: 98%;
+            height: 22px;
+            font-size: 12px;
+            padding-top: 2px;
+            padding-bottom: 0px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+}

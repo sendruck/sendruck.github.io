@@ -1,0 +1,65 @@
+//TABLET MENU LINE
+@media screen and (max-width: 1024px) and (min-width: 929px){
+    .menu_line  {
+        ul.menu_list {
+            li {
+                #two-lined {
+                    padding-top: 9px!important;
+                    padding-bottom: 9px!important;
+                }
+            }
+        }
+    }
+}
+
+@include breakpoint(medium only) {
+    .menu_line  {
+        height: 34px!important;
+
+        .menu_div {
+            padding-left: 0px!important;
+        }
+        li {
+            padding-top: 0!important;
+
+            a {
+                padding-top: 9px!important;
+                padding-bottom: 9px!important;
+                padding-right: 3px!important;
+                padding-left: 3px!important;
+
+                &:hover {
+                    background-color: #f3af088c!important;
+                }
+            }
+
+            a.two-line {
+                padding-top: 2px!important;
+                padding-bottom: 2px!important;
+            }
+        }
+
+
+        li:last-child {
+            a {
+                border-right: 1px solid #534741!important;
+            }
+        }
+
+        .navbar-new--search {
+            padding-left: 0px!important;
+            position: relative;
+            left: 5px;
+        }
+
+        .login_icon {
+            padding-left: 3px!important;
+            padding-right: 3px!important;
+        }
+    }
+
+    .modal_bonus {
+        width: 80%!important;
+    }
+}
+

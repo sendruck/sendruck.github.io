@@ -1,0 +1,9 @@
+//TABLET TOP LINE
+@include breakpoint(medium only) {
+    .breadcrumbs {
+        margin-top: 5px;
+        a {
+            font-size: 11px;
+        }
+    }
+}

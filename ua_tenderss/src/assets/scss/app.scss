@@ -8,6 +8,13 @@
 @import 'components/mobile/accesories/dotBtn.scss';
 @import 'components/mobile/mobile-filters.scss';
 
+//TABLET STYLES
+@import 'components/tablet/tablet-top-line.scss';
+@import 'components/tablet/tablet-menu-line.scss';
+@import 'components/tablet/tablet-select.scss';
+@import 'components/tablet/tablet-footer.scss';
+
+
 //MODALS
 @import 'components/modal/bonus-modal.scss';
 @import 'components/modal/search-modal.scss';
@@ -74,7 +81,6 @@
 //FOOTER
 @import 'components/footer.scss';
 
-// .hide_text {
-//     color: transparent;
-//     visibility: hidden;
-// }
+body {
+    overflow-x: hidden;
+}

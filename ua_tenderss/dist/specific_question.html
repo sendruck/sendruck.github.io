@@ -21,7 +21,7 @@
 	<link rel="manifest" href="manifest.json">
 </head>
 
-<body>	
+<body style='overflow-x:hidden;'>	
 		
 		<div class="off-canvas-content" data-off-canvas-content>
 			
@@ -56,7 +56,7 @@
 			    
 			        </ul>
 			    </div>    
-			    <div class="statistics">
+			    <div class="statistics hide-for-medium-only">
 			        <div class="stat_outer_line">
 			            <div class="stat_inner_line">
 			                <div class="statistics_wrapper">
@@ -79,7 +79,7 @@
 			    </div>
 			
 			    <div class="banners_wrapper">
-			        <div class="hide-for-small-only banner-2 ">
+			        <div class="hide-for-small-only banner-2 hide-for-medium-only">
 			            <a href="http://googleads.g.doubleclick.net/pcs/click?xai=AKAOjstXtZFhWXhNbu7VzY9luptH9h6zZ69glbCvYXyAMOcxc0Qik-HBgPh4DOjQ6MmQQU9gl6IoJhfiPAIsP1UJBkUwbW19keWah92toJivgqsMQqwFDTN3335vObo5li4LC-tBw7Eostwfl9vrrOiCaa7Vx48uG_ai-R3jCXGAp0cL1nP5-G8ZP4euVHpLQzz-CJdPeVa31K-lpA7cg3mQz-VlotnGVLbRqcH_Q0AQK0pBJBS8xRA&sig=Cg0ArKJSzPeDO_kxZm43&adurl=http://www.ua-tenders.com/rubrics/guarantee/&nm=13"
 			            target="_blank" rel="noopener">
 			                <picture>
@@ -108,7 +108,7 @@
 			        </div>
 			    </div>
 			
-			        <div class="my_page_info hide-for-small-only">
+			        <div class="my_page_info hide-for-small-only hide-for-medium-only">
 			            <p class="user_name">
 			                Яковенко Олександр
 			            </p>
@@ -149,10 +149,10 @@
 			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/services/tenders/">Поставщикам</a>
 			            </li>
 			            <li>
-			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/guarantee/">Банковская гарантия</a>
+			                <a class="flex-child-shrink two-line" id="two-lined" href="http://www.ua-tenders.com/rubrics/guarantee/">Банковская гарантия</a>
 			            </li>
 			            <li>
-			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/garantiya_turfirmam/">Гарантия турфирмам</a>
+			                <a class="flex-child-shrink two-line" id="two-lined" href="http://www.ua-tenders.com/rubrics/garantiya_turfirmam/">Гарантия турфирмам</a>
 			            </li>
 			            <li>
 			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/learning/">Семинары</a>
@@ -164,14 +164,20 @@
 			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/complaint/">Жалобы</a>
 			            </li>
 			            <li>
-			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/audit/">Проверки-Аудит</a>
+			                <a class="flex-child-shrink two-line" id="two-lined" href="http://www.ua-tenders.com/rubrics/audit/">Проверки-Аудит</a>
 			            </li>
 			            <li>
 			                <a class="flex-child-shrink" href="http://www.ua-tenders.com/rubrics/examination/">Экспертиза</a>
 			            </li>
 			        </ul>
 			    </div>
-			    <div class="hide-for-small-only search_wrapp flex-container">
+			    <a  class="login_icon show-for-medium-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
+			        <img src="assets/img/icons/login.png" alt="login">
+			    </a>
+			    <a href="#searchModal" class="navbar-new__item navbar-new--search navbar-toggle collapsed show-for-medium-only" data-toggle="searchModal">
+			        <img src="assets/img/icons/search-icon-small.png">
+			    </a>
+			    <div class="hide-for-small-only search_wrapp flex-container hide-for-medium-only">
 			        <div class="search_bar flex-child-grow">
 			            <div class="search_icon">
 			                <div class="search_icon_tr"></div>
@@ -197,7 +203,7 @@
 			<!-- MENU_CLOSE -->
 			
 			<!-- MOBILE_SELECT_OPEN -->
-			<div class="tb-selector show-for-small-only hide">
+			<div class="tb-selector show-for-medium-only show-for-small-only hide">
 			    <select name="tbsel show-for-small-only" onchange="location.href='/tender/' + this[this.selectedIndex].value + '/';">
 			        <option value="all">Список тендеров по отрасли...</option>
 			
@@ -437,7 +443,7 @@
 			    </div>
 			<!-- SPECIFIC_QUESTION_BLOCK_CLOSE -->
 			<!-- FOOTER_OPEN -->
-			<div class="footer_block hide-for-small-only">
+			<div class="footer_block hide-for-small-only hide-for-medium-only">
 			    <div class="instr_caption hide-for-small-only">
 			        <img src="assets/img/icons/info_tenders.gif" alt="footer_icon" class="foooter_info">
 			        <p>
@@ -449,7 +455,7 @@
 			    </a>
 			</div>
 			<div class="footer_instr_consul hide-for-small-only">
-			    <div class="instr_body hide-for-small-only grid-x">
+			    <div class="instr_body hide-for-small-only hide-for-medium-only grid-x">
 			        <div class="instr_block instr_block1 cell large-4">
 			            <div class="footer_img_wrapper">
 			                <a href="/tender/all/?b=all&a=all&t=all&p=&z=">
@@ -658,7 +664,7 @@
 			
 			<div class="footer_bottom_line">
 			    <div class="bottom-line-left">
-			        <a href="http://www.ua-tenders.com/news/rss/" class="hide-for-small-only">
+			        <a href="http://www.ua-tenders.com/news/rss/" class="hide-for-small-only hide-for-medium-only">
 			            <img src="assets/img/icons/rss_all.gif" alt="rss_icon" class="footer_line_icon">
 			        </a>
 			        <p>
@@ -674,7 +680,7 @@
 			                обязательна.
 			        </p>
 			    </div>
-			    <div class="bottom-line-right">
+			    <div class="bottom-line-right hide-for-medium-only">
 			        <img src="assets/img/icons/dynamic.gif" alt="dynamicGif" class="dynamic hide-for-small-only">
 			        <a href="/dinamics/" class="dynamic hide-for-small-only">
 			            динамика сайта	
