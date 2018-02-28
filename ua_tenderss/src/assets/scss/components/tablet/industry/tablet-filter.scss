@@ -4,8 +4,24 @@
         .filter_input {
             select,  input[type='text'] {
                 height: 25px!important;
-                font-size: 14px!important;
+                font-size: 13px!important;
             }
         }
+    }
+
+    .hints_block {
+        flex: unset!important;
+        margin-bottom: 15px!important;
+    }
+
+    .right_banner {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .table_col {
+        margin-top: 8px;
+        margin-bottom: 5px;
     }
 }
