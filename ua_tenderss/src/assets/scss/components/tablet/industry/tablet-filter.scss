@@ -1,0 +1,11 @@
+//TABLET FILTERS
+@include breakpoint(medium only) {
+    .filter_block {
+        .filter_input {
+            select,  input[type='text'] {
+                height: 25px!important;
+                font-size: 14px!important;
+            }
+        }
+    }
+}

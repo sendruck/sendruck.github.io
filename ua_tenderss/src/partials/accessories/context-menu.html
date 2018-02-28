@@ -12,9 +12,9 @@
 <!-- CONTEXT_TOP_TOPIC_CLOSE -->
 
 <!-- CONTEXT_MENU_OPEN -->
-<div id="context-top-topic" class="hide-for-small-only">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
+<div id="context-top-topic" class="hide-for-small-only hide-for-medium-only">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
     {{#ifpage 'index' 'industry' 'specific-news' 'tenders_Ukraine' 'suppliers' 'customers' 'specific-supplier' 'specific-customer'}}
-        <ul id="context-menu-ul" class="hide-for-small-only">
+        <ul id="context-menu-ul" class="hide-for-small-only hide-for-medium-only">
             {{#each context-content}}
                 <li class="{{class}}">
                     <a href="{{link}}">{{text}}</a>
