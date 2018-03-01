@@ -1,0 +1,12 @@
+//TABLET SUPPLIERS
+@include breakpoint(medium only) {
+    .grid-x {
+        .suppliers-right-block {
+            width: 200px!important;
+        }
+
+        .industry_table_wrapp {
+            margin-right: 5px!important;
+        }
+    }
+}
