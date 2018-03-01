@@ -1,5 +1,5 @@
 // MOBILE SPECIFIC SUPPLIER
-@include breakpoint(small down) {
+@include breakpoint(medium down) {
     .specific_supplier_wrapp {
         h2 {
             text-align: center;
@@ -37,5 +37,26 @@
                 margin-left: 0px;
             }
         }
+    }
+
+    .grid-x {
+        .specific-suppplier-right-block {
+            width: 200px!important;
+        }
+
+        .tb-selector {
+            background: unset!important;
+            select {
+                height: 25px!important;
+                font-style: 11px!important;
+                padding-right: 20px!important;
+            }
+        }
+    }
+}
+
+@include breakpoint(medium only) {
+    .specific_supplier_wrapp h2 {
+        text-align: unset!important;
     }
 }
