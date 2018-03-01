@@ -1,5 +1,5 @@
 //MOBILE_CUSTOMERS
-@include breakpoint(small down) {
+@include breakpoint(medium down) {
     .customer-table {
         .contracts-col, .verif-tenders-col {
             width: 100%!important;
@@ -17,6 +17,27 @@
 
         td.numb_col {
             width: 100%;
+        }
+    }
+}
+
+@include breakpoint(medium only) {
+    .grid-x {
+        .specific-customer-right-block {
+            width: 200px!important;
+        }
+
+        .tb-selector {
+            background: unset!important;
+            select {
+                height: 25px!important;
+                font-style: 11px!important;
+                padding-right: 20px!important;
+            }
+        }
+
+        .customer_info {
+            height: unset!important;
         }
     }
 }
