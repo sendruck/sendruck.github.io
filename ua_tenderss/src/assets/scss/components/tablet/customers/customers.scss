@@ -1,0 +1,12 @@
+//TABLET CUSTOMERS
+@include breakpoint(medium only) {
+    .grid-x {
+        .customers-right-block {
+            width: 200px!important;
+        }
+
+        .industry_table_wrapp {
+            margin-right: 5px!important;
+        }
+    }
+}
