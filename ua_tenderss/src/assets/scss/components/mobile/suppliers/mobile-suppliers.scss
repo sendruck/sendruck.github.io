@@ -48,4 +48,24 @@
         }
 
     }
+
+    // .contacts-col::before {
+    //     width: 90%!important;
+    // }
+}
+
+@include breakpoint(435px down) {
+    .contacts-col::before {
+            width: 95%!important;
+        }
+
+    .contacts-col {
+        text-align: right!important;
+    }
+}
+
+@include breakpoint(435px down) {
+    .responsive-card-table td:after {
+        width: 30%!important;
+    }
 }
