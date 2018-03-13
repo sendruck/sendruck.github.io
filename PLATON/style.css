@@ -1508,6 +1508,10 @@ main {
     margin-top: 19px;
 }
 
+.internet-enq-item p {
+    width: 325px!important;
+}
+
 /* PAYMENT_INTEGRATION */
 .payment-integration {
     max-width: 959px;
@@ -1565,6 +1569,9 @@ main {
     bottom: -8px;
 }
 
+.payment-integration-left-block p, .payment-integration-left-block h2 {
+    width: 383px;
+}
 
 /* BANK_GARANT */
 .bank-garant {
