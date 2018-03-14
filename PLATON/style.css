@@ -92,6 +92,7 @@ nav.left-nav a:not(.logo) {
     top: 2px;
     margin-right: 18px;
     padding-bottom: 33px;
+    transition: opacity .15s ease-out
 }
 
 nav.left-nav a:not(.logo):hover {
@@ -108,7 +109,7 @@ nav.left-nav a:not(.logo):focus, nav.left-nav a:not(.logo):active {
 .phone {
     display: inline-block;
     margin-bottom: 0;
-    padding-bottom: 33px;
+    padding-bottom: 31px;
 }
 
 .sign-in {
@@ -118,7 +119,7 @@ nav.left-nav a:not(.logo):focus, nav.left-nav a:not(.logo):active {
     position: relative;
     padding: 9px 19px;
     margin-left: 18px;
-    bottom: 18px;
+    bottom: 16px;
 }
 
 .sign-in::before {
@@ -132,6 +133,7 @@ nav.left-nav a:not(.logo):focus, nav.left-nav a:not(.logo):active {
     right: 0;
     position: absolute;
     content: "";
+    transition: all .15s ease-out;
 }
 
 .sign-in:hover::before {
@@ -199,22 +201,40 @@ nav.left-nav a:not(.logo):focus, nav.left-nav a:not(.logo):active {
     width: 168px;
     z-index: 1000;
     font-weight: 800;
+    z-index: 100;
+    position: relative;
+}
+
+.join-link::before {
+    background: linear-gradient(259.9deg, #DA4816 -3.83%, #FF8532 116.47%);
+    opacity: 0;
+    content: '';    
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    z-index: -100;
+    transition: opacity 0.3s linear;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
 }
 
 .join-link:hover {
     cursor: pointer;
-    background: linear-gradient(259.9deg, #DA4816 -3.83%, #FF8532 116.47%);
-    border-radius: 4px;
     text-decoration: none;
     color: #ffffff;
 }
 
-.join-link:focus {
-    background: linear-gradient(259.9deg, #E34C19 -3.83%, #FF9954 116.47%);
+.join-link:hover::before {
+    opacity: 1;
     border-radius: 4px;
-    text-decoration: none;
-    color: #ffffff;
 }
+
+.join-link:active::before {
+    opacity: 0;
+}
+
 
 .partners-banks {
     max-width: 951px;
@@ -604,8 +624,8 @@ main {
     height: 114px;  
     padding-top: 27px;
     padding-left: 35px;
-    padding-right: 40px;
-    margin-bottom: 18px;
+    padding-right: 36px;
+    margin-bottom: 16px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     font-family: 'Open Sans', sans-serif;
@@ -615,6 +635,8 @@ main {
     -webkit-box-shadow: 0px 8px 100px #E7EBF5;
             box-shadow: 0px 8px 100px #E7EBF5;
     cursor: pointer;
+    z-index: 9999;
+    position: relative;
 }
 
 .payment-integration-item:hover .payment-arrow {
@@ -626,6 +648,11 @@ main {
 .payment-integration-item a:active {
     text-decoration: none;
     color: #1A1F4A;
+}
+
+.payment-integration-item img {
+    position: relative;
+    bottom: 4px;
 }
 
 .payment_integration_item_name {
@@ -699,7 +726,7 @@ main {
     background: #EFF3FF;
     -webkit-transform: rotate(2.77deg);
             transform: rotate(2.77deg); 
-    margin-top: 117px;
+    margin-top: 123px;
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
     height: 473px;
@@ -746,6 +773,7 @@ main {
     width: 283.96px;
     height: 153px;
     margin-top: 28px;
+    position: relative;
 }
 
 .bank-garant-item p {
@@ -757,33 +785,16 @@ main {
     margin-bottom: 0;
 }
 
-.alfa_bank-item {
-    margin-top: 28px;
+.bank-garant-item img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .privatbank-item {
     margin-top: 25px;
-}
-
-.alfa_bank-img {
-    margin: 14px 62px 48px 59px;
-}
-
-.privatbank-img {
-    margin: 21px 62px 48px 51px;
-}
-
-.rayfayzen-img {
-    margin-top: 0;
-    position: relative;
-    bottom: 12px;
-    margin-left: 43px;
-}
-
-.oschad_bank-img {
-    margin-top: 10px!important;
-    margin-left: 69px;
-}
+} 
 
 .item-empt {
     border: 1.5px solid #E7EBF4;
@@ -1053,6 +1064,7 @@ main {
     right: 0;
     position: absolute;
     content: "";
+    transition: all .15s ease-out;
 }
 
 .news-caption-block a:hover {
@@ -1134,6 +1146,7 @@ main {
 .news-item:hover {
     -webkit-box-shadow: 0px 0px 50px #E7EBF5;
             box-shadow: 0px 0px 50px #E7EBF5;
+    position: relative;
 }
 
 .news-item:last-child {
@@ -1259,18 +1272,38 @@ main {
     padding: 15px 36px;
     color: #FFFFFF;
     margin-top: 21px;
+    position: relative;
+    z-index: 100;
+}
+
+.join-btn::before {
+    background: linear-gradient(259.9deg, #DA4816 -3.83%, #FF8532 116.47%);
+    opacity: 0;
+    content: '';    
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    z-index: -100;
+    transition: opacity 0.3s linear;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+
+.join-btn:hover::before {
+    opacity: 1;
+    border-radius: 4px;
 }
 
 .join-btn:hover {
-    background: linear-gradient(259.9deg, #DA4816 -3.83%, #FF8532 116.47%);
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.join-btn:focus, .join-btn:active {
-    background: linear-gradient(259.9deg, #E34C19 -3.83%, #FF9954 116.47%); 
-    color: #FFFFFF;
-    text-decoration: none;
+.join-btn:active::before {
+    opacity: 0;
 }
 
 .footer-bottom {
@@ -1329,6 +1362,7 @@ main {
     font-size: 15px;
     color: #6E7082;
     margin-bottom: 18px;
+    transition: all .15s ease-out;
 }
 
 .footer-menu a:hover {
@@ -1371,7 +1405,6 @@ main {
     padding: 7px 18px 9px 18px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: rgba(255, 255, 255, 0.15);
     position: relative;
     left: 6px;
 }
@@ -1383,9 +1416,11 @@ main {
     right: 0;
     position: absolute;
     content: "";
+    opacity: 0.25;
     padding: 7px 18px 9px 18px;
     border: 0.5px solid #FEFEFE;
     border-radius: 4px 0px 0px 4px;
+    transition: all .15s ease-out;
 }
 
 .rus:hover {
@@ -1394,23 +1429,24 @@ main {
 }
 
 .rus:hover::before {
-    background: rgba(255, 255, 255, 0.15);
-    opacity: 0.5;
     border: 0.5px solid #FEFEFE;
+    opacity: 1;
 }
 
 .ukr {
     padding: 7px 18px 9px 18px;
     background: transparent;
     position: relative;
+    background: rgba(255, 255, 255, 0.15);
+
 }
 
 .ukr::before {
     border: 0.5px solid #FEFEFE;
+    
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 0px 4px 4px 0px;
-    opacity: 0.25;
     top: 0;
     left: 0;
     bottom: 0;
@@ -1418,6 +1454,7 @@ main {
     position: absolute;
     content: "";
     padding: 7px 18px 9px 18px;
+    transition: all .15s ease-out;
 }
 
 .ukr:hover {
@@ -1426,16 +1463,17 @@ main {
 }
 
 .ukr:hover::before {
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 0.5;
     border: 0.5px solid #FEFEFE;
-    opacity: 1;
 }
 
-.ukr:focus, .ukr:active {
+.rus:focus, .rus:active {
     color: #C5C5CD;
     text-decoration: none;
 }
 
-.ukr:focus::before, .ukr:active::before {
+.rus:focus::before, .rus:active::before {
     border: 0.5px solid #C5C5CD;
     outline: none;
 }
@@ -1446,6 +1484,7 @@ main {
     width: 37px;
     display: block;
     margin-bottom: 23px;
+    transition: all .15s ease-out;
 }
 
 .facebook-icon:hover {
