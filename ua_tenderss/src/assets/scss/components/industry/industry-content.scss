@@ -171,7 +171,7 @@
 
 
 @include breakpoint(medium only) { 
-    #context-menu-ul {
+    .industry-menu-ul {
         display: none;
     }
 
@@ -184,16 +184,19 @@
         margin-right: auto;
     }
 
-    #context-menu #context-top-topic {
+    .industry-right-col#context-menu .industry-top-topic {
+        background: #0080C6 url("../img/icons/tender_title.gif") no-repeat 10px 55%;
+        color: #FFFFFF;
+        text-align: left;
         padding: 5px 10px 5px 48px!important;
         font: bold 13px Verdana,sans-serif!important;
     }
 
-    #context-menu ul li {
+    .industry-right-col#context-menu ul li {
         height: 24px;
     }
     
-    #context-menu ul a {
+    .industry-right-col#context-menu ul a {
         font-size: 12px!important;
     }
 

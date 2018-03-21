@@ -121,13 +121,13 @@ $(".roll_up_link").on("click", function(){
 
 
 // SHOW_CONTEXT_MENU_TABLET
-$("#context-top-topic").on("click", function(event) {
+$(".industry-top-topic").on("click", function(event) {
     event.preventDefault();
     $("#context-menu-ul").toggleClass("showMenu");
     if ($("#context-menu-ul").hasClass("showMenu")) {
-        $("#context-top-topic").css("background", "#005583");
+        $(".industry-top-topic").css({'background': '#005583'});
     } else {
-        $("#context-top-topic").css("background", "#0080C6");
+        $(".industry-top-topic").css({'background': '#0080C6 url("assets/img/icons/tender_title.gif") no-repeat 10px 55%'});
     }
 })
 
