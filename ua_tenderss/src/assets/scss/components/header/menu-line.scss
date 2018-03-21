@@ -9,8 +9,7 @@
 
     .menu_div {
         padding: 0 0 0 9px;
-        width: 100%;
-
+        // width: 100%;
         ul.menu_list {
             float: left;
             padding: 0;
@@ -69,6 +68,7 @@
 }
 .search_bar {
     background-color: #f9ca65;
+    flex: 1 1 auto;
 
     form {
         display: unset!important;
@@ -125,5 +125,12 @@
         position: relative;
         top: -3px;
         left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu_line .menu_div {
+        width: 100%;
     }
 }

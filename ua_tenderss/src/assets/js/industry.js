@@ -120,6 +120,17 @@ $(".roll_up_link").on("click", function(){
 })
 
 
+// SHOW_CONTEXT_MENU_TABLET
+$("#context-top-topic").on("click", function(event) {
+    event.preventDefault();
+    $("#context-menu-ul").toggleClass("showMenu");
+    if ($("#context-menu-ul").hasClass("showMenu")) {
+        $("#context-top-topic").css("background", "#005583");
+    } else {
+        $("#context-top-topic").css("background", "#0080C6");
+    }
+})
+
 // SHORTENT LONG TENDER LINK
 checkScreenSize();
 

@@ -168,3 +168,34 @@
 .industry-right-col {
     width: 240px!important;
 }
+
+
+@include breakpoint(medium only) { 
+    #context-menu-ul {
+        display: none;
+    }
+
+    .showMenu {
+        display: block!important;
+    }
+
+    .industry-right-col {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #context-menu #context-top-topic {
+        padding: 5px 10px 5px 48px!important;
+        font: bold 13px Verdana,sans-serif!important;
+    }
+
+    #context-menu ul li {
+        height: 24px;
+    }
+    
+    #context-menu ul a {
+        font-size: 12px!important;
+    }
+
+
+}
