@@ -39,33 +39,39 @@
             border: none;
         }
 
-        td.region-col:after {
-            width: 25%!important;
-        }
+        // td.region-col:after {
+        //     width: 25%!important;
+        // }
 
         td {
             padding-left: 50%!important;
         }
 
+        .region-col p {
+            width: 100%;
+        }
+
+
+
     }
 
-    // .contacts-col::before {
-    //     width: 90%!important;
-    // }
 }
 
 @include breakpoint(435px down) {
     .contacts-col::before {
-            width: 95%!important;
-        }
-
-    .contacts-col {
-        text-align: right!important;
+        width: 95%!important;
     }
-}
 
-@include breakpoint(435px down) {
     .responsive-card-table td:after {
         width: 30%!important;
+    }
+
+    .industry_col a, .contacts-col p {
+        width: 160%!important;
+    }
+    #suppliers-table {
+        tr td.region-col::before {
+            width: 65%!important;
+        } 
     }
 }

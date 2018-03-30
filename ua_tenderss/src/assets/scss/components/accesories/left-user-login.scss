@@ -97,6 +97,10 @@
         font-size: 13px;
     }
 
+    button[type=submit]:active {
+        border-style: inset;
+    }
+
     input[type=button] {
         font-size: 13px;
         width: 100%;

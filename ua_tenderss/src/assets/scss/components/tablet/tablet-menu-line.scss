@@ -12,6 +12,50 @@
     }
 }
 
+@media screen and (max-width: 1170px) and (min-width: 1023px){
+    .menu_line  {
+        height: 34px!important;
+        ul.menu_list {
+            li {
+                a:not(.two-line) {
+                    padding-top: 7px!important;
+                    padding-bottom: 7px!important;
+                }
+            }
+        }
+    }
+    .search_bar input {
+        width: 50%!important;
+    }
+
+    .search_bar .search_icon {
+        margin-top: 6px!important;
+    }
+
+    .favourite_wrapper .faw_mail_btns {
+        top: 3px!important;
+        left: 0px!important;
+    }
+
+    .banner_line .my_page_info {
+        width: 22%!important;
+    }
+
+    #context-menu .tb-selector select {
+        font-size: 12px!important;
+    }
+
+    .filter_block .filter_wrapper .second_col .register_announcement {
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+        margin-left: 30px!important;
+    }
+
+    .filter_block .filter_wrapper .filter_input span {
+        margin-left: 0!important;
+    }
+}
+
 @include breakpoint(medium only) {
     .menu_line  {
         height: 34px!important;
