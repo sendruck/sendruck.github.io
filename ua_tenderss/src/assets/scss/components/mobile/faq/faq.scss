@@ -1,6 +1,6 @@
 //MOBILE FAQ
 @include breakpoint(small down) {
-    .questions_wrapper {
+    .questions_wrapper, .specific_question_wrapper {
         width: 100%!important;
         padding-left: 10px !important;
         padding-right: 10px !important;

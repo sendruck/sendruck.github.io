@@ -88,13 +88,13 @@ context-heading: Персональная страница
             {{> additional}}
         </div>
         <div class="large-shrink cell hide-for-small-only hide-for-medium-only specific-news-right">
-            <div id="context-menu">
+            <div id="context-menu" class="personal-page">
                 {{> select-industry}}
                 {{> context-menu}}
                 {{> left-banner-block}}
 
                 <!-- NEWS_SUBSCRIPTION_OPEN -->
-                <div id="context-top-topic" class="hide-for-small-only">
+                <div id="context-top-topic" class="hide-for-small-only {{#ifpage 'specific-news'}}news-sub-caption{{/ifpage}}">
                     Подписка на новости
                 </div>
                 <script type="text/javascript">
@@ -128,7 +128,7 @@ context-heading: Персональная страница
                 <!-- NEWS_SUBSCRIPTION_CLOSE -->
 
                 <!-- NEWS EXPORT OPEN -->
-                <div id="context-top-topic" class="hide-for-small-only">
+                <div id="context-top-topic" class="hide-for-small-only {{#ifpage 'specific-news'}}export-news-caption{{/ifpage}}">
                     Экспорт новостей
                 </div>
                 <div class="news_exp_wrapper specific_news_exp_wrapper">

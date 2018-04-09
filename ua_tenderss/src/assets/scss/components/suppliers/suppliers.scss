@@ -1,7 +1,7 @@
 //SUPPLIERS
-.suppliers_wrapp {
+.suppliers_wrapp, .customers_wrapp {
     padding-left: 13px;
-    .suppliers_heading {
+    .suppliers_heading, .customers_heading {
         h2 {
             color: #666666;
             padding: 0;
@@ -54,7 +54,7 @@
         margin-bottom: 5px!important;
     }
 
-    .suppliers_table_wrapp {
+    .suppliers_table_wrapp, .customers_table_wrapp {
         margin-left: 0px!important;
     }
 

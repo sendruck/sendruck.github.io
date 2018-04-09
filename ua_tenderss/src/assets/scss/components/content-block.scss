@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.news_wrapper {
+.news_wrapper, .legislation_wrapper, .legislation_laws_wrapper, .materials_wrapper, .specific_law_wrapper, .specific_material_wrapper {
     width: 84%;
     display: inline-block;
     padding-left: 15px;
@@ -63,7 +63,7 @@
     background: #EFEFEF;
 }
 
-.news_info_wrapper {
+.news_info_wrapper, .info_wrapper {
     background-color: $tender_info-color;
     border: $tender_info-border;
     margin: 5px 0 15px 0;
@@ -79,7 +79,7 @@
     padding-right: 5px;
 }
 
-.legislation_wrapper {
+.legislation_wrapper, .materials_wrapper, .legislation_laws_wrapper {
     margin-left: 0px;
     p {
         display: block;
@@ -102,11 +102,11 @@
     }
 }
 
-.legeslation_info_block {
+.legeslation_info_block, .materials_info_block, .legislation_laws_block {
     margin-bottom: 0px!important;
 }
 
-.news_blck_caption {
+.news_blck_caption, .legislation_blck_caption, .materials_blck_caption, .legislation_laws_blck_caption, .specific_law_blck_caption {
     color: $primary-color;
     font-size: $tender-font-size;
     font-family: $body-font-family;
@@ -115,7 +115,7 @@
     font-weight: 700;
 }
 
-.news_info_block {
+.news_info_block, .legislation_info_block, .materials_info_block, .legislation_laws_block {
     margin-bottom: 10px;
     .news-image {
         width: 12%;
@@ -123,7 +123,7 @@
         margin-right: 10px;
     }
     
-    a.news_blck_caption {
+    a.news_blck_caption, a.legislation_blck_caption, a.materials_blck_caption, a.legislation_laws_blck_caption, a.specific_law_blck_caption {
         color: $primary-color;
         font-size: $tender-font-size;
         font-family: $body-font-family;
@@ -186,7 +186,7 @@
     padding-right: 5px;
 }
 
-h2.news_heading {
+h2.news_heading, h2.legislation_heading, h2.materials_heading, h2.legislation_laws_heading, h2.specific_law_heading, h2.specific_material_heading, h2.specific_question_heading {
     font-size: 16px;
     color: #666666;
     padding: 0;

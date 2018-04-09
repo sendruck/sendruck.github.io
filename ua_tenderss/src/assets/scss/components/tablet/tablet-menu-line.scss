@@ -1,5 +1,5 @@
 //TABLET MENU LINE
-@media screen and (max-width: 1023px) and (min-width: 933px){
+@media screen and (max-width: 1019px) and (min-width: 934px){
     .menu_line  {
         ul.menu_list {
             li {
@@ -9,13 +9,17 @@
                 }
             }
         }
+
     }
 }
 
-@media screen and (max-width: 1170px) and (min-width: 1023px){
+@media screen and (max-width: 1174px) and (min-width: 1020px){
     .menu_line  {
         height: 34px!important;
         ul.menu_list {
+            li.two-line-list {
+                flex-basis: 10%;
+            }
             li {
                 a:not(.two-line) {
                     padding-top: 7px!important;
@@ -104,6 +108,14 @@
 
     .modal_bonus {
         width: 80%!important;
+    }
+}
+
+@media screen and (max-width: 933px){
+    ul.menu_list {
+        li.two-line-list {
+            flex-basis: 10%;
+        }
     }
 }
 

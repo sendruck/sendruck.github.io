@@ -1,6 +1,6 @@
 // MOBILE SPECIFIC SUPPLIER
 @include breakpoint(medium down) {
-    .specific_supplier_wrapp {
+    .specific_supplier_wrapp, .specific_customer_wrapp {
         h2 {
             text-align: center;
         }
@@ -56,7 +56,7 @@
 }
 
 @include breakpoint(medium only) {
-    .specific_supplier_wrapp h2 {
+    .specific_supplier_wrapp h2, .specific_customer_wrapp h2 {
         text-align: unset!important;
     }
 }

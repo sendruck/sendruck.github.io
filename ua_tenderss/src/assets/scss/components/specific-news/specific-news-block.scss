@@ -1,4 +1,4 @@
-.specific-news-content {
+.specific-news-content, .specific-supplier-content, .specific-customer-content {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -11,7 +11,7 @@
     padding: 0;
     margin: 10px 0 5px 0!important;
 }
-.specific_news_caption {
+.specific_news_caption, .specific_material_caption {
     color: #064D9F;
     font-size: $tender-font-size;
     font-family: $body-font-family;

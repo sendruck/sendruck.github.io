@@ -1,4 +1,4 @@
-<div class="news_wrapper flex-child-auto {{#ifpage 'faq' 'specific_question'}}questions_wrapper{{/ifpage}}">
+<div class="{{#ifpage 'legislation'}}legislation_wrapper{{/ifpage}} flex-child-auto {{#ifpage 'faq'}}questions_wrapper{{/ifpage}} {{#ifpage 'specific_question'}}specific_question_wrapper{{/ifpage}} {{#ifpage 'legislation_laws'}}legislation_laws_wrapper{{/ifpage}} {{#ifpage 'materials'}}materials_wrapper{{/ifpage}} {{#ifpage 'specific_law'}}specific_law_wrapper{{/ifpage}} {{#ifpage 'specific_material'}}specific_material_wrapper{{/ifpage}} {{#ifpage 'news'}}news_wrapper{{/ifpage}}">
 
     <!-- NEWS_CONTENT_OPEN -->
     {{#ifpage 'news'}}
@@ -37,7 +37,7 @@
                 <span class="publication_date">
                     {{publication_date}}
                 </span>
-                <div class="news_info_wrapper ">
+                <div class="news_info_wrapper info_wrapper">
                     <p>
                         {{text}}
                     </p>
@@ -53,7 +53,7 @@
 
     <!-- LEGISLATIN_CONTENT_OPEN -->
     {{#ifpage 'legislation'}}
-        <h2 class="news_heading">
+        <h2 class="legislation_heading">
             {{legislation-content.legislation_heading}}
         </h2>
 
@@ -61,13 +61,13 @@
             {{legislation-content.legislation_preface}}
         </p>
 
-        <div class="news_info_block clear-fix">
+        <div class="legislation_info_block clear-fix">
             <p>
-                <a class="news_blck_caption" href="{{link}}">
+                <a class="legislation_blck_caption" href="{{link}}">
                     Еженедельные обзоры от UA-TENDERS.COM
                 </a>
             </p>
-            <div class="news_info_wrapper legislation_wrapper">
+            <div class="info_wrapper legislation_wrapper">
                 <strong style="color: red">
                     {{legislation-content.legislation_alert}}
                 </strong>
@@ -83,13 +83,13 @@
         </div>
         <hr>
         {{#each legislation-content.context-content}}
-            <article class="news_info_block legeslation_info_block clear-fix">
+            <article class="legislation_info_block clear-fix">
                 <h2>
-                    <a class="news_blck_caption" href="{{link}}">
+                    <a class="legislation_blck_caption" href="{{link}}">
                         {{link-text}}
                     </a>
                 </h2>
-                <div class="news_info_wrapper legislation_wrapper legislation_description">
+                <div class="info_wrapper legislation_wrapper legislation_description">
                     <p>
                         {{text}}
                     </p>
@@ -102,7 +102,7 @@
 
     <!-- MATERIALS_CONTENT_OPEN -->
     {{#ifpage 'materials'}}
-        <h2 class="news_heading">
+        <h2 class="materials_heading">
             {{materials-content.materials_heading}}
         </h2>
 
@@ -111,13 +111,13 @@
         </p>
 
         {{#each materials-content.context-content}}
-            <article class="news_info_block legeslation_info_block clear-fix">
+            <article class="materials_info_block clear-fix">
                 <p>
-                    <a class="news_blck_caption" href="{{link}}">
+                    <a class="materials_blck_caption" href="{{link}}">
                         {{link-text}}
                     </a>
                 </p>
-                <div class="news_info_wrapper legislation_wrapper">
+                <div class="info_wrapper materials_wrapper">
                     <p>
                         {{text}}
                     </p>
@@ -130,7 +130,7 @@
 
     <!-- LEGISLATIN_LAWS_CONTENT_OPEN -->
     {{#ifpage 'legislation_laws'}}
-    <h2 class="news_heading">
+    <h2 class="legislation_laws_heading">
         {{legislation_laws.legislation_heading}}
     </h2>
 
@@ -138,13 +138,13 @@
         {{legislation_laws.legislation_preface}}
     </p> 
 
-    <div class="news_info_block legeslation_info_block clear-fix">
+    <div class="legislation_laws_block  clear-fix">
         <p>
-            <a class="news_blck_caption" href="{{legislation_laws.legislation_intr_link}}">
+            <a class="legislation_laws_blck_caption" href="{{legislation_laws.legislation_intr_link}}">
                 {{legislation_laws.legislation_intr_link_text}}
             </a>
         </p>
-        <div class="news_info_wrapper legislation_wrapper legislation_laws_wrapper">
+        <div class="info_wrapper legislation_laws_wrapper">
             <strong style="color: red">
                 {{legislation_laws.legislation_alert}}
             </strong>
@@ -154,13 +154,13 @@
         </div>
     </div>
     {{#each legislation_laws.context-content}}
-        <article class="news_info_block legeslation_info_block clear-fix">
+        <article class="legislation_laws_block clear-fix">
             <p>
-                <a class="news_blck_caption" href="{{link}}">
+                <a class="legislation_laws_blck_caption" href="{{link}}">
                     {{link-text}}
                 </a>
             </p>
-            <div class="news_info_wrapper legislation_wrapper legislation_laws_wrapper legislation_decription">
+            <div class="info_wrapper legislation_laws_wrapper legislation_decription">
                 <p>
                     {{text}}
                 </p>
@@ -175,10 +175,10 @@
 
     <!-- SPECIFIC_LAWS_CONTENT_OPEN -->
     {{#ifpage 'specific_law'}}
-        <h2 class="news_heading">
+        <h2 class="specific_law_heading">
             Законы Украины
         </h2>
-        <p class="news_blck_caption">
+        <p class="specific_law_blck_caption">
             Закон від 25.12.2015 N 922-VIII
         </p>
 
@@ -248,7 +248,7 @@
             <p>5) договір про закупівлю - договір, що укладається між замовником і учасником за результатами проведення процедури закупівлі та передбачає надання послуг, виконання робіт або набуття права власності на товари;</p>
 
         <!-- PAGINATION_OPEN -->
-        <div class="grid-x  cell pagination_wrapp newspage_wrap">
+        <div class="grid-x  cell pagination_wrapp {{#ifpage 'news'}}newspage_wrap{{/ifpage}} {{#ifpage 'specific_law'}} specific-law-wrap {{/ifpage}} {{#ifpage 'suppliers'}}suppliers_wrap{{/ifpage}} {{#ifpage 'customers'}}customers_wrap{{/ifpage}}">
             <ul class="pagination" role="navigation" aria-label="Pagination">
                 <li class="pagination-previous disabled show-for-small-only">
                         предыдущая
@@ -276,10 +276,10 @@
 
     <!-- SPECIFIC_MATERIAL_OPEN -->
         {{#ifpage 'specific_material'}}
-            <h2 class="news_heading">
+            <h2 class="specific_material_heading">
                 Статьи
             </h2>
-            <p class="specific_news_caption">
+            <p class="specific_material_caption">
                 Тендерні закупівлі - ефективність, доведена часом
             </p>
             <div class="specific_news_block specific_material_block">
@@ -315,7 +315,7 @@
 
     <!-- FAQ_CONTENT_OPEN -->
     {{#ifpage 'faq' 'specific_question'}}
-        <h2 class="news_heading">
+        <h2 class="specific_question_heading">
             Вопросы-ответы
         </h2>
 

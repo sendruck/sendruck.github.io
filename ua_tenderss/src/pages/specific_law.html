@@ -23,7 +23,7 @@ unregistered: true
     </div>
 
     <div class="large-shrink cell specific_law-right hide-for-small-only hide-for-medium-only">
-        <div id="context-menu">
+        <div id="context-menu" class="{{#ifpage 'legislation_laws'}} legislation_laws {{/ifpage}} {{#ifpage 'specific_law'}} announcements-menu {{/ifpage}}">
             {{> select-industry}}
 
             {{> context-menu}}

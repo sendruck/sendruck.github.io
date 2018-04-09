@@ -1,6 +1,6 @@
 // MOBILE SUPPLIERS
 @include breakpoint(small down) {
-    .suppliers_wrapp {
+    .suppliers_wrapp, .customers_wrapp {
         padding-right: 10px;
         input[type=text] {
             width: 100%!important;
@@ -24,7 +24,7 @@
         }
     }
 
-    .suppliers_table_wrapp {
+    .suppliers_table_wrapp, .customers_table_wrapp {
         margin-right: 0px!important;
         background-color: transparent;
         border: none;

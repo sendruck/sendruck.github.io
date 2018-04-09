@@ -1,6 +1,6 @@
 //FILTER_BLOCK
 .filter_block {
-    padding-right: 80px;
+    padding-right: 50px;
     padding-left: 10px !important;
 
     span {
@@ -201,4 +201,15 @@
     }
 
 
+}
+
+
+@media screen and (max-width: 1170px) and (min-width: 1023px){
+    .filter_block {
+        padding-right: 15px!important;
+    }
+
+    .filter_block .filter_wrapper .filter_input {
+        padding-left: 0;
+    }
 }

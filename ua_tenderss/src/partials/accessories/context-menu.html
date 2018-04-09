@@ -1,9 +1,9 @@
 <!-- CONTEXT_TOP_TOPIC_OPEN -->
 {{#ifpage 'suppliers' 'customers'}}
-    <div id="context-top-topic" class="hide-for-small-only">{{suppliers.top-topic-heading}}</div>
-        <ul id="context-menu-ul" class="hide-for-small-only">
+    <div id="context-top-topic" class="rubrikator-menu hide-for-small-only">{{suppliers.top-topic-heading}}</div>
+        <ul id="context-menu-ul rubrikator-menu-ul" class="hide-for-small-only">
             {{#each suppliers.top-topic-content}}
-                <li class="suppliers_top_topic">
+                <li class="suppliers_top_topic customers_top_topic">
                     <a href="{{link}}">{{link-text}}</a>
                 </li>
             {{/each}}
@@ -12,9 +12,9 @@
 <!-- CONTEXT_TOP_TOPIC_CLOSE -->
 
 <!-- CONTEXT_MENU_OPEN -->
-<div id="context-top-topic" class="hide-for-small-only {{#unlesspage 'industry'}} hide-for-medium-only {{/unlesspage}} {{#ifpage 'industry'}}industry-top-topic{{/ifpage}}">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
+<div id="context-top-topic" class="hide-for-small-only {{#unlesspage 'industry'}} hide-for-medium-only {{/unlesspage}} {{#ifpage 'industry'}}industry-top-topic{{/ifpage}} {{#ifpage 'specific-news'}} personal-page-caption {{/ifpage}} {{#ifpage 'legislation'     'legislation_laws' 'specific_law' 'specific_material'}} announcements-caption {{/ifpage}}">{{context-heading}} {{#ifpage 'news'}} {{top-news.top-news-heading}} {{/ifpage}}</div>
     {{#ifpage 'index' 'industry' 'specific-news' 'tenders_Ukraine' 'suppliers' 'customers' 'specific-supplier' 'specific-customer'}}
-        <ul id="context-menu-ul" class="hide-for-small-only  {{#unlesspage 'industry'}} hide-for-medium-only {{/unlesspage}} {{#ifpage 'industry'}}industry-menu-ul{{/ifpage}}">
+        <ul id="context-menu-ul" class="hide-for-small-only  {{#unlesspage 'industry'}} hide-for-medium-only {{/unlesspage}} {{#ifpage 'industry'}}industry-menu-ul{{/ifpage}} {{#ifpage 'specific-news'}}personal-page-menu-ul{{/ifpage}}">
             {{#each context-content}}
                 <li class="{{class}}">
                     <a href="{{link}}">{{text}}</a>

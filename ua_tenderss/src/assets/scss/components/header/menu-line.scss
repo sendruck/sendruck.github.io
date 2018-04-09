@@ -7,6 +7,10 @@
     border-top: 2px solid #f3af08;
     margin-bottom: 6px;
 
+    .search_bar {
+        width: 60%;
+    }
+
     .menu_div {
         padding: 0 0 0 9px;
         // width: 100%;
@@ -124,7 +128,8 @@
     .faw_mail_btns {
         position: relative;
         top: -3px;
-        left: 10px;
+        // left: 10px;
+        text-align: center;
     }
 }
 
