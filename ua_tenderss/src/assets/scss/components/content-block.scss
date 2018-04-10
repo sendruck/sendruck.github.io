@@ -44,8 +44,8 @@
 
 }
 
-.legislation_wrapper,  {
-    width: unset;
+.legislation_wrapper, .legislation_laws_wrapper  {
+    width: 100%;
 }
 
 .materials_wrapper {
@@ -104,11 +104,11 @@
     padding-right: 5px;
 }
 
-.legislation_laws_wrapper {
-    p {
-        display: inline;
-    }
-}
+// .legislation_laws_wrapper {
+//     p {
+//         display: inline;
+//     }
+// }
 
 .legeslation_info_block, .materials_info_block, .legislation_laws_block {
     margin-bottom: 0px!important;
