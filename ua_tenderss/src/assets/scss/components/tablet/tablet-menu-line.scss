@@ -52,7 +52,7 @@
     .filter_block .filter_wrapper .second_col .register_announcement {
         padding-left: 15px!important;
         padding-right: 15px!important;
-        margin-left: 30px!important;
+        // margin-left: 30px!important;
     }
 
     .filter_block .filter_wrapper .filter_input span {
@@ -66,6 +66,10 @@
 
         .menu_div {
             padding-left: 0px!important;
+        }
+
+        .mobile-buttons a {
+            margin-right: 10px;
         }
         li {
             padding-top: 0!important;
@@ -97,13 +101,17 @@
         .navbar-new--search {
             padding-left: 0px!important;
             position: relative;
-            left: 5px;
+            // right: 5px;
         }
+
 
         .login_icon {
             padding-left: 3px!important;
             padding-right: 3px!important;
+            margin-right: 10px;
         }
+
+
     }
 
     .modal_bonus {

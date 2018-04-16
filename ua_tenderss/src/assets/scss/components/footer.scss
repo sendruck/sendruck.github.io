@@ -3,8 +3,9 @@
     background-color: $footer-color;
     display: flex;
     justify-content: space-between;
-    padding-left: 34px; 
+    padding-left: 10px; 
     padding-top: 3px;
+    padding-right: 10px;
     .instr_caption {
         p {
             padding: 2px 0px 5px 0px;
@@ -34,7 +35,8 @@
     background-color: $footer-color;
     display: flex;
     justify-content: space-between;
-    padding-left: 34px; 
+    padding-left: 10px; 
+    padding-right: 10px; 
 
     .instr_body {
         display: flex;
@@ -85,7 +87,7 @@
         .instr_block2 {
             .instr_block_text {
                 p:last-child {
-                    margin-top: 25px;
+                    margin-top: 13px;
                     margin-bottom: 0px;
                 }
             }
@@ -153,7 +155,7 @@
 }
 
 .phone {
-    padding-left: 34px; 
+    padding-left: 10px; 
     padding-bottom: 10px;
     background-color: $footer-color;
     .footer_phone {
@@ -219,3 +221,54 @@
         float: right;
     }
 }
+
+.instr_block2 .instr_block_text a {
+    display: inherit;
+    width: 92%;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 1245px) and (min-width: 1200px) {
+    .footer_instr_consul .footer_cons_wrapper ul li a, .footer_instr_consul .instr_body a  {
+        font-size: 11px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block1 .instr_block_text p:last-child {
+        margin-top: 60px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block2 .instr_block_text p:last-child {
+        margin-top: 26px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block3 .instr_block_text p:last-child {
+        margin-top: 59px;
+    }
+}
+
+@media screen and (max-width: 1245px) and (min-width: 1024px) {
+    .footer_instr_consul .footer_cons_wrapper ul li a, .footer_instr_consul .instr_body a  {
+        font-size: 9px;
+    }
+
+    .footer_instr_consul .footer_cons_wrapper .left-cons {
+        margin-right: 8px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block .footer_img_wrapper {
+        margin-right: 10px;
+        width: 27%;
+    }
+    .footer_instr_consul .instr_body .instr_block1 .instr_block_text p:last-child {
+        margin-top: 44px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block2 .instr_block_text p:last-child {
+        margin-top: 13px;
+    }
+
+    .footer_instr_consul .instr_body .instr_block3 .instr_block_text p:last-child {
+        margin-top: 45px;
+    }
+}
+

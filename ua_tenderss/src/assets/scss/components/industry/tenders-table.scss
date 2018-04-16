@@ -8,10 +8,15 @@ $responsive-card-table-label-bg: #e6e6e6;;
     padding-left: 10px;
     padding-right: 10px;
 }
+#tablee {
+    padding-right: 6px!important;
+    padding-left: 6px!important;
+}
 
 @media screen and (max-width: $responsive-card-table-stack-point) {
     #tablee {
         padding: 0px !important;
+        padding-right: 6px!important;
     }
 }
 
