@@ -148,9 +148,6 @@
 			        <a  class="login_icon show-for-small-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
 			            <img src="assets/img/icons/login.png" alt="login">
 			        </a>
-			        <a href="#searchModal" class="navbar-new__item navbar-new--search navbar-toggle collapsed show-for-small-only" data-toggle="searchModal">
-			            <img src="assets/img/icons/search-icon-small.png">
-			        </a>
 			        <ul class="menu_list hide-for-small-only flex-container">
 			            <li>
 			                <a class="first flex-child-shrink" href="http://www.ua-tenders.com/">Главная</a>
@@ -185,9 +182,6 @@
 			        </ul>
 			    </div>
 			    <!-- <div class="mobile-buttons"> -->
-			        <a href="#searchModal" class="navbar-new__item navbar-new--search navbar-toggle collapsed show-for-medium-only" data-toggle="searchModal">
-			            <img src="assets/img/icons/search-icon-small.png">
-			        </a>
 			        <a  class="login_icon show-for-medium-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
 			            <img src="assets/img/icons/login.png" alt="login">
 			        </a>
@@ -296,7 +290,7 @@
 			                        Предмет закупки:
 			                    </span>
 			                </div>
-			                <div class="large-5 cell filter_input">
+			                <div class="large-5 cell filter_input filter_input_half">
 			                    <select name="st" id="st" class="hide-for-small-only">
 			                        <option value="all">-- Все статусы --</option>
 			                        <option value="2">Период уточнений</option>
@@ -314,7 +308,7 @@
 			                    <input type="text" name="z" value="" id="z" class="show-for-small-only" >
 			                </div>
 			                <!-- <div class="see_more"> -->
-			                <div class="large-5 cell filter_input second_col zakup_summ hide_expand will_expand" id="no_padding">
+			                <div class="large-5 cell filter_input filter_input_half second_col zakup_summ hide_expand will_expand" id="no_padding">
 			                    <span>
 			                        Сумма закупки: 
 			                    </span>
@@ -335,7 +329,7 @@
 			                        Дата подачи и вид:
 			                    </span>
 			                </div>
-			                <div class="cell large-5 filter_input">
+			                <div class="cell large-5 filter_input filter_input_half">
 			                    <select size="1" name="a" id="a" class="tkind" >
 			                        <option value="" selected="selected">
 			                        -- Все тендеры --
@@ -351,7 +345,7 @@
 			                        </option>
 			                    </select>
 			                </div>
-			                <div class="cell large-5 filter_input second_col" id="no_padding">
+			                <div class="cell large-5 filter_input filter_input_half second_col" id="no_padding">
 			                    <select name="t" id="t">
 			                        <option value="all">-- Все закупки --</option>
 			                        <option value="open-ukr-prozorro"> Открытые торги Prozorro
@@ -384,13 +378,13 @@
 			                        Адрес, место поставки:
 			                    </span>
 			                </div>
-			                <div class="cell large-5 filter_input">
+			                <div class="cell large-5 filter_input filter_input_half">
 			                    <span class="input_hint hide-for-small-only hide-for-medium-only">
 			                        например " вул. Хрещатик "
 			                    </span>
 			                    <input type="text" name="p" value="" id="p">
 			                </div>
-			                <div class="cell large-5 filter_input second_col" id="no_padding">
+			                <div class="cell large-5 filter_input filter_input_half second_col" id="no_padding">
 			                    <select name="region" id="region" >
 			                        <option value="0">-&nbsp;- все регионы -&nbsp;-</option>
 			                        <option value="9">Винницкая область</option><option value="3">Волынская область</option><option value="19">Днепропетровская область</option><option value="24">Донецкая область</option><option value="10">Житомирская область</option><option value="1">Закарпатская область</option><option value="22">Запорожская область</option><option value="4">Ивано-Франковская область</option><option value="26">Киев</option><option value="11">Киевская область</option><option value="14">Кировоградская область</option><option value="25">Луганская область</option><option value="2">Львовская область</option><option value="15">Николаевская область</option><option value="13">Одесская область</option><option value="17">Полтавская область</option><option value="7">Ровенская область</option><option value="18">Сумская область</option><option value="5">Тернопольская область</option><option value="23">Харьковская область</option><option value="20">Херсонская область</option><option value="8">Хмельницкая область</option><option value="12">Черкасская область</option><option value="16">Черниговская область</option><option value="6">Черновицкая область</option> 
@@ -408,7 +402,7 @@
 			                        Статус тендера:
 			                    </span>
 			                </div>
-			                <div class="cell large-5 filter_input">
+			                <div class="cell large-5 filter_input filter_input_half">
 			                    <span class="input_hint hide-for-small-only hide-for-medium-only">
 			                        например "послуги" или номер тендера "UA-2016-07-26-000077-c"
 			                    </span>
@@ -428,7 +422,7 @@
 			                        <option value="1">Предквалификация</option> 
 			                    </select>
 			                </div>
-			                <div class="cell large-5 filter_input register-wrapp-relative second_col hide-for-small-only hide-for-medium-only" id="no_padding">
+			                <div class="cell large-5 filter_input filter_input_half register-wrapp-relative second_col hide-for-small-only hide-for-medium-only" id="no_padding">
 			                    <div class="register_announcement">
 			                        <a href="/reg/">
 			                            Зарегистрируйтесь
@@ -449,13 +443,13 @@
 			                        Код классификатора:
 			                    </span>
 			                </div>
-			                <div class="cell large-5 filter_input">
+			                <div class="cell large-5 filter_input filter_input_half">
 			                    <span class="input_hint hide-for-small-only hide-for-medium-only input_spec_hint">
 			                        вводите начальные цифры классификатора ДКПП/CPV пока не появится список совпадении 
 			                    </span>
 			                    <input type="text" name="classifier_code" value="" id="classifier_code" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true">
 			                </div>
-			                <div class="cell large-5 filter_input second_col">
+			                <div class="cell large-5 filter_input filter_input_half second_col">
 			                    
 			                </div>
 			            </div>
@@ -464,7 +458,7 @@
 			                <div class="cell large-2 filter_caption hide_text">
 			                    
 			                </div>
-			                <div class="cell large-5 filter_input">
+			                <div class="cell large-5 filter_input filter_input_half">
 			                    <input type="submit" value="Искать" class="find_expanded ">
 			                    <!-- <img src="assets/img/down.png" class="up_icon not_expanded show-for-small-only"> -->
 			                    <p class="see_more_wrapper">
@@ -478,7 +472,7 @@
 			                        </a>
 			                    </p>
 			                </div>
-			                <div class="cell large-5 filter_input hide_text">
+			                <div class="cell large-5 filter_input filter_input_half hide_text">
 			                    
 			                </div>
 			            </div>

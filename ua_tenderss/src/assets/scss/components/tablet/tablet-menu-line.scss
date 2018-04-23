@@ -17,6 +17,7 @@
     .menu_line  {
         height: 34px!important;
         ul.menu_list {
+            justify-content: space-between;
             li.two-line-list {
                 flex-basis: 10%;
             }
@@ -57,6 +58,9 @@
 
     .filter_block .filter_wrapper .filter_input span {
         margin-left: 0!important;
+    }
+    .search_wrapp {
+        margin-left: 10px;
     }
 }
 

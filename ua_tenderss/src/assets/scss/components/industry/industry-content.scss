@@ -1,6 +1,6 @@
 //FILTER_BLOCK
 .filter_block {
-    padding-right: 50px;
+    padding-right: 15px;
     padding-left: 10px !important;
 
     span {
@@ -229,5 +229,19 @@
 @media screen and (max-width: 1380px){
     .input_spec_hint {
         top: 5px!important;
+    }
+}
+
+@media screen and (min-width: 1550px){
+    .filter_block .filter_wrapper .filter_caption {
+        width: 10%;
+    }
+
+    .filter_block .filter_wrapper .filter_input {
+        width: 90%;
+    }
+
+    .filter_block .filter_wrapper .filter_input_half {
+        width: 45%;
     }
 }
