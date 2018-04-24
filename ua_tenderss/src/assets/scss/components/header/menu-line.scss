@@ -76,9 +76,11 @@
     width: 23%;
 }
 .search_bar {
-    background-color: #f9ca65;
+    // background-color: #f9ca65;
     flex: 1 1 auto;
-
+    position: relative;
+    padding-left: 10px;
+    padding-top: 2px;
     form {
         display: unset!important;
     }
@@ -95,16 +97,21 @@
     }
 
         .search_icon_tr {
-            background: url("../img/icons/search_icon.gif") no-repeat 0px 2px;
+            background: url("../img/icons/search_icon.png") no-repeat 0px 2px;
             color: transparent;
             width: 22px;
             height: 19px;
             display: inline-block;
+            position: absolute;
+            position: absolute;
+            top: 4px;
+            left: 15px;
+            z-index: 2;
         }
 
         input {
             font-family: Verdana,Arial,sans-serif;
-            font-size: 10px;
+            font-size: 11px!important;
             border: 1px solid #505153;
             width: 65%;
             margin: 0;
@@ -112,11 +119,11 @@
             padding: 0 1px;
             height: 16px;
             bottom: 5px;
+            padding-left: 20px;
             position: relative;
         }
 
         a {
-            // margin-right: 50px;
             display: unset;
             font-size: 12px;
             font-family: $body-font-family;
@@ -124,7 +131,7 @@
             text-decoration: none;
             line-height: normal;
             font-weight: 700;
-            bottom: 3px;
+            bottom: 5px;
             position: relative;
         }
 }
@@ -134,9 +141,14 @@
     .faw_mail_btns {
         position: relative;
         top: -3px;
-        // left: 10px;
         text-align: center;
     }
+}
+
+@media screen and (max-width: 1190px) {
+    .search_bar .search_icon_tr {
+        top: 9px;
+    } 
 }
 
 
