@@ -131,3 +131,25 @@
     }
 }
 
+@media screen and (max-width: 810px) and (min-width: 768px){
+    .menu_line .login_icon {
+        margin-right: 0px;
+    }
+
+    .tablet-menu-icon {
+        padding: 0 0.8rem!important;
+    }
+
+    .tablet-menu-icon:before {
+        left: 3px!important;
+    }
+}
+
+@media screen and (max-width: 944px) and (min-width: 930px){
+    .menu_line .login_icon {
+        margin-right: 0px;
+    }
+}
+
+
+

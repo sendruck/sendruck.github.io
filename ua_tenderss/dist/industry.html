@@ -148,7 +148,7 @@
 			        <a  class="login_icon show-for-small-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
 			            <img src="assets/img/icons/login.png" alt="login">
 			        </a>
-			        <ul class="menu_list hide-for-small-only flex-container">
+			        <ul class="menu_list hide-for-small-only flex-container" id="two-line-menu">
 			            <li>
 			                <a class="first flex-child-shrink" href="http://www.ua-tenders.com/">Главная</a>
 			            </li>
@@ -182,6 +182,9 @@
 			        </ul>
 			    </div>
 			    <!-- <div class="mobile-buttons"> -->
+			            <a class="tablet-menu-icon float-left show-for-medium-only" data-toggle="offCanvasNew" aria-expanded="false" aria-controls="offCanvas">
+			                Open Menu
+			            </a>
 			        <a  class="login_icon show-for-medium-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
 			            <img src="assets/img/icons/login.png" alt="login">
 			        </a>
@@ -485,8 +488,8 @@
 			        <!-- CONTEXT_TOP_TOPIC_CLOSE -->
 			        
 			        <!-- CONTEXT_MENU_OPEN -->
-			        <div id="context-top-topic" class="hide-for-small-only  industry-top-topic  ">Контекстное меню </div>
-			                <ul id="context-menu-ul" class="hide-for-small-only   industry-menu-ul ">
+			        <div id="context-top-topic" class="hide-for-small-only  industry-top-topic hide-for-medium-only  ">Контекстное меню </div>
+			                <ul id="context-menu-ul" class="hide-for-small-only   industry-menu-ul hide-for-medium-only ">
 			                        <li class="n-blue">
 			                            <a href="/tender/all/?b&#x3D;all&amp;a&#x3D;&amp;t&#x3D;all&amp;p&#x3D;&amp;z&#x3D;">Поиск тендера</a>
 			                        </li>
@@ -1662,6 +1665,13 @@
 			    <p class="footer_phone">
 			        (044) 239-27-39, 237-17-23, 230-82-27, 425-46-47, 581-28-21
 			    </p>
+			        <form action="http://www.ua-tenders.com/search/" method="get" name="searchform" class="show-for-medium-only">
+			            <input type="text" name="text" value="">
+			            <a onclick="window.document.searchform.submit();" class="reg-enter">Найти</a>
+			        </form>
+			        <a href="#searchModal" class="footer-search-icon navbar-new__item navbar-new--search navbar-toggle collapsed show-for-small-only" data-toggle="searchModal">
+			            <img src="assets/img/icons/search-icon-small.png">
+			        </a>
 			    <ul class="footer_left_menu">
 			        <li>
 			            <a href="http://www.ua-tenders.com/rubrics/services/reklama/">
@@ -1723,6 +1733,60 @@
 			            </div>
 			</div>
 			<!-- SEARCH_MODAL_CLOSE -->		</div>
+			<div class="off-canvas position-left is-closed" id="offCanvasNew" data-off-canvas>
+			    <!-- Close button open-->
+			    <button class="close-button" aria-label="Close menu" type="button" data-close>
+			        <span aria-hidden="true">&times;</span>
+			    </button>
+			    <!-- Close button close-->
+			
+			
+			    <!-- TABLET CONTEXT MENU OPEN -->
+			    <ul class="vertical menu mobile_menu">
+			        <li>
+			            <a href="/tender/all/?b=all&a=&t=all&p=&z=">
+			                Поиск тендера
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/tenders/tenders_list/add/">
+			                Добавить тендер	
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/tenders/result/add/">
+			                Добавить результат
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/result/trz">
+			                Результаты тендеров
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/customers/trz">
+			                Каталог заказчиков
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/suppliers/trz">
+			                Каталог поставщиков
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/offer/trz">
+			                Каталог предложений
+			            </a>
+			        </li>
+			        <li>
+			            <a href="/rubrics/services/price/">
+			                Доступ к тендерам
+			            </a>
+			        </li>
+			    </ul>
+			    <!-- TABLET CONTEXT MENU OPEN -->
+			
+			</div>
 		<div class="off-canvas position-left is-closed" id="offCanvas" data-off-canvas>
 		    <!-- Close button open-->
 		    <button class="close-button" aria-label="Close menu" type="button" data-close>

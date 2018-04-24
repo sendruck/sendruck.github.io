@@ -42,3 +42,67 @@
         padding: 0px !important;
     }
 }
+
+@include breakpoint(medium only) {
+    .phone {
+        .footer_phone {
+            text-align: left;
+            display: inline-block;
+            margin-left: 29px;
+        }
+        form {
+            display: inline-block;
+        }
+        input {
+            height: 16px;
+            font-size: 10px;
+            font-family: Verdana,Arial,sans-serif;
+            border: 1px solid #505153;
+            margin-bottom: 0;
+            display: inline-block;
+            width: 50%;
+        }
+        .reg-enter {
+            display: unset;
+            font-size: 12px;
+            font-family: Arial, Verdana, sans-serif;
+            color: #534741;
+            text-decoration: none;
+            line-height: normal;
+            font-weight: 700;
+            position: relative;
+        }
+    }
+
+}
+
+@include breakpoint(small only) {
+    .phone {
+        text-align: center;
+        .footer_phone {
+            display: inline-block;
+        }
+        .footer-search-icon {
+            float: none;
+            padding-left: 0px!important;
+            padding-bottom: 0px!important;
+            img {
+                width: 18px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px){
+    .footer_phone {
+        font-size: 9px!important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .phone {
+        padding-left: 0px !important;
+        height: 116px!important;
+    }
+}

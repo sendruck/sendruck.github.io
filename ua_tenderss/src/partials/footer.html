@@ -193,6 +193,15 @@
     <p class="footer_phone">
         (044) 239-27-39, 237-17-23, 230-82-27, 425-46-47, 581-28-21
     </p>
+    {{#ifpage 'industry'}}
+        <form action="http://www.ua-tenders.com/search/" method="get" name="searchform" class="show-for-medium-only">
+            <input type="text" name="text" value="">
+            <a onclick="window.document.searchform.submit();" class="reg-enter">Найти</a>
+        </form>
+        <a href="#searchModal" class="footer-search-icon navbar-new__item navbar-new--search navbar-toggle collapsed show-for-small-only" data-toggle="searchModal">
+            <img src="assets/img/icons/search-icon-small.png">
+        </a>
+    {{/ifpage}}
     <ul class="footer_left_menu">
         <li>
             <a href="http://www.ua-tenders.com/rubrics/services/reklama/">

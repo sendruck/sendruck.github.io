@@ -100,7 +100,7 @@
 
 }
 
-.mobile-menu-icon {
+.mobile-menu-icon, .tablet-menu-icon {
     position: relative;
     text-indent: -99999px;
     display: block;
@@ -113,7 +113,7 @@
     display: inline-block;
 }
 
-.mobile-menu-icon:before {
+.mobile-menu-icon:before, .tablet-menu-icon:before {
     content: "";
     position: absolute;
     left: 9px;
@@ -123,4 +123,16 @@
     background: #666666;
     -webkit-box-shadow: 0 0.3em 0 0 #666666, 0 0.6em 0 0 #666666;
             box-shadow: 0 0.3em 0 0 #666666, 0 0.6em 0 0 #666666;
+}
+
+.tablet-menu-icon {
+    margin-right: 0.2rem;
+    padding: 0 1rem;
+    border-left: 1px solid #f3af08;
+    height: 30px;
+}
+
+.tablet-menu-icon:before {
+    left: 5px;
+    top: 10px;
 }

@@ -29,6 +29,9 @@
 			{{> footer}}
 			{{> search-modal}}
 		</div>
+		{{#ifpage 'industry'}}
+			{{> context-menu-tablet}}
+		{{/ifpage}}
 		{{> mobile-menu}}
 		{{> mobile-login}}
 	<script async src="{{root}}assets/js/app.js"></script>

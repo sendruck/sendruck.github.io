@@ -13,7 +13,7 @@
                 <img src="assets/img/icons/search-icon-small.png">
             </a>
         {{/unlesspage}}
-        <ul class="menu_list hide-for-small-only flex-container">
+        <ul class="menu_list hide-for-small-only flex-container" {{#ifpage 'industry'}}id="two-line-menu"{{/ifpage}}>
             <li>
                 <a class="first flex-child-shrink" href="http://www.ua-tenders.com/">Главная</a>
             </li>
@@ -52,6 +52,11 @@
                 <img src="assets/img/icons/search-icon-small.png">
             </a>
         {{/unlesspage}}
+        {{#ifpage 'industry'}}
+            <a class="tablet-menu-icon float-left show-for-medium-only" data-toggle="offCanvasNew" aria-expanded="false" aria-controls="offCanvas">
+                Open Menu
+            </a>
+        {{/ifpage}}
         <a  class="login_icon show-for-medium-only" data-toggle="loginModal" aria-expanded="false" aria-controls="offCanvas">
             <img src="assets/img/icons/login.png" alt="login">
         </a>
