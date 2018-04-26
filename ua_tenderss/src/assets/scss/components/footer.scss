@@ -279,4 +279,10 @@
     }
 }
 
+@include breakpoint(medium only) {
+    .phone .footer_left_menu {
+        display: inline-block;
+        margin-left: 32px !important;    
+    }
+}
 

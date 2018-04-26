@@ -1,6 +1,7 @@
 //MOBILE_FOOTER
 @include breakpoint(small down) {
     .phone {
+        position: relative;
         padding-left: 0px !important;
         height: 90px;
         .footer_phone {
@@ -8,8 +9,8 @@
             padding-top: 5px;
         }
     }
-
     
+
     .footer_left_menu {
         text-align: center;
         margin-top: 5px;
@@ -32,7 +33,7 @@
         font-weight: 600;
         font-size: 12px;
         font-family: Verdana, Arial, sans-serif;
-
+        bottom: 2px;
         &:hover {
             text-decoration: underline;
         }
@@ -43,15 +44,12 @@
     }
 }
 
-@include breakpoint(medium only) {
+@include breakpoint(medium down) {
     .phone {
-        .footer_phone {
-            text-align: left;
-            display: inline-block;
-            margin-left: 29px;
-        }
         form {
             display: inline-block;
+            position: relative;
+            right: 9px;
         }
         input {
             height: 16px;
@@ -80,7 +78,7 @@
     .phone {
         text-align: center;
         .footer_phone {
-            display: inline-block;
+            display: block;
         }
         .footer-search-icon {
             float: none;
@@ -91,6 +89,28 @@
                 height: 15px;
             }
         }
+        input {
+            border-radius: 2px;
+            padding: 0;
+            padding-left: 18px;
+            font-size: 12px;
+            width: 60%;
+        }
+    }
+    .footer_left_menu {
+        margin-top: 0;
+    }
+    .search_icon_tr {
+        background: url("../img/icons/search_icon.png") no-repeat 0px 2px;
+        color: transparent;
+        width: 22px;
+        height: 19px;
+        display: inline-block;
+        position: absolute;
+        position: absolute;
+        top: 6px;
+        left: 42px;
+        z-index: 2;
     }
 }
 
@@ -104,5 +124,8 @@
     .phone {
         padding-left: 0px !important;
         height: 116px!important;
+        .full_version {
+            bottom: unset;
+        }
     }
 }
