@@ -1,7 +1,7 @@
 // TENDERS_TABLE
 $responsive-card-table-bottom-gap: 20px;
 $responsive-card-table-border: 1px solid #E2DFD8;
-$responsive-card-table-stack-point: 480px;
+$responsive-card-table-stack-point: 611px;
 $responsive-card-table-label-bg: #e6e6e6;;
 
 .table_col {
@@ -92,7 +92,7 @@ $responsive-card-table-label-bg: #e6e6e6;;
     }
 
     .date_publ_col {
-        width: 8%;
+        width: 105px;
     }
 
     .summ_col {
@@ -209,8 +209,14 @@ $responsive-card-table-label-bg: #e6e6e6;;
                 z-index: 0;
             }
         }
-
-
     }
 
+}
+
+@media screen and (max-width: 610px) {
+    .responsive-card-table {
+        .date_publ_col {
+            width: 8%;
+        }
+    }
 }

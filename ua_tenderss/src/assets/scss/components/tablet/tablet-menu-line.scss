@@ -1,11 +1,11 @@
 //TABLET MENU LINE
-@media screen and (max-width: 1019px) and (min-width: 934px){
+@media screen and (max-width: 1023px) and (min-width: 934px){
     .menu_line  {
         ul.menu_list {
             li {
                 #two-lined {
-                    padding-top: 9px!important;
-                    padding-bottom: 9px!important;
+                    padding-top: 7px!important;
+                    padding-bottom: 7px!important;
                 }
             }
         }
@@ -13,11 +13,11 @@
     }
 }
 
-@media screen and (max-width: 1190px) and (min-width: 1020px){
+@media screen and (max-width: 1190px) and (min-width: 1024px){
     .menu_line  {
         height: 34px!important;
         ul.menu_list {
-            justify-content: space-between;
+            justify-content: baseline;
             li.two-line-list {
                 flex-basis: 10%;
             }
@@ -26,11 +26,19 @@
                     padding-top: 7px!important;
                     padding-bottom: 7px!important;
                 }
+                a {
+                    position: relative;
+                    bottom: 2px;
+                }
             }
+            
         }
+    .search_wrapp {
+        width: 39%;
+    }
     }
     .search_bar input {
-        width: 50%!important;
+        width: 70%!important;
     }
 
     .search_bar .search_icon {
@@ -53,7 +61,6 @@
     .filter_block .filter_wrapper .second_col .register_announcement {
         padding-left: 15px!important;
         padding-right: 15px!important;
-        // margin-left: 30px!important;
     }
 
     .filter_block .filter_wrapper .filter_input span {
@@ -78,9 +85,9 @@
         li {
             padding-top: 0!important;
 
-            a {
-                padding-top: 9px!important;
-                padding-bottom: 9px!important;
+            a { 
+                padding-top: 7px!important;
+                padding-bottom: 7px!important;
                 padding-right: 3px!important;
                 padding-left: 3px!important;
 
@@ -89,9 +96,14 @@
                 }
             }
 
+            a {
+                position: relative;
+                top: 2px;
+            }
+
             a.two-line {
-                padding-top: 2px!important;
-                padding-bottom: 2px!important;
+                padding-top: 0px!important;
+                padding-bottom: 0px!important;
             }
         }
 
@@ -105,7 +117,6 @@
         .navbar-new--search {
             padding-left: 0px!important;
             position: relative;
-            // right: 5px;
         }
 
 
@@ -131,25 +142,8 @@
     }
 }
 
-@media screen and (max-width: 810px) and (min-width: 768px){
-    .menu_line .login_icon {
-        margin-right: 0px;
-    }
 
-    .tablet-menu-icon {
-        padding: 0 0.8rem!important;
-    }
 
-    .tablet-menu-icon:before {
-        left: 3px!important;
-    }
-}
-
-@media screen and (max-width: 944px) and (min-width: 930px){
-    .menu_line .login_icon {
-        margin-right: 0px;
-    }
-}
 
 
 

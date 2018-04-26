@@ -113,39 +113,56 @@
         }
         
         .see_more_wrapper {
-            text-align: center;
+            // text-align: center;
             margin-top: 10px;
             margin-bottom: 10px;
         }
 
         .roll_up_link {
-            text-align: center;
+            // text-align: center;
             color: $primary-color;
             font-weight: 600;
-            font-family: $body-font-family;
-            font-size: 14px;
+            // font-family: $body-font-family;
+            font-size: 12px;
             margin-bottom: 0px;
             &:hover {
-                text-decoration: underline;
+                // text-decoration: underline;
                 outline: none;
+            }
+            a {
+                border: 1px solid black;
+                background: #dddddd;
+                padding-right: 13px;
+                padding-left: 13px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+                position: relative;
+                top: 8px;
+                &:hover {
+                    background-color: #afafaf;
+                    outline: none;
+                }
             }
         }
 
         .see_more_btn {
+            border: 1px solid black;
+            background: #dddddd;
             margin: 0 auto;
             position: relative;
-            top: 5px;
-            font-family: $body-font-family;
-            padding-right: 10px;
-            padding-left: 10px;
-            padding-bottom: 5px;
-            font-size: 14px;
-            padding-top: 5px;
+            top: 10px;
+            // font-family: $body-font-family;
+            padding-right: 13px;
+            padding-left: 13px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            padding-top: 10px;
             color: $primary-color;
             font-weight: 600;
 
             &:hover {
-                text-decoration: underline;
+                // text-decoration: underline;
+                background-color: #afafaf;
                 outline: none;
             }
         }

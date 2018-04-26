@@ -2,6 +2,7 @@
 .filter_block {
     padding-right: 15px;
     padding-left: 10px !important;
+    position: relative;
 
     span {
         padding: 0;
@@ -13,7 +14,7 @@
     }
 
     
-    a {
+    a.rss {
         margin-left: 5px;
 
         .rss_icon {
