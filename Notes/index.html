@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Notes
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let header = document.querySelector("header"),
+                editArea = document.getElementById("edit-area");
+
+            editArea.addEventListener("focus", function( event ) {
+                header.classList.add("edit-state");
+            });
+
+            editArea.addEventListener("blur", function( event ) {
+                header.classList.toggle("edit-state");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="body-wrapper">
+        <header>
+            <div class="btn-back">
+                <span>
+                    Заметки
+                </span>
+            </div>
+            <textarea id="edit-area" cols="30" rows="10"></textarea>
+            <div class="edit-panel">
+                <img src="img/user.png" class="add-btn"></img>
+                <img src="img/share.png" class="share-btn"></img>
+                <span>
+                    Готово
+                </span>
+            </div> 
+        </header>
+        <nav>
+            <div class="nav-btn">
+                <img src="img/delete.png">
+            </div>
+            <div class="nav-btn">
+                <img src="img/tick.png">                
+            </div>
+            <div class="nav-btn">
+                <img src="img/delete.png">                
+            </div>
+            <div class="nav-btn">
+                <img src="img/delete.png">                
+            </div>
+            <div class="nav-btn">
+                <img src="img/delete.png">                
+            </div>
+        </nav>
+    </div>
+</body>
+</html>

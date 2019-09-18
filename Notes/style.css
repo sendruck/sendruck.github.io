@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'San Francisco Text Regular';
+    src: url('SFUIText-Regular.eot');
+    src: url('SFUIText-Regular.eot?#iefix') format('embedded-opentype'),
+    url('SFUIText-Regular.woff') format('woff'),
+    url('SFUIText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* RESET STYLES BEGIN */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {  
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+    outline: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+form {
+    margin: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/* RESET STYLES END */
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'San Francisco Text Regular';
+    background: url(img/background.jpg);
+}
+
+/* HEADER OPEN */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 0 15px;
+}
+
+.btn-back {
+    position: relative;
+    top: 5px;
+}
+
+.btn-back span,
+.edit-panel span {
+    color: #D89601;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.btn-back span::before {
+    display: inline-block;
+    content: url('img/arrow.png');
+    position: relative;
+    top: 5px;
+}
+
+.edit-panel {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    transition: .5s width;
+}
+
+.edit-panel img {
+    display: inline-block;
+    height: 31px;
+    position: relative;
+    top: 10px;
+}
+
+.edit-panel span {
+    display: none;
+}
+
+.edit-state .edit-panel {
+    width: 160px;
+}
+
+.edit-state .edit-panel span {
+    display: block!important;
+}
+/* HEADER CLOSE */
+
+textarea#edit-area {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: calc(100% - 30px);
+    height: 82%;
+    background: transparent;
+    border: 0px;
+    font-size: 20px;
+    padding: 15px;
+}
+
+/* BOTTOM NAVIGATION OPEN */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav-btn img {
+    height: 31px;
+}
+/* BOTTOM NAVIGATION CLOSE */   
